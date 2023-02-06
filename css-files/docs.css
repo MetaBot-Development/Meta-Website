@@ -1,338 +1,330 @@
 body {
-    background-color: #131313;
+  background-color: #131313;
 }
 
-.metaDocZero{
-    margin-top: 10%;
-    background-color: #202020;
-    border-radius: 25px;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 65%;
-    height: 75%;
-    margin-left: 18%;
-    color: #fff
+.metaDocZero {
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 65%;
+  height: 75%;
+  margin-left: 18%;
+  color: #fff;
 }
 
 .metaDocOne {
-    margin-top: 10%;
-    background-color: #202020;
-    border-radius: 25px;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin-left: 18%;
-    color: #fff
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 65%;
+  height: 70%;
+  margin-left: 18%;
+  color: #fff;
 }
 
 .metaDocTwo {
-    margin-top: 10%;
-    background-color: #202020;
-    border-radius: 25px;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin-left: 18%;
-    color: #fff
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 65%;
+  height: 70%;
+  margin-left: 18%;
+  color: #fff;
 }
 
 .metaDocThree {
-    margin-top: 10%;
-    background-color: #202020;
-    border-radius: 25px;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin-left: 18%;
-    color: #fff
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 65%;
+  height: 70%;
+  margin-left: 18%;
+  color: #fff;
 }
 
 .metaDocFour {
-    margin-top: 10%;
-    background-color: #202020;
-    border-radius: 25px;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin-left: 18%;
-    color: #fff
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 65%;
+  height: 70%;
+  margin-left: 18%;
+  color: #fff;
 }
 
 .metaDocFive {
-    margin-top: 10%;
-    background-color: #202020;
-    border-radius: 25px;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin-left: 18%;
-    color: #fff
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 65%;
+  height: 70%;
+  margin-left: 18%;
+  color: #fff;
 }
 
 .metaDocSix {
-    margin-top: 10%;
-    background-color: #202020;
-    border-radius: 25px;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin-left: 18%;
-    color: #fff
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 65%;
+  height: 70%;
+  margin-left: 18%;
+  color: #fff;
 }
 
 .metaDocSeven {
-    margin-top: 10%;
-    background-color: #202020;
-    border-radius: 25px;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin-left: 18%;
-    color: #fff
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 65%;
+  height: 70%;
+  margin-left: 18%;
+  color: #fff;
 }
 
 .metaDocEight {
-    margin-top: 10%;
-    background-color: #202020;
-    border-radius: 25px;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin-left: 18%;
-    color: #fff
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 65%;
+  height: 70%;
+  margin-left: 18%;
+  color: #fff;
 }
 
 .metaDocNine {
-    margin-top: 10%;
-    background-color: #202020;
-    border-radius: 25px;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 65%;
-    height: 70%;
-    margin-left: 18%;
-    color: #fff
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 65%;
+  height: 70%;
+  margin-left: 18%;
+  color: #fff;
 }
 
 .metaDocTen {
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 65%;
+  height: 70%;
+  margin-left: 18%;
+  color: #fff;
+}
+
+.documents-all h1 {
+  text-decoration: underline;
+}
+.documents-all h2 {
+  text-decoration: underline;
+  margin-left: 2%;
+}
+
+.documents-all p {
+  margin-left: 2%;
+  line-height: 1.4;
+}
+
+.documents-all a {
+  color: #5fa4ff;
+  text-decoration: none;
+}
+
+.documents-all a:hover {
+  color: #2282ff;
+  text-decoration: none;
+}
+
+.docs-cmd-box {
+  border-left: 5px #4f4f4f solid;
+  margin-left: 2%;
+  margin-top: 2%;
+  padding: 2%;
+  background-color: rgba(81, 81, 81, 0.4);
+}
+
+.docs-cmd-box-important {
+  border-left: 5px #fe0606 solid;
+  margin-left: 2%;
+  margin-top: 2%;
+  padding: 2%;
+  background-color: rgba(255, 81, 81, 0.4);
+}
+
+.metaDocTwo h3 {
+  text-decoration: underline;
+}
+
+.metaDocSix h3 {
+  text-decoration: underline;
+}
+
+.metaDocSeven h3 {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 960px) {
+  .metaDocZero {
     margin-top: 10%;
     background-color: #202020;
     border-radius: 25px;
     border: 2px solid #864cff;
     padding: 20px;
-    width: 65%;
+    width: 90%;
     height: 70%;
-    margin-left: 18%;
-    color: #fff
-}
+    margin-left: 6%;
+    color: #fff;
+    font-size: 13.8px;
+  }
 
+  .metaDocOne {
+    margin-top: 30%;
+    background-color: #202020;
+    border-radius: 25px;
+    border: 2px solid #864cff;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    margin-left: 6%;
+    color: #fff;
+    font-size: 14.2px;
+  }
 
+  .metaDocTwo {
+    margin-top: 10%;
+    background-color: #202020;
+    border-radius: 25px;
+    border: 2px solid #864cff;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    margin-left: 6%;
+    color: #fff;
+    font-size: 13.2px;
+  }
 
+  .metaDocThree {
+    margin-top: 10%;
+    background-color: #202020;
+    border-radius: 25px;
+    border: 2px solid #864cff;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    margin-left: 6%;
+    color: #fff;
+    font-size: 13.6px;
+  }
 
-.documents-all h1{
-    text-decoration: underline;
-}
-.documents-all h2{
-    text-decoration: underline;
-    margin-left: 2%;
-}
+  .metaDocFour {
+    margin-top: 10%;
+    background-color: #202020;
+    border-radius: 25px;
+    border: 2px solid #864cff;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    margin-left: 6%;
+    color: #fff;
+    font-size: 14.4px;
+  }
 
-.documents-all p{
-    margin-left: 2%;
-    line-height: 1.4
-}
+  .metaDocFive {
+    margin-top: 10%;
+    background-color: #202020;
+    border-radius: 25px;
+    border: 2px solid #864cff;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    margin-left: 6%;
+    color: #fff;
+    font-size: 13.8px;
+  }
 
-.documents-all a{
-    color: #5fa4ff;
-    text-decoration: none;
-}
-   
-.documents-all a:hover{
-       color: #2282ff;
-       text-decoration: none;
-}
+  .metaDocSix {
+    margin-top: 10%;
+    background-color: #202020;
+    border-radius: 25px;
+    border: 2px solid #864cff;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    margin-left: 6%;
+    color: #fff;
+    font-size: 13.4px;
+  }
 
+  .metaDocSeven {
+    margin-top: 10%;
+    background-color: #202020;
+    border-radius: 25px;
+    border: 2px solid #864cff;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    margin-left: 6%;
+    color: #fff;
+    font-size: 14px;
+  }
 
-.docs-cmd-box {
-    border-left: 5px #4f4f4f solid;
-    margin-left: 2%;
-    margin-top: 2%;
-    padding: 2%;
-    background-color: rgba(81, 81, 81, 0.4);
-}
+  .metaDocEight {
+    margin-top: 10%;
+    background-color: #202020;
+    border-radius: 25px;
+    border: 2px solid #864cff;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    margin-left: 6%;
+    color: #fff;
+    font-size: 14px;
+  }
 
-.docs-cmd-box-important {
-    border-left: 5px #fe0606 solid;
-    margin-left: 2%;
-    margin-top: 2%;
-    padding: 2%;
-    background-color: rgba(255, 81, 81, 0.4);
-}
+  .metaDocNine {
+    margin-top: 10%;
+    background-color: #202020;
+    border-radius: 25px;
+    border: 2px solid #864cff;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    margin-left: 6%;
+    color: #fff;
+    font-size: 14.4px;
+  }
 
-.metaDocTwo h3{
-    text-decoration: underline;
-}
-
-.metaDocSix h3{
-    text-decoration: underline;
-}
-
-.metaDocSeven h3{
-    text-decoration: underline;
-}
-
-@media screen and (max-width: 960px) {
-
-
-
-    .metaDocZero{
-        margin-top: 10%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 6%;
-        color: #fff;
-        font-size: 13.8px;  
-    }
-    
-    .metaDocOne {
-        margin-top: 30%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 6%;
-        color: #fff;
-        font-size: 14.2px;
-    }
-    
-    .metaDocTwo {
-        margin-top: 10%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 6%;
-        color: #fff;
-        font-size: 13.2px;
-    }
-    
-    .metaDocThree {
-        margin-top: 10%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 6%;
-        color: #fff;
-        font-size: 13.6px;
-    }
-    
-    .metaDocFour {
-        margin-top: 10%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 6%;
-        color: #fff;
-        font-size: 14.4px;
-    }
-    
-    .metaDocFive {
-        margin-top: 10%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 6%;
-        color: #fff;
-        font-size: 13.8px;
-    }
-    
-    .metaDocSix {
-        margin-top: 10%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 6%;
-        color: #fff;
-        font-size: 13.4px;
-    }
-    
-    .metaDocSeven {
-        margin-top: 10%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 6%;
-        color: #fff;
-        font-size: 14px;
-    }
-    
-    .metaDocEight {
-        margin-top: 10%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 6%;
-        color: #fff;
-        font-size: 14px;
-    }
-    
-    .metaDocNine {
-        margin-top: 10%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 6%;
-        color: #fff;
-        font-size: 14.4px;
-    }
-    
-    .metaDocTen {
-        margin-top: 10%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 6%;
-        font-size: 17px 
-    }
-
+  .metaDocTen {
+    margin-top: 10%;
+    background-color: #202020;
+    border-radius: 25px;
+    border: 2px solid #864cff;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    margin-left: 6%;
+    font-size: 17px;
+  }
 }

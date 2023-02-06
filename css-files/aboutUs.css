@@ -1,150 +1,148 @@
 .metaTeam {
-    margin-top: 10%;
-    background-color: #202020;
-    border-radius: 25px;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 60%;
-    height: 70%;
-    margin-left: 20%;
-    color: #fff;
-    font-size: 14.8px;
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 60%;
+  height: 70%;
+  margin-left: 20%;
+  color: #fff;
+  font-size: 14.8px;
 }
 
 .metaTeamInvite {
-    margin-top: 10%;
-    background-color: #202020;
-    border: 2px solid #864cff;
-    padding: 20px;
-    width: 60%;
-    height: 70%;
-    margin-left: 20%;
-    color: #fff;
-    font-size: 14.8px;
+  margin-top: 10%;
+  background-color: #202020;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 60%;
+  height: 70%;
+  margin-left: 20%;
+  color: #fff;
+  font-size: 14.8px;
 }
 
 .metaTeamInvite a {
-    text-decoration: none;
-    color: #6900fc;
+  text-decoration: none;
+  color: #6900fc;
 }
 
 .metaTeamInvite a:hover {
-    text-decoration: none;
-    color: #0011fc;
+  text-decoration: none;
+  color: #0011fc;
 }
 
 .myImage {
-    float: left;
-    height: 25%;
-    width: 9%;
-    font-family: Veranda;
-
+  float: left;
+  height: 25%;
+  width: 9%;
+  font-family: Veranda;
 }
 
 .heading {
-    float:right;
+  float: right;
 }
 
-.metaTeam h1, h3, p {
-    margin-left: 12%;
+.metaTeam h1,
+h3,
+p {
+  margin-left: 12%;
 }
 
-.metaTeam h2{
-    margin-left: 12%;
+.metaTeam h2 {
+  margin-left: 12%;
 }
 
 .metaTeamInvite h2 {
-    margin-left: 12%;
+  margin-left: 12%;
 }
-
-
 
 #frosty {
-    border: 2px solid #fb4432;
+  border: 2px solid #fb4432;
 }
 #frosty img {
-    border: 3px solid #f58b00;
+  border: 3px solid #f58b00;
 }
 
 #dankly {
-    border: 2px solid #ea025b;
+  border: 2px solid #ea025b;
 }
 #dankly img {
-    border: 3px solid #ff4bcf;
+  border: 3px solid #ff4bcf;
 }
 
 #bapo {
-    border: 2px solid #FA8072;
+  border: 2px solid #fa8072;
 }
 #bapo img {
-    border: 3px solid #FFE4E1;
+  border: 3px solid #ffe4e1;
 }
 
 #randy {
-    border: 2px solid #ff0000;
+  border: 2px solid #ff0000;
 }
 #randy img {
-    border: 3px solid #020107;
+  border: 3px solid #020107;
 }
 
 #sweeve {
-    border: 2px solid #004aff;
+  border: 2px solid #004aff;
 }
 #sweeve img {
-    border: 3px solid #4f74ff;
+  border: 3px solid #4f74ff;
 }
 
 @media screen and (max-width: 960px) {
-
-    .metaTeam {
-        margin-top: 10%;
-        background-color: #202020;
-        border-radius: 25px;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 5%;
-        color: #fff;
-        font-size: 12.8px;
-    }
-
-    .myImage {
-        float: left;
-        height: 69%;
-        width: 17%;
-        font-family: Veranda;
-    }
-
-    .metaTeam h1, h2, h3, p {
-        margin-left: 20%;
-    }
-
-    .metaTeamInvite {
-        margin-top: 10%;
-        background-color: #202020;
-        border: 2px solid #864cff;
-        padding: 20px;
-        width: 90%;
-        height: 70%;
-        margin-left: 5%;
-        color: #fff;
-        font-size: 14.8px;
-    }
-
-}
-
-.jobs {
-
+  .metaTeam {
     margin-top: 10%;
     background-color: #202020;
     border-radius: 25px;
     border: 2px solid #864cff;
     padding: 20px;
-    width: 60%;
+    width: 90%;
     height: 70%;
+    margin-left: 5%;
+    color: #fff;
+    font-size: 12.8px;
+  }
+
+  .myImage {
+    float: left;
+    height: 69%;
+    width: 17%;
+    font-family: Veranda;
+  }
+
+  .metaTeam h1,
+  h2,
+  h3,
+  p {
     margin-left: 20%;
+  }
+
+  .metaTeamInvite {
+    margin-top: 10%;
+    background-color: #202020;
+    border: 2px solid #864cff;
+    padding: 20px;
+    width: 90%;
+    height: 70%;
+    margin-left: 5%;
     color: #fff;
     font-size: 14.8px;
+  }
+}
 
+.jobs {
+  margin-top: 10%;
+  background-color: #202020;
+  border-radius: 25px;
+  border: 2px solid #864cff;
+  padding: 20px;
+  width: 60%;
+  height: 70%;
+  margin-left: 20%;
+  color: #fff;
+  font-size: 14.8px;
 }
