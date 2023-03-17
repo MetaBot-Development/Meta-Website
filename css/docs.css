@@ -1,0 +1,231 @@
+.documents-all a {
+    text-decoration: none;
+}
+
+
+
+.docs-cmd-box {
+    border-left: 5px solid rgb(0, 202, 50);
+    padding: 1%;
+    background-color: #181818;
+}
+
+.docs-cmd-box h3 {
+    font-size: 20px;
+    text-decoration: none;
+    color: #9aff7e;
+}
+
+
+.metaDocZero {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+.metaDocOne {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+.metaDocTwo {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+.metaDocThree {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+.metaDocFour {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+.metaDocFive {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+.metaDocSix {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+.metaDocSeven {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+.metaDocEight {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+.metaDocNine {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+.metaDocTen {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+
+
+.metaDocOne h2 {
+    text-decoration: underline;
+}
+
+.metaDocTwo h2 {
+    text-decoration: underline;
+}
+
+.metaDocThree h2 {
+    text-decoration: underline;
+}
+
+.metaDocfour h2 {
+    text-decoration: underline;
+}
+
+.metaDocfive h2 {
+    text-decoration: underline;
+}
+
+.metaDocSix h2 {
+    text-decoration: underline;
+}
+
+.metaDocSeven h2 {
+    text-decoration: underline;
+}
+
+.metaDocEight h2 {
+    text-decoration: underline;
+}
+
+.metaDocNine h2 {
+    text-decoration: underline;
+}
+
+.metaDocTen h2 {
+    text-decoration: underline;
+}
+
+
+
+
+.metaDocZero h3 {
+text-decoration: underline;
+}
+
+.metaDocZero p {
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.metaDocOne {
+    border: 3px solid rgb(0, 255, 64);
+    border-radius: 50px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+
+
+.premiumBox {
+    border: 3px solid #008f00;
+    border-radius: 25px;
+    background-color: #181818;
+    padding: 2%;
+}
+
+.premiumBox h2 {
+    border-bottom: solid 3px #008f00;
+    padding-bottom: 1%;
+    text-align: center;
+}
+
+.plusFeat {
+    border-left: solid 20px #00760a;
+    border-radius: 3%;
+    padding-left: 2%;
+    background-color: #1f1f1f;
+}
+
+.plusPrice {
+    border:#008f00 solid 3px;
+    border-radius: 10px;
+    padding-left: 4px;
+    padding-right: 4px;
+    background-color: #008f0036;
+}
+
+.plusBtn {
+    color: #ffffff;
+    background-color: #008f00;
+    border: #004400 solid 2px;
+    border-radius: 15px;
+    font-size: 25px;
+    padding: 4px;
+}
+
+.plusBtn a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.plusBtn a:hover {
+    background-color: #00df00;
+    border: #ffffff solid 2px;
+    border-radius: 15px;
+    font-size: 25px;
+    padding: 5px;
+}
+
+.plusOrderBox {
+    border-left: solid 10px #191919;
+    padding-left: 2%;
+    background-color: #1c1c1c;
+}
+
+.plusOrderBox h4 {
+    text-decoration: underline;
+    font-size: 20px;
+}

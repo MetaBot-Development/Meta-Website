@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/commands.css" rel="stylesheet" />
+    <link href="css/docs.css" rel="stylesheet" />
+    <link rel="icon" href="img/ico/image.ico">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="shortcut icon" href="../img/" type="image/x-icon" />
+    <title>Documentation</title>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+
+    <div class="navbar navbar-expand-md bg-dark navbar-dark">
+        <div class="container">
+          <a href="" class="navbar-brand text-info">Meta Discord Bot</a>
+  
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainmenu"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse" id="mainmenu">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item"><a href="home.html" class="nav-link">Home</a></li>
+              <li class="nav-item">
+                <a href="commands.html" class="nav-link">Commands</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="linksdrop"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Links</a
+                >
+                <ul class="dropdown-menu bg-dark" aria-labelledby="linksdrop">
+                  <li>
+                    <a
+                      class="dropdown-item text-muted"
+                      href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=8&scope=bot%20applications.commands"
+                      >Invite</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted"
+                      href="https://github.com/MetaBot-Development"
+                      >Github</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted"
+                      href="https://discord.gg/Rc8DgBBpsx"
+                      >Support Server</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-muted"
+                      href="plus.html"
+                      >Meta Plus</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <li class="navbar-nav nav-item">
+              <a
+                href="https://top.gg/bot/980436688260182016"
+                class="btn btn-outline-info"
+                >Vote</a
+              >
+            </li>
+          </div>
+        </div>
+      </div>
+
+
+
+    <div class="container">
+      <section style="margin-top: 9%">
+        <div class="row">
+          <div class="col-sm-6 my-1">
+            <h2 class="fw-bold">Welcome to the Documentations</h2>
+            <p class="command-descreption">
+              Official Documentation of Meta Discord Bot. Learn and use!
+            </p>
+          </div>
+          <div class="col-sm-6 my-1">
+            <script
+              async
+              src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4050940490843957"
+              crossorigin="anonymous"
+            ></script>
+            <!-- banner -->
+            <ins
+              class="adsbygoogle"
+              style="display: inline-block; width: 100%; height: 90px"
+              data-ad-client="ca-pub-4050940490843957"
+              data-ad-slot="6770580457"
+            ></ins>
+            <script>
+              (adsbygoogle = window.adsbygoogle || []).push({});
+            </script>
+          </div>
+        </div>
+        <hr />  
+        
+
+            <div class="documents-all">
+        
+              <div class="metaDocZero" id="docs">
+        
+                  <h2>CATEGORY</h2>
+                  <br>
+                  <h3>Setup:</h3>
+                  <br>
+                  <p>
+                    • <a href="#setup">How To Setup</a> <br>
+                  </p>
+                  <br>
+                  <h3>Protections:</h3>
+                  <br>
+                  <p>
+                    • <a href="#anti-mod-grief">Anti Mod Grief</a> <br>
+                    • <a href="#anti-alt">Anti Alt</a> <br>
+                    • <a href="#safe-bot">Safe Bot</a> <br>
+                    • <a href="#auto-mod">Auto Mod</a> <br>
+                  </p>
+                  <br>
+                  <h3>Other Useful Stuff:</h3>
+                  <br>
+                  <p>
+                    • <a href="#meta-ban-role">Meta / Meta Ban Role</a> <br>
+                    • <a href="#scan">Scan Command</a> <br>
+                    • <a href="#inspect">Inspect Command</a> <br>
+                    • <a href="#dangerous-roles">Dangerous Roles</a> <br>
+                    • <a href="#what-data-we-collect">Data Collection</a> <br>
+                    • <a href="#meta-support">Meta Support</a> <br>
+                    • <a href="#policies">Policies</a> <br>
+                  </p>
+
+              </div>
+              <br>
+              <br>
+              <br>
+              <br>
+                <div class="metaDocOne" id="setup">
+        
+                  <h1>Setup Command</h1>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>/setup [log-channel | mod-rank | mute-rank | protection]</h3>
+                  </div>
+                  <br>
+                  <br>
+                  <h2>Setup a Log Channel</h2>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>/setup [log-channel: #choose-your-log-channel]</h3>
+                  </div>
+                  <br>
+                  <p>
+                    Log channel is <b>required</b> to use the bot. All Meta Protection logs will be sent there. <br>
+                    It's recommended that only Admins can see that channel.
+                  </p>
+                  <br>
+                  <br>
+                  <h2>Setup a Mod Rank</h2>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>/setup [mod-rank: @your-main-moderator-rank]</h3>
+                  </div>
+                  <br>
+                  <p>
+                    Moderator Rank is <b>required</b> to use bot. Without the Mod Rank, features like <a href="#anti-mod-grief">Anti Mod Grief </a> wont work at all.<br>
+                    People with the Mod Rank will be monitored by Meta and punished when triggering the Anti Mod Grief System. <a href="#anti-mod-grief">Learn about Anti Mod Grief</a>
+                  </p>
+                  <br>
+                  <br>
+                  <h2>Setup a Mute Rank</h2>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>/setup [mute-rank: create]</h3>
+                  </div>
+                  <br>
+                  <p>
+                    Mute Rank is <b>required</b> to use bot. Without the Mod Rank, none of the features will work.<br>
+                    When using the command, Meta will create the <b>Meta Ban</b> role that has all the channels configured already. <br>
+                    That role will be given to protection breakers.
+                  </p>
+                  <br>
+                  <br>
+                  <h2>Setup a Meta Protection Systems</h2>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>/setup [protection: mod-grief | anti-alt | safe-bot | auto-mod]</h3>
+                  </div>
+                  <br>
+                  <p>
+                    Enable any of the advanced protection systems that Meta has to offer. To get to know what each module does, check these out: <br> <br>
+                    • <a href="#anti-mod-grief">Anti Mod Grief</a> <br>
+                    • <a href="#anti-alt">Anti Alt</a> <br>
+                    • <a href="#safe-bot">Safe Bot</a> <br>
+                    • <a href="#auto-mod">Auto Mod</a> <br>
+                  </p>
+                </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <div class="metaDocTwo" id="anti-mod-grief">
+                  <h1>Anti Mod Grief</h1>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>/setup [protection: mod-grief]</h3>
+                  </div>
+                  <br>
+                  <br>
+                  <p>
+                    When running that command, you should see a option tab to open up. <br>
+                    There you can choose the difficulty of your server Moderation Grief System, the more harder, the less freedom your server Moderators have.
+                  </p>
+                  <br>
+                  <br>
+                  <h2>When Enabled</h2>
+                  <br>
+                  <p>
+                    Meta will monitor all server members with the <b>Moderator Rank</b> and will make sure they wont damage your server. <br>
+                    Whenever a Moderator triggers an event, Meta will remove all their roles and will add <b>Meta Ban</b> role to them. <br>
+                    With <b>Meta Ban</b> role, they will not be able to see/message in any server channel and to any server member. <br>
+                    Meta will also send a message to the <b>Meta Banned</b> user explaining why they were Meta Banned, and also will send a detailed log to the Log channel.
+                  </p>
+                  <br>
+                  <br>
+                  <h2>Difficulties</h2>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>Easy</h3>
+                    <br>
+                    <p>
+                      • Giving Dangerous Roles - User gives themself / someone a dangerous role.<br>
+                      • Unbanning Manually - User unbans somoene manually, not via bot.<br>
+                    </p>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>Medium</h3>
+                    <br>
+                    <p>
+                      • Giving Dangerous Roles - User gives themself / someone a dangerous role.<br>
+                      • Unbanning Manually - User unbans somoene manually, not via bot.<br>
+                      • Creating A Role - User creates a role in the server.<br>
+                      • Deleting A Role - User deletes a role in the server.<br>
+                      • Updating A Role - User changes role permissions, color & other values.<br>
+                      • Server Update - User updates server tab. <a href="plus.html" class="premium-only">Meta Plus</a><br>
+                    </p>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>Hard</h3>
+                    <br>
+                    <p>
+                      • Giving Dangerous Roles - User gives themself / someone a dangerous role.<br>
+                      • Unbanning Manually - User unbans somoene manually, not via bot.<br>
+                      • Creating A Role - User creates a role in the server.<br>
+                      • Deleting A Role - User deletes a role in the server.<br>
+                      • Updating A Role - User changes role permissions, color & other values.<br>
+                      • Creating A Channel - User creates a channel in the server.<br>
+                      • Deleting A Channel - User deletes a channel in the server.<br>
+                      • Updating A Channel - User updates chnanel. <a href="plus.html" class="premium-only">Meta Plus</a><br>  
+                    </p>
+                  </div>
+                </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <div class="metaDocThree" id="anti-alt">
+                  <h1>Anti Alt</h1>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>/setup [protection: anti-alt]</h3>
+                  </div>
+                  <br>
+                  <br>
+                  <p>
+                    When running that command, you should see a option tab to open up. <br>
+                    You can either enable or disable this feature there, by deafult it's already disabled.
+                  </p>
+                  <br>
+                  <br>
+                  <h2>When Enabled</h2>
+                  <br>
+                  <p>
+                    Meta will monitor all new members who join the server. If someone who joins have a triggering event symptoms, Meta will notify the staff team about that user. <br>
+                    Also, Meta will send a message to the detected account saying that they have been putted under suspicion. <br>
+                    Nothing will happen to the account, just a log will be sent to notify the staff.
+                  </p>
+                  <br>
+                  <br>
+                  <h2>Triggers</h2>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>Account Age</h3>
+                    <br>
+                    <p>
+                        When the account is younger than 5 days, Meta will consider that account to be an Alt account then. <br>
+                        Nothing will happen to the account, just a log will be sent to notify the staff team.
+                    </p>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>Known Alt Name <a href="plus.html" class="premium-only">Meta Plus</a></h3>
+                    <br>
+                    <p>
+                        When a account joins with a known alt name, Meta will consider that account to be an Alt account.
+                        Nothing will happen to the account, just a log will be sent to notify the staff team.
+                    </p>
+                  </div>
+                </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <div class="metaDocFour" id="safe-bot">
+                  <h1>Safe Bot</h1>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>/setup [protection: safe-bot]</h3>
+                  </div>
+                  <br>
+                  <br>
+                  <p>
+                    When running that command, you should see a option tab to open up. <br>
+                    You can either enable or disable this feature there, by deafult it's already disabled.
+                  </p>
+                  <br>
+                  <br>
+                  <h2>When Enabled</h2>
+                  <br>
+                  <p>
+                    Meta will monitor all the bots that get added to the server. If a bot is added to the server and the person who added the bot doesn't have Administrator permissions, Meta will Meta Ban them & the bot that was added. <br>
+                    Normally, people with Manage Server can add bots, this feature makes sure only Admins can add bots to the server.
+                  </p>
+                </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <div class="metaDocFive" id="auto-mod">
+                  <h1>Auto Mod</h1>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>/setup [protection: auto-mod]</h3>
+                  </div>
+                  <br>
+                  <br>
+                  <p>
+                    When running that command, you should see a option tab to open up. <br>
+                    You can either enable or disable this feature there, by deafult it's already disabled.
+                  </p>
+                  <br>
+                  <br>
+                  <h2>When Enabled</h2>
+                  <br>
+                  <p>
+                     Meta checks all the message contents that are sent in the server. If one of the message contents breaks one of the rules, Meta will delete the message and sends a warning log to the staff Log Channel and to the user. <br>
+                     Users with Administrator permissions and users with the Moderator Rank are not effected by automod and will not be listened. <br>
+                  </p>
+                  <br>
+                  <br>
+                  <h2>Triggers</h2>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>Rule #1: Racism</h3>
+                    <br>
+                    <p>
+                      Meta has blacklisted 27 different ways to say racist words. When an attempt is made, Meta will delete the message and logs it.
+                    </p>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>Rule #2: Discord Invites</h3>
+                    <br>
+                    <p>
+                        Whenever someone sends a message that contains <b>"DISCORD.GG/"</b>, Meta will delete the message as this is Discord server invite format. <br>
+                        After that, a log will be sent to the log channel and to the user.
+                    </p>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>Rule #3: Self Botting <a href="plus.html" class="premium-only">Meta Plus</a></h3>
+                    <br>
+                    <p>
+                      Self Botting is when a user acts like a robot, meaning they are sending embeds, or doing other things that a human cannot do. <br> <br>
+                      When Meta detects something like this, it will Meta Ban the user and send a message to Staff team.
+                    </p>
+                  </div>
+                </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <div class="metaDocSix" id="meta-ban-role">
+                  <h1>Meta / Meta Ban Role</h1>
+                  <br>
+                  <br>
+                    <h2>Meta Ban</h2>
+                    <br>
+                    <div class="docs-cmd-box">
+                      <h3>What is that role?</h3>
+                      <br>
+                      <p>
+                        Meta Ban is a custom role created by Meta setup command. <br>
+                        That role will be used to make rule breakers / module triggeres not see any server channel and any server members. <br>
+                        Meta Ban role is required for every single function in the bot.
+                      </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="docs-cmd-box-important">
+                      <h3>IMPORTANT!</h3>
+                      <br>
+                      <p>
+                          When the role is created, please move it above your staff roles, this is so Meta can prevent <a href="#anti-mod-grief">Mod Griefs</a> and other server griefs. <br>
+                          If you do not move it above your Moderation rank or staff ranks, none of the module will work and your server is not protected!
+                      </p>
+                    </div>
+                    <br>
+                    <br>
+                    <h2>Meta</h2>
+                    <br>
+                    <div class="docs-cmd-box">
+                      <h3>What is that role?</h3>
+                      <br>
+                      <p>
+                          Meta (role name), is automatically created when adding Meta to your server. <br>
+                          You cannot delete this role but you can re-name it and modify it all you want. <br>
+                          Make sure that the role has Administrator permissions, so it all can work!
+                      </p>
+                    </div>
+                  <br>
+                  <br>
+                    <div class="docs-cmd-box-important">
+                      <h3>IMPORTANT!</h3>
+                      <br>
+                      <p>
+                          Please move the role <b>Meta</b> as up as possible. It needs to be higher than <b>Meta Ban</b> role and higher than your <b>Moderation Rank</b>, otherwise the bot cannot protect your server. <br>
+                      </p>
+                    </div>
+                    <br>
+                    <br>
+                </div>
+                <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                  <div class="metaDocSeven" id="scan">
+                    <h1>Scan Command</h1>
+                    <br>
+                    <br>
+                        <p>
+                          Scan command is the perfect command to see how protected your server is. <br>
+                          This command will tell you about your server users, permissions and status of Meta.
+                       </p>
+                      <br>
+                      <br>
+                      <h2>What each field mean in the command?</h2>
+                      <br>
+                      <div class="docs-cmd-box">
+                        <h3>Mod Grief</h3>
+                        <br>
+                        <h4>Admin Count:</h4>
+                        <p>
+                          <i>How many people have <strong>Administrator</strong> permissions</i> <br>
+                          <i>This includes BOTS! </i>
+                        </p>
+                        <br>
+                        <h4>Dangerous Roles:</h4>
+                        <p>
+                          <i>How many roles have the status of <a href="#dangerous-roles">Dangerous Role</a> <br>
+                        </p>
+                      </div>
+                      <br>
+                      <div class="docs-cmd-box">
+                        <h3>Anti Alt</h3>
+                        <br>
+                        <h4>Young Accounts:</h4>
+                        <p>
+                          <i>The count of accounts in your server that are younger than 5 days.</i><br>
+                        </p>
+                        <br>
+                        <h4>Blacklisted Accounts:</h4>
+                        <p>
+                          <i>The count of accounts that have well known raid / spam / troll name.</i> <br>
+                        </p>
+                      </div>
+                      <br>
+                      <br>
+                      <div class="docs-cmd-box">
+                        <h3>Protection Score:</h3>
+                        <br>
+                        <p>
+                          Protection score is created by the next factors: <br> <br>
+                          • Have Meta in your server ( +20 )<br>
+                          • Have Meta Log Channel setted up ( +10 )<br>
+                          • Have Meta Mod Rank setted up ( +10 )<br>
+                          • Have Meta Ban role setted up ( +10 )<br>
+                          • Have Meta Mod Grief Enabled ( +10 )<br>
+                          • Have Meta Anti Alt Enabled ( +10 )<br>
+                          • Have Meta Safe Bot Enabled ( +10 )<br>
+                          • Have Meta Auto Mod Enabled ( +10 )<br>
+                          • Have 5 or less people with <strong>Administrator</strong> permissions ( +10 )<br>
+                        </p>
+                      </div>
+                      <br>
+                      <div class="docs-cmd-box">
+                        <h3>Issues:</h3>
+                        <br>
+                        <p>
+                          Meta will display all your issues and will send a link as well telling how you can fix the issue. <br>
+                          If you have a perfect score / no issues, Meta will say good things to you!
+                        </p>
+                      </div>
+                  </div>
+                  <br>
+        <br>
+        <br>
+        <br>
+                  <div class="metaDocSeven" id="inspect">
+                    <h1>Inspect Command</h1>
+                    <br>
+                    <br>
+                        <p>
+                          Inspect command is the perfect command to quickly gather information about a specific user. <br>
+                          This command will tell you about the users basic info, meta info, dangerous info & server info.
+                       </p>
+                      <br>
+                      <br>
+                      <h2>What each field mean in the command?</h2>
+                      <br>
+                      <div class="docs-cmd-box">
+                        <h3>Basic:</h3>
+                        <br>
+                        <p>
+                          <strong>User: Clickable mention of the user.</strong> <br>
+                          <strong>ID: Users account ID number.</strong> <br>
+                          <strong>Joined: A time lenght of when the user joined the server.</strong> <br>
+                          <strong>Created: A time lenght of when the user created their account.</strong> <br>
+                        </p>
+                      </div>
+                      <br>
+                      <div class="docs-cmd-box">
+                        <h3>Customization:</h3>
+                        <br>
+                        <p>
+                          <strong>Profile Image: Link to users account profile image.</strong> <br>
+                          <strong>Status: Users account status. [Online, Idle, Do Not Disturb, Offline]</strong> <br>
+                          <strong>Activity: Users account activity. [Watching, Playing, Streaming, ..., Listening]</strong> <br>
+                        </p>
+                      </div>
+                      <br>
+                      <br>
+                      <div class="docs-cmd-box">
+                        <h3>Meta Stats: <a href="#inspect" class="morewithpremium-only">More With Plus</a></h3>
+                        <br>
+                        <p>
+                          <strong>Blacklisted: Does users account contain a blacklisted name.</strong> <br>
+                          <strong>Young Account: Is users account younger than 5 days.</strong> <br>
+                          <strong>Verified E-mail: Does the user have verified e-mail connected to their account.</strong> <br>
+                          <strong>Blocked: Is the user blocked in Meta Database.</strong> <br>
+                       </p>
+                      </div>
+                      <br>
+                      <br>
+                      <div class="docs-cmd-box">
+                        <h3>Server:</h3>
+                        <br>
+                        <p>
+                          <strong>Highest Role: Server highest ranking role.</strong> <br>
+                          <strong>Is Bot: Whether the user account is bot or no.</strong> <br>
+                          <strong>Acknowledgements: Permission wise, what is the user considered as?</strong> <br>
+                          <strong>All Roles (Server Name): Display of all users roles.</strong> <br>
+                       </p>
+                      </div>
+                      <br>
+                      <br>
+                      <div class="docs-cmd-box">
+                        <h3>Acknowledgements:</h3>
+                        <br>
+                        <p>
+                          Acknowledgements is devided to 4 different categories. Server Owner, Administrator, Moderator and Server Member. <br>
+                          Here is what Meta considers each of these:
+                       </p>
+                       <br>
+                        <div class="docs-cmd-box">
+                          <h4>Server Owner:</h4>
+                          <br>
+                          <p>
+                            When user account is assigned to server owner status by Discord.
+                         </p>
+                        </div>
+                        <br>
+                        <div class="docs-cmd-box">
+                          <h4>Administrator:</h4>
+                          <br>
+                          <p>
+                            When users account has "ADMINISTRATOR" permissions.
+                         </p>
+                        </div>
+                        <br>
+                        <div class="docs-cmd-box">
+                          <h4>Moderator:</h4>
+                          <br>
+                          <p>
+                            When user has at least 1 of the next permissions: <br>
+                            "BAN_MEMBERS", "KICK_MEMBERS", "MENTION_EVERYONE", "MANAGE_ROLES", "MODERATE_MEMBERS", "MANAGE_GUILD", "MANAGE_MESSAGES" 
+                         </p>
+                        </div>
+                        <br>
+                        <div class="docs-cmd-box">
+                          <h4>Server Member:</h4>
+                          <br>
+                          <p>
+                            When users account doesn't meet any of the above requirements.
+                         </p>
+                        </div>
+                      </div>
+                      <br>
+                  </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <div class="metaDocSeven" id="dangerous-roles">
+                  <h1>Dangerous Roles</h1>
+                  <br>
+                  <br>
+                      <p>
+                          Dangerous role is a Discord role that has specific permissions. <br>
+                          Meta uses the definition of "Dangerous Roles" in <a href="#anti-mod-grief">Mod Grief</a> module.
+                      </p>
+                    <br>
+                    <br>
+                    <h2>What is considered as a Dangerous Roles?</h2>
+                    <br>
+                    <div class="docs-cmd-box">
+                      <h3>Roles that have atleast one of the next permissions:</h3>
+                      <br>
+                      <p>
+                        • MANAGE_MESSAGES <br>
+                        • MANAGE_GUILD <br>
+                        • ADMINISTRATOR <br>
+                        • BAN_MEMBERS <br>
+                        • KICK_MEMBERS <br>
+                        • MENTION_EVERYONE <br>
+                        • MANAGE_ROLES <br>
+                        • MODERATE_MEMBERS <br>
+                      </p>
+                    </div>
+                </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <div class="metaDocEight" id="what-data-we-collect">
+                  <h1>Data Collection</h1>
+                  <br>
+                  <br>
+                      <p>
+                          Meta does collect and store data about your Discord Server. <br>
+                          For full information about data and privacy, please check out <a href="./legal/privacy.html" target="_blank">Meta Privacy Policy</a>.
+                      </p>
+                    <br>
+                    <br>
+                    <h2>What we collect?</h2>
+                    <br>
+                    <div class="docs-cmd-box">
+                      <h3>We collect data about:</h3>
+                      <br>
+                      <p>
+                        • SERVER ID <br>
+                        • LOG CHANNEL ID <br>
+                        • MOD RANK ID <br>
+                        • MUTE RANK ID <br>
+                        • MODULE STATUS <br>
+                        • PREMIUM STATUS <br>
+                      </p>
+                    </div>
+                    <br>
+                    <br>
+                    <h2>How to delete my data?</h2>
+                    <br>
+                    <p>
+                      If you want that Meta stops owning the data about you, please open a ticket in our <a href="https://discord.gg/Rc8DgBBpsx" target="_blank">support server</a> or via <a href="mailto:help.me.metabot@gmail.com" target="_blank">e-mail</a>. <br>
+                      If you use the Support server, open a ticket at #special-support. <br> <br>
+                      Be ready to prove that you are the data owner!
+                    </p>
+        
+                </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <div class="metaDocNine" id="meta-support">
+                  <h1>Meta Support</h1>
+                  <br>
+                  <br>
+                      <p>
+                        Customer support is very important to us, thats why we have created many ways for users to contact with us. <br>
+                        Check out the next places you can contact with us & about what.
+                      </p>
+                    <br>
+                    <br>
+                    <div class="docs-cmd-box">
+                      <h3>General Questions</h3>
+                      <br>
+                      <p>
+                          All general questions about Meta can be asked in the <a href="http://discord.gg/Rc8DgBBpsx" target="_blank">support server</a> or via our support e-mail <a href="mailto:help.me.metabot@gmail.com" target="_blank">help.me.metabot@gmail.com</a>, we'll get back to you ASAP!
+                      </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="docs-cmd-box">
+                      <h3>Special Questions</h3>
+                      <br>
+                      <p>
+                          All special questions such as data, source, security or our policies, you must create a ticket in our <a href="http://discord.gg/Rc8DgBBpsx" target="_blank">support server</a> or e-mail to us at <a href="mailto:help.me.metabot@gmail.com" target="_blank">help.me.metabot@gmail.com</a>, and we'll sort everything out easily!
+                      </p>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="docs-cmd-box">
+                      <h3>Our E-mail</h3>
+                      <br>
+                      <p>
+                          We have just recently started using g-mail to support members. So to lauch big, you can ask us there about anything related to Discord, yeah thats right, not only about Meta, but overall About Discord! <br><br>
+                          Leave a question at <a href="mailto:help.me.metabot@gmail.com" target="_blank">help.me.metabot@gmail.com</a> and we'll help ya out!
+                      </p>
+                    </div> 
+                </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+                <div class="metaDocTen" id="policies">
+                  <h1>Policies</h1>
+                  <br>
+                  <br>
+                      <p>
+                        We have our own policies created for legal reason. <br>
+                        If you find any bug / misinformation in our guidelines, please let us know. 
+                      </p>
+                    <br>
+                    <br>
+                    <div class="docs-cmd-box">
+                      <h3>Our Policies</h3>
+                      <p>
+                        • <a href="./legal/terms.html" target="_blank">Terms Of Service</a> <br>
+                        • <a href="./legal/privacy.html" target="_blank">Privacy Policy</a> <br>  
+                      </p>
+                    </div>
+                </div>
+        
+            </div>
+        <br>
+        <br>
+        <br>    
+      </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="footer-clean bg-dark">
+      <footer>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Quick access</h3>
+              <ul>
+                <li><a href="#Features">Features</a></li>
+                <li><a href="#Statics">Statics</a></li>
+                <li><a href="#FAQ">FaQ</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>About</h3>
+              <ul>
+                <li><a href="commands.html">Commands</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="docs.html">Documentation</a></li>
+              </ul>
+            </div>
+            <div class="col-sm-4 col-md-3 item">
+              <h3>Links</h3>
+              <ul>
+                <li>
+                  <a href="https://discord.gg/Rc8DgBBpsx">Support server</a>
+                </li>
+                <li>
+                  <a href="https://meta-bot.tk/legal/terms-of-service"
+                  target="_blank">Terms Of Service</a
+                  >
+                </li>
+                <li>
+                  <a href="https://meta-bot.tk/legal/privacy-policy"
+                  target="_blank">Privacy Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="page-footer font-small text-light mt-5">
+          <div class="footer-copyright text-center">
+            <a href="https://github.com/MetaBot-Development"
+            target="_blank">Metabot Development</a
+            >
+            © 2023 Copyright
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <input
+      id="commands"
+      value="[{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-gift ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Moderation Commands&#34;,&#34;commands&#34;:[&#34;ban&#34;,&#34;kick&#34;,&#34;mute&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-globe-europe ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; General Commands&#34;,&#34;commands&#34;:[&#34;help&#34;,&#34;ping&#34;,&#34;invite&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fa-hammer-war ttt&#39;&gt;&lt;/i&gt;&amp;nbsp;&amp;nbsp; Leveling Commands&#34;,&#34;commands&#34;:[&#34;leaderboard&#34;]},{&#34;title&#34;:&#34;&lt;i class=&#39;fas fas fa-crown ttt&#39;&gt;&lt;/i&gt;&amp;nbsp; Premium Commands&#34;,&#34;commands&#34;:[&#34;reactionrole&#34;,&#34;slowmode&#34;]}]"
+      hidden
+    />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/fontawesome/all.min.js"></script>
+    <script src="js/animation.js"></script>
+    <script>
+      function active(elm) {
+        document.getElementById("CategoryBtnAll").classList.remove("active");
+
+        document.getElementById("CategoryBtn0").classList.remove("active");
+        document.getElementById("Category0").setAttribute("hidden", "");
+
+        document.getElementById("CategoryBtn1").classList.remove("active");
+        document.getElementById("Category1").setAttribute("hidden", "");
+
+        document.getElementById("CategoryBtn2").classList.remove("active");
+        document.getElementById("Category2").setAttribute("hidden", "");
+
+        document.getElementById("CategoryBtn3").classList.remove("active");
+        document.getElementById("Category3").setAttribute("hidden", "");
+
+        elm.classList.add("active");
+        if (elm.id.replace("CategoryBtn", "") == "All") {
+          document.getElementById("Category0").removeAttribute("hidden");
+
+          document.getElementById("Category1").removeAttribute("hidden");
+
+          document.getElementById("Category2").removeAttribute("hidden");
+
+          document.getElementById("Category3").removeAttribute("hidden");
+        } else {
+          document
+            .getElementById("Category" + elm.id.replace("CategoryBtn", ""))
+            .removeAttribute("hidden");
+        }
+      }
+      document.getElementById("CategoryBtnAll").click();
+      function search(arg) {
+        let commands = JSON.parse(document.getElementById("commands").value);
+        let cmds = [];
+        commands.forEach((category) => {
+          category.commands.forEach((command) => {
+            cmds.push(command);
+          });
+        });
+        let existedCmds = cmds.filter((obj) => obj.includes(arg.toLowerCase()));
+        cmds.forEach((cmd) => {
+          document.getElementById(cmd).setAttribute("hidden", "");
+        });
+        existedCmds.forEach((cmd) => {
+          document.getElementById(cmd).removeAttribute("hidden");
+        });
+      }
+    </script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  </body>
+</html>
