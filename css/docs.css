@@ -167,6 +167,39 @@ text-decoration: underline;
     padding: 3%;
 }
 
+.docs-cmd-box-important {
+    border-left: solid 5px red;
+    background-color: rgba(255, 0, 0, 0.321);
+}
+
+.docs-cmd-box-important p{
+    padding-left: 2%;
+}
+
+.docs-cmd-box-important h3{
+    padding-left: 2%;
+}
+
+#doc-point {
+    border-radius: 25%;
+    border: solid 2px #0d55fd;
+    padding-left: 3px;
+    padding-right: 5px;
+    background-color: #053ab63a;
+    text-decoration: none;
+
+}
+
+.premium-only {
+    border-radius: 20%;
+    border: solid 2px #0d55fd;
+    padding-left: 3px;
+    padding-right: 5px;
+    background-color: #053ab63a;
+    text-decoration: none;
+    color: #fff;
+}
+
 
 
 .premiumBox {
@@ -183,7 +216,7 @@ text-decoration: underline;
 }
 
 .plusFeat {
-    border-left: solid 20px #0d55fd;
+    border-left: solid 5px #0d55fd;
     border-radius: 3%;
     padding-left: 2%;
     background-color: #1f1f1f;
@@ -212,15 +245,11 @@ text-decoration: underline;
 }
 
 .plusBtn a:hover {
-    background-color: #005ddf;
-    border: #ffffff solid 2px;
-    border-radius: 15px;
-    font-size: 25px;
-    padding: 5px;
+    color: #00dfd8;
 }
 
 .plusOrderBox {
-    border-left: solid 10px #191919;
+    border-left: solid 10px #303030;;
     padding-left: 2%;
     background-color: #1c1c1c;
 }
@@ -229,3 +258,4 @@ text-decoration: underline;
     text-decoration: underline;
     font-size: 20px;
 }
+
