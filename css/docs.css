@@ -180,18 +180,20 @@ text-decoration: underline;
     padding-left: 2%;
 }
 
-#doc-point {
-    border-radius: 25%;
+.scorePoint {
+    border-radius: 10%;
     border: solid 2px #0d55fd;
     padding-left: 3px;
     padding-right: 5px;
+    margin-left: 10px;
+    margin-bottom: 3px;
     background-color: #053ab63a;
     text-decoration: none;
 
 }
 
 .premium-only {
-    border-radius: 20%;
+    border-radius: 10%;
     border: solid 2px #0d55fd;
     padding-left: 3px;
     padding-right: 5px;
@@ -259,3 +261,34 @@ text-decoration: underline;
     font-size: 20px;
 }
 
+
+.partnerBox {
+    border: 3px solid #0d55fd;
+    border-radius: 24px;
+    background-color: #1f1f1f;
+    margin: 1%;
+    padding: 3%;
+}
+
+.partnerBox h2 {
+text-align: center;
+font-size: 60px;
+}
+
+.partnerOffer {
+    border: solid 3px #0d55fd;
+    padding: 6px;
+    font-size: 20px;
+    border-radius: 20px;
+    background-color: #0d55fd46;
+    padding-right: 10px;
+}
+
+.partnerCounter {
+    border: solid 3px #0dfd29;
+    padding: 6px;
+    font-size: 15px;
+    border-radius: 20px;
+    background-color: #0dfd2930;
+    padding-right: 10px;
+}
