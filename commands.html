@@ -67,265 +67,318 @@
                 crossorigin="anonymous"
               ></script>
               <!-- banner -->
-              <ins
-                class="adsbygoogle"
-                style="display: inline-block; width: 100%; height: 90px"
-                data-ad-client="ca-pub-4050940490843957"
-                data-ad-slot="6770580457"
-              ></ins>
-              <script>
-                (adsbygoogle = window.adsbygoogle || []).push({});
-              </script>
             </div>
           </div>
           <hr />
         </section>
-        <div class="mt-4"></div>
-        <div class="row">
-          <div class="col-md-4 my-2">
-            <div class="card p-3">
-              <h5>Select Commands Category</h5>
-              <hr />
-              <button
-                onclick="active(this)"
-                id="CategoryBtnAll"
-                class="text-decoration-none btn btn-primary mt-2 my-1 p-2"
-              >
-                <i class="fad fa-icons ttt"></i>&nbsp; All Commands
-              </button>
-  
-              <button
-                onclick="active(this)"
-                id="CategoryBtn0"
-                class="text-decoration-none btn btn-primary mt-2 my-1 p-2"
-              >
-                <i class="fas fa-gift ttt"></i>&nbsp; Protection Commands
-              </button>
-  
-              <button
-                onclick="active(this)"
-                id="CategoryBtn1"
-                class="text-decoration-none btn btn-primary mt-2 my-1 p-2"
-              >
-                <i class="fas fa-globe-europe ttt"></i>&nbsp; Server Commands
-              </button>
-  
-              <button
-                onclick="active(this)"
-                id="CategoryBtn2"
-                class="text-decoration-none btn btn-primary mt-2 my-1 p-2"
-              >
-                <i class="fas fa-hammer-war ttt"></i>&nbsp;&nbsp; Meta Info
-                Commands
-              </button>
-  
-              <button
-                onclick="active(this)"
-                id="CategoryBtn3"
-                class="text-decoration-none btn btn-primary mt-2 my-1 p-2"
-              >
-                <i class="fas fas fa-crown ttt"></i>&nbsp;&nbsp; Setup Command
-              </button>
-            </div>
+        <div class="commandBoxBig" id="help">
+          <br>
+          <div class="commandBoxCommand">
+            <h3>/help</h3>
           </div>
-          <div class="col-md-8 my-2">
-            <div class="mt-4"></div>
-  
-            <div class="commands-section" id="Category0">
-              <div class="accordion accordion-flush mt-2" id="help">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button
-                      class="accordion-button collapsed"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#fhelp"
-                    >
-                      /scan&nbsp; <span class="command-descreption"></span>
-                    </button>
-                  </h2>
-                  <div
-                    id="fhelp"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#help"
-                  >
-                    <div class="accordion-body">
-                      <span>Usage Examples:</span> <br />
-                      <span class="examples">
-                        <br />
-                        /scan <br />
-                        <br />
-                        This will quickly scan your server and provide you with
-                        some information. <br />
-                        You can learn about the command fields in the
-                        <a href="docs.html">Documentation</a>.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="accordion accordion-flush mt-2" id="ping">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button
-                      class="accordion-button collapsed"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#fping"
-                    >
-                      /inspect&nbsp; <span class="command-descreption"></span>
-                    </button>
-                  </h2>
-                  <div
-                    id="fping"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#ping"
-                  >
-                    <div class="accordion-body">
-                      <span>Usage Examples:</span> <br />
-                      <span class="examples">
-                        <br />
-                        /inspect @user <br /><br />
-  
-                        This command will scan the user and provide general stats
-                        about the user such as join dates, roles, etc... <br />
-                        For more information, you can learn about the command
-                        specifically in the <a href="#">Documentation</a>.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="commands-section" id="Category1">
-              <div class="accordion accordion-flush mt-2" id="ban">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button
-                      class="accordion-button collapsed"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#fban"
-                    >
-                      /help&nbsp; <span class="command-descreption"></span>
-                    </button>
-                  </h2>
-                  <div
-                    id="fban"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#ban"
-                  >
-                    <div class="accordion-body">
-                      <span>Usage Examples:</span> <br />
-                      <span class="examples">
-                        <br />
-                        /help <br /><br />
-                        Get the usual useful links and information about Meta bot.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-  
-              <div class="accordion accordion-flush mt-2" id="kick">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button
-                      class="accordion-button collapsed"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#fkick"
-                    >
-                      /settings&nbsp; <span class="command-descreption"></span>
-                    </button>
-                  </h2>
-                  <div
-                    id="fkick"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#kick"
-                  >
-                    <div class="accordion-body">
-                      <span>Usage Examples:</span> <br />
-                      <span class="examples">
-                        <br />
-                        /settings <br /><br />
-                        See all your server settings, what is enabled & disabled,
-                        what has been setted up and more.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="commands-section" id="Category2">
-              <div class="accordion accordion-flush mt-2" id="invite">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button
-                      class="accordion-button collapsed"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#finvite"
-                    >
-                      /ping&nbsp; <span class="command-descreption"></span>
-                    </button>
-                  </h2>
-                  <div
-                    id="finvite"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#invite"
-                  >
-                    <div class="accordion-body">
-                      <span>Usage Examples:</span> <br />
-                      <span class="examples">
-                        <br />
-                        /ping <br /><br />
-                        See Meta's ping, that's it.... <br />
-                        There is a 1% chance to get a special response, if you get
-                        it, save it and send it to the developers!
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-  
-            <div class="commands-section" id="Category3">
-              <div class="accordion accordion-flush mt-2" id="mute">
-                <div class="accordion-item">
-                  <h2 class="accordion-header" id="flush-headingOne">
-                    <button
-                      class="accordion-button collapsed"
-                      data-bs-toggle="collapse"
-                      data-bs-target="#fmute"
-                    >
-                      /setup&nbsp; <span class="command-descreption"></span>
-                    </button>
-                  </h2>
-                  <div
-                    id="fmute"
-                    class="accordion-collapse collapse"
-                    data-bs-parent="#mute"
-                  >
-                    <div class="accordion-body">
-                      <span>Usage Examples:</span> <br />
-                      <span class="examples">
-                        <br />
-                        /setup [log-channel: #channel] <br />
-                        /setup [mod-rank: @rank] <br />
-                        /setup [meta-ban: create] <br />
-                        /setup [protection: module] <br />
-                        <br />
-                        Set the bot up quickly with this 1 simple command. If you
-                        need help, seek support in the
-                        <a href="https://discord.gg/Rc8DgBBpsx">Support Server</a>. <br />
-                        For more information about the setup command, check out
-                        our <a href="docs.html">Documentations</a>.
-                      </span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <br>
+          <br>
+          <div class="commandBoxInfo">
+            <h5>Description:</h5>
+            <p>The basic information command that provides members with the links for Meta commands list, support server and the <a href="docs.html">documentations</a>.</p>
           </div>
+          <br>
+          <div class="commandBoxPermissions">
+            <h5>Permissions:</h5>
+            <p>This command is available for everyone. Only the command runner can see the response.</p>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="commandBoxBig" id="setup">
+          <br>
+          <div class="commandBoxCommand">
+            <h3>/setup</h3>
+          </div>
+          <br>
+          <div class="commandBoxValues">
+            <br>
+            <h5>Values</h5>
+              <b class="commandBoxValueBox">[ admin-logs: #channel ]</b> - Where all the protection / sensitive logs will be sent.
+              <br>
+              <b class="commandBoxValueBox">[ mod-logs: #channel ]</b> - Where all the bans / unbans, timeoutes / timeout removals will be sent.
+              <br>
+              <b class="commandBoxValueBox">[ mod-rank: @role ]</b> - The rank that Meta will watch / monitor.
+              <br>
+              <br>
+            </div>
+          <br>
+          <br>
+          <div class="commandBoxInfo">
+            <h5>Description:</h5>
+            <p>The quick setup command to get everything working! This is <b>required</b>, otherwise the bot cannot work or function in your server. <br>With that command, you're setting the admin log channel, the moderation log channel and the moderator rank.</p>
+          </div>
+          <br>
+          <div class="commandBoxPermissions">
+            <h5>Permissions:</h5>
+            <p>Only the people with <b>Administrator</b> permissions can run this command.</p>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="commandBoxBig" id="settings">
+          <br>
+          <div class="commandBoxCommand">
+            <h3>/settings</h3>
+          </div>
+          <br>
+          <br>
+          <div class="commandBoxInfo">
+            <h5>Description:</h5>
+            <p>The overview of your server. See every single setting and how Meta is setted up in your server. If the bot is setted up. This is the command where you can also modify the protection modules, by using the buttons below.</p>
+          </div>
+          <br>
+          <div class="commandBoxPermissions">
+            <h5>Permissions:</h5>
+            <p>Only the people with <b>Administrator</b> permissions can run this command.</p>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="commandBoxBig" id="docs">
+          <br>
+          <div class="commandBoxCommand">
+            <h3>/docs</h3>
+          </div>
+          <br>
+          <div class="commandBoxValues">
+            <br>
+            <h5>Values</h5>
+              <b class="commandBoxValueBox">[ search: Document ]</b> - What kind of document are you looking for.
+              <br>
+              <br>
+            </div>
+          <br>
+          <br>
+          <div class="commandBoxInfo">
+            <h5>Description:</h5>
+            <p>Get a direct link to specific Meta Documentation document. Each section also includes a very short summary of the topic. But documents is more detailed version of them!</p>
+          </div>
+          <br>
+          <div class="commandBoxPermissions">
+            <h5>Permissions:</h5>
+            <p>This command is available for everyone. Only the command runner can see the response.</p>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="commandBoxBig" id="scan">
+          <br>
+          <div class="commandBoxCommand">
+            <h3>/scan</h3>
+          </div>
+          <br>
+          <br>
+          <div class="commandBoxInfo">
+            <h5>Description:</h5>
+            <p>Scan your server and indentify problems! Get your protection score and fix the issues! To see how we calculate the protection score, check out <a href="docs.html#scan">the scan documentation</a>.</p>
+          </div>
+          <br>
+          <div class="commandBoxPermissions">
+            <h5>Permissions:</h5>
+            <p>Only the people with <b>Administrator</b> permissions can run this command.</p>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="commandBoxBig" id="inspect">
+          <br>
+          <div class="commandBoxCommand">
+            <h3>/inspect</h3>
+          </div>
+          <br>
+          <div class="commandBoxValues">
+            <br>
+            <h5>Values</h5>
+              <b class="commandBoxValueBox">[ user: @username ]</b> - The member you wanna inspect.
+              <br>
+              <br>
+            </div>
+          <br>
+          <br>
+          <div class="commandBoxInfo">
+            <h5>Description:</h5>
+            <p>Get information about a specific user. The inspect command is the perfect command for just that. Get exclusive info about a member.</p>
+          </div>
+          <br>
+          <div class="commandBoxPermissions">
+            <h5>Permissions:</h5>
+            <p>This command is available for everyone. Only the command runner can see the response.</p>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="commandBoxBig" id="ban-add">
+          <br>
+          <div class="commandBoxCommand">
+            <h3>/ban-add</h3>
+          </div>
+          <br>
+          <div class="commandBoxValues">
+            <br>
+            <h5>Values</h5>
+              <b class="commandBoxValueBox">[ user: @username ]</b> - The member you wanna ban.
+              <br>
+              <b class="commandBoxValueBox">[ reason: ]</b> - Why are you banning this user?.
+              <br>
+              <b class="commandBoxValueBox">[ proof: ]</b> - Image of proof. ( OPTIONAL )
+              <br>
+              <br>
+            </div>
+          <br>
+          <br>
+          <div class="commandBoxInfo">
+            <h5>Description:</h5>
+            <p>Ban a member from the server. User will be removed from the server, a log will be sent to moderation logs and also we'll notify the user as well. <br>If you want, you can even add image proof with Meta!</p>
+          </div>
+          <br>
+          <div class="commandBoxPermissions">
+            <h5>Permissions:</h5>
+            <p>Users with <b>Ban Permissions</b> can use this command. Also people with the <b>Moderator Rank</b> can run this command.</p>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="commandBoxBig" id="ban-remove">
+          <br>
+          <div class="commandBoxCommand">
+            <h3>/ban-remove</h3>
+          </div>
+          <br>
+          <div class="commandBoxValues">
+            <br>
+            <h5>Values</h5>
+              <b class="commandBoxValueBox">[ user: @username ]</b> - The member you wanna unban.
+              <br>
+              <b class="commandBoxValueBox">[ reason: ]</b> - Why are you unbanning this user.
+              <br>
+              <br>
+            </div>
+          <br>
+          <br>
+          <div class="commandBoxInfo">
+            <h5>Description:</h5>
+            <p>Remove a ban from a user. A simple way to unban someone from the server. Simply list thier <b>Discord ID</b> and the <b>reason</b> and you're done!</p>
+          </div>
+          <br>
+          <div class="commandBoxPermissions">
+            <h5>Permissions:</h5>
+            <p>Users with <b>Ban Permissions</b> can use this command. Also people with the <b>Moderator Rank</b> can run this command.</p>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="commandBoxBig" id="timeout-add">
+          <br>
+          <div class="commandBoxCommand">
+            <h3>/timeout-add</h3>
+          </div>
+          <br>
+          <div class="commandBoxValues">
+            <br>
+            <h5>Values</h5>
+              <b class="commandBoxValueBox">[ user: @username ]</b> - The member you wanna time out.
+              <br>
+              <b class="commandBoxValueBox">[ timeout-format: ]</b> - What is the format of your time. ( Seconds, Minutes, Hours, Days )
+              <br>
+              <b class="commandBoxValueBox">[ time: ]</b> - For how long you wanna mute the user.
+              <br>
+              <b class="commandBoxValueBox">[ reason: ]</b> - What is the reason for the timeout.
+              <br>
+              <b class="commandBoxValueBox">[ proof: ]</b> - Image of proof. ( OPTIONAL )
+              <br>
+              <br>
+            </div>
+          <br>
+          <br>
+          <div class="commandBoxInfo">
+            <h5>Description:</h5>
+            <p>Set user to timeout. User who'se in timeout cannot join any voice channels and cannot chat in the server. Meta will take care of the logging, gathering proof and notifing the user.</p>
+          </div>
+          <br>
+          <div class="commandBoxPermissions">
+            <h5>Permissions:</h5>
+            <p>Users with <b>Moderate Member Permissions</b> can use this command. Also people with the <b>Moderator Rank</b> can run this command.</p>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="commandBoxBig" id="timeout-remove">
+          <br>
+          <div class="commandBoxCommand">
+            <h3>/timeout-remove</h3>
+          </div>
+          <br>
+          <div class="commandBoxValues">
+            <br>
+            <h5>Values</h5>
+              <b class="commandBoxValueBox">[ user: @username ]</b> - The member you wanna remove from timeout.
+              <br>
+              <b class="commandBoxValueBox">[ reason: ]</b> - Why are you removing the timeout.
+              <br>
+              <br>
+            </div>
+          <br>
+          <br>
+          <div class="commandBoxInfo">
+            <h5>Description:</h5>
+            <p>A simple way to remove a timeout from a user. Meta will log the action and notify all parties. </p>
+          </div>
+          <br>
+          <div class="commandBoxPermissions">
+            <h5>Permissions:</h5>
+            <p>Users with <b>Moderate Member Permissions</b> can use this command. Also people with the <b>Moderator Rank</b> can run this command.</p>
+          </div>
+
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="commandBoxBig" id="ping">
+          <br>
+          <div class="commandBoxCommand">
+            <h3>/ping</h3>
+          </div>
+          <br>
+          <br>
+          <div class="commandBoxInfo">
+            <h5>Description:</h5>
+            <p>Bot being laggy? It might be because of some sort of host issue or something else. But the best way to know that is to check the ping.</p>
+          </div>
+          <br>
+          <div class="commandBoxPermissions">
+            <h5>Permissions:</h5>
+            <p>This command is available for everyone. Only the command runner can see the response.</p>
+          </div>
+          <br>
+          <div class="commandBoxMyth">
+            <h5>⭐ Mythic Effect ⭐</h5>
+            <p>There is a 1% chance to get a mythic pong message! If you get this, make sure to take a screeny and send it to the developer in the support server! <br>There might be a prize!</p>
+          </div>
+
         </div>
       </div>
 

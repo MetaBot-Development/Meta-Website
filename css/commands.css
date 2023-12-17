@@ -197,3 +197,59 @@ hr {
   /* Microsoft Edge */
   color: rgb(219, 219, 219);
 }
+
+
+
+.commandBoxBig {
+  border-left: solid 7px #343434;
+  padding-left: 15px;
+  background-color: #2f2f302d;
+}
+
+.commandBoxBig a{
+  text-decoration: none;
+  color: #5a8cff;
+}
+
+.commandBoxCommand {
+  border-left: solid 7px #0e00ab;
+  padding-left: 15px;
+  padding: 10px;
+  background-color: #0f0f962d;
+}
+
+.commandBoxInfo {
+  border-left: solid 7px #007808;
+  padding-left: 15px;
+  padding: 10px;
+  margin-left: 5%;
+  background-color: #00ff1129;
+}
+
+.commandBoxPermissions {
+  border-left: solid 7px #a74500;
+  padding-left: 15px;
+  padding: 10px;
+  margin-left: 5%;
+  background-color: #ffbf0038;
+}
+
+.commandBoxValues {
+  border-left: solid 7px #2a2a2a;
+  padding-left: 15px;
+  margin-left: 5%;
+  background-color: #1414142d;
+}
+
+.commandBoxValueBox {
+  background-color: #0f1624;
+}
+
+.commandBoxMyth {
+  border-left: solid 7px #78005c;
+  padding-left: 15px;
+  padding: 10px;
+  margin-left: 5%;
+  background-color: #ff00dd29;
+}
+

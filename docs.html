@@ -183,15 +183,22 @@
                   <h1>Setup Command</h1>
                   <br>
                   <div class="docs-cmd-box">
-                    <h3>/setup [log-channel: #log-channel] [mod-rank: @moderator]</h3>
+                    <h3>/setup [admin-logs: #channel] [mod-logs: #channel] [mod-rank: @rank]</h3>
                   </div>
                   <br>
                   <br>
-                  <h4>What is the log channel?</h4>
+                  <h4>What is the Admin Logs channel?</h4>
                   <br>
                   <p>
-                    Log channel is required for the bot to function. All Meta Bot logs will be sent into the channel. If the log channel setup is not completed, you cannot use any of the protection modules. Commands are still available. <br>
+                    Admin Logs channel is required for the bot to function. All Meta Bot logs will be sent into the channel. If the log channel setup is not completed, you cannot use any of the protection modules. Commands are still available. <br>
                     We recommend to show Meta's log channel only to trusted server members / staff, since it contains sensitive information such as alt accounts and moderator grief attempts.
+                  </p>
+                  <br>
+                  <h4>What is the Mod Logs channel?</h4>
+                  <br>
+                  <p>
+                    Unlike the Admin Log channel, Mod Logs channel contains all the moderation related information. All meta's Moderation commands such as <b>/ban-add /ban-remove /timeout-add /timeout-remove</b> logs will be sent into that channel. <br>
+                    This channel is also required to set, even if you don't use any of the Meta's moderation commands.
                   </p>
                   <br>
                   <h4>What is the Moderator Rank</h4>
@@ -429,10 +436,10 @@
                   </p>
                   <br>
                   <br>
-                  <h2>Auto Mod RUles</h2>
+                  <h2>Auto Mod Rules</h2>
                   <br>
                   <div class="docs-cmd-box">
-                    <h3>Rule #1: Racism</h3>
+                    <h3>Rule #1: Racism Detection</h3>
                     <br>
                     <p>
                       Meta has blacklisted 400+ different ways to say racial slurs. When an attempt is made, Meta will delete the message and logs it.
@@ -456,6 +463,15 @@
                     <p>
                       Self Botting is when a user acts like a robot, meaning they are sending embeds, or doing other things that a human cannot do. <br> <br>
                       When Meta detects something like this, it will Meta Mute the user and send a message to Staff team.
+                    </p>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="docs-cmd-box">
+                    <h3>Rule #4: Rule34 Detection</h3>
+                    <br>
+                    <p>
+                      Every message that tries to mention the "Rule34" will be blocked by Meta since it's a NSFW content. The message will be deleted and a log will be sent to the staff team and also the user!
                     </p>
                   </div>
                 </div>
