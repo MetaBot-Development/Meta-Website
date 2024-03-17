@@ -1,0 +1,67 @@
+.meta-wiki-introduction-WIKI {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1%; /* Adjust the gap between the cards as needed */
+    color: white;
+    font-family: sans-serif;
+    background-color: rgba(0, 0, 255, 0.119);
+}
+
+.meta-wiki-introduction-WIKI img {
+    width: 10%;
+    height: 90%;
+    margin-left:7%;
+    padding: 0%;
+    margin-top: 1%;
+}
+
+.meta-wiki-introduction-WIKI H2{
+    font-size: 500%;
+    margin-top: 1.7%;
+    margin-left: -80%;
+}
+
+.container {
+    background-color: rgba(42, 42, 42, 0.263);
+    border-right: solid 10px rgb(30, 30, 30);
+    border-left: solid 10px rgb(30, 30, 30);
+    border-radius: 3px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1%; /* Adjust the gap between the cards as needed */
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 15%;
+}
+
+.box1, .box2 {
+    border: solid 3px rgb(80, 49, 239);
+    background-color: rgb(27, 26, 26);;
+    border-radius: 5px;
+    width: 100%;
+    margin: 4%;
+    height: 85%;
+    width: 80%;
+    margin-left: 7%;
+    padding: 2%;
+    color: white;
+    font-family: sans-serif;
+}
+
+.box1 p, .box2 p{
+    font-size: 120%;
+}
+
+.box1 a, .box2 a{
+    text-decoration: none;
+    color: rgb(0, 179, 255);
+}
+
+.box1 a:hover, .box2 a:hover{
+    color: rgb(0, 217, 255);
+    font-size: 110%;
+    background-color: rgba(149, 0, 255, 0.142);
+    padding: 1%;
+    border-radius: 15px;
+}

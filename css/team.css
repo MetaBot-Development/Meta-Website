@@ -1,0 +1,119 @@
+.team-intro {
+    color: white;
+    font-family: sans-serif;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%; /* Adjust the gap between the cards as needed */
+}
+
+
+.introduction {
+    background-color: rgb(22, 22, 22);
+    border-left: 25px solid rgba(0, 4, 255, 0.27);
+    border-radius: 3%;
+    padding: 3%;
+    margin-left: 25%;
+}
+
+.introduction h2 {
+    padding-bottom: 5%;
+}
+
+#MetaGroupHeading {
+    color: rgb(0, 166, 255);
+}
+
+.introduction p {
+    color: rgb(197, 197, 197);
+}
+
+.team-img img {
+    width: 55%;
+    height: 100%;
+    margin-left: 25%;
+}
+
+.team-members {
+    padding-top: 15%;
+}
+
+.team {
+    border-left: 30px solid rgba(140, 0, 255, 0.597);
+    border-right: 30px solid rgba(140, 0, 255, 0.597);
+    border-radius: 1%;
+    width: 70%;
+    margin-left: 10.5%;
+    color: white;
+    font-family: sans-serif;
+    background-color: rgba(113, 43, 226, 0.127);
+    padding: 3%;
+    margin-bottom: 5%;
+}
+
+.teambox {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10%; /* Adjust the gap between the cards as needed */
+}
+
+.teambox h2 {
+    color: rgb(167, 45, 255);
+}
+
+.teambox p {
+    margin-left: 5%;
+    padding-top: 1%;
+}
+
+#frosty {
+    background-color: rgba(255, 213, 0, 0.056);
+    border-radius: 3%;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+
+#frosty img {
+    margin-left: 60%;
+    border: 5px solid rgba(93, 0, 255, 0.386);
+    border-radius: 3%;
+}
+
+#dankly {
+    background-color: rgba(255, 30, 0, 0.056);
+    border-radius: 3%;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+
+#dankly img {
+    margin-left: 60%;
+    border: 5px solid rgba(93, 0, 255, 0.386);
+    border-radius: 3%;
+}
+
+#bapo {
+    background-color: rgba(255, 0, 102, 0.056);
+    border-radius: 3%;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+
+#bapo img {
+    margin-left: 60%;
+    border: 5px solid rgba(93, 0, 255, 0.386);
+    border-radius: 3%;
+}
+
+#randy {
+    background-color: rgba(0, 255, 17, 0.056);
+    border-radius: 3%;
+    margin-bottom: 2%;
+    padding: 1%;
+}
+
+#randy img {
+    margin-left: 60%;
+    border: 5px solid rgba(93, 0, 255, 0.386);
+    border-radius: 3%;
+}
