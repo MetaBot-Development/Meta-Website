@@ -1,145 +1,29 @@
-#pingImg {
-    width: 50%;
-    height: 40%;
-    margin-top: 15%;
-}
+    #IMG {
+        width: 50%;
+        height: 90%;
+        margin-left: 5%;
+    }
 
-#settingImg {
-    width: 50%;
-    height: 70%;
-    margin-top: 7%;
-}
+    #IMG2 {
+        width: 50%;
+        height: 5%;
+        margin-left: 5%;
+    }
 
-#settingImg2 {
-    width: 50%;
-    height: 6%;
-    margin-top: -3.6%;
-}
+@media only screen and (max-width: 980px) {
+  
+    #IMG {
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+    }
 
-#setupImg {
-    margin-left: 30%;
-    width: 50%;
-    height: 85%;
-    margin-top: 8%;
-}
+    #IMG2 {
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+    }
 
-#wikiImg {
-    width: 70%;
-    height: 70%;
-    margin-top: 7%;
-}
-
-#banImg {
-    width: 70%;
-    height: 60%;
-    margin-top: 20%;
-    margin-left: 20%;
-}
-
-#inspectImg {
-    width: 50%;
-    height: 80%;
-    margin-top: 10%;
-    margin-left: 20%;
-}
-
-#scanImg {
-    width: 80%;
-    height: 55%;
-    margin-top: 30%;
-    margin-left: 10%;
-}
-
-#timeoutAddImg {
-    width: 80%;
-    height: 50%;
-    margin-top: 30%;
-    margin-left: 10%;
-}
-
-#timeoutRemImg {
-    width: 70%;
-    height: 70%;
-    margin-top: 10%;
-    margin-left: 20%;
-}
-
-
-#roleImg {
-    width: 90%;
-    height: 70%;
-    margin-top: 15%;
-    margin-left: 0%;          
-}
-
-#plusImg {
-    width: 50%;
-    height: 60%;
-    margin-top: 15%;
-    margin-left: 20%; 
-}
-
-#amg1Img {
-    width: 90%;
-    height: 20%;
-    margin-left: 7%;
-    margin-top: 20%;
-}
-
-#amg2Img {
-    width: 70%;
-    height: 10%;
-    margin-left: 7%;
-    margin-top: -4%;
-}
-
-#amg3Img {
-    width: 70%;
-    height: 30%;
-    margin-left: 7%;
-    margin-top: 40%;
-}
-
-#altImg1 {
-    width: 60%;
-    height: 30%;
-    margin-left: 20%;
-    margin-top: 15%; 
-}
-
-#altImg2 {
-    width: 50%;
-    height: 3%;
-    margin-left: 20%;
-    margin-top: -4%; 
-}
-
-#altImg3 {
-    width: 60%;
-    height: 45%;
-    margin-left: 20%;
-    margin-top: -1%; 
-}
-
-#altImg4 {
-    width: 60%;
-    height: 3%;
-    margin-left: 20%;
-    margin-top: -4%; 
-}
-
-#modImg {
-    width: 60%;
-    height: 40%;
-    margin-left: 20%;
-    margin-top: 40%; 
-}
-
-#mbImg {
-    width: 60%;
-    height: 70%;
-    margin-left: 20%;
-    margin-top: 10%; 
 }
 
 @media only screen and (max-width: 1400px) {
@@ -278,13 +162,3 @@
 
 }
 
-
-@media only screen and (max-width: 850px) {
-
-    #pingImg, #settingImg, #settingImg2, #wikiImg, #banImg, #inspectImg, #scanImg, #timeoutAddImg, #timeoutRemImg, #roleImg, #plusImg, #amg1Img, #amg2Img, #amg3Img, #altImg1, #altImg2, #altImg3, #altImg4, #modImg, #mbImg {
-        width: 0%;
-        height: 0%;
-        margin-top: 0%;
-    } 
-
-}

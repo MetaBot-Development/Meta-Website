@@ -1,6 +1,6 @@
 .container a {
-text-decoration: none;
-color: rgb(0, 110, 255);
+    text-decoration: none;
+    color: rgb(0, 110, 255);
 }
 
 .container a:hover {
@@ -30,6 +30,7 @@ color: rgb(0, 110, 255);
     margin-left: -70%; 
 }
 
+
 .sp-100, .sp-200 {
     background-color: rgba(0, 0, 255, 0.227);
     border: solid 3px blue;
@@ -53,18 +54,65 @@ color: rgb(0, 110, 255);
 
 }
 
+
+
+@media only screen and (max-width: 980px) {
+
+        
+    .meta-wiki-introduction {
+        display: grid;
+        color: white;
+        font-family: sans-serif;
+        background-color: rgba(0, 0, 255, 0.119);
+    }
+    
+    .meta-wiki-introduction img {
+        margin: 0;
+        width: 0%;
+        height: 0%;
+    }
+    
+    .intro-text {
+        font-size: 15px;
+        margin-left: -100%;
+        padding: 50px;
+    }
+
+
+    .sp-100, .sp-200 {
+        background-color: rgba(0, 0, 255, 0.227);
+        border: solid 5px blue;
+        color: white;
+        font-size: 50px;
+        padding: 1%;
+        margin-top: 5%;
+        border-radius: 10px;
+        font-family: sans-serif;
+        margin-bottom: 1%;
+    }
+    
+    .sp-200 {
+        margin-left: 6%;
+    }
+    
+    .sp-100:hover, .sp-200:hover {
+        background-color: rgba(0, 0, 255, 0.507);
+        border: solid 3px blue;
+        color: white;
+    
+    }
+
+}
+
 .container {
     background-color: rgba(42, 42, 42, 0.263);
     border-right: solid 25px rgb(30, 30, 30);
     border-left: solid 25px rgb(30, 30, 30);
-    border-radius: 1%;
+    border-radius: 5px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 1%; /* Adjust the gap between the cards as needed */
-    margin-top: 10%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 15%;
+    gap: 1%; 
+    margin-top: 10% 5% 15% 5%;
 }
 
 
@@ -80,20 +128,43 @@ color: rgb(0, 110, 255);
 }
 
 .helpbox {
-    margin: 2%;
+    margin: 1%;
     padding: 2%;
     color: white;
     font-family: sans-serif;
+
 }
+
 
 .helpbox-img img {
     border: solid 3px blue;
     border-radius: 5px;
-    width: 100%;
-    margin: 4%;
-    height: 80%;
-    width: 50%;
-    margin-left: 45%;
+}
+
+
+@media only screen and (max-width: 980px) {
+
+    .container {
+        background-color: rgba(42, 42, 42, 0.263);
+        border-right: solid 25px rgb(30, 30, 30);
+        border-left: solid 25px rgb(30, 30, 30);
+        border-radius: 5px;
+        display: inline-block;
+
+        margin-top: 10% 5% 15% 5%;
+    }    
+    
+    .heading-s {
+        margin-bottom: 1%;
+        font-size: 40px;
+        border: solid 5px blue;
+        width: 97.5%;
+        padding: .5%;
+        background-color: rgba(0, 0, 255, 0.112);
+        border-radius: 10px;
+        text-align: center;
+    }
+
 }
 
 .cmd {
@@ -114,6 +185,35 @@ color: rgb(0, 110, 255);
 
 .intro-s {
     padding-left: 1%;
+}
+
+
+@media only screen and (max-width: 980px) {
+
+    .cmd {
+        margin-top: 2%;
+        background-color: rgba(0, 60, 255, 0.17);
+        padding: 1%;
+        border-radius: 15px;
+        width: 97.5%;
+        padding-left: 2%;
+        font-size: 30px;
+    }
+    
+    .intro-cmd {
+        margin-top: 2%;
+        margin-left: 1%;
+        padding-left: 2%;
+        font-size: 15px;
+    }
+    
+    .intro-s {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 20px;
+        font-size: 13px;
+    }  
+
 }
 
 .mythic-effect {
@@ -324,3 +424,5 @@ color: rgb(0, 110, 255);
     background-color: rgba(0, 0, 255, 0.237);
     text-align: center;
 }
+
+

@@ -21,6 +21,31 @@
     margin-left: -80%;
 }
 
+@media only screen and (max-width: 980px) {
+
+    .meta-wiki-introduction-WIKI {
+        color: rgb(255, 255, 255);
+        font-family: sans-serif;
+        background-color: rgba(0, 21, 255, 0.119);
+    }
+
+    .meta-wiki-introduction-WIKI img {
+        width: 30%;
+        height: 90%;
+        margin-left:7%;
+        padding: 0%;
+        margin-top: 3%;
+    }
+    
+    .meta-wiki-introduction-WIKI H2{
+        font-size: 500%;
+        margin-top: 8%;
+        margin-left: -50%;
+    }
+
+}
+
+
 .container {
     background-color: rgba(42, 42, 42, 0.263);
     border-right: solid 10px rgb(30, 30, 30);
@@ -35,7 +60,7 @@
     margin-bottom: 15%;
 }
 
-.box1, .box2 {
+.box {
     border: solid 3px rgb(80, 49, 239);
     background-color: rgb(27, 26, 26);;
     border-radius: 5px;
@@ -49,19 +74,78 @@
     font-family: sans-serif;
 }
 
-.box1 p, .box2 p{
+.box p{
     font-size: 120%;
 }
 
-.box1 a, .box2 a{
+.box a{
     text-decoration: none;
     color: rgb(0, 179, 255);
 }
 
-.box1 a:hover, .box2 a:hover{
+.box a:hover{
     color: rgb(0, 217, 255);
     font-size: 110%;
     background-color: rgba(149, 0, 255, 0.142);
     padding: 1%;
     border-radius: 15px;
+}
+
+
+@media only screen and (max-width: 980px) {
+
+    .container {
+        background-color: rgba(42, 42, 42, 0.263);
+        border-right: solid 10px rgb(30, 30, 30);
+        border-left: solid 10px rgb(30, 30, 30);
+        border-radius: 3px;
+        display: inline-block;
+        margin-top: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-bottom: 15%;
+    }
+    
+    .box {
+        border: solid 3px rgb(80, 49, 239);
+        background-color: rgb(27, 26, 26);;
+        border-radius: 5px;
+        width: 100%;
+        margin: 4%;
+        height: 85%;
+        width: 80%;
+        margin-left: 7%;
+        padding: 2%;
+        color: white;
+        font-family: sans-serif;
+    }
+
+    .box h1{
+        font-size: 80px;
+        margin-bottom: 5%;
+    }
+
+    .box h2{
+        font-size: 50px;
+        margin-top: 5%;
+        margin-bottom: 2%;
+    }
+
+    .box p{
+        font-size: 35px;
+    }
+    
+    .box a{
+        text-decoration: none;
+        color: rgb(0, 179, 255);
+    }
+    
+    .box a:hover{
+        color: rgb(0, 217, 255);
+        font-size: 110%;
+        background-color: rgba(149, 0, 255, 0.142);
+        padding: 1%;
+        border-radius: 15px;
+    }
+
 }

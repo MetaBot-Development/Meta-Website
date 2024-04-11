@@ -39,3 +39,51 @@
     text-decoration: none;
     color: rgb(199, 199, 199);
 }
+
+@media only screen and (max-width: 980px) {
+
+    .footer-modules {
+        background-color: #040404;
+        color: white;
+        font-family: sans-serif;
+        justify-content: center;
+        padding-bottom: 6%;
+    }
+    .footer {
+        display: flex;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        justify-content: center;
+    }
+    
+    .tulp {
+        padding: 0% 5% 0% 5%;
+        text-align: center;
+    }
+    
+    .tulp h3{
+        font-size: 40px;
+        padding-bottom: 15%;
+    }
+
+
+    
+    .tulp a{
+        font-size: 30px;
+        text-decoration: none;
+        color: rgb(199, 199, 199);
+    }
+    
+    .cc {
+        text-align: center;
+        padding-top: 2%;
+        padding-bottom: 0%;
+    }
+    
+    .cc a {
+        font-size: 10px;
+        text-decoration: none;
+        color: rgb(199, 199, 199);
+    }
+
+}

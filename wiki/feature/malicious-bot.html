@@ -60,20 +60,55 @@
           <h2>What is Malicious Bot Detection and how it works</h2>
           <p>
             The Malicious Bot Detection system protect your server from being griefed by malicious bots. <br>
-            When this is enabled, Meta wont allow bots to be added into your server, unless the user who'se trying to add the bot <b id="green">has Administrator</b> permissions. <br><br>
-
-            When an user without Administrator permissions add a bot, the user will be <a href="./meta-roles.html">Meta Muted</a> and the bot will be just banned from the server. <br>
-            A detailed log embed will be sent into <a href="../command/setup.html">Administration Logs</a> channel.
+            This is the perfect module to enable, if you want to keep your server clean from bots and only make it so trusted people can add bots into your server. <br>
+            Once enabled, Meta will active 2 different protection systems, info below. <br> <br>
+            Meta Group definently recommends to enable this feature.
           </p>
       </div> 
+
+      <div id="purplebox">
+        <h2>Admin can only add</h2>
+        <p>
+          By enabling the Anti Malicious Bot Detection system, only people with <b id="red">Administrator</b> permissions can add bots. <br> <br>
+          By deafult, people with <b id="green">Manage Guild</b> can add bots to the server, but Metas system will <a href="./meta-roles.html">Meta Mute</a> them if they do not have the <b id="red">Administrator</b> permissions.
+        </p>
+    </div> 
+
+    <div id="aquabox">
+      <h2>Scanning each bot</h2>
+      <p>
+        When enabled, each bot that is added, will be runned through Metas Malicious Bot List. If the bot is in the list, Meta will <a href="./meta-roles.html">Meta Mute</a> the bot. User who added the bot will not be affected by Meta. <br> <br>
+
+        What bots are in the list? This is private information. We only add bots that are harmful / known to harm and destroy servers. For more information on this, please contact with the Head of Meta Group over in the <a href="https://discord.gg/Rc8DgBBpsx">Support Server</a>.
+      </p>
+  </div> 
 
 
       </div>
 
       <div class="helpbox-img">
 
-        <img id="mbImg" src="../../images/wiki-img/mb.png" alt="">
+        <img id="IMG" src="../../images/wiki-img/mb.png" alt="">
 
+        <style>
+          #IMG { 
+            width: 50%;
+            height: 40%;
+            margin-top: 25%;
+           }
+
+
+           @media only screen and (max-width: 980px) {
+  
+              #IMG {
+                  width: 90%;
+                  height: 100%;
+                  margin-left: 5%;
+                  margin-top: 5%;
+              }
+
+            }
+        </style>
       </div>
 
     </div>

@@ -10,7 +10,6 @@
     <link href="../../css/card.css" rel="stylesheet" />
     <link href="../../css/style.css" rel="stylesheet" />
     <link href="../../css/wiki-card.css" rel="stylesheet" />
-    <link href="../../css/wiki-mobile.css" rel="stylesheet" />
     <link href="../../css/wiki-img.css" rel="stylesheet" />
 
     <link rel="icon" href="../../images/meta.ico">
@@ -76,8 +75,24 @@
 
       <div class="helpbox-img">
 
-        <img id="setupImg" src="../../images/wiki-img/setup.png" alt="">
+        <img id="IMG" src="../../images/wiki-img/setup.png" alt="">
 
+        <style>
+          #IMG { 
+            margin-top: 5%;
+           }
+
+           @media only screen and (max-width: 980px) {
+  
+              #IMG {
+                  width: 90%;
+                  height: 100%;
+                  margin-left: 5%;
+                  margin-top: 5%;
+              }
+
+            }
+        </style>
       </div>
 
     </div>
