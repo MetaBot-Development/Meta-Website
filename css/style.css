@@ -125,3 +125,43 @@
     font-size: 150%;
     color: rgb(255, 235, 174);
 }
+
+.S404box {
+    border: solid 10px blue;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    text-align: center;
+    width: 40%;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 24%;
+    padding: 1%;
+}
+
+.S404box a {
+    text-decoration: none;
+    color: rgb(0, 149, 255);
+}
+.S404box a:hover {
+    color: rgb(0, 60, 255);
+}
+
+@media only screen and (max-width: 980px) {
+
+    .S404box {
+        border: solid 10px blue;
+        border-radius: 5px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        justify-content: center;
+        text-align: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 10%;
+        margin-bottom: 109%;
+        padding: 1%;
+    }
+
+}
