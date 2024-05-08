@@ -104,6 +104,28 @@
 
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+    .intro-text {
+        margin-left: -45%;
+    }
+
+    .meta-wiki-introduction {
+        display: grid;
+        color: white;
+        font-family: sans-serif;
+        background-color: rgba(0, 0, 255, 0.119);
+    }
+    
+    .meta-wiki-introduction img {
+        margin-top: 3%;
+        margin-left: 1%;
+        width: 45%;
+        height: 80%;
+    }
+
+}
+
 .container {
     background-color: rgba(42, 42, 42, 0.263);
     border-right: solid 25px rgb(30, 30, 30);
@@ -163,6 +185,15 @@
         background-color: rgba(0, 0, 255, 0.112);
         border-radius: 10px;
         text-align: center;
+    }
+
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+  
+    
+    .heading-s {
+        width: 40%;
     }
 
 }

@@ -23,141 +23,37 @@
         height: 100%;
         margin-left: 5%;
     }
+}
+
+
+@media only screen and (max-width: 980px) {
+  
+    #IMG {
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+    }
+
+    #IMG2 {
+        width: 90%;
+        height: 100%;
+        margin-left: 5%;
+    }
 
 }
 
-@media only screen and (max-width: 1400px) {
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
 
-    #pingImg {
-        width: 80%;
-        height: 30%;
-        margin-top: 35%;
-    } 
-    #settingImg {
-        width: 70%;
-        height: 50%;
-        margin-top: 25%;
-    }
-
-    #settingImg2 {
-        width: 70%;
-        height: 4%;
-        margin-top: -3.6%;
-    }
-
-    #wikiImg {
-        width: 70%;
-        height: 60%;
-        margin-top: 10%;
-        margin-left: 50%;
-    }
-
-    #banImg {
-        width: 70%;
-        height: 35%;
-        margin-top: 70%;
-        margin-left: 20%;
-    }
-
-    #inspectImg {
-        width: 80%;
-        height: 80%;
-        margin-top: 15%;
-        margin-left: 10%;
-    }
-
-    #scanImg {
-        width: 80%;
-        height: 35%;
-        margin-top: 55%;
-        margin-left: 10%;
-    }
-
-    #timeoutAddImg {
-        width: 90%;
-        height: 30%;
-        margin-top: 75%;
-        margin-left: 3%;
-    }
-
-    #timeoutRemImg {
-        width: 80%;
-        height: 50%;
-        margin-top: 35%;
-        margin-left: 10%;
-    }
-
-    #roleImg {
-        width: 80%;
-        height: 30%;
-        margin-top: 55%;
-        margin-left: 10%; 
-    }
-
-    #amg1Img {
-        width: 70%;
-        height: 7%;
-        margin-left: 7%;
-        margin-top: 20%;
-    }
-    
-    #amg2Img {
-        width: 50%;
-        height: 4%;
-        margin-left: 7%;
-        margin-top: -4%;
-    }
-    
-    #amg3Img {
-        width: 70%;
-        height: 15%;
-        margin-left: 7%;
-        margin-top: 200%;
-    }
-
-
-
-
-    #altImg1 {
-        width: 90%;
-        height: 20%;
+    #IMG {
+        width: 710%;
+        height: 70%;
         margin-left: 5%;
-        margin-top: 15%; 
     }
-    
-    #altImg2 {
-        width: 80%;
-        height: 2.2%;
-        margin-left: 5%;
-        margin-top: -4%; 
-    }
-    
-    #altImg3 {
+
+    #IMG2 {
         width: 90%;
-        height: 30%;
+        height: 70%;
         margin-left: 5%;
-        margin-top: 15%; 
-    }
-    
-    #altImg4 {
-        width: 90%;
-        height: 2.2%;
-        margin-left: 5%;
-        margin-top: -4%; 
-    }
-    
-    #modImg {
-        width: 90%;
-        height: 30%;
-        margin-left: 5%;
-        margin-top: 70%; 
-    }
-    
-    #mbImg {
-        width: 90%;
-        height: 60%;
-        margin-left: 5%;
-        margin-top: 25%; 
     }
 
 }

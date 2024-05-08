@@ -40,6 +40,24 @@
     font-size: 55px;
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+    .background {
+        width: 86%;
+        height: 100vh; 
+        scale: 1.15;
+        margin-left: 7%;
+    }
+    
+    .homeButtons {
+        display: flex;
+        gap: 5%;
+        margin-top: 95%;
+        margin-left: 17%;
+    }
+
+}
+
 @media only screen and (max-width: 980px) {
 
         .homeButtons {
@@ -64,8 +82,6 @@
             background-color: rgba(0, 4, 255, 0.27);
             font-size: 55px;
         }
-
-
 }
 
 
@@ -80,9 +96,46 @@
     display: flex;
     margin-top: 10%;
 }
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
 
+
+    .protection-modules {
+        margin-top: 25%;
+    }
+    
+    .protection-container {
+        display: inline;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%; /* Adjust the gap between the cards as needed */
+    }
+    
+    
+    .card1, .card2, .card3, .card4 {
+        height: 100%; /* Adjust the height as needed */
+        width: 70%;
+        background: #121212;
+        border-radius: .5rem;
+        position: relative;
+        margin-left: 12.5%;
+    }
+    
+    .card1 p, .card2 p, .card3 p, .card4 p {
+        margin-top: 1%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    
+    .card1 h2, .card2 h2, .card3 h2, .card4 h2 {
+        margin-bottom: -5%;
+    }
+
+}
 
 @media only screen and (max-width: 980px) {
+
+    .protection-modules {
+        margin-top: 25%;
+    }
 
     .protection-container {
         display: inline-block;
@@ -100,6 +153,7 @@
     }
 
 }
+
 
 
 .stats-modules {
@@ -129,7 +183,43 @@
     margin-bottom: 10%;
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
 
+    .stats-modules {
+        color: rgb(255, 255, 255);
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%; /* Adjust the gap between the cards as needed */
+        margin-top: 20%;
+    
+    }
+    
+    .meta-img img{
+        height: 60%;
+        width: 80%;
+        margin-top: 55%;
+        margin-left: 25%;
+    }
+    
+    .stats-text {
+        margin-top: 55%;
+        width: 50%;
+        justify-content: center;
+    }
+    
+    .stats-text h2 {
+        text-align: center;
+        font-size: 300%;
+        margin-bottom: 10%;
+    }
+
+    .card5 h3 {
+        font-size: 150%;
+        margin-top: 13%;
+    }
+
+}
 
 
 @media only screen and (max-width: 980px) {
@@ -209,6 +299,47 @@
     width: 100%;
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+    .card6 {
+        height: 75%;
+        width: 65%;
+        background-color: #0b0b0b;
+        margin-left: 10%;
+    }
+    
+    .card6 img {
+        height: 100%;
+        width: 100%;
+    }
+    
+    .premium-modules {
+        color: rgb(255, 255, 255);
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10%; /* Adjust the gap between the cards as needed */
+        margin-top: 20%;
+        margin-bottom: 15%;
+    }
+    
+    
+    .premium-text h2 {
+        margin-left: 20%;
+        margin-top: 15%;
+        font-size: 200%;
+        color: rgb(255, 191, 0);
+    }
+    
+    .premium-text p {
+        margin-left: 24%;
+        margin-top: 5%;
+        font-size: 110%;
+        color: rgb(255, 235, 174);
+    }
+
+}
+
 @media only screen and (max-width: 980px) {
 
     .premium-modules {
@@ -247,6 +378,7 @@
 
 
 }
+
 
 
 

@@ -21,6 +21,34 @@
     margin-left: -80%;
 }
 
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+    .meta-wiki-introduction-WIKI {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1%; /* Adjust the gap between the cards as needed */
+        color: white;
+        font-family: sans-serif;
+        background-color: rgba(0, 0, 255, 0.119);
+    }
+    
+    .meta-wiki-introduction-WIKI img {
+        width: 20%;
+        height: 90%;
+        margin-left:7%;
+        padding: 0%;
+        margin-top: 1%;
+    }
+    
+    .meta-wiki-introduction-WIKI H2{
+        font-size: 500%;
+        margin-top: 1.7%;
+        margin-left: -60%;
+    }
+
+}
+
+
 @media only screen and (max-width: 980px) {
 
     .meta-wiki-introduction-WIKI {
@@ -66,7 +94,7 @@
     border-radius: 5px;
     width: 100%;
     margin: 4%;
-    height: 85%;
+    height: 90%;
     width: 80%;
     margin-left: 7%;
     padding: 2%;
@@ -121,7 +149,7 @@
     }
 
     .box h1{
-        font-size: 80px;
+        font-size: 65px;
         margin-bottom: 5%;
     }
 
@@ -149,3 +177,49 @@
     }
 
 }
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+        .container {
+            background-color: rgba(42, 42, 42, 0.263);
+            border-right: solid 10px rgb(30, 30, 30);
+            border-left: solid 10px rgb(30, 30, 30);
+            border-radius: 3px;
+            display: grid;
+            margin-top: 10%;
+            margin-left: 5%;
+            margin-right: 5%;
+            margin-bottom: 15%;
+        }
+        
+        .box {
+            border: solid 3px rgb(80, 49, 239);
+            background-color: rgb(27, 26, 26);;
+            border-radius: 5px;
+            width: 100%;
+            margin: 4%;
+            height: 95%;
+            width: 80%;
+            margin-left: 7%;
+            padding: 2%;
+            color: white;
+            font-family: sans-serif;
+        }
+    
+        .box h1{
+            font-size: 45px;
+            margin-bottom: 5%;
+        }
+    
+        .box h2{
+            font-size: 30px;
+            margin-top: 5%;
+            margin-bottom: 2%;
+        }
+    
+        .box p{
+            font-size: 25px;
+        }
+        
+    
+    }
