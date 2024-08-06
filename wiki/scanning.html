@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Meta Auto Moderation System">
+    <meta property="og:description" content="Protect your server from the most common and needed things such as racism, server promotions, self botting and anti rule34 with only 1 click.">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1011355084514394164/1232259786297577502/lightbub.jpeg?ex=6628cedb&is=66277d5b&hm=db16acda4ff0b0bd695481dedb737fefe8d7ce2a156752677dbc378fcc09170f&">
+    <meta property="og:url" content="https://meta-bot.xyz/">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="128">
+    <meta property="og:image:height" content="128"> 
+    <meta name="theme-color" content="#5100FF">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="../../css/footer.css" rel="stylesheet">
+    <link href="../../css/wiki-doc.css" rel="stylesheet">
+    <link rel="icon" href="../../images/meta.ico">
+    <title>Meta | Scanning</title>
+</head>
+<body>
+    <div class="wiki-page">
+        <div class="wiki-heading">
+            <img src="../../images/Meta.png">
+<h1>Meta Protection</h1>
+            <div class="links-wiki-quick">
+              <p>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", target="_blank"><ul>Invite </ul></a>
+                <a href="https://discord.gg/Rc8DgBBpsx", target="_blank"><ul>Support</ul></a>
+                <a href="https://top.gg/bot/980436688260182016", target="_blank"><ul>Top.gg</ul></a>
+              </p>
+            </div>
+            <div class="mobile-menu">
+                <a href="../menu.html" id="mobile-menu-btn"><i class="fa fa-solid fa-bars"></i> Menu</a>
+            </div>
+        </div>
+        <div class="wikipedia-struckture">
+            <div class="wiki-menu">
+                <a href="../home.html"><p>Home</p></a>
+                <a href="../about.html"><p>About Meta Protection Bot</p></a>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", target="_blank"><p>Invite</p></a>
+                <a href="https://discord.gg/Rc8DgBBpsx", target="_blank"><p>Support</p></a>
+                <a href="./anti-mod-grief.html"><p>Anti Mod Grief</p></a>
+                <a href="./anti-alt.html"><p>Anti Alt Detector</p></a>
+                <a href="./malicious-bot-scanner.html"><p>Malicious Bot Scanner</p></a>
+                <a href="./automod.html"><p>AutoMod with Discord</p></a>
+                <a href="../commands.html"><p>Commands</p></a>
+                <a href="./dangerous-roles.html"><p>Dangerous Roles</p></a>
+                <a href="./meta-roles.html"><p>Meta Roles</p></a>
+                <a href="../plus.html"><p>Meta Plus</p></a>
+                <a href="../updates.html"><p>Patch Notes</p></a>
+                <a href="../legal/terms.html", target="_blank"><p>Terms Of Service</p></a>
+                <a href="../legal/privacy.html", target="_blank"><p>Privacy Policy</p></a>
+            </div>
+            <script>
+                let be = "this"
+            </script>
+            <div class="wiki-content">
+                <div class="wiki-content-container">
+                    <div class="content-header">
+                        <h1>Scanning Your Server</h1>
+                        <hr>
+                    </div>
+                    <div class="wiki-content-block", id="action">
+                        <h2>Scanning as an Action</h2>
+                        <p>
+                            Scanning your server every now and then is very useful if you'd like to get some background information about your server. <br>
+                            Meta provides an advanced scanning system for free, to ensure everyone their servers safety. <br><br>
+
+                            Meta Scan gives you inside info about your server administrators, roles, alt accounts, members and channels. Also, Meta calculates the protection score, and gives you ideas to optimize the score.
+                        </p>
+                        <br>
+                        <br>
+                        <hr>
+                    </div>
+
+                    <div class="wiki-content-block", id="score">
+                        <h2>Scanning Score Calculations</h2>
+                        <p>
+                            The calculation to figure out the scanning score is calculated next:
+                        </p>
+                        <div class="wiki-info-box-green">
+                            <div class="wiki-inside-info-box">
+                                <h3>CALCULATION:</h3>
+                                <p id="scanning">
+                                    Have Meta Setup completed <x id="points"> +15 points</x> <br> <br><br>
+
+                                    Anti Mod Grief Channel Create Enabled <x id="points"> +3 points</x> <br><br>
+                                    Anti Mod Grief Channel Delete Enabled <x id="points"> +3 points</x> <br><br>
+                                    Anti Mod Grief Channel Modify Enabled <x id="points"> +6 points</x> <br><br>
+                                    Anti Mod Grief Manual Ban Revoke Enabled <x id="points"> +6 points</x> <br><br>
+                                    Anti Mod Grief Guild Update Enabled <x id="points"> +3 points</x> <br><br>
+                                    Anti Mod Grief Dangeroul Role Given Enabled <x id="points"> +8 points</x> <br><br>
+                                    Anti Mod Grief Role Created Enabled <x id="points"> +3 points</x> <br><br>
+                                    Anti Mod Grief Role Deleted Enabled <x id="points"> +3 points</x> <br><br>
+                                    Anti Mod Grief Role Modified Enabled <x id="points"> +5 points</x> <br> <br><br>
+
+                                    Anti Alt Detection System Enabled <x id="points"> +14 points</x> <br><br>
+                                    Malicious Bot Scanning System Enabled <x id="points"> +11 points</x> <br><br>
+                                    AutoMod Rules Used <x id="points"> +3 points</x> <br> <br><br>
+
+                                    Have less than 6 administrators <x id="points"> +12 points</x> <br><br>
+                                    Have less than 30 suspected alt accounts in your server <x id="points"> +5 points</x> <br><br><br>
+
+                                    Total: <x id="points"> 100 points</x> | <x id="points"> 1 point</x> = <x id="points"> 1%</x>
+                                </p>
+                            </div>
+                        </div>
+
+
+                        <hr>
+                    </div>
+
+                    <div class="wiki-content-block", id="explain">
+                        <h2>Why do we calculate it so?</h2>
+                        <p>
+                            We have added general point giving situations such as alt account count and administrator account count, but this is as far as we can to be 100% sure. <br>
+                            Why Metas scanning is so focused on Meta itself, is because we know, that if you have such things enabled, our score is not false. We rely on our own statistics and information, because we can trust this. <br><br>
+
+                            Maybe in the future, we will add more third party factors, but given the current situation, we'd like to provide serivce that we are sure of.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="wiki-bookmark">
+                <div class="wiki-bookmark-content">
+                    <a href="#action"><h4>Scan Action</h4></a>
+                    <a href="#score"><h4>Calculation</h4></a>
+                    <a href="#explain"><p>Why</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-modules">
+
+        <div class="footer">
+
+          <div class="tulp">
+            <h3>Meta</h3>
+            <a href="../about.html">About Us</a> <br>
+            <a href="https://discord.gg/Rc8DgBBpsx">Discord</a> <br>
+          </div>
+  
+          <div class="tulp">
+            <h3>Links</h3> 
+            <a href="../plus.html">Meta Plus</a> <br>
+            <a href="https://github.com/MetaBot-Development">Github</a> 
+          </div>
+  
+          <div class="tulp">
+            <h3>Legal</h3>
+            <a href="../../legal/terms.html">Terms</a> <br>
+            <a href="../../legal/privacy.html">Privacy</a> <br>
+          </div>
+
+        </div>
+
+        <div class="cc">
+          <a href="../../home.html">Meta Group &copy 2024</a>
+        </div>
+
+
+      </div>
+      
+</body>
+</html>

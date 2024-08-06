@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Meta Auto Moderation System">
+    <meta property="og:description" content="Protect your server from the most common and needed things such as racism, server promotions, self botting and anti rule34 with only 1 click.">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1011355084514394164/1232259786297577502/lightbub.jpeg?ex=6628cedb&is=66277d5b&hm=db16acda4ff0b0bd695481dedb737fefe8d7ce2a156752677dbc378fcc09170f&">
+    <meta property="og:url" content="https://meta-bot.xyz/">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="128">
+    <meta property="og:image:height" content="128"> 
+    <meta name="theme-color" content="#5100FF">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="../../css/footer.css" rel="stylesheet">
+    <link href="../../css/wiki-doc.css" rel="stylesheet">
+    <link rel="icon" href="../../images/meta.ico">
+    <title>Meta | Anti Mod Grief</title>
+</head>
+<body>
+    <div class="wiki-page">
+        <div class="wiki-heading">
+            <img src="../../images/Meta.png">
+<h1>Meta Protection</h1>
+            <div class="links-wiki-quick">
+              <p>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", target="_blank"><ul>Invite </ul></a>
+                <a href="https://discord.gg/Rc8DgBBpsx", target="_blank"><ul>Support</ul></a>
+                <a href="https://top.gg/bot/980436688260182016", target="_blank"><ul>Top.gg</ul></a>
+              </p>
+            </div>
+            <div class="mobile-menu">
+                <a href="../menu.html" id="mobile-menu-btn"><i class="fa fa-solid fa-bars"></i> Menu</a>
+            </div>
+        </div>
+        <div class="wikipedia-struckture">
+            <div class="wiki-menu">
+                <a href="../home.html"><p>Home</p></a>
+                <a href="../about.html"><p>About Meta Protection Bot</p></a>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", target="_blank"><p>Invite</p></a>
+                <a href="https://discord.gg/Rc8DgBBpsx", target="_blank"><p>Support</p></a>
+                <a href="./anti-mod-grief.html"><p><b class="wiki-this-page">Anti Mod Grief</b></p></a>
+                <style>
+                    .wiki-this-page {color: rgb(54, 99, 221); }
+                </style>
+                <a href="./anti-alt.html"><p>Anti Alt Detector</p></a>
+                <a href="./malicious-bot-scanner.html"><p>Malicious Bot Scanner</p></a>
+                <a href="./automod.html"><p>AutoMod with Discord</p></a>
+                <a href="../commands.html"><p>Commands</p></a>
+                <a href="./dangerous-roles.html"><p>Dangerous Roles</p></a>
+                <a href="./meta-roles.html"><p>Meta Roles</p></a> 
+                <a href="../plus.html"><p>Meta Plus</p></a>
+                <a href="../updates.html"><p>Patch Notes</p></a>
+                <a href="../legal/terms.html", target="_blank"><p>Terms Of Service</p></a>
+                <a href="../legal/privacy.html", target="_blank"><p>Privacy Policy</p></a>
+            </div>
+            <div class="wiki-content">
+                <div class="wiki-content-container">
+                    <div class="content-header">
+                        <h1>Anti Mod Grief</h1>
+                        <hr>
+                    </div>
+                    <div class="wiki-content-block", id="amg">
+                        <h2>What is AMG</h2>
+                        <p>
+                            Anti Mod Grief (AMG) is a background protection system that prevents your server staff from harming your server. Limit your server staff from some more dangerous actions such as deleting a channel / role, unbanning manually without logging, giving out <a href="./dangerous-roles.html">dangerous roles</a> and much more!
+                            <br><br>
+                            AMG actions can be configured independently to give you as much freedom as possible. <br>
+                            To learn about action filters, check below.
+                        </p>
+                        <div class="wiki-info-box-yellow">
+                            <div class="wiki-inside-info-box">
+                                <h3><i class="fa fa-info-circle"></i> Permission Warning</h3>
+                                <p>Users with the <b class="command">Administrator</b> permissions will be ignored by Meta. Administrators can change the configurations of the module.</p>
+                            </div>
+                        </div>
+                        <div class="wiki-info-box-green">
+                            <div class="wiki-inside-info-box">
+                                <h3>Action Logs</h3>
+                                <p>All Anti Mod Grief logs will be sent into the server <b class="command">admin-logs</b> channel. You <b>cannot</b> change the logging channel for Anti Mod Grief.</p>
+                            </div>
+                        </div>
+                        <p>
+                            Check out the video tutorial on how to setup the Anti Mod Grief protection system:
+                        </p>
+                        <div class="wiki-video-box", id="tutorial">
+                            <div class="wiki-inside-video-box">
+                                <video  controls id="video">
+                                    <source src="../images/videos/mod-grief-setup.mp4" type="video/mp4">
+                                  </video>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="wiki-content-block", id="actions">
+                        <h2>Actions</h2>
+                        <p>
+                            Users who have the <a href="./moderation.html">Moderator Rank</a> <b>will be </b>affected by this, users <b>without it</b> wont be affected.
+                        </p>
+                        
+                        <div class="large-selection">
+                            <div class="selection">
+                                <div class="box">
+                                    <h3>Channel Created</h3>
+                                    <p>User cannot create any type of channels</p>
+                                </div>
+                                <div class="box">
+                                    <h3>Channel Deleted</h3>
+                                    <p>User cannot delete any channels</p>
+                                </div>
+                                <div class="box">
+                                    <h3>Channel Modified</h3>
+                                    <p>User cannot modify channel permissions / fields</p>
+                                </div>
+                            </div>
+                            <div class="selection">
+                                <div class="box">
+                                    <h3>Manual Ban Remove</h3>
+                                    <p>Users must use an app to ban other members</p> 
+                                </div>
+                                <div class="box">
+                                    <h3>Dangerous Role</h3>
+                                    <p>User cannot give / remove <a href="./dangerous-roles.html">Dangerous Roles</a> to / from other members / bots</p>
+                                </div>
+                                <div class="box">
+                                    <h3>Guild Update</h3>
+                                    <p>User cannot change server overview settings</p>
+                                </div>
+                            </div>
+                            <div class="selection">
+                                <div class="box">
+                                    <h3>Role Created</h3>
+                                    <p>User cannot create any roles</p>
+                                </div>
+                                <div class="box">
+                                    <h3>Role Deleted</h3>
+                                    <p>User cannot delete any roles</p>
+                                </div>
+                                <div class="box">
+                                    <h3>Role Updated</h3>
+                                    <p>User cannot modify / update any role</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="wiki-info-box", id="extra">
+                            <div class="wiki-inside-info-box">
+                                <h3><i class="fa fa-info-circle"></i> What each action has:</h3>
+                                <p>
+                                    Action logs will be sent into <b class="command">admin-logs</b> <br><br>
+                                    Only takes action on users who have the <a href="./moderation.html">Moderator Rank</a> <br> <br>
+                                    Ignores Administrators and Owners
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="wiki-info-box-red">
+                            <div class="wiki-inside-info-box">
+                                <h3><i class="fa fa-info-circle"></i> Permissions Needed</h3>
+                                <p>Make sure Meta has all the necessary permissions, if you're not sure, try giving the app Administrator permissions.</p>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="wiki-content-block", id="example">
+                        <h2>Example</h2>
+
+                        <div class="wiki-video-box">
+                            <div class="wiki-inside-video-box">
+                                <video  controls id="video">
+                                    <source src="../images/videos/mod-grief-example.mp4" type="video/mp4">
+                                  </video>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            <div class="wiki-bookmark">
+                <div class="wiki-bookmark-content">
+                    <a href="#amg"><h4>What is AMG?</h4></a>
+                    <a href="#tutorial"><p>Video Tutorial</p></a>
+                    <a href="#actions"><h4>Actions</h4></a>
+                    <a href="#extra"><p>Extra information</p></a>
+                    <a href="#example"><h4>Example</h4></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-modules">
+
+        <div class="footer">
+
+          <div class="tulp">
+            <h3>Meta</h3>
+            <a href="../about.html">About Us</a> <br>
+            <a href="https://discord.gg/Rc8DgBBpsx">Discord</a> <br>
+          </div>
+  
+          <div class="tulp">
+            <h3>Links</h3> 
+            <a href="../plus.html">Meta Plus</a> <br>
+            <a href="https://github.com/MetaBot-Development">Github</a> 
+          </div>
+  
+          <div class="tulp">
+            <h3>Legal</h3>
+            <a href="../../legal/terms.html">Terms</a> <br>
+            <a href="../../legal/privacy.html">Privacy</a> <br>
+          </div>
+
+        </div>
+
+        <div class="cc">
+          <a href="../../home.html">Meta Group &copy 2024</a>
+        </div>
+
+
+      </div>
+      
+</body>
+</html>

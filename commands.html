@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Meta Auto Moderation System">
+    <meta property="og:description" content="Protect your server from the most common and needed things such as racism, server promotions, self botting and anti rule34 with only 1 click.">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1011355084514394164/1232259786297577502/lightbub.jpeg?ex=6628cedb&is=66277d5b&hm=db16acda4ff0b0bd695481dedb737fefe8d7ce2a156752677dbc378fcc09170f&">
+    <meta property="og:url" content="https://meta-bot.xyz/">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="128">
+    <meta property="og:image:height" content="128"> 
+    <meta name="theme-color" content="#5100FF">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="./css/footer.css" rel="stylesheet">
+    <link href="./css/wiki-doc.css" rel="stylesheet">
+    <link rel="icon" href="../../images/meta.ico">
+    <title>Meta Commands</title>
+</head>
+<body>
+    <div class="wiki-page">
+        <div class="wiki-heading">
+            <img src="../../images/Meta.png">
+<h1>Meta Protection</h1>
+            <div class="links-wiki-quick">
+              <p>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", target="_blank"><ul>Invite </ul></a>
+                <a href="https://discord.gg/Rc8DgBBpsx", target="_blank"><ul>Support</ul></a>
+                <a href="https://top.gg/bot/980436688260182016", target="_blank"><ul>Top.gg</ul></a>
+              </p>
+            </div>
+            <div class="mobile-menu">
+                <a href="./menu.html" id="mobile-menu-btn"><i class="fa fa-solid fa-bars"></i> Menu</a>
+            </div>
+        </div>
+        <div class="wikipedia-struckture">
+            <div class="wiki-menu">
+                <a href="./home.html"><p>Home</p></a>
+                <a href="./about.html"><p>About Meta Protection Bot</p></a>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", target="_blank"><p>Invite</p></a>
+                <a href="https://discord.gg/Rc8DgBBpsx", target="_blank"><p>Support</p></a>
+                <a href="./wiki/anti-mod-grief.html"><p>Anti Mod Grief</p></a>
+                <a href="./wiki/anti-alt.html"><p>Anti Alt Detector</p></a>
+                <a href="./wiki/malicious-bot-scanner.html"><p>Malicious Bot Scanner</p></a>
+                <a href="./wiki/automod.html"><p>AutoMod with Discord</p></a>
+                <a href="./commands.html"><p><b class="wiki-this-page">Commands</b></p></a>
+                <style>
+                    .wiki-this-page {color: rgb(54, 99, 221); }
+                </style>
+                <a href="./wiki/dangerous-roles.html"><p>Dangerous Roles</p></a>
+                <a href="./wiki/meta-roles.html"><p>Meta Roles</p></a>
+                <a href="./plus.html"><p>Meta Plus</p></a>
+                <a href="./updates.html"><p>Updates</p></a>
+                <a href="../legal/terms.html", target="_blank"><p>Terms Of Service</p></a>
+                <a href="../legal/privacy.html", target="_blank"><p>Privacy Policy</p></a>
+            </div>
+            <div class="wiki-content">
+                <div class="wiki-content-container">
+                    <div class="content-header">
+                        <h1>Commands</h1>
+                        <hr>
+                    </div>
+                    <div class="wiki-content-block">
+                        <h2>Slash Commands</h2>
+                        <p>Meta is equipped with Discord Slash Commands. All of the commands are usuable with the <b class="command">/command</b> format. Some special / secret / easter-egg commands could be with prefixes.</p>
+                        <br>
+                        <hr>
+
+                        <h2 id="server">Server Commands</h2>
+                        <div class="commands", id="setup">
+                            <div class="commandbox">
+                                <b class="heading-cmd">/setup <x class="permissionBox-admin">Administrator</x></b>
+
+                                <p> <i>
+                                    Set up Meta is your server. This single command is all you need to run, to make your server safer! <br> <br>
+
+                                    <b id="red">Without setup the bot will not function in your server! </b>
+                                </i> </p>
+                                <br>
+                                <div class="utilitybox">
+                                    <z class="type">Inputs:</z> <br><br>
+                                    <x class="item">admin-logs</x> - The channel where all of the sensitive logs will be sent. <br><br>
+                                    <x class="item">mod-logs</x> - Channel where all type of Moderation logs will be sent. <br><br>
+                                    <x class="item">mod-rank</x> - The rank that Meta <b>will</b> monitor and take action on if user has the rank.
+                                </div>
+                            </div>
+
+                            <div class="commandbox", id="settings">
+                                <b class="heading-cmd">/settings <x class="permissionBox-admin">Administrator</x></b>
+
+                                <p> <i>
+                                    Get a quick overview of your server Meta Settings. This command lets you manage all the protection systems and configurations. <br>
+                                    Click on any of the buttons and start protecting your server like a true administrator!
+                                </i> </p>
+                                <br>
+                                <div class="utilitybox-btn">
+                                    <z class="type">Buttons:</z> <br><br>
+                                    <x class="item-btn-primary">Anti Mod Grief</x> - Configurate the <a href="./wiki/anti-mod-grief.html">Anti Mod Grief Protection System</a>. <br><br>
+                                    <x class="item-btn-primary">Anti Alt</x> - Modify the Meta <a href="./wiki/anti-alt.html">Anti Alt Protection System</a>. Make sure there are no fake accounts in your server.<br><br>
+                                    <x class="item-btn-primary">Malicious Bot</x> - Enable the advanced <a href="./wiki/malicious-bot-scanner.html">Malicious Bot Scanner</a> to protect your server. <br><br>
+                                    <x class="item-btn-primary">Automod</x> - Choose the setup of your Discord <a href="./wiki/automod.html">AutoMod</a> rules. Enable different rules and create them with 1 single click.
+                                </div>
+                            </div>
+
+                            <div class="commandbox", id="scan">
+                                <b class="heading-cmd">/scan <x class="permissionBox-admin">Administrator</x></b>
+
+                                <p> <i>
+                                    Scan your server and get a detailed overview of the channels, roles, administrators, alt accounts and much more. <br> <br>
+
+                                    Meta will also check your server for flaws and gives an overall protection score from 1 - 100 scale. To perfect your score, Meta gives you a list of issues on how you can improve the score. <br> <br>
+                                
+                                    Learn more about scanning <a href="./wiki/scanning.html">here...</a>
+                                </i> </p>
+                                <br>
+                                <div class="utilitybox-btn">
+                                    <z class="type">Buttons:</z> <br><br>
+                                    <x class="item-btn-primary">New Accounts</x> - Get a summary of <b>all accounts</b> that are considered to be alt accounts. <br><br>
+                                    <x class="item-btn-danger">Dangerous Roles</x> - List of <b>all the roles</b> that are considered to be <a href="./wiki/dangerous-roles.html">Dangerous Roles</a>. <br><br>
+                                    <x class="item-btn-success">Admins</x> - Get a list of all the users who have <x class="command">Administrator</x> permissions in the server. <br><br>
+                                    <x class="item-btn-secondary">Bots</x> - See every <b>Discord Bot / App</b> that is in your server.
+                                </div>
+                            </div>
+
+                            <div class="commandbox", id="inspect">
+                                <b class="heading-cmd">/inspect <x class="permissionBox-casual">Everyone</x></b>
+
+                                <p> <i>Get a detailed overview on someones Discord profile. From their activity to server roles, this command shows you all of the stats.</i> </p>
+                                <br>
+                                <div class="utilitybox">
+                                    <z class="type">Input:</z> <br><br>
+                                    <x class="item">user</x> - Choose an user whose profile you'd like to inspect.
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <h2 id="moderation">Moderation Commands</h2>
+
+                            <div class="commandbox", id="ban">
+                                <b class="heading-cmd">/ban <x class="permissionBox-mod">Moderator</x></b>
+
+                                <p> 
+                                    <i>Ban someone from the server and get all of the details instantly. Keep it clean, organized and professional.</i> <br><br>
+
+                                    Ban logs will be sent into mod-logs channel. <br>
+                                    Banned user will be notified about the ban and the reason of the ban. <br> 
+                                    Moderator who went through with the ban will get insta overview as an "only you can see" message.
+                                </p>
+                                <br>
+                                <div class="utilitybox">
+                                    <z class="type">Inputs:</z> <br><br>
+                                    <x class="item">user</x> - Choose the user who you'd like to ban from the server. <br><br>
+                                    <x class="item">reason</x> - Give a reason for the ban. Anything decent fits ;) <br><br>
+                                    <x class="item">proof</x> <y class="optional">optional</y> - Add an image of proof for others to see. Proof is included in log message if given. 
+                                </div>
+                            </div>
+
+                            <div class="commandbox", id="unban">
+                                <b class="heading-cmd">/unban <x class="permissionBox-mod">Moderator</x></b>
+                                <p> 
+                                    <i>Revoke a ban from a user whose already banned. Keep your server up-to-date and beautiful with amazing design.</i> <br><br>
+                                    Unban logs will be sent into mod-logs channel. <br>
+                                    Unbanned user <b id="red"> will not</b> be notified about the unban.<br> 
+                                    Moderator who went through with the unban will get insta overview as an "only you can see" message.
+                                </p>
+                                <br>
+                                <div class="utilitybox">
+                                    <z class="type">Inputs:</z> <br><br>
+                                    <x class="item">id</x> - <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID", target="_blank">Discord ID</a> of the user you'd like to unban from the server.<br><br>
+                                    <x class="item">reason</x> - Give the unban it's very own reason. Be creative!
+                                </div>
+                            </div>
+
+                            <div class="commandbox", id="mute">
+                                <b class="heading-cmd">/mute <x class="permissionBox-mod">Moderator</x></b>
+
+                                <p> <i>
+                                    Time someone out in your server with clean and professional responses and actions. <br>
+                                    Make people unable to chat and join voice channels in your server. Meta uses Discords Timeout feature to mute users.
+                                    </i> 
+                                    <br>
+                                    <br>
+                                    Mute logs will be sent into mod-logs channel. <br>
+                                    Muted user will be notified about the mute.<br> 
+                                    Moderator who went through with the mute will get insta overview as an "only you can see" message.
+                                </p>
+                                <br>
+                                <div class="utilitybox">
+                                    <z class="type">Inputs:</z> <br><br>
+                                    <x class="item">user</x> - Choose the user you'd like to mute. <br><br>
+                                    <x class="item">time</x> - For how long you'd like to mute the user. <x class="number-only">Number Only</x> <br><br>
+                                    <x class="item">time-unit</x> - Choose the unit. Seconds, minutes, hours or days. <br><br>
+                                    <x class="item">reason</x> - Give the mute it's reason, cannot mute for no reason right? <br><br>
+                                    <x class="item">proof</x> <y class="optional">optional</y> - Add a image as proof for others to see. Proof is included in the log if given. 
+                                </div>
+                            </div>
+
+                            <div class="commandbox", id="unmute">
+                                <b class="heading-cmd">/unmute <x class="permissionBox-mod">Moderator</x></b>
+
+                                <p> <i>
+                                    Make removing a timeout easy, clean and professional. Remove a timeout from an user with 1 single command, fast and easy.
+                                    <br>
+                                    <br>
+                                    Unmute logs will be sent into mod-logs channel. <br>
+                                    Umuted user will be notified about the unmute.<br> 
+                                    Moderator who went through with the unmute will get insta overview as an "only you can see" message.
+                                </i> </p>
+                                <br>
+                                <div class="utilitybox">
+                                    <z class="type">Inputs:</z> <br><br>
+                                    <x class="item">user</x> - The user who you'd like to unmute. <br><br>
+                                    <x class="item">reason</x> - Give the unmute action a reason. Improvising is allowed!
+                                </div>
+                            </div>
+
+                            <div class="commandbox", id="kick">
+                                <b class="heading-cmd">/kick <x class="permissionBox-mod">Moderator</x></b>
+
+                                <p> <i>Don't want to ban them but mute just doesn't do it? Kick the user from your server while staying professional and organized.</i> </p>
+                                <br>
+                                <div class="utilitybox">
+                                    <z class="type">Inputs:</z> <br><br>
+                                    <x class="item">user</x> - The user who shall be kicked from the server. <br><br>
+                                    <x class="item">reason</x> - Give the kick action a cool and reasonable reason. <br><br>
+                                    <x class="item">proof</x> <y class="optional">optional</y> - Add a image as proof for others to see. Proof is included in the log if given. 
+                                </div>
+                            </div>
+
+                            <hr>
+
+                            <h2 id="casual">Casual Commands</h2>
+
+                            <div class="commandbox", id="ping">
+                                <b class="heading-cmd">/ping <x class="permissionBox-casual">Everyone</x></b>
+
+                                <p> <i>Whenever the bot is online but is responding slowly, it's best to check if the issue is on Metas side. Check the apps ping with this command!</i> </p>
+
+                                <div class="effect">
+                                    <h3>⭐ Mythic Magic ⭐</h3>
+                                    <p><i>There is a 1% chance to get a special, super duper rare Mythic response when running this command. If you manage to be the one lucky fella, take a screenshot and send it to the Meta Team over at the <a href="https://discord.gg/Rc8DgBBpsx">Support Server</a>. You'll receive a cool little suprize / reward for it.</i></p>
+                                </div>
+                            </div>
+
+                            <div class="commandbox", id="help">
+                                <b class="heading-cmd">/help <x class="permissionBox-casual">Everyone</x></b>
+
+                                <p> <i>Getting started with Meta? Don't worry, we have everything ready for you to start protecting your server! Check out the help command to get the most forward and easiet help directions.</i> </p>
+
+                                <div class="utilitybox-btn">
+                                    <z class="type">Buttons:</z> <br><br>
+                                    <x class="item-btn-secondary">Commands</x> - Link to this same command introduction page :) <br><br>
+                                    <x class="item-btn-secondary">Support</x> - A quick way to join our <a href="https://discord.gg/Rc8DgBBpsx">Support Server</a>. <br><br>
+                                    <x class="item-btn-secondary">Website</x> - Shortcut from Discord to this webpage home page! 
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="wiki-bookmark">
+                <div class="wiki-bookmark-content">
+                    <a href="#server"><h4>Server Commands</h4></a>
+                    <a href="#setup"><p>Setup</p></a>
+                    <a href="#settings"><p>Settings</p></a>
+                    <a href="#scan"><p>Scan</p></a>
+                    <a href="#inspect"><p>Inspect</p></a>
+                    <a href="#moderation"><h4>Moderation Commands</h4></a>
+                    <a href="#ban"><p>Ban</p></a>
+                    <a href="#unban"><p>Unban</p></a>
+                    <a href="#mute"><p>Mute</p></a>
+                    <a href="#unmute"><p>Unmute</p></a>
+                    <a href="#kick"><p>Kick</p></a>
+                    <a href="#casual"><h4>Casual Commands</h4></a>
+                    <a href="#ping"><p>Ping</p></a>
+                    <a href="#help"><p>Help</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-modules">
+
+        <div class="footer">
+
+          <div class="tulp">
+            <h3>Meta</h3>
+            <a href="./about.html">About Us</a> <br>
+            <a href="https://discord.gg/Rc8DgBBpsx">Discord</a> <br>
+          </div>
+  
+          <div class="tulp">
+            <h3>Links</h3> 
+            <a href="./plus.html">Meta Plus</a> <br>
+            <a href="https://github.com/MetaBot-Development">Github</a> 
+          </div>
+  
+          <div class="tulp">
+            <h3>Legal</h3>
+            <a href="../../legal/terms.html">Terms</a> <br>
+            <a href="../../legal/privacy.html">Privacy</a> <br>
+          </div>
+
+        </div>
+
+        <div class="cc">
+          <a href="../../home.html">Meta Group &copy 2024</a>
+        </div>
+
+
+      </div>
+      
+</body>
+</html>
+
+<script src="./javascript/dropdown.js"></script>

@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta property="og:title" content="Meta Auto Moderation System">
+    <meta property="og:description" content="Protect your server from the most common and needed things such as racism, server promotions, self botting and anti rule34 with only 1 click.">
+    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1011355084514394164/1232259786297577502/lightbub.jpeg?ex=6628cedb&is=66277d5b&hm=db16acda4ff0b0bd695481dedb737fefe8d7ce2a156752677dbc378fcc09170f&">
+    <meta property="og:url" content="https://meta-bot.xyz/">
+    <meta property="og:type" content="website">
+    <meta property="og:image:type" content="image/jpeg">
+    <meta property="og:image:width" content="128">
+    <meta property="og:image:height" content="128"> 
+    <meta name="theme-color" content="#5100FF">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="../../css/footer.css" rel="stylesheet">
+    <link href="../../css/wiki-doc.css" rel="stylesheet">
+    <link rel="icon" href="../../images/meta.ico">
+    <title>Meta | Anti Alt</title>
+</head>
+<body>
+    <div class="wiki-page">
+        <div class="wiki-heading">
+            <img src="../../images/Meta.png">
+<h1>Meta Protection</h1>
+            <div class="links-wiki-quick">
+              <p>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", target="_blank"><ul>Invite </ul></a>
+                <a href="https://discord.gg/Rc8DgBBpsx", target="_blank"><ul>Support</ul></a>
+                <a href="https://top.gg/bot/980436688260182016", target="_blank"><ul>Top.gg</ul></a>
+              </p>
+            </div>
+            <div class="mobile-menu">
+                <a href="../menu.html" id="mobile-menu-btn"><i class="fa fa-solid fa-bars"></i> Menu</a>
+            </div>
+        </div>
+        <div class="wikipedia-struckture">
+            <div class="wiki-menu">
+                <a href="../home.html"><p>Home</p></a>
+                <a href="../about.html"><p>About Meta Protection Bot</p></a>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", target="_blank"><p>Invite</p></a>
+                <a href="https://discord.gg/Rc8DgBBpsx", target="_blank"><p>Support</p></a>
+                <a href="./anti-mod-grief.html"><p>Anti Mod Grief</p></a>
+                <a href="./anti-alt.html"><p><b class="wiki-this-page">Anti Alt Detector</b></p></a>
+                <style>
+                    .wiki-this-page {color: rgb(54, 99, 221); }
+                </style>
+                <a href="./malicious-bot-scanner.html"><p>Malicious Bot Scanner</p></a>
+                <a href="./automod.html"><p>AutoMod with Discord</p></a>
+                <a href="../commands.html"><p>Commands</p></a>
+                <a href="./dangerous-roles.html"><p>Dangerous Roles</p></a>
+                <a href="./meta-roles.html"><p>Meta Roles</p></a>
+                <a href="../plus.html"><p>Meta Plus</p></a>
+                <a href="../updates.html"><p>Patch Notes</p></a>
+                <a href="../legal/terms.html", target="_blank"><p>Terms Of Service</p></a>
+                <a href="../legal/privacy.html", target="_blank"><p>Privacy Policy</p></a>
+            </div>
+            <script>
+                let be = "this"
+            </script>
+            <div class="wiki-content">
+                <div class="wiki-content-container">
+                    <div class="content-header">
+                        <h1>Anti Alt Detector </h1>
+                        <hr>
+                    </div>
+                    <div class="wiki-content-block", id="antialt">
+                        <h2>What is Anti Alt Detection</h2>
+                        <p>
+                            Alt accounts are widely known as "second" accounts, usually used for actions that a user doesn't want / cannot do on their main account. Users can use alt accounts to evade bans, collect something / comeple something to gain personal benefit or just do malicious actions without getting punished on their main account. <br><br>
+
+                            Alt accounts are usually easy to detect, by looking at their name, profile or bio, you could figure it out, but the easiest way is the account age. Alt accounts are usually made in bulk and fast, meaning their account age is young. Meta takes advantage of such issues and tries to find / filter out the accounts that are suspiciously young. <br><br>
+
+                            By enabling the Anti Alt Detection System, Meta will scan each account that joins the server and notifies server staff and the user if they are considered to be an alt account.
+                        </p>
+                        <div class="wiki-info-box-yellow">
+                            <div class="wiki-inside-info-box">
+                                <h3><i class="fa fa-info-circle"></i> Permission Warning</h3>
+                                <p>Users with the <b class="command">Administrator</b> permissions will be ignored by Meta. Administrators can change the configurations of the module.</p>
+                            </div>
+                        </div>
+                        <div class="wiki-info-box-green">
+                            <div class="wiki-inside-info-box">
+                                <h3>Action Logs</h3>
+                                <p>All Anti Alt Detection logs will be sent into the server <b class="command">admin-logs</b> channel. You <b>cannot</b> change the logging channel for Anti Alt Detector.</p>
+                            </div>
+                        </div>
+                        <div class="wiki-info-box">
+                            <div class="wiki-inside-info-box">
+                                <h3><i class="fa fa-info-circle"></i> Why we recommend Alt Detectors?</h3>
+                                <p>
+                                    Based on our statistics, Meta has found over 7000 suspected Alt Accounts in 290+ servers combined. This number is very large considering the size of the servers, meaning that the use of alt accounts is wide in all type of servers. 
+                                </p>
+                            </div>
+                        </div>
+
+                        <p>
+                            Check out the video tutorial on how to enable Anti Alt Detection System:
+                        </p>
+                        <div class="wiki-video-box", id="enable">
+                            <div class="wiki-inside-video-box">
+                                <video  controls id="video">
+                                    <source src="../images/videos/antialt-setup.mp4" type="video/mp4">
+                                  </video>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="wiki-content-block", id="rules">
+                        <h2>Anti Alt Rules</h2>
+                        <div class="subtext", id="meta">
+                            <h3>Young Account</h3>
+                            <p>
+                                An account that has joined your server, but is suspiciously young. The paramater of how young can an account be, can be setted by you.
+                            </p>
+                        </div>
+                        <br>
+                        <div class="subtext", id="meta">
+                            <h3>Suspicious Username</h3>
+                            <p>
+                                If the account has a known scamming / suspicious name. This feature is created so those accounts wont be kicked (like automod would), but the staff will be notified.
+                            </p>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="wiki-content-block", id="modify">
+                        <h2>Modify Anti Alt Detector</h2>
+                        <p>
+                            You can edit the day count on Anti Alt. The day count is the amount of days the account must be old, inorder to <b>not be</b> considered to be an alt account. <br><br>
+
+                            By deafult, the days count is set to <b class="command">2 days</b>
+                        </p>
+                        <div class="wiki-info-box-white">
+                            <div class="wiki-inside-info-box">
+                                <h3>EXAMPLE:</h3>
+                                <p>
+                                    If the day count is <b class="command">5 days</b>, then <b>all</b> accounts that are <b>younger</b> than <b class="command">5 days</b> are considered to be Alt Accounts.
+                                </p>
+                            </div>
+                        </div>
+                        <p>
+                            Check out the video tutorial on how to change the day count:
+                        </p>
+                        <div class="wiki-video-box", id="tutorial1">
+                            <div class="wiki-inside-video-box">
+                                <video  controls id="video">
+                                    <source src="../images/videos/anti-alt-modify.mp4" type="video/mp4">
+                                  </video>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+
+                    <div class="wiki-content-block", id="kicker">
+                        <h2>Automatically Kick Alt Accounts <a href="./plus.html" id="premium">Meta Plus</a></h2>
+                        <p>
+                            Have a busy server that is struggeling with Alt Accounts constantly joining? We're here to help out. <a href="./plus.html">Meta Plus</a> offers automatic alt kicker, that does all the time consuming kicking itself. <br> <br>
+                            
+                            If Meta consideres an account to be an Alt Account, and the automatic kicker is <b>enabled</b>, the account will be kicked, a notification will be sent to the Moderation team and the user itself, explaining why they were kicked and how old their account is. <br><br>
+
+                            This feature is perfect when you do not want fresh / newly made accounts in your server, everything will be logged into the Administrator logs.
+                        </p>
+                        <div class="wiki-info-box-red">
+                            <div class="wiki-inside-info-box">
+                                <h3><i class="fa fa-info-circle"></i> Permissions Needed</h3>
+                                <p>Make sure Meta has all the necessary permissions, if you're not sure, try giving the app Administrator permissions.</p>
+                            </div>
+                        </div>
+                        <p>
+                            Check out the video tutorial on how to enable Automatic Alt Kicker:
+                        </p>
+                        <div class="wiki-video-box", id="tutorial2">
+                            <div class="wiki-inside-video-box">
+                                <video  controls id="video">
+                                    <source src="../images/videos/anti-alt-kicker.mp4" type="video/mp4">
+                                  </video>
+                            </div>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+            <div class="wiki-bookmark">
+                <div class="wiki-bookmark-content">
+                    <a href="#antialt"><h4>What is Anti Alt</h4></a>
+                    <a href="#enable"><p>How to enable</p></a>
+                    <a href="#rules"><h4>Rules</h4></a>
+                    <a href="#modify"><h4>Modify Anti Alt</h4></a>
+                    <a href="#tutorial1"><p>How to modify</p></a>
+                    <a href="#kicker"><h4>Automatic Kicker</h4></a>
+                    <a href="#tutorial2"><p>How to enable</p></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-modules">
+
+        <div class="footer">
+
+          <div class="tulp">
+            <h3>Meta</h3>
+            <a href="../about.html">About Us</a> <br>
+            <a href="https://discord.gg/Rc8DgBBpsx">Discord</a> <br>
+          </div>
+  
+          <div class="tulp">
+            <h3>Links</h3> 
+            <a href="../plus.html">Meta Plus</a> <br>
+            <a href="https://github.com/MetaBot-Development">Github</a> 
+          </div>
+  
+          <div class="tulp">
+            <h3>Legal</h3>
+            <a href="../../legal/terms.html">Terms</a> <br>
+            <a href="../../legal/privacy.html">Privacy</a> <br>
+          </div>
+
+        </div>
+
+        <div class="cc">
+          <a href="../../home.html">Meta Group &copy 2024</a>
+        </div>
+
+
+      </div>
+      
+</body>
+</html>

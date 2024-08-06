@@ -1,0 +1,254 @@
+.plus-intro {
+    border-radius: 20px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(to top right, #bf00d0 5%, #3478ff 40%, #0044ff,  #5100ff 90%);
+    padding: 20px;
+    margin-left: 15%;
+    margin-top: 5%;
+}
+
+.intro h2 {
+    font-family: 'Arial Narrow Bold', sans-serif;
+    font-size: 35px;
+    width: 85%;
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+    margin-left: 10%;
+}
+
+.intro-text {
+    padding: 0%;
+    font-size: 20px;
+
+}
+
+#intro-text-heading {
+    padding: 2%;
+    background: linear-gradient(to right, rgba(174, 144, 255, 0), rgba(207, 159, 255, 0.271),  rgba(174, 144, 255, 0));
+}
+
+.buy-plus-btn-text {
+    border: solid 1px white;
+    border-radius: 5px;
+    width: 25%;
+    margin-left: 35%;
+    margin-bottom: 5%;
+    padding: 2%;
+    text-decoration: none;
+    color: white;
+    font-weight: 550;
+}
+
+.buy-plus-btn :hover {
+    background-color: rgba(225, 147, 249, 0.199);
+    transition: .3s;
+}
+
+#plus-intro-bottom {
+    margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+    .plus-intro {
+        width: 82%;
+        margin-left: 6%;
+    }
+
+}
+
+@media only screen and (max-width: 980px) {
+
+    .plus-intro {
+        width: 82%;
+        margin-left: 6%;
+    }
+
+    .buy-plus-btn-text {
+        border: solid 1px white;
+        border-radius: 5px;
+        width: 25%;
+        margin-left: 35%;
+        margin-bottom: 5%;
+        padding: 2%;
+        text-decoration: none;
+        color: white;
+        font-weight: 550;
+        font-size: 30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.meta-plans {
+    display: flex;
+    padding: 1%;
+    margin-top: 10%;
+    justify-content: center;
+    gap: 10%
+}
+
+.original-plan, .plus-plan {
+    width: 40%;
+    border-radius: 25px;
+}
+
+.original-plan {
+    border: 1px solid rgb(0, 42, 255);
+    background: linear-gradient(to top right, rgba(99, 0, 199, 0.441) 5%,  rgb(28, 96, 255));
+}
+
+.plus-plan {
+    border: 1px solid rgb(255, 255, 255);
+    background: linear-gradient(to top right, rgba(0, 255, 174, 0.697) 1%,  rgba(0, 21, 255, 0.725) 30%,  rgba(221, 0, 255, 0.626) 99%);
+}
+
+.plan-heading {
+    display: flex;
+}
+
+.heading-text {
+    padding-top: 3%;
+    padding-left: 6%;
+
+}
+
+.heading-text h2 {
+    padding: 0;
+    font-size: 40px;
+    margin-bottom: 0;
+}
+
+.heading-text h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+}
+
+.heading-img img {
+    width: 60%;
+    height: 90%;
+    margin-left: 30%;
+    margin-top: 6%;
+    margin-bottom: 0;
+}
+
+.heading-img-2 img{
+    width: 45%;
+    height: 85%;
+    margin-left: 45%;
+    margin-top: 6%;
+    margin-bottom: 0;
+}
+
+.plan-price {
+    margin-left: 6%;
+    margin-top: -10%;
+    font-size: 20px;
+}
+
+.perk {
+    padding: 1%;
+    margin: 0;
+    font-size: 17px;
+}
+
+.perk-p {
+    padding: 1%;
+    margin: 0;
+    font-size: 17px;
+}
+
+.perk-list {
+    margin-top: 15%;
+}
+
+.selectedbox {
+    text-align: center;
+    border: 1px rgba(255, 255, 255, 0.459) solid;
+    border-radius: 5px;
+    width: 80%;
+    padding: 3%;
+    margin: 6%;
+    margin-top: 36%;
+    margin-left: 7%;
+    color: rgba(255, 255, 255, 0.459);
+    background-color: rgba(255, 255, 255, 0.068);
+}
+
+.selectedbox-plus {
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+    padding: 3%;
+    margin: 6%;
+    margin-left: 7%;
+    color: rgb(255, 255, 255);
+    background: radial-gradient(rgba(208, 0, 255, 0.552) 20%,  rgb(251, 0, 255) );
+}
+
+.selectedbox-plus:hover {
+    transition: 1s;
+    background-color: rgb(255, 0, 0)
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+
+    .meta-plans {
+        display: inline-block;
+        padding: 1%;
+        margin-top: 10%;
+        justify-content: center;
+        gap: 10%
+    }
+
+    .original-plan, .plus-plan {
+        width: 80%;
+        border-radius: 25px;
+        margin-bottom: 5%;
+        margin-left: 10%;
+    }
+
+
+
+}
+
+@media only screen and (max-width: 980px) {
+
+    .meta-plans {
+        display: inline-block;
+        padding: 1%;
+        margin-top: 10%;
+        justify-content: center;
+        gap: 10%
+    }
+
+    .original-plan, .plus-plan {
+        width: 80%;
+        border-radius: 25px;
+        margin-bottom: 5%;
+        margin-left: 10%;
+    }
+
+}
