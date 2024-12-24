@@ -9,8 +9,8 @@
 }
 
 #up-green {
-    background-color: rgba(0, 0, 255, 0.215);
-    border-left: 5px solid blue;
+    background-color: rgba(81, 255, 0, 0.215);
+    border-left: 5px solid rgb(0, 176, 15);
 }
 
 .update-box {

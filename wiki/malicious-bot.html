@@ -16,7 +16,7 @@
     <link href="../../css/footer.css" rel="stylesheet">
     <link href="../../css/wiki-doc.css" rel="stylesheet">
     <link rel="icon" href="../../images/meta.ico">
-    <title>Meta | Malicious Bots</title>
+    <title>Meta | Malicious Bot</title>
 </head>
 <body>
     <div class="wiki-page">
@@ -42,7 +42,7 @@
                 <a href="https://discord.gg/Rc8DgBBpsx", target="_blank"><p>Support</p></a>
                 <a href="./anti-mod-grief.html"><p>Anti Mod Grief</p></a>
                 <a href="./anti-alt.html"><p>Anti Alt Detector</p></a>
-                <a href="./malicious-bot-scanner.html"><p><b class="wiki-this-page">Malicious Bot Scanner</b></p></a>
+                <a href="./malicious-bot.html"><p><b class="wiki-this-page">Malicious Bot Scanner</b></p></a>
                 <style>
                     .wiki-this-page {color: rgb(54, 99, 221); }
                 </style>
@@ -58,14 +58,27 @@
             <div class="wiki-content">
                 <div class="wiki-content-container">
                     <div class="content-header">
-                        <h1>Malicious Bot Scanner</h1>
+                        <h1>Malicious Bot</h1>
                         <hr>
                     </div>
                     <div class="wiki-content-block">
-                        <h2 id="about">What is Malicious Bot Scanner?</h2>
+                        <h2 id="about">What is Malicious Bot Protection System?</h2>
                         <p>
-                            This system works behind the scenes and scans each bot that is added to your server. Meta works with the community and has gathered a list of known malicious bots that either scam people, destroy / nuke servers or do harm in any other way. <br><br>
-                            This system also limits the ability to add bots to only people with the Administrator permissions.
+                            Malicious Bot Protection System (MBPS) is an advanced Anti-Nuke protection module, that provides it's users with 3 great systems to protect their server from malicious applications or Discord bots. <br> <br> 
+                            The MBPS allows it's user to enable 3 different protection modules:<br>
+                            <div class="subtext", id="meta">
+                                <h3>Scan Bots</h3>
+                            </div>
+                            <br>
+                            <div class="subtext", id="meta">
+                                <h3>Admin Only</h3>
+                            </div>
+                            <br>
+                            <div class="subtext", id="meta">
+                                <h3>Notifications</h3>
+                            </div>
+                            <br>
+                            MBPS works behind the scenes 24/7 and takes action only, when specific triggers have been pulled by an action. To learn more about the system triggers and how they work, continue reading this page!
 
                         </p>
                         <div class="wiki-info-box-yellow">
@@ -99,19 +112,31 @@
                             </div>
                         </div>
                         <hr>
-                        <h2 id="admin">Administrator Only</h2>
+                        <h2 id="scanbot">Scan Bots</h2>
                         <p>
-                            When Malicious Bot Detector is enabled, only people with the <b class="command">Administrator</b> permissions can add bots / apps <b>into the server</b>, user side clients are not included in this system. <br> <br>
-                            By deafult, people with the Manage Guild can add any application to your server. To make the security more advanced, Meta Group recommends to enable the Malicious Bot Detector, to only allow needed bots into your server.
+                            Meta Group has gathered and will keep gathering all of the known malicious bots into the Meta Protection Database (MPD). If the Scan Bots module has been enabled in a server. Meta will scan every single to bot that is added into the server, to make sure it is not in the MPD. <br> <br>
+                            If an app / bot has been found in the MPD, it will be immediately <a href="./meta-roles.html">Meta Muted</a> in the server. <br>
+                            In case the server management wants to continiue using the added app / bot, they can simply <b id="red">remove the Meta Mute</b> role from the application. <b id="red">DO AT YOUR OWN RISK</b>. In most cases, this is not recommended.
                         </p>
                         <br>
                         <hr>
-                        <h2 id="knownbots">Known Malicious Bots</h2>
+                        <h2 id="admin">Administrator Only</h2>
                         <p>
-                            Meta has gathered and will keep gathering all the malicious bots into it's database. The more you support Meta, the more safer your server is. When inviting one of the bots that has found a place in our database, Meta will let you know about it immediately. <br> <br>
+                            The <b>Admin Only</b> module limites the permission of "Adding applications / Discord bots" into your server. By deafult, Discord allows users to add apps / bots whenever the given user has Manage Guild permission. <br> <br>
+                            With this module enabled, you can limit this permission to only users with the Administrator permissions. This means that even if the user has Manage Guild permission, they cannot add apps / bots into the server. <br> <br>
+                            Whenever someone (who is not an Administrator) adds an app / bot, they will be <b id="red">Meta Muted</b> and the added bot will be <b id="red">Banned</b> from the server for security reasons.
+                            We recommended this module, because the permission Administrator is already the most powerful permission, so whoever has it, must be a trusted member of the community. <br><br>
+                            Adding all kind of different bots could harm your server, so it's best to limit it to the most trusted users in the server.
+                        </p>
+                        <br>
+                        <hr>
+                        <h2 id="notifybot">Notification Option</h2>
+                        <p>
+                            This module is not a protection system, we consider it as an informative system. <br> <br>
+                            Whenever an app / bot is added into your server, Meta will gather all of the information about the added bot / app and all of the information about the user who added the bot (adder). <br><br>
+                            All this info will be sent into your server log channel. <br><br>
 
-                            The list of malicious bots is gathered by Meta Team and verified by testing the apps / bots in private servers. <br>
-                            When an app if found to be malicious, your can still add it to your server <b>at your own risk, Meta has warned you about a possible grief.</b> We recommends you to not add any malicious bots.
+                            If you wish to get an informative embed whenever an app / bot has been added into your server, make sure to enable this feature!
                         </p>
                     </div>
                     <br>
@@ -120,10 +145,11 @@
             </div>
             <div class="wiki-bookmark">
                 <div class="wiki-bookmark-content">
-                    <a href="#about"><h4>What is MBS</h4></a>
+                    <a href="#about"><h4>What is MBPS</h4></a>
                     <a href="#tutorial"><p>Tutorial Video</p></a>
-                    <a href="#admin"><h4>Administrator Only</h4></a>
-                    <a href="#knownbots"><h4>Known Malicious Bots</h4></a>
+                    <a href="#scanbot"><h4>Scan Bots</h4></a>
+                    <a href="#admin"><h4>Admin Only</h4></a>
+                    <a href="#notifybot"><h4>Notify</h4></a>
 
                 </div>
             </div>
