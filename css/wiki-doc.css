@@ -805,7 +805,10 @@ body {
 .stat-box {
     background: linear-gradient(to top right, #bf00d0ae 5%, #3478ffb4 40%, #0044ffa3,  #5100ffad 90%);
     border-radius: 10px;
-    padding: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 0%;
     border: solid white 2px;
 }
 
