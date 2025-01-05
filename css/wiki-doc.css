@@ -186,12 +186,17 @@ body a:hover {
 /* Menu styles */
 .wiki-menu {
     position: fixed; /* Make the menu fixed */
-    width: 25%; /* Adjust the width of the menu */
+    top: 0; /* Start at the top of the screen */
+    left: -60%; /* Start off-screen on small screens */
+    width: 60%; /* Adjust the width of the menu on smaller screens */
     font-size: 16px;
     margin: 0;
-    height: 100%; /* Full height of the viewport */
+    height: 100vh; /* Full height of the viewport */
     overflow-y: auto; /* Scrollable if content overflows */
+    background-color: #040404; /* Add background to the menu */
     transition: left 0.3s ease-in-out; /* Smooth transition for left property */
+    z-index: 1000; /* Ensure menu is above other content */
+    padding-top: 20px; /* Add space from the top */
 }
 
 .wiki-menu p {
@@ -214,7 +219,7 @@ body a:hover {
 /* Responsive Design for Medium Screens (1000px - 1400px) */
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
     .wiki-menu {
-        width: 20%; /* Slightly reduce the width of the menu */
+        width: 25%; /* Slightly reduce the width of the menu */
     }
 
     .wiki-menu p {
@@ -234,7 +239,7 @@ body a:hover {
         width: 60%; /* Increase the width of the menu on small screens */
         font-size: 16px;
         margin: 0;
-        height: 100%;
+        height: 100vh; /* Full viewport height */
         overflow-y: auto;
         left: -60%; /* Start off-screen, will slide in with JS or interaction */
     }
@@ -256,7 +261,7 @@ body a:hover {
         width: 70%; /* Even wider menu on very small screens */
         font-size: 14px;
         margin: 0;
-        height: 100%;
+        height: 100vh; /* Full height of the viewport */
         overflow-y: auto;
         left: -70%; /* Start off-screen */
     }
@@ -270,6 +275,13 @@ body a:hover {
         font-size: 12px; /* Reduce font size further for smaller screens */
     }
 }
+
+/* Make sure the content doesn't overlap into the menu */
+.wiki-content {
+    margin-left: 25%; /* Leave space for the menu */
+    padding-bottom: 80px; /* Add space to avoid overlap with the footer */
+}
+
 
 
 
