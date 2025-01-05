@@ -244,46 +244,17 @@ body a:hover {
 /* For small to medium screens (max-width 980px) */
 @media only screen and (max-width: 980px) {
     .wiki-menu {
-        position: fixed;
-        width: 60%; /* Increase the width of the menu on small screens */
-        font-size: 16px;
-        margin: 0;
-        top: 80px; /* Keep the top margin from the navbar */
-        height: calc(100vh - 80px - 60px); /* Keep it scrollable and within viewport height */
-        left: -100%; /* Keep the menu off-screen initially */
-    }
-
-    .wiki-menu p {
-        width: 100%; /* Full width for menu items */
-        margin-left: 0; /* Align menu items properly */
-    }
-
-    .wiki-menu a {
-        font-size: 14px; /* Smaller font size for mobile */
+        display: none; /* Hide the menu on mobile screens */
     }
 }
 
 /* For very small screens (max-width 600px) */
 @media only screen and (max-width: 600px) {
     .wiki-menu {
-        position: fixed;
-        width: 70%; /* Even wider menu on very small screens */
-        font-size: 14px;
-        margin: 0;
-        top: 80px; /* Keep the top margin from the navbar */
-        height: calc(100vh - 80px - 60px); /* Keep it scrollable and within viewport height */
-        left: -100%; /* Keep the menu off-screen */
-    }
-
-    .wiki-menu p {
-        width: 100%; /* Full width for menu items */
-        margin-left: 0; /* Align properly */
-    }
-
-    .wiki-menu a {
-        font-size: 12px; /* Reduce font size further for smaller screens */
+        display: none; /* Hide the menu on mobile screens */
     }
 }
+
 
 
 
@@ -446,40 +417,15 @@ body a:hover {
 
 /* Responsive Design for Medium Screens (1000px - 1400px) */
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
-    /* Bookmark styles */
     .wiki-bookmark {
-        position: fixed;
-        width: 15%;
-        margin-left: 90%;
-    }
-
-    .wiki-bookmark-content p, h4 {
-        transition: background-color 0.2s;
-        padding: 3px;
-        padding-left: 3%;
-        width: 60%;
-        border-radius: 5px;
-        font-size: 15px; /* Adjust font size for medium screens */
-    }
-
-    .wiki-bookmark-content p:hover, h4:hover {
-        background-color: rgb(48, 48, 48);
-    }
-
-    .wiki-bookmark-content a {
-        text-decoration: none;
-        color: white;
-        border-radius: 5px;
+        display: none; /* Hide the menu on mobile screens */
     }
 }
 
 /* Responsive Design for Small Screens (Max-width 980px) */
 @media only screen and (max-width: 980px) {
     .wiki-bookmark {
-        position: fixed;
-        width: 15%;
-        margin-left: 90%;
-        right: -450px; /* Hide the bookmark off-screen on small screens */
+        display: none; /* Hide the menu on mobile screens */
     }
 }
 
@@ -970,12 +916,13 @@ body a:hover {
     }
 }
 
-/* For Small Screens (Max-width 980px) */
+/* For Small Screens (Max-width: 980px) */
 @media only screen and (max-width: 980px) {
     /* Video Styling */
     .wiki-inside-video-box video {
-        width: 100%; /* Ensures the video takes full width on smaller screens */
+        width: 110%; /* Make the video slightly wider than full width */
         height: auto; /* Maintains aspect ratio */
+        margin-left: -5%; /* Center the video by shifting it to the left */
     }
 
     /* Mobile Menu Button */
@@ -994,13 +941,16 @@ body a:hover {
 
     /* Video Container Adjustments */
     #video {
-        border-radius: 50px;
+        border-radius: 30px;
         padding-bottom: 0;
-        margin-bottom: -90%;
-        width: 100%; /* Ensures the video takes full width on mobile */
+        margin-bottom: -70%; /* Adjust the margin to give more space to the video */
+        width: 110%; /* Increase the width of the video container */
         height: auto; /* Adjusts height proportionally */
+        margin-left: -5%; /* Center the video container */
     }
 }
+
+
 
 /* Points Styling */
 #points {
