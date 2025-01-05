@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 body {
   background-color: #131313;
 }
@@ -57,60 +58,128 @@ body {
   padding: 5px;
 }
 
-
+/* For screens with max-width 980px */
 @media only screen and (max-width: 980px) {
-
   body {
     background-color: #131313;
   }
-  
+
+  .tos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 100%; /* Full width on smaller screens */
+    margin: 0 auto;
+    height: auto; /* Adjust height for smaller screens */
+    text-align: center;
+    padding: 20px; /* Reduced padding */
+  }
+
+  .tos-box {
+    background-color: rgb(39, 39, 39);
+    padding: 15px; /* Reduced padding for smaller screens */
+  }
+
+  .tos-box h1 {
+    text-align: center;
+    color: white;
+    padding: 5px;
+    border-bottom: 3px solid rgb(32, 32, 32);
+    font-size: 25px; /* Reduced font size for smaller screens */
+  }
+
+  .tos-box h2 {
+    text-align: left;
+    color: rgb(145, 209, 255);
+    padding-left: 15px; /* Reduced padding */
+    text-decoration: underline;
+    font-size: 20px; /* Reduced font size */
+  }
+
+  .tos-box p {
+    border: 3px;
+    color: white;
+    text-align: left;
+    padding: 15px; /* Reduced padding */
+    font-size: 16px; /* Slightly reduced font size */
+  }
+
+  .tos-box a {
+    color: #0d55fd;
+    text-decoration: none;
+  }
+
+  .tos-box a:hover {
+    color: #3f79ff;
+    text-decoration: none;
+  }
+
+  .difference {
+    border-left: 5px #4f4f4f solid;
+    background-color: rgba(81, 81, 81, 0.4);
+    padding: 5px;
+  }
+}
+
+/* For very small screens with max-width 480px */
+@media only screen and (max-width: 480px) {
+  body {
+    background-color: #131313;
+  }
+
   .tos {
     display: flex;
     flex-direction: column;
     justify-content: center;
     max-width: 100%;
     margin: 0 auto;
-    height: 90%;
+    height: auto;
     text-align: center;
-    padding: 30px;
+    padding: 10px; /* Even smaller padding for mobile screens */
   }
-  
+
   .tos-box {
     background-color: rgb(39, 39, 39);
+    padding: 10px; /* Even smaller padding */
   }
-  
+
   .tos-box h1 {
     text-align: center;
     color: white;
     padding: 5px;
     border-bottom: 3px solid rgb(32, 32, 32);
-    font-size: 25px;
+    font-size: 20px; /* Smaller font size for mobile */
   }
 
-  .tos-box h1 a{
-    color: white;
-  }
-  
   .tos-box h2 {
     text-align: left;
     color: rgb(145, 209, 255);
-    padding-left: 20px;
+    padding-left: 10px; /* Smaller padding */
     text-decoration: underline;
-    font-size: 20px;
+    font-size: 18px; /* Smaller font size */
   }
-  
+
   .tos-box p {
     border: 3px;
     color: white;
     text-align: left;
-    padding: 20px;
-    font-size: 15px;
+    padding: 10px; /* Smaller padding */
+    font-size: 14px; /* Smaller font size */
   }
-  
+
+  .tos-box a {
+    color: #0d55fd;
+    text-decoration: none;
+  }
+
+  .tos-box a:hover {
+    color: #3f79ff;
+    text-decoration: none;
+  }
+
   .difference {
     border-left: 5px #4f4f4f solid;
     background-color: rgba(81, 81, 81, 0.4);
     padding: 5px;
-  }     
-
+  }
 }

@@ -1,102 +1,120 @@
+/* General footer styling */
 .footer-modules {
     background-color: #040404;
     color: white;
     font-family: sans-serif;
-    justify-content: center;
     padding-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px; /* Add margin to ensure there's no overlap with the content */
 }
+
 .footer {
     display: flex;
     padding-top: 2%;
     padding-bottom: 2%;
-    justify-content: center;
-}
-
-.tulp {
-    padding: 0% 10% 0% 10%;
+    justify-content: space-between; /* Evenly distribute space */
+    flex-wrap: nowrap; /* Prevent wrapping, keep items side by side */
+    width: 100%;
     text-align: center;
 }
 
-.tulp h3{
-    font-size: 150%;
+.tulp {
+    padding: 0 10%;
+    text-align: center;
+    flex: 1 1 30%; /* Default width for each section */
+    min-width: 200px; /* Prevent columns from shrinking too much */
+    box-sizing: border-box; /* Ensure padding is accounted for */
+}
+
+.tulp h3 {
+    font-size: 1.5rem; /* Default font size for h3 */
     padding-bottom: 5%;
 }
 
-.tulp a{
-    font-size: 100%;
+.tulp a {
+    font-size: 1rem; /* Default font size for links */
     text-decoration: none;
     color: rgb(199, 199, 199);
 }
 
 .cc {
     text-align: center;
-    padding-top: .25%;
+    padding-top: 0.25%;
     padding-bottom: 0%;
+    width: 100%;
 }
 
 .cc a {
-    font-size: 100%;
+    font-size: 1rem; /* Default font size for cc links */
     text-decoration: none;
     color: rgb(199, 199, 199);
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1400px) {
-
-
-
-}
-
+/* For screens with max-width 980px */
 @media only screen and (max-width: 980px) {
-
     .footer-modules {
-        background-color: #040404;
-        color: white;
-        font-family: sans-serif;
-        justify-content: center;
         padding-bottom: 6%;
     }
+
     .footer {
-        display: flex;
+        flex-direction: row; /* Keep columns side by side */
         padding-top: 2%;
         padding-bottom: 2%;
-        justify-content: center;
+        justify-content: space-between;
     }
-    
+
     .tulp {
-        padding: 0% 5% 0% 5%;
+        padding: 0 5%; /* Adjust padding for smaller screens */
         text-align: center;
-    }
-    
-    .tulp h3{
-        font-size: 40px;
-        padding-bottom: 15%;
+        flex: 1 1 30%; /* Keep 3 columns, each 30% of the width */
     }
 
+    .tulp h3 {
+        font-size: 1.75rem; /* Adjusted font size for h3 */
+        padding-bottom: 10%;
+    }
 
-    
-    .tulp a{
-        font-size: 30px;
-        text-decoration: none;
-        color: rgb(199, 199, 199);
+    .tulp a {
+        font-size: 1.25rem; /* Adjusted font size for links */
     }
-    
-    .cc {
-        text-align: center;
-        padding-top: 2%;
-        padding-bottom: 0%;
-    }
-    
+
     .cc a {
-        font-size: 30px;
-        text-decoration: none;
-        color: rgb(199, 199, 199);
+        font-size: 1.25rem; /* Adjusted font size for cc links */
     }
-  
-
 }
 
+/* For very small screens with max-width 480px */
+@media only screen and (max-width: 480px) {
+    .footer-modules {
+        padding-bottom: 8%;
+    }
 
+    .footer {
+        flex-direction: row; /* Keep columns side by side */
+        padding-top: 2%;
+        padding-bottom: 2%;
+        justify-content: space-between;
+    }
 
+    .tulp {
+        padding: 0 3%; /* Further reduce padding */
+        flex: 1 1 30%; /* Keep 3 columns side by side */
+    }
 
+    .tulp h3 {
+        font-size: 1.5rem; /* Adjusted font size for h3 */
+        padding-bottom: 8%;
+    }
 
+    .tulp a {
+        font-size: 1.1rem; /* Adjusted font size for links */
+    }
+
+    .cc a {
+        font-size: 1.1rem; /* Adjusted font size for cc links */
+    }
+}
 

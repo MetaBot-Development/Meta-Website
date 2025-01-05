@@ -6,6 +6,14 @@ body {
     font-family: sans-serif;
 }
 
+body a {
+    text-decoration: none;
+    color: rgb(0, 153, 255);
+}
+
+body a:hover {
+    color: rgb(0, 55, 255);
+}
 
 /* Header styles */
 .wiki-heading {
@@ -14,6 +22,7 @@ body {
     position: relative;
     display: flex;
     align-items: center;
+    padding: 10px;
 }
 
 .wiki-heading img {
@@ -26,11 +35,12 @@ body {
 .wiki-heading h1 {
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
 }
 
 .links-wiki-quick {
     display: flex;
-    margin-left: 70%;
+    margin-left: auto;
 }
 
 .links-wiki-quick a {
@@ -44,60 +54,64 @@ body {
     color: rgb(29, 82, 229);
 }
 
-
 .wiki-heading ul {
     font-size: 20px;
 }
 
+/* Responsive Design for Medium Screens (1000px - 1400px) */
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
-
+    .wiki-heading h1 {
+        font-size: 26px;
+    }
 
     .links-wiki-quick {
-        display: flex;
-        margin-left: 40%;
+        margin-left: auto;
     }
-    
+
+    .wiki-heading img {
+        height: 60px;
+        width: 60px;
+    }
 }
 
+/* Responsive Design for Small Screens (Max-width 980px) */
 @media only screen and (max-width: 980px) {
-    
     .wiki-heading img {
         height: 80px;
         width: 80px;
-        margin-right: 10px;
-        margin-left: 10px;
     }
     
     .wiki-heading h1 {
         font-size: 60px;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         width: 100%;
     }
-    
+
     .links-wiki-quick {
         display: flex;
-        margin-left: -20%;
-        color: rgb(255, 255, 255);
         margin-left: -60%;
+        color: rgb(255, 255, 255);
         position: absolute;
-        
+        top: 10px;
+        left: 10px;
     }
-   
+
     .links-wiki-quick a {
         text-decoration: none;
         color: rgb(255, 255, 255);
         transition: color .3s;
-
     }
-    
-    
+
     .wiki-heading ul {
         font-size: 20px;
     }
-
 }
 
-
+/* For very small screens like phones (Max-width 600px) */
+@media only screen and (max-width: 600px) {
+    .wiki-heading h1 {
+        font-size: 40px;
+    }
+}
 
 
 
@@ -113,11 +127,51 @@ body {
 /* Main structure */
 .wikipedia-struckture {
     display: flex;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+    justify-content: space-between; /* Distribute space between items */
+    padding: 20px;
 }
 
 .wikipedia-struckture a {
     text-decoration: none;
     color: rgb(107, 171, 255);
+    transition: color 0.3s;
+}
+
+/* Responsive Design for Medium Screens (1000px - 1400px) */
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+    .wikipedia-struckture {
+        flex-direction: row; /* Keep items in a row on larger screens */
+        padding: 15px;
+    }
+
+    .wikipedia-struckture a {
+        font-size: 18px; /* Slightly larger text on medium screens */
+    }
+}
+
+/* Responsive Design for Small Screens (Max-width 980px) */
+@media only screen and (max-width: 980px) {
+    .wikipedia-struckture {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding: 10px;
+    }
+
+    .wikipedia-struckture a {
+        font-size: 16px; /* Smaller font size for mobile devices */
+    }
+}
+
+/* For very small screens like phones (Max-width 600px) */
+@media only screen and (max-width: 600px) {
+    .wikipedia-struckture {
+        flex-direction: column; /* Stack items vertically for phones */
+        padding: 5px;
+    }
+
+    .wikipedia-struckture a {
+        font-size: 14px; /* Smaller font size for very small screens */
+    }
 }
 
 
@@ -137,6 +191,7 @@ body {
     margin: 0;
     height: 100%; /* Full height of the viewport */
     overflow-y: auto; /* Scrollable if content overflows */
+    transition: left 0.3s ease-in-out; /* Smooth transition for left property */
 }
 
 .wiki-menu p {
@@ -156,49 +211,64 @@ body {
     background-color: rgb(48, 48, 48);
 }
 
+/* Responsive Design for Medium Screens (1000px - 1400px) */
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
-
     .wiki-menu {
-        position: fixed; /* Make the menu fixed */
-        width: 25%; /* Adjust the width of the menu */
-        font-size: 16px;
-        margin: 0;
-        height: 100%; /* Full height of the viewport */
-        overflow-y: auto; /* Scrollable if content overflows */
+        width: 20%; /* Slightly reduce the width of the menu */
     }
-    
+
     .wiki-menu p {
-        padding: 7px;
-        width: 70%;
-        border-radius: 5px;
-        margin-left: 5%;
-        transition: background-color 0.2s;
+        width: 80%; /* Increase width of the menu items */
+        margin-left: 10%;
     }
-    
+
     .wiki-menu a {
-        text-decoration: none;
-        color: white;
+        font-size: 18px; /* Increase font size slightly */
     }
-    
-    .wiki-menu p:hover {
-        background-color: rgb(48, 48, 48);
-    }
-
-
 }
 
+/* Responsive Design for Small Screens (Max-width 980px) */
 @media only screen and (max-width: 980px) {
-
     .wiki-menu {
-        position: fixed; /* Make the menu fixed */
-        width: 25%; /* Adjust the width of the menu */
+        position: fixed;
+        width: 60%; /* Increase the width of the menu on small screens */
         font-size: 16px;
         margin: 0;
-        height: 100%; /* Full height of the viewport */
-        overflow-y: auto; /* Scrollable if content overflows */
-        left: -450px;
+        height: 100%;
+        overflow-y: auto;
+        left: -60%; /* Start off-screen, will slide in with JS or interaction */
     }
 
+    .wiki-menu p {
+        width: 100%; /* Make the menu items take full width */
+        margin-left: 0; /* Align menu items properly */
+    }
+
+    .wiki-menu a {
+        font-size: 14px; /* Smaller font size for mobile */
+    }
+}
+
+/* For very small screens like phones (Max-width 600px) */
+@media only screen and (max-width: 600px) {
+    .wiki-menu {
+        position: fixed;
+        width: 70%; /* Even wider menu on very small screens */
+        font-size: 14px;
+        margin: 0;
+        height: 100%;
+        overflow-y: auto;
+        left: -70%; /* Start off-screen */
+    }
+
+    .wiki-menu p {
+        width: 100%; /* Full width for menu items */
+        margin-left: 0; /* Align properly */
+    }
+
+    .wiki-menu a {
+        font-size: 12px; /* Reduce font size further for smaller screens */
+    }
 }
 
 
@@ -268,7 +338,6 @@ body {
 }
 
 .wiki-video-box {
-
     height: 50vh;
     border-radius: 15px;
     margin-bottom: 5%;
@@ -279,33 +348,48 @@ body {
     margin-left: 2%;
 }
 
+/* Responsive Design for Medium Screens (1000px - 1400px) */
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
-
     /* Content styles */
     .wiki-content {
-        margin-left: 23%; /* Add left margin to make space for the fixed menu */
-        width: 70%;
+        margin-left: 23%; /* Adjust left margin for medium screens */
+        width: 70%; /* Adjust content width */
     }
 
     .wiki-content-container h1 {
-        font-size: 45px;
+        font-size: 45px; /* Adjust heading size */
         margin-bottom: 2%;
-     }
-
+    }
 }
 
+/* Responsive Design for Small Screens (Max-width 980px) */
 @media only screen and (max-width: 980px) {
-
     .wiki-content {
         margin-left: 10%; /* Add left margin to make space for the fixed menu */
-        width: 100%;
+        width: 100%; /* Full width for smaller screens */
     }
 
     .wiki-content-container h1 {
-        font-size: 55px;
+        font-size: 55px; /* Adjust heading size */
         margin-bottom: 2%;
-     }
+    }
+}
 
+/* For very small screens (Max-width 600px) */
+@media only screen and (max-width: 600px) {
+    .wiki-content {
+        margin-left: 5%; /* Reduce margin on very small screens */
+        width: 90%; /* Increase width for very small screens */
+    }
+
+    .wiki-content-container h1 {
+        font-size: 40px; /* Further reduce heading size for very small screens */
+        margin-bottom: 2%;
+    }
+
+    .wiki-video-box {
+        height: 40vh; /* Reduce height of video box for very small screens */
+    }
 }
 
 
@@ -334,15 +418,14 @@ body {
     background-color: rgb(48, 48, 48);
 }
 
-
 .wiki-bookmark-content a {
     text-decoration: none;
     color: white;
     border-radius: 5px;
 }
 
+/* Responsive Design for Medium Screens (1000px - 1400px) */
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
-
     /* Bookmark styles */
     .wiki-bookmark {
         position: fixed;
@@ -356,33 +439,28 @@ body {
         padding-left: 3%;
         width: 60%;
         border-radius: 5px;
-        font-size: 15px;
+        font-size: 15px; /* Adjust font size for medium screens */
     }
-
-
 
     .wiki-bookmark-content p:hover, h4:hover {
         background-color: rgb(48, 48, 48);
     }
-
 
     .wiki-bookmark-content a {
         text-decoration: none;
         color: white;
         border-radius: 5px;
     }
-
 }
 
+/* Responsive Design for Small Screens (Max-width 980px) */
 @media only screen and (max-width: 980px) {
-
     .wiki-bookmark {
         position: fixed;
         width: 15%;
         margin-left: 90%;
-        right: -450px;
+        right: -450px; /* Hide the bookmark off-screen on small screens */
     }
-
 }
 
 
@@ -391,6 +469,7 @@ body {
 
 
 
+/* Command styles */
 .command {
     border: solid 1px rgb(171, 171, 171);
     padding: 3px;
@@ -399,12 +478,14 @@ body {
     color: rgb(229, 231, 231);
 }
 
+/* Selection styles */
 .selection {
     display: flex;
     justify-content: center;
     text-align: center;
 }
 
+/* Box styles */
 .box {
     width: 100%;
     margin: 5%;
@@ -419,6 +500,7 @@ body {
     margin: 0;
 }
 
+/* Premium box styles */
 #premium {
     border: solid 3px rgb(255, 162, 0);
     border-radius: 10px;
@@ -427,7 +509,7 @@ body {
     color: rgb(255, 204, 0);
 }
 
-
+/* Box for AM */
 .box-am {
     width: 100%;
     margin: 2%;
@@ -441,11 +523,10 @@ body {
     margin: 0;
 }
 
-
+/* Responsive Design for Medium Screens (1000px - 1400px) */
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
-
     .command {
-        padding: 1px;
+        padding: 1px; /* Reduced padding for medium screens */
     }
 
     .box {
@@ -458,14 +539,13 @@ body {
     }
     
     .box h3 {
-        font-size: 22px;
+        font-size: 22px; /* Font size adjustment for medium screens */
         margin: 0;
     }
-
 }
 
+/* Responsive Design for Small Screens (Max-width 980px) */
 @media only screen and (max-width: 980px) {
-
     .box {
         width: 100%;
         margin: 2%;
@@ -476,12 +556,12 @@ body {
     }
     
     .box h3 {
-        font-size: 40px;
+        font-size: 40px; /* Increased font size for smaller screens */
         margin: 0;
     }
 
     .selection p {
-        font-size: 30px;
+        font-size: 30px; /* Font size for selection on small screens */
     }
 
     #premium {
@@ -490,7 +570,7 @@ body {
         padding: 5px;
         background-color: rgba(255, 170, 0, 0.225);
         color: rgb(255, 204, 0);
-        font-size: 15px;
+        font-size: 15px; /* Font size adjustment for premium on small screens */
     }
 
     .box-am {
@@ -504,15 +584,16 @@ body {
     
     .box-am h3 {
         margin-bottom: 30px;
-        font-size: 40px;
+        font-size: 40px; /* Increased font size for AM box */
     }
+
     .box-am p {
         margin: 0;
-        font-size: 30px;
+        font-size: 30px; /* Font size for paragraph inside AM box */
     }
 
     #modify h4 {
-        font-size: 27px;
+        font-size: 27px; /* Font size for modify heading */
     }
 }
 
@@ -526,11 +607,13 @@ body {
 
 
 
+/* Commands Section */
 .commands {
     margin: 0;
     margin-top: 5%;
 }
 
+/* Command Box Styling */
 .commandbox {
     background-color: rgb(39, 39, 39);
     border: solid 3px grey;
@@ -540,10 +623,12 @@ body {
     margin-bottom: 3%;
 }
 
+/* Command Heading Styling */
 .heading-cmd {
     font-size: 22px;
 }
 
+/* Permission Boxes */
 .permissionBox-admin {
     font-size: 17px;
     padding: .2% 1% .2% 1%;
@@ -574,6 +659,7 @@ body {
     border-radius: 5px;
 }
 
+/* Utility Box */
 .utilitybox {
     border: solid rgb(21, 21, 21) 2px;
     border-radius: 5px;
@@ -583,6 +669,7 @@ body {
     padding: 1.5%;
 }
 
+/* Item Box */
 .item {
     border: 2px solid rgb(14, 14, 14);
     border-radius: 5px;
@@ -591,6 +678,7 @@ body {
     box-shadow: 5em;
 }
 
+/* Utility Box Button */
 .utilitybox-btn {
     border: solid rgb(21, 21, 21, 0) 2px;
     border-radius: 5px;
@@ -600,6 +688,7 @@ body {
     padding: 1.5%;
 }
 
+/* Item Buttons */
 .item-btn-primary {
     border: 2px solid rgb(30, 30, 30);
     border-radius: 5px;
@@ -632,6 +721,7 @@ body {
     box-shadow: 5em;
 }
 
+/* Optional Label */
 .optional {
     font-size: 13px;
     color: orange;
@@ -641,6 +731,7 @@ body {
     padding: 1px 3px 1px 3px;
 }
 
+/* Effect Box */
 .effect {
     background-image: repeating-radial-gradient(rgb(255, 0, 251) , rgba(251, 0, 255, 0.162));
     border-radius: 10px;
@@ -655,10 +746,12 @@ body {
     font-size: 14px;
 }
 
+/* Red Text */
 #red {
     color: rgb(255, 64, 64);
 }
 
+/* Number-Only Box */
 .number-only {
     color: white;
     border: solid red 2px;
@@ -667,97 +760,44 @@ body {
     padding: 3px;
 }
 
+/* Media Queries for Responsiveness */
+
+/* For Medium Screens (1000px - 1400px) */
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
-
-    
     .utilitybox {
-        border: solid rgb(21, 21, 21) 2px;
-        border-radius: 5px;
-        box-shadow: 5em;
         width: 90%;
-        background-color: rgb(26, 26, 26);
-        padding: 1.5%;
-    }
-    
-    .item {
-        border: 2px solid rgb(14, 14, 14);
-        border-radius: 5px;
-        background-color: rgb(44, 44, 44);
-        padding: 0.8%;
-        box-shadow: 5em;
-    }
-    
-    .utilitybox-btn {
-        border: solid rgb(21, 21, 21, 0) 2px;
-        border-radius: 5px;
-        box-shadow: 5em;
-        width: 95%;
-        background-color: rgba(26, 26, 26, 0.553);
-        padding: 1.5%;
-    }
-    
-    .item-btn-primary {
-        padding: 0.3%;
-    }
-    
-    .item-btn-danger {
-        padding: 0.3%;
-    }
-    
-    .item-btn-secondary {
-        padding: 0.3%;
-    }
-    
-    .item-btn-success {
-        padding: 0.3%;
     }
 
+    .item {
+        padding: 0.8%;
+    }
+
+    .utilitybox-btn {
+        padding: 1.5%;
+    }
+
+    .item-btn-primary, .item-btn-danger, .item-btn-secondary, .item-btn-success {
+        padding: 0.3%;
+    }
 }
 
+/* For Small Screens (Max-width 980px) */
 @media only screen and (max-width: 980px) {
-
     .utilitybox {
-        border: solid rgb(21, 21, 21) 2px;
-        border-radius: 5px;
-        box-shadow: 5em;
         width: 90%;
-        background-color: rgb(26, 26, 26);
-        padding: 1.5%;
-    }
-    
-    .item {
-        border: 2px solid rgb(14, 14, 14);
-        border-radius: 5px;
-        background-color: rgb(44, 44, 44);
-        padding: 0.8%;
-        box-shadow: 5em;
-    }
-    
-    .utilitybox-btn {
-        border: solid rgb(21, 21, 21, 0) 2px;
-        border-radius: 5px;
-        box-shadow: 5em;
-        width: 95%;
-        background-color: rgba(26, 26, 26, 0.553);
-        padding: 1.5%;
-    }
-    
-    .item-btn-primary {
-        padding: 0.3%;
-    }
-    
-    .item-btn-danger {
-        padding: 0.3%;
-    }
-    
-    .item-btn-secondary {
-        padding: 0.3%;
-    }
-    
-    .item-btn-success {
-        padding: 0.3%;
     }
 
+    .item {
+        padding: 0.8%;
+    }
+
+    .utilitybox-btn {
+        padding: 1.5%;
+    }
+
+    .item-btn-primary, .item-btn-danger, .item-btn-secondary, .item-btn-success {
+        padding: 0.3%;
+    }
 }
 
 
@@ -770,6 +810,8 @@ body {
 
 
 
+
+/* Permissions Box */
 .permissions {
     border: solid grey 2px;
     padding: 5px;
@@ -777,7 +819,7 @@ body {
     background-color: rgb(55, 55, 55);
 }
 
-
+/* Subtext Styling */
 .subtext {
     background-color: rgba(63, 63, 63, 0.355);
     padding: 5px;
@@ -789,7 +831,7 @@ body {
     margin-right: 2%;
 }
 
-
+/* Stats Section */
 #stats {
     text-align: center;
 }
@@ -802,6 +844,7 @@ body {
     margin-bottom: 7%;
 }
 
+/* Stat Box Styling */
 .stat-box {
     background: linear-gradient(to top right, #bf00d0ae 5%, #3478ffb4 40%, #0044ffa3,  #5100ffad 90%);
     border-radius: 10px;
@@ -812,17 +855,19 @@ body {
     border: solid white 2px;
 }
 
+/* Stat Number Styling */
 #stat-number {
     background: linear-gradient(to right, rgba(174, 144, 255, 0), rgba(207, 159, 255, 0.271),  rgba(174, 144, 255, 0));
 }
 
+/* Media Queries for Responsiveness */
 
+/* For Medium Screens (1000px - 1400px) */
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
-
     #stats {
         text-align: center;
     }
-    
+
     .stats {
         display: flex;
         justify-content: center;
@@ -830,22 +875,20 @@ body {
         margin-top: 5%;
         margin-bottom: 7%;
     }
-    
-    
+
     #stat-number {
         font-size: 25px;
         background: linear-gradient(to right, rgba(174, 144, 255, 0), rgba(207, 159, 255, 0.271),  rgba(174, 144, 255, 0));
     }
-
 }
 
+/* For Small Screens (Max-width 980px) */
 @media only screen and (max-width: 980px) {
-
     #stats {
         text-align: center;
         font-size: 60px;
     }
-    
+
     .stats {
         display: flex;
         justify-content: center;
@@ -853,37 +896,38 @@ body {
         margin-top: 5%;
         margin-bottom: 7%;
     }
-    
-    
+
     #stat-number {
         font-size: 40px;
         background: linear-gradient(to right, rgba(174, 144, 255, 0), rgba(207, 159, 255, 0.271),  rgba(174, 144, 255, 0));
     }
-
 }
 
 
 
 
 
-
-
-
+/* Wiki Video Box */
 .wiki-video-box {
     margin: 0;
     padding: 0;
     justify-content: center;
 }
 
+/* Video Styling */
 #video {
     border-radius: 50px;
+    width: 100%; /* Ensures the video will scale based on its container */
+    max-width: 1115px; /* Maximum width for larger screens */
+    height: auto; /* Automatically adjusts the height to maintain aspect ratio */
 }
 
-.wiki-inside-video-box video{   
-    width: 1115px;
-    height: 552px;
+.wiki-inside-video-box video {
+    width: 100%; /* Ensures the video takes up the available width */
+    height: auto; /* Adjusts the height based on the aspect ratio */
 }
 
+/* Mobile Menu Button */
 #mobile-menu-btn {
     margin-left: -200%;
     position: absolute;
@@ -896,22 +940,25 @@ body {
     color: rgba(255, 255, 255, 0);
 }
 
-@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+/* Media Queries */
 
-    .wiki-inside-video-box video{
+/* For Medium Screens (1000px - 1400px) */
+@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+    .wiki-inside-video-box video {
         width: 630px;
         height: 450px;
     }
-
 }
 
+/* For Small Screens (Max-width 980px) */
 @media only screen and (max-width: 980px) {
+    /* Video Styling */
+    .wiki-inside-video-box video {
+        width: 100%; /* Ensures the video takes full width on smaller screens */
+        height: auto; /* Maintains aspect ratio */
+    }
 
-    .wiki-inside-video-box video{
-        width: 800px;
-        height: 550px;
-    } 
-
+    /* Mobile Menu Button */
     #mobile-menu-btn {
         margin-left: -20%;
         top: 40%;
@@ -920,19 +967,22 @@ body {
         font-size: 30px;
         text-decoration: none;
     }
-    
+
     #mobile-menu-btn:hover {
         color: #0066ff;
     }
 
+    /* Video Container Adjustments */
     #video {
         border-radius: 50px;
         padding-bottom: 0;
         margin-bottom: -90%;
+        width: 100%; /* Ensures the video takes full width on mobile */
+        height: auto; /* Adjusts height proportionally */
     }
-
 }
 
+/* Points Styling */
 #points {
     border: solid 1px rgb(0, 199, 0);
     padding: 2px;
@@ -940,10 +990,91 @@ body {
     background-color: #089f003a;
 }
 
-
+/* Scanning Text Adjustments */
 @media only screen and (max-width: 980px) {
-
     #scanning {
         font-size: 15px;
+    }
+}
+
+
+
+
+/* General adjustments for smaller screens */
+@media only screen and (max-width: 980px) {
+
+    /* Adjusting text size */
+    .wiki-content-container h1 {
+        font-size: 25px; /* Adjust as necessary */
+    }
+
+    .wiki-content-container h2 {
+        font-size: 20px; /* Adjust as necessary */
+    }
+
+    /* Adjust the width of content and boxes */
+    .wiki-content, .wiki-content-container, .wiki-info-box, .wiki-video-box, .wiki-inside-info-box {
+        width: 90%; /* Reduce width to fit the screen */
+        margin: 0 auto; /* Center the content */
+    }
+
+    /* Adjust box sizes */
+    .box, .box-am {
+        width: 90%; /* Ensure the box fits within the screen */
+        margin: 2%; /* Add some spacing between the boxes */
+    }
+
+    /* Adjust buttons */
+    .item-btn-primary, .item-btn-danger, .item-btn-secondary, .item-btn-success {
+        padding: 0.4em 1em; /* Adjust button size */
+        font-size: 16px; /* Adjust text size for buttons */
+    }
+
+    /* Video adjustments */
+    .wiki-inside-video-box video {
+        width: 100%; /* Ensure video width adjusts to screen size */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    /* Adjust the sidebar or any fixed content */
+    .wiki-menu, .wiki-bookmark {
+        width: 100%; /* Take full width on small screens */
+        position: static; /* Remove fixed positioning for small screens */
+        margin: 0; /* Remove margin */
+    }
+
+    /* Adjust the text and layout inside boxes */
+    .box h3, .box-am h3 {
+        font-size: 18px; /* Reduce font size */
+    }
+
+    .box p, .box-am p {
+        font-size: 14px; /* Reduce paragraph text size */
+    }
+
+    /* Adjust header font sizes */
+    .heading-cmd {
+        font-size: 18px; /* Reduce heading font size */
+    }
+
+    /* Adjust any optional text */
+    .optional {
+        font-size: 12px; /* Reduce optional text size */
+    }
+
+    /* Adjust stat boxes and other layout components */
+    .stat-box {
+        padding: 1.5% 3%;
+    }
+
+    .stats {
+        flex-direction: column; /* Stack stats vertically */
+        gap: 10%; /* Add gap between stacked elements */
+    }
+
+    /* Adjust other smaller components */
+    .permissions, .subtext, .permissionBox-admin, .permissionBox-mod, .permissionBox-casual {
+        font-size: 14px; /* Reduce font size */
+        padding: 3px; /* Reduce padding */
     }
 }

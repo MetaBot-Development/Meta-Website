@@ -1,3 +1,4 @@
+/* General styles */
 .plus-intro {
     border-radius: 20px;
     width: 70%;
@@ -23,7 +24,6 @@
 .intro-text {
     padding: 0%;
     font-size: 20px;
-
 }
 
 #intro-text-heading {
@@ -43,7 +43,7 @@
     font-weight: 550;
 }
 
-.buy-plus-btn :hover {
+.buy-plus-btn-text:hover {
     background-color: rgba(225, 147, 249, 0.199);
     transition: .3s;
 }
@@ -54,6 +54,7 @@
     font-size: 14px;
 }
 
+/* For medium screens (1000px to 1400px) */
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
 
     .plus-intro {
@@ -61,51 +62,71 @@
         margin-left: 6%;
     }
 
+    .buy-plus-btn-text {
+        font-size: 25px; /* Adjusted font size */
+        width: 30%; /* Adjusted button width */
+        margin-left: 35%;
+    }
+
 }
 
+/* For small screens (max-width: 980px) */
 @media only screen and (max-width: 980px) {
 
     .plus-intro {
-        width: 82%;
-        margin-left: 6%;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .intro h2 {
+        font-size: 28px; /* Adjusted font size */
+        margin-left: 0;
+    }
+
+    .intro-text {
+        font-size: 18px; /* Adjusted font size */
     }
 
     .buy-plus-btn-text {
-        border: solid 1px white;
-        border-radius: 5px;
-        width: 25%;
-        margin-left: 35%;
-        margin-bottom: 5%;
-        padding: 2%;
-        text-decoration: none;
-        color: white;
-        font-weight: 550;
-        font-size: 30px;
+        width: 50%; /* Button takes more space on small screens */
+        font-size: 22px; /* Adjusted font size */
+        margin-left: 25%;
     }
 
 }
 
+/* For very small screens (max-width: 480px) */
+@media only screen and (max-width: 480px) {
 
+    .plus-intro {
+        width: 95%;
+        margin-left: 2%;
+        padding: 15px; /* Reduced padding */
+    }
 
+    .intro h2 {
+        font-size: 22px; /* Further reduced font size */
+    }
 
+    .intro-text {
+        font-size: 16px; /* Further reduced font size */
+    }
 
+    .buy-plus-btn-text {
+        width: 70%; /* Button width adjusted for smaller screens */
+        font-size: 18px; /* Smaller font size for the button */
+        margin-left: 15%;
+    }
 
+}
 
-
-
-
-
-
-
-
-
-
+/* Meta plans section */
 .meta-plans {
     display: flex;
     padding: 1%;
     margin-top: 10%;
     justify-content: center;
-    gap: 10%
+    gap: 10%;
 }
 
 .original-plan, .plus-plan {
@@ -130,7 +151,6 @@
 .heading-text {
     padding-top: 3%;
     padding-left: 6%;
-
 }
 
 .heading-text h2 {
@@ -153,7 +173,7 @@
     margin-bottom: 0;
 }
 
-.heading-img-2 img{
+.heading-img-2 img {
     width: 45%;
     height: 85%;
     margin-left: 45%;
@@ -209,10 +229,10 @@
 
 .selectedbox-plus:hover {
     transition: 1s;
-    background-color: rgb(255, 0, 0)
+    background-color: rgb(255, 0, 0);
 }
 
-
+/* For medium screens (1000px to 1400px) */
 @media only screen and (min-width: 1000px) and (max-width: 1400px) {
 
     .meta-plans {
@@ -220,7 +240,7 @@
         padding: 1%;
         margin-top: 10%;
         justify-content: center;
-        gap: 10%
+        gap: 10%;
     }
 
     .original-plan, .plus-plan {
@@ -229,11 +249,9 @@
         margin-bottom: 5%;
         margin-left: 10%;
     }
-
-
-
 }
 
+/* For small screens (max-width: 980px) */
 @media only screen and (max-width: 980px) {
 
     .meta-plans {
@@ -241,7 +259,7 @@
         padding: 1%;
         margin-top: 10%;
         justify-content: center;
-        gap: 10%
+        gap: 10%;
     }
 
     .original-plan, .plus-plan {
@@ -250,5 +268,4 @@
         margin-bottom: 5%;
         margin-left: 10%;
     }
-
 }
