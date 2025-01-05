@@ -185,20 +185,19 @@ body a:hover {
 
 /* Menu styles */
 .wiki-menu {
-    position: fixed; /* Make the menu fixed */
-    top: 0; /* Start at the top of the screen */
-    left: -60%; /* Start off-screen on small screens */
-    width: 60%; /* Adjust the width of the menu on smaller screens */
+    position: fixed; /* Fixed position */
+    width: 25%; /* Default width of the menu for large screens */
     font-size: 16px;
     margin: 0;
-    height: 100vh; /* Full height of the viewport */
-    overflow-y: auto; /* Scrollable if content overflows */
-    background-color: #040404; /* Add background to the menu */
-    transition: left 0.3s ease-in-out; /* Smooth transition for left property */
-    z-index: 1000; /* Ensure menu is above other content */
-    padding-top: 20px; /* Add space from the top */
+    top: 80px; /* Start the menu below the navbar */
+    left: -100%; /* Initially off-screen */
+    height: calc(100vh - 80px - 60px); /* Full height minus navbar and footer space */
+    overflow-y: auto; /* Allow scrolling if content overflows */
+    transition: left 0.3s ease-in-out; /* Smooth transition for sliding in */
+    z-index: 1000; /* Ensure menu stays above the content but below navbar */
 }
 
+/* Menu items styling */
 .wiki-menu p {
     padding: 7px;
     width: 70%;
@@ -216,10 +215,20 @@ body a:hover {
     background-color: rgb(48, 48, 48);
 }
 
-/* Responsive Design for Medium Screens (1000px - 1400px) */
-@media only screen and (min-width: 1000px) and (max-width: 1400px) {
+/* Navbar styling */
+.navbar {
+    position: relative;
+    z-index: 2000; /* Ensure navbar is above the menu */
+    padding: 20px 0; /* Ensure there's enough space at the top of the page */
+}
+
+/* For large screens (above 980px) */
+@media only screen and (min-width: 981px) {
     .wiki-menu {
-        width: 25%; /* Slightly reduce the width of the menu */
+        left: 0; /* Make the menu visible on large screens */
+        width: 25%; /* Keep the menu at 25% width on larger screens */
+        top: 80px; /* Keep the top margin from the navbar */
+        height: calc(100vh - 80px - 60px); /* Ensure height doesn't overlap with footer */
     }
 
     .wiki-menu p {
@@ -228,24 +237,24 @@ body a:hover {
     }
 
     .wiki-menu a {
-        font-size: 18px; /* Increase font size slightly */
+        font-size: 18px; /* Larger font size for better readability */
     }
 }
 
-/* Responsive Design for Small Screens (Max-width 980px) */
+/* For small to medium screens (max-width 980px) */
 @media only screen and (max-width: 980px) {
     .wiki-menu {
         position: fixed;
         width: 60%; /* Increase the width of the menu on small screens */
         font-size: 16px;
         margin: 0;
-        height: 100vh; /* Full viewport height */
-        overflow-y: auto;
-        left: -60%; /* Start off-screen, will slide in with JS or interaction */
+        top: 80px; /* Keep the top margin from the navbar */
+        height: calc(100vh - 80px - 60px); /* Keep it scrollable and within viewport height */
+        left: -100%; /* Keep the menu off-screen initially */
     }
 
     .wiki-menu p {
-        width: 100%; /* Make the menu items take full width */
+        width: 100%; /* Full width for menu items */
         margin-left: 0; /* Align menu items properly */
     }
 
@@ -254,16 +263,16 @@ body a:hover {
     }
 }
 
-/* For very small screens like phones (Max-width 600px) */
+/* For very small screens (max-width 600px) */
 @media only screen and (max-width: 600px) {
     .wiki-menu {
         position: fixed;
         width: 70%; /* Even wider menu on very small screens */
         font-size: 14px;
         margin: 0;
-        height: 100vh; /* Full height of the viewport */
-        overflow-y: auto;
-        left: -70%; /* Start off-screen */
+        top: 80px; /* Keep the top margin from the navbar */
+        height: calc(100vh - 80px - 60px); /* Keep it scrollable and within viewport height */
+        left: -100%; /* Keep the menu off-screen */
     }
 
     .wiki-menu p {
@@ -276,11 +285,10 @@ body a:hover {
     }
 }
 
-/* Make sure the content doesn't overlap into the menu */
-.wiki-content {
-    margin-left: 25%; /* Leave space for the menu */
-    padding-bottom: 80px; /* Add space to avoid overlap with the footer */
-}
+
+
+
+
 
 
 
