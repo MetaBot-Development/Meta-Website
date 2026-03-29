@@ -22,7 +22,7 @@
 <!-- SIDEBAR -->
 <aside class="sidebar" id="sidebar">
     <div class="sidebar-header">
-        <a href="introduction.html" class="sidebar-logo">
+        <a href="home.html" class="sidebar-logo">
             <img src="images/meta.png" alt="Meta Logo">
             <span>Meta Docs</span>
         </a>
@@ -32,7 +32,7 @@
         <!-- Getting Started Section -->
         <div class="nav-section">
             <div class="nav-section-title">Getting Started</div>
-            <a href="introduction.html" class="nav-item" data-page="introduction.html">
+            <a href="home.html" class="nav-item" data-page="home.html">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
                 Introduction
             </a>
@@ -335,7 +335,7 @@
 <script>
 // Search functionality
 const searchData = [
-    { title: "Introduction", description: "Welcome to Meta documentation", href: "introduction.html", category: "Getting Started" },
+    { title: "Introduction", description: "Welcome to Meta documentation", href: "home.html", category: "Getting Started" },
     { title: "Getting Started", description: "Learn the basics of Meta bot", href: "getting-started.html", category: "Getting Started" },
     { title: "Invite Meta", description: "Add Meta to your Discord server", href: "https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", category: "Getting Started" },
     { title: "Support", description: "Get help and join our community", href: "https://discord.gg/Rc8DgBBpsx", category: "Getting Started" },
@@ -443,7 +443,7 @@ function copyCode(btn) {
 }
 
 // Set active nav item based on current page
-const currentPage = window.location.pathname.split('/').pop() || 'introduction.html';
+const currentPage = window.location.pathname.split('/').pop() || 'home.html';
 document.querySelectorAll('.nav-item').forEach(item => {
     const itemPage = item.getAttribute('data-page') || item.getAttribute('href');
     if (itemPage === currentPage) {
