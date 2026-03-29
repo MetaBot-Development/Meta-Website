@@ -1,320 +1,620 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta property="og:title" content="Meta Auto Moderation System">
-    <meta property="og:description" content="Secure your server Now! Meta Advanced Moderation & Management commands, functions and tutorials!">
-    <meta property="og:image" content="https://cdn.discordapp.com/attachments/1011355084514394164/1232259786297577502/lightbub.jpeg?ex=6628cedb&is=66277d5b&hm=db16acda4ff0b0bd695481dedb737fefe8d7ce2a156752677dbc378fcc09170f&">
-    <meta property="og:url" content="https://botmeta.xyz/">
-    <meta property="og:type" content="website">
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="128">
-    <meta property="og:image:height" content="128"> 
-    <meta name="theme-color" content="#5100FF">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link href="./css/footer.css" rel="stylesheet">
-    <link href="./css/wiki-doc.css" rel="stylesheet">
-    <link rel="icon" href="../../images/meta.ico">
-    <title>Meta Commands</title>
+    <title>Meta Docs | Commands</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meta Bot Commands - Complete list of all Meta Discord bot commands">
+    <link rel="stylesheet" href="./css files/docs.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div class="wiki-page">
-        <div class="wiki-heading">
-            <img src="../../images/Meta.png">
-<h1>Meta Protection</h1>
-            <div class="links-wiki-quick">
-              <p>
-                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", target="_blank"><ul>Invite </ul></a>
-                <a href="https://discord.gg/Rc8DgBBpsx", target="_blank"><ul>Support</ul></a>
-                <a href="https://top.gg/bot/980436688260182016", target="_blank"><ul>Top.gg</ul></a>
-              </p>
-            </div>
-            <div class="mobile-menu">
-                <a href="./menu.html" id="mobile-menu-btn"><i class="fa fa-solid fa-bars"></i> Menu</a>
-            </div>
-        </div>
-        <div class="wikipedia-struckture">
-            <div class="wiki-menu">
-                <a href="./home.html"><p>Home</p></a>
-                <a href="./about.html"><p>About Meta Protection Bot</p></a>
-                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", target="_blank"><p>Invite</p></a>
-                <a href="https://discord.gg/Rc8DgBBpsx", target="_blank"><p>Support</p></a>
-                <a href="./wiki/anti-mod-grief.html"><p>Anti Mod Grief</p></a>
-                <a href="./wiki/anti-alt.html"><p>Anti Alt Detector</p></a>
-                <a href="./wiki/malicious-bot.html"><p>Malicious Bot Scanner</p></a>
-                <a href="./wiki/automod.html"><p>AutoMod with Discord</p></a>
-                <a href="./commands.html"><p><b class="wiki-this-page">Commands</b></p></a>
-                <style>
-                    .wiki-this-page {color: rgb(54, 99, 221); }
-                </style>
-                <a href="./wiki/dangerous-roles.html"><p>Dangerous Roles</p></a>
-                <a href="./wiki/meta-roles.html"><p>Meta Roles</p></a>
-                <a href="./plus.html"><p>Meta Plus</p></a>
-                <a href="./news.html"><p>News</p></a>
-                <a href="../legal/terms.html", target="_blank"><p>Terms Of Service</p></a>
-                <a href="../legal/privacy.html", target="_blank"><p>Privacy Policy</p></a>
-            </div>
-            <div class="wiki-content">
-                <div class="wiki-content-container">
-                    <div class="content-header">
-                        <h1>Commands</h1>
-                        <hr>
-                    </div>
-                    <div class="wiki-content-block">
-                        <h2>Slash Commands</h2>
-                        <p>Meta is equipped with Discord Slash Commands. All of the commands are usuable with the <b class="command">/command</b> format. Some special / secret / easter-egg commands could be with prefixes.</p>
-                        <br>
-                        <hr>
 
-                        <h2 id="server">Server Commands</h2>
-                        <div class="commands", id="setup">
-                            <div class="commandbox">
-                                <b class="heading-cmd">/setup <x class="permissionBox-admin">Administrator</x></b>
-
-                                <p> <i>
-                                    Set up Meta is your server. This single command is all you need to run, to make your server safer! <br> <br>
-
-                                    <b id="red">Without setup the bot will not function in your server! </b>
-                                </i> </p>
-                                <br>
-                                <div class="utilitybox">
-                                    <z class="type">Inputs:</z> <br><br>
-                                    <x class="item">admin-logs</x> - The channel where all of the sensitive logs will be sent. <br><br>
-                                    <x class="item">mod-logs</x> - Channel where all type of Moderation logs will be sent. <br><br>
-                                    <x class="item">mod-rank</x> - The rank that Meta <b>will</b> monitor and take action on if user has the rank.
-                                </div>
-                            </div>
-
-                            <div class="commandbox", id="settings">
-                                <b class="heading-cmd">/settings <x class="permissionBox-admin">Administrator</x></b>
-
-                                <p> <i>
-                                    Get a quick overview of your server Meta Settings. This command lets you manage all the protection systems and configurations. <br>
-                                    Click on any of the buttons and start protecting your server like a true administrator!
-                                </i> </p>
-                                <br>
-                                <div class="utilitybox-btn">
-                                    <z class="type">Buttons:</z> <br><br>
-                                    <x class="item-btn-primary">Anti Mod Grief</x> - Configurate the <a href="./wiki/anti-mod-grief.html">Anti Mod Grief Protection System</a>. <br><br>
-                                    <x class="item-btn-primary">Anti Alt</x> - Modify the Meta <a href="./wiki/anti-alt.html">Anti Alt Protection System</a>. Make sure there are no fake accounts in your server.<br><br>
-                                    <x class="item-btn-primary">Malicious Bot</x> - Enable the advanced <a href="./wiki/malicious-bot.html">Malicious Bot Scanner</a> to protect your server. <br><br>
-                                    <x class="item-btn-primary">Automod</x> - Choose the setup of your Discord <a href="./wiki/automod.html">AutoMod</a> rules. Enable different rules and create them with 1 single click.
-                                </div>
-                            </div>
-
-                            <div class="commandbox", id="scan">
-                                <b class="heading-cmd">/scan <x class="permissionBox-admin">Administrator</x></b>
-
-                                <p> <i>
-                                    Scan your server and get a detailed overview of the channels, roles, administrators, alt accounts and much more. <br> <br>
-
-                                    Meta will also check your server for flaws and gives an overall protection score from 1 - 100 scale. To perfect your score, Meta gives you a list of issues on how you can improve the score. <br> <br>
-                                
-                                    Learn more about scanning <a href="./wiki/scanning.html">here...</a>
-                                </i> </p>
-                                <br>
-                                <div class="utilitybox-btn">
-                                    <z class="type">Buttons:</z> <br><br>
-                                    <x class="item-btn-primary">New Accounts</x> - Get a summary of <b>all accounts</b> that are considered to be alt accounts. <br><br>
-                                    <x class="item-btn-danger">Dangerous Roles</x> - List of <b>all the roles</b> that are considered to be <a href="./wiki/dangerous-roles.html">Dangerous Roles</a>. <br><br>
-                                    <x class="item-btn-success">Admins</x> - Get a list of all the users who have <x class="command">Administrator</x> permissions in the server. <br><br>
-                                    <x class="item-btn-secondary">Bots</x> - See every <b>Discord Bot / App</b> that is in your server.
-                                </div>
-                            </div>
-
-                            <div class="commandbox", id="inspect">
-                                <b class="heading-cmd">/inspect <x class="permissionBox-casual">Everyone</x></b>
-
-                                <p> <i>Get a detailed overview on someones Discord profile. From their activity to server roles, this command shows you all of the stats.</i> </p>
-                                <br>
-                                <div class="utilitybox">
-                                    <z class="type">Input:</z> <br><br>
-                                    <x class="item">user</x> - Choose an user whose profile you'd like to inspect.
-                                </div>
-                            </div>
-
-                            <hr>
-
-                            <h2 id="moderation">Moderation Commands</h2>
-
-                            <div class="commandbox", id="ban">
-                                <b class="heading-cmd">/ban <x class="permissionBox-mod">Moderator</x></b>
-
-                                <p> 
-                                    <i>Ban someone from the server and get all of the details instantly. Keep it clean, organized and professional.</i> <br><br>
-
-                                    Ban logs will be sent into mod-logs channel. <br>
-                                    Banned user will be notified about the ban and the reason of the ban. <br> 
-                                    Moderator who went through with the ban will get insta overview as an "only you can see" message.
-                                </p>
-                                <br>
-                                <div class="utilitybox">
-                                    <z class="type">Inputs:</z> <br><br>
-                                    <x class="item">user</x> - Choose the user who you'd like to ban from the server. <br><br>
-                                    <x class="item">reason</x> - Give a reason for the ban. Anything decent fits ;) <br><br>
-                                    <x class="item">proof</x> <y class="optional">optional</y> - Add an image of proof for others to see. Proof is included in log message if given. 
-                                </div>
-                            </div>
-
-                            <div class="commandbox", id="unban">
-                                <b class="heading-cmd">/unban <x class="permissionBox-mod">Moderator</x></b>
-                                <p> 
-                                    <i>Revoke a ban from a user whose already banned. Keep your server up-to-date and beautiful with amazing design.</i> <br><br>
-                                    Unban logs will be sent into mod-logs channel. <br>
-                                    Unbanned user <b id="red"> will not</b> be notified about the unban.<br> 
-                                    Moderator who went through with the unban will get insta overview as an "only you can see" message.
-                                </p>
-                                <br>
-                                <div class="utilitybox">
-                                    <z class="type">Inputs:</z> <br><br>
-                                    <x class="item">id</x> - <a href="https://support.discord.com/hc/en-us/articles/206346498-Where-can-I-find-my-User-Server-Message-ID", target="_blank">Discord ID</a> of the user you'd like to unban from the server.<br><br>
-                                    <x class="item">reason</x> - Give the unban it's very own reason. Be creative!
-                                </div>
-                            </div>
-
-                            <div class="commandbox", id="mute">
-                                <b class="heading-cmd">/mute <x class="permissionBox-mod">Moderator</x></b>
-
-                                <p> <i>
-                                    Time someone out in your server with clean and professional responses and actions. <br>
-                                    Make people unable to chat and join voice channels in your server. Meta uses Discords Timeout feature to mute users.
-                                    </i> 
-                                    <br>
-                                    <br>
-                                    Mute logs will be sent into mod-logs channel. <br>
-                                    Muted user will be notified about the mute.<br> 
-                                    Moderator who went through with the mute will get insta overview as an "only you can see" message.
-                                </p>
-                                <br>
-                                <div class="utilitybox">
-                                    <z class="type">Inputs:</z> <br><br>
-                                    <x class="item">user</x> - Choose the user you'd like to mute. <br><br>
-                                    <x class="item">time</x> - For how long you'd like to mute the user. <x class="number-only">Number Only</x> <br><br>
-                                    <x class="item">time-unit</x> - Choose the unit. Seconds, minutes, hours or days. <br><br>
-                                    <x class="item">reason</x> - Give the mute it's reason, cannot mute for no reason right? <br><br>
-                                    <x class="item">proof</x> <y class="optional">optional</y> - Add a image as proof for others to see. Proof is included in the log if given. 
-                                </div>
-                            </div>
-
-                            <div class="commandbox", id="unmute">
-                                <b class="heading-cmd">/unmute <x class="permissionBox-mod">Moderator</x></b>
-
-                                <p> <i>
-                                    Make removing a timeout easy, clean and professional. Remove a timeout from an user with 1 single command, fast and easy.
-                                    <br>
-                                    <br>
-                                    Unmute logs will be sent into mod-logs channel. <br>
-                                    Umuted user will be notified about the unmute.<br> 
-                                    Moderator who went through with the unmute will get insta overview as an "only you can see" message.
-                                </i> </p>
-                                <br>
-                                <div class="utilitybox">
-                                    <z class="type">Inputs:</z> <br><br>
-                                    <x class="item">user</x> - The user who you'd like to unmute. <br><br>
-                                    <x class="item">reason</x> - Give the unmute action a reason. Improvising is allowed!
-                                </div>
-                            </div>
-
-                            <div class="commandbox", id="kick">
-                                <b class="heading-cmd">/kick <x class="permissionBox-mod">Moderator</x></b>
-
-                                <p> <i>Don't want to ban them but mute just doesn't do it? Kick the user from your server while staying professional and organized.</i> </p>
-                                <br>
-                                <div class="utilitybox">
-                                    <z class="type">Inputs:</z> <br><br>
-                                    <x class="item">user</x> - The user who shall be kicked from the server. <br><br>
-                                    <x class="item">reason</x> - Give the kick action a cool and reasonable reason. <br><br>
-                                    <x class="item">proof</x> <y class="optional">optional</y> - Add a image as proof for others to see. Proof is included in the log if given. 
-                                </div>
-                            </div>
-
-                            <hr>
-
-                            <h2 id="casual">Casual Commands</h2>
-
-                            <div class="commandbox", id="ping">
-                                <b class="heading-cmd">/ping <x class="permissionBox-casual">Everyone</x></b>
-
-                                <p> <i>Whenever the bot is online but is responding slowly, it's best to check if the issue is on Metas side. Check the apps ping with this command!</i> </p>
-
-                                <div class="effect">
-                                    <h3>⭐ Mythic Magic ⭐</h3>
-                                    <p><i>There is a 1% chance to get a special, super duper rare Mythic response when running this command. If you manage to be the one lucky fella, take a screenshot and send it to the Meta Team over at the <a href="https://discord.gg/Rc8DgBBpsx">Support Server</a>. You'll receive a cool little suprize / reward for it.</i></p>
-                                </div>
-                            </div>
-
-                            <div class="commandbox", id="help">
-                                <b class="heading-cmd">/help <x class="permissionBox-casual">Everyone</x></b>
-
-                                <p> <i>Getting started with Meta? Don't worry, we have everything ready for you to start protecting your server! Check out the help command to get the most forward and easiet help directions.</i> </p>
-
-                                <div class="utilitybox-btn">
-                                    <z class="type">Buttons:</z> <br><br>
-                                    <x class="item-btn-secondary">Commands</x> - Link to this same command introduction page :) <br><br>
-                                    <x class="item-btn-secondary">Support</x> - A quick way to join our <a href="https://discord.gg/Rc8DgBBpsx">Support Server</a>. <br><br>
-                                    <x class="item-btn-secondary">Website</x> - Shortcut from Discord to this webpage home page! 
-                                </div>
-                            </div>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="wiki-bookmark">
-                <div class="wiki-bookmark-content">
-                    <a href="#server"><h4>Server Commands</h4></a>
-                    <a href="#setup"><p>Setup</p></a>
-                    <a href="#settings"><p>Settings</p></a>
-                    <a href="#scan"><p>Scan</p></a>
-                    <a href="#inspect"><p>Inspect</p></a>
-                    <a href="#moderation"><h4>Moderation Commands</h4></a>
-                    <a href="#ban"><p>Ban</p></a>
-                    <a href="#unban"><p>Unban</p></a>
-                    <a href="#mute"><p>Mute</p></a>
-                    <a href="#unmute"><p>Unmute</p></a>
-                    <a href="#kick"><p>Kick</p></a>
-                    <a href="#casual"><h4>Casual Commands</h4></a>
-                    <a href="#ping"><p>Ping</p></a>
-                    <a href="#help"><p>Help</p></a>
-                </div>
-            </div>
-        </div>
+    <!-- SHOOTING STARS -->
+    <div class="shooting-stars">
+        <span></span><span></span><span></span><span></span><span></span>
     </div>
 
-    <div class="footer-modules">
+    <!-- PARALLAX STARFIELD -->
+    <div class="star-layer star-layer-1"></div>
+    <div class="star-layer star-layer-2"></div>
 
-        <div class="footer">
-
-          <div class="tulp">
-            <h3>Meta</h3>
-            <a href="./about.html">About Us</a> <br>
-            <a href="https://discord.gg/Rc8DgBBpsx">Discord</a> <br>
-          </div>
-  
-          <div class="tulp">
-            <h3>Links</h3> 
-            <a href="./plus.html">Meta Plus</a> <br>
-            <a href="https://github.com/MetaBot-Development">Github</a> 
-          </div>
-  
-          <div class="tulp">
-            <h3>Legal</h3>
-            <a href="../../legal/terms.html">Terms</a> <br>
-            <a href="../../legal/privacy.html">Privacy</a> <br>
-          </div>
-
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="introduction.html" class="sidebar-logo">
+                <img src="images/meta.png" alt="Meta Logo">
+                <span>Meta Docs</span>
+            </a>
         </div>
 
-        <div class="cc">
-          <a href="../../home.html">Meta Group &copy 2024</a>
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">Getting Started</div>
+                <a href="introduction.html" class="nav-item" data-page="./introduction.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    Introduction
+                </a>
+                <a href="documentation/getting-started.html" class="nav-item" data-page="documentation/getting-started.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                    </svg>
+                    Getting Started
+                </a>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" target="_blank" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" x2="12" y1="15" y2="3" />
+                    </svg>
+                    Invite Meta
+                </a>
+                <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
+                    </svg>
+                    Support
+                </a>
+                <a href="plus.html" class="nav-item nav-item-special">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                    </svg>
+                    Meta Plus
+                </a>
+                <a href="#" class="nav-item active">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="4 17 10 11 4 5" />
+                        <line x1="12" x2="20" y1="19" y2="19" />
+                    </svg>
+                    Commands
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Protection</div>
+                <a href="documentation/anti-mod-grief.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                        <path d="M12 8v4" />
+                        <path d="M12 16h.01" />
+                    </svg>
+                    Anti Mod Grief
+                </a>
+                <a href="documentation/anti-alt.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <line x1="17" x2="22" y1="8" y2="13" />
+                        <line x1="22" x2="17" y1="8" y2="13" />
+                    </svg>
+                    Anti Alt
+                </a>
+                <a href="documentation/malicious-app.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 8V4H8" />
+                        <rect width="16" height="12" x="4" y="8" rx="2" />
+                        <path d="M2 14h2" />
+                        <path d="M20 14h2" />
+                        <path d="M15 13v2" />
+                        <path d="M9 13v2" />
+                    </svg>
+                    Malicious App
+                </a>
+                <a href="documentation/automod.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 4V2" />
+                        <path d="M15 16v-2" />
+                        <path d="M8 9h2" />
+                        <path d="M20 9h2" />
+                        <path d="M17.8 11.8 19 13" />
+                        <path d="M15 9h0" />
+                        <path d="M17.8 6.2 19 5" />
+                        <path d="m3 21 9-9" />
+                        <path d="M12.2 6.2 11 5" />
+                    </svg>
+                    AutoMod
+                </a>
+                <a href="documentation/server-logs.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                        <path d="M10 9H8" />
+                        <path d="M16 13H8" />
+                        <path d="M16 17H8" />
+                    </svg>
+                    Server Logs
+                </a>
+                <a href="documentation/themes.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="13.5" cy="6.5" r="0.5" fill="currentColor" />
+                        <circle cx="17.5" cy="10.5" r="0.5" fill="currentColor" />
+                        <circle cx="8.5" cy="7.5" r="0.5" fill="currentColor" />
+                        <circle cx="6.5" cy="12.5" r="0.5" fill="currentColor" />
+                        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z" />
+                    </svg>
+                    Themes
+                </a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Security</div>
+                <a href="article/inspecting.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                    Inspecting
+                </a>
+                <a href="article/scanning.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+                        <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+                        <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+                        <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+                        <path d="M7 12h10" />
+                    </svg>
+                    Scanning
+                </a>
+                <a href="article/dangerous-roles.html" class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                        <path d="M12 9v4" />
+                        <path d="M12 17h.01" />
+                    </svg>
+                    Dangerous Roles
+                </a>
+                <a href="article/meta-roles.html" class="nav-item" data-page="article/meta-roles.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Meta Roles</a>
+
+            </div>
+        </nav>
+    </aside>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-glow"></div>
+
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="search-container">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+            </svg>
+            <input type="text" class="search-input" id="search-input" placeholder="Search documentation..."
+                autocomplete="off">
+            <kbd class="search-kbd">⌘K</kbd>
+            <div class="search-results" id="search-results"></div>
         </div>
 
+        <div class="header-actions">
+            <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="btn-ghost">
+                Support
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+            <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands"
+                target="_blank" class="btn-primary">
+                Invite Meta
+            </a>
+        </div>
+    </header>
 
-      </div>
-      
+    <!-- MOBILE OVERLAY -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="content-container">
+
+            <section class="doc-section">
+                <h1>Commands</h1>
+                <div class="glow-line"></div>
+                <p class="lead">Complete reference of all Meta Bot commands. Use slash commands (/) to interact with
+                    Meta in your Discord server.</p>
+
+                <!-- Command Search -->
+                <div class="command-search-box">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <path d="m21 21-4.3-4.3"></path>
+                    </svg>
+                    <input type="text" id="command-filter" placeholder="Filter commands..." autocomplete="off">
+                </div>
+
+                <!-- Quick Navigation -->
+                <div class="command-nav">
+                    <a href="#setup" class="command-nav-item">Configuration</a>
+                    <a href="#protection" class="command-nav-item">Protection</a>
+                    <a href="#moderation" class="command-nav-item">Moderation</a>
+                    <a href="#info" class="command-nav-item">Info</a>
+                </div>
+
+                <!-- Config Commands -->
+                <div class="command-category" id="setup">
+                    <div class="command-category-header">
+                        <div class="command-category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                                <circle cx="12" cy="12" r="3" />
+                            </svg>
+                        </div>
+                        <h2>Configuration Commands</h2>
+                    </div>
+
+                    <div class="command-list">
+                        <div class="command-item">
+                            <div class="command-header">
+                                <code class="command-name">/setup</code>
+                                <span class="command-badge">Essential</span>
+                            </div>
+                            <p class="command-desc">Initialize Meta in your server with a guided setup wizard. Configures basic protection settings.</p>
+                            <div class="command-usage">
+                                <span class="usage-label">Usage:</span>
+                                <code>/setup [admin-log] [mod-log] [mod-rank]</code>
+                            </div>
+                            <div class="command-params">
+                                <div class="param">
+                                    <code>admin-log</code>
+                                    <span class="param-required">required</span>
+                                    <span>Channel where sensitive information will be sent</span>
+                                </div>
+                                <div class="param">
+                                    <code>mod-log</code>
+                                    <span class="param-required">required</span>
+                                    <span>Channel where moderation logs will be sent</span>
+                                </div>
+                                <div class="param">
+                                    <code>mod-rank</code>
+                                    <span class="param-required">required</span>
+                                    <span>Role that will be monitored by Meta.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="command-item">
+                            <div class="command-header">
+                                <code class="command-name">/settings</code>
+                                <span class="command-badge">Essential</span>
+                            </div>
+                            <p class="command-desc">The main configuration command for Meta. Change, set up and modify every single setting in Meta with the settings command.</p>
+                            <div class="command-usage">
+                                <span class="usage-label">Usage:</span>
+                                <code>/settings</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Protection Commands -->
+                <div class="command-category" id="protection">
+                    <div class="command-category-header">
+                        <div class="command-category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                                <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                            </svg>
+                        </div>
+                        <h2>Protection Commands</h2>
+                    </div>
+
+                    <div class="command-list">
+                        <div class="command-item">
+                            <div class="command-header">
+                                <code class="command-name">/inspect</code>
+                            </div>
+                            <p class="command-desc">Get detailed information about a specific user in the server. Inspect a user's profile, activity, status, ranks, permissions and much more.</p>
+                            <div class="command-usage">
+                                <span class="usage-label">Usage:</span>
+                                <code>/inspect [user]</code>
+                            </div>
+                            <div class="command-params">
+                                <div class="param">
+                                    <code>user</code>
+                                    <span class="param-required">required</span>
+                                    <span>The user you'd like to inspect</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="command-item">
+                            <div class="command-header">
+                                <code class="command-name">/scan</code>
+                            </div>
+                            <p class="command-desc">Advanced scanning system all in one command. Get detailed overview of your server instantly, detect issues, see stats and get an overall protection score.</p>
+                            <div class="command-usage">
+                                <span class="usage-label">Usage:</span>
+                                <code>/scan</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Moderation Commands -->
+                <div class="command-category" id="moderation">
+                    <div class="command-category-header">
+                        <div class="command-category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                            </svg>
+                        </div>
+                        <h2>Moderation Commands</h2>
+                    </div>
+
+                    <div class="command-list">
+                        <div class="command-item">
+                            <div class="command-header">
+                                <code class="command-name">/mute</code>
+                            </div>
+                            <p class="command-desc">Mute a user in the server with reason, duration and image of the wrongdoing.</p>
+                            <div class="command-usage">
+                                <span class="usage-label">Usage:</span>
+                                <code>/mute [user] [time] [time-format] [reason] [image]</code>
+                            </div>
+                            <div class="command-params">
+                                <div class="param">
+                                    <code>user</code>
+                                    <span class="param-required">required</span>
+                                    <span>The user you'd like to mute / time out</span>
+                                </div>
+                                <div class="param">
+                                    <code>time</code>
+                                    <span class="param-required">required</span>
+                                    <span>For how long you'd like to mute the user [NUMBER ONLY]</span>
+                                </div>
+                                <div class="param">
+                                    <code>time-format</code>
+                                    <span class="param-required">required</span>
+                                    <span>Choose the format [seconds, minutes, hours, days]</span>
+                                </div>
+                                <div class="param">
+                                    <code>reason</code>
+                                    <span class="param-required">required</span>
+                                    <span>What is the reasoning behind the mute</span>
+                                </div>
+                                <div class="param">
+                                    <code>image</code>
+                                    <span class="param-optional">optional</span>
+                                    <span>Include a picture into the log for proof or just for fun :)</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="command-item">
+                            <div class="command-header">
+                                <code class="command-name">/unmute</code>
+                            </div>
+                            <p class="command-desc">Unmute a user in the server quickly with a solid reason option.</p>
+                            <div class="command-usage">
+                                <span class="usage-label">Usage:</span>
+                                <code>/unmute [ID] [reason]</code>
+                            </div>
+                            <div class="command-params">
+                                <div class="param">
+                                    <code>ID</code>
+                                    <span class="param-required">required</span>
+                                    <span>The ID of the user you'd like to unmute</span>
+                                </div>
+                                <div class="param">
+                                    <code>reason</code>
+                                    <span class="param-required">required</span>
+                                    <span>Specify the reason for the unmute</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="command-item">
+                            <div class="command-header">
+                                <code class="command-name">/ban</code>
+                            </div>
+                            <p class="command-desc">Ban a user from the server with a reason and optional image proof.</p>
+                            <div class="command-usage">
+                                <span class="usage-label">Usage:</span>
+                                <code>/ban [member] [reason] [image]</code>
+                            </div>
+                            <div class="command-params">
+                                <div class="param">
+                                    <code>member</code>
+                                    <span class="param-required">required</span>
+                                    <span>The user you'd like to ban</span>
+                                </div>
+                                <div class="param">
+                                    <code>reason</code>
+                                    <span class="param-required">required</span>
+                                    <span>Specify the reason for the ban</span>
+                                </div>
+                                <div class="param">
+                                    <code>image</code>
+                                    <span class="param-optional">optional</span>
+                                    <span>Include a picture into the log for proof.</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="command-item">
+                            <div class="command-header">
+                                <code class="command-name">/unban</code>
+                            </div>
+                            <p class="command-desc">Unban a user from the server with a reason.</p>
+                            <div class="command-usage">
+                                <span class="usage-label">Usage:</span>
+                                <code>/unban [user] [reason]</code>
+                            </div>
+                            <div class="command-params">
+                                <div class="param">
+                                    <code>ID</code>
+                                    <span class="param-required">required</span>
+                                    <span>The ID of the user you'd like to unban</span>
+                                </div>
+                                <div class="param">
+                                    <code>reason</code>
+                                    <span class="param-required">required</span>
+                                    <span>Specify the reason for the unban</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="command-item">
+                            <div class="command-header">
+                                <code class="command-name">/kick</code>
+                            </div>
+                            <p class="command-desc">Kick a user from the server with a reason and optional image for proof.</p>
+                            <div class="command-usage">
+                                <span class="usage-label">Usage:</span>
+                                <code>/kick [user] [reason] [image]</code>
+                            </div>
+                            <div class="command-params">
+                                <div class="param">
+                                    <code>member</code>
+                                    <span class="param-required">required</span>
+                                    <span>The user you'd like to kick</span>
+                                </div>
+                                <div class="param">
+                                    <code>reason</code>
+                                    <span class="param-required">required</span>
+                                    <span>Specify the reason for the kick</span>
+                                </div>
+                                <div class="param">
+                                    <code>image</code>
+                                    <span class="param-optional">optional</span>
+                                    <span>Include a picture into the log for proof.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Commands -->
+                <div class="command-category" id="info">
+                    <div class="command-category-header">
+                        <div class="command-category-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 16v-4" />
+                                <path d="M12 8h.01" />
+                            </svg>
+                        </div>
+                        <h2>Info Commands</h2>
+                    </div>
+
+                    <div class="command-list">
+                        <div class="command-item">
+                            <div class="command-header">
+                                <code class="command-name">/help</code>
+                            </div>
+                            <p class="command-desc">Welcome to the World of Meta. Help command gives you quick access to all available resources regarding Meta.</p>
+                            <div class="command-usage">
+                                <span class="usage-label">Usage:</span>
+                                <code>/help</code>
+                            </div>
+                        </div>
+
+                        <div class="command-item">
+                            <div class="command-header">
+                                <code class="command-name">/ping</code>
+                            </div>
+                            <p class="command-desc">See how broken the bot is ha..ha..ha... Also, there is a 1% chance to get a Mythic Pong! If you get that, send a screeny of it to the Developer of Meta over at the support server.</p>
+                            <div class="command-usage">
+                                <span class="usage-label">Usage:</span>
+                                <code>/ping</code>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Command Tips -->
+                <div class="info-card">
+                    <div class="info-card-icon">💡</div>
+                    <div class="info-card-content">
+                        <strong>Pro Tip</strong>
+                        <p>Use <code>/help &lt;command&gt;</code> in Discord to get detailed information about any specific
+                            command, including all available options and examples.</p>
+                    </div>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+
+        menuBtn.addEventListener('click', function () {
+            sidebar.classList.toggle('open');
+            overlay.classList.toggle('open');
+            menuBtn.classList.toggle('active');
+        });
+
+        overlay.addEventListener('click', function () {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('open');
+            menuBtn.classList.remove('active');
+        });
+
+        // Command filter
+        const commandFilter = document.getElementById('command-filter');
+        const commandItems = document.querySelectorAll('.command-item');
+
+        commandFilter.addEventListener('input', function () {
+            const query = this.value.toLowerCase().trim();
+            commandItems.forEach(item => {
+                const name = item.querySelector('.command-name').textContent.toLowerCase();
+                const desc = item.querySelector('.command-desc').textContent.toLowerCase();
+                if (name.includes(query) || desc.includes(query)) {
+                    item.style.display = '';
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+        });
+
+        // Smooth scroll for nav items
+        document.querySelectorAll('.command-nav-item').forEach(item => {
+            item.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            });
+        });
+    </script>
+
 </body>
-</html>
 
-<script src="./javascript/dropdown.js"></script>
+</html>

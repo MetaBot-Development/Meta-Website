@@ -1,0 +1,7 @@
+# Main site → home.html
+https://botmeta.app/   /home.html  200
+https://www.botmeta.app/   /home.html  200
+
+# Docs subdomain → introduction.html
+https://docs.botmeta.app/   /introduction.html  200
+https://www.docs.botmeta.app/   /introduction.html  200

@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meta Docs | Anti Alt</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Anti Alt Detection - Detect and block alternate accounts from joining your Discord server">
+    <link rel="stylesheet" href="../css files/docs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- SHOOTING STARS -->
+<div class="shooting-stars">
+    <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- PARALLAX STARFIELD -->
+<div class="star-layer star-layer-1"></div>
+<div class="star-layer star-layer-2"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <a href="../introduction.html" class="sidebar-logo">
+            <img src="../images/meta.png" alt="Meta Logo">
+            <span>Meta Docs</span>
+        </a>
+    </div>
+    
+    <nav class="sidebar-nav">
+        <!-- Getting Started Section -->
+        <div class="nav-section">
+            <div class="nav-section-title">Getting Started</div>
+            <a href="../introduction.html" class="nav-item" data-page="introduction.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Introduction
+            </a>
+            <a href="getting-started.html" class="nav-item" data-page="documentation/getting-started.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                Getting Started
+            </a>
+            <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" class="nav-item" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                Invite Meta
+            </a>
+            <a href="https://discord.gg/Rc8DgBBpsx" class="nav-item" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/></svg>
+                Support
+            </a>
+            <a href="../plus.html" class="nav-item nav-item-special" data-page="plus.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                Meta Plus
+            </a>
+            <a href="../commands.html" class="nav-item" data-page="commands.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+                Commands
+            </a>
+        </div>
+        
+        <!-- Protection Section -->
+        <div class="nav-section">
+            <div class="nav-section-title">Protection</div>
+            <a href="anti-mod-grief.html" class="nav-item" data-page="anti-mod-grief.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+                Anti Mod Grief
+            </a>
+            <a href="anti-alt.html" class="nav-item active" data-page="anti-alt.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" x2="22" y1="8" y2="13"/><line x1="22" x2="17" y1="8" y2="13"/></svg>
+                Anti Alt
+            </a>
+            <a href="malicious-app.html" class="nav-item" data-page="malicious-app.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                Malicious App
+            </a>
+            <a href="automod.html" class="nav-item" data-page="automod.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h0"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>
+                AutoMod
+            </a>
+            <a href="server-logs.html" class="nav-item" data-page="server-logs.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                Server Logs
+            </a>
+            <a href="themes.html" class="nav-item" data-page="themes.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="0.5" fill="currentColor"/><circle cx="17.5" cy="10.5" r="0.5" fill="currentColor"/><circle cx="8.5" cy="7.5" r="0.5" fill="currentColor"/><circle cx="6.5" cy="12.5" r="0.5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg>
+                Themes
+            </a>
+        </div>
+        
+        <!-- Security Section -->
+        <div class="nav-section">
+            <div class="nav-section-title">Security</div>
+            <a href="../article/inspecting.html" class="nav-item" data-page="../article/inspecting.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                Inspecting
+            </a>
+            <a href="../article/scanning.html" class="nav-item" data-page="../article/scanning.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></svg>
+                Scanning
+            </a>
+            <a href="../article/dangerous-roles.html" class="nav-item" data-page="../article/dangerous-roles.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+                Dangerous Roles
+            </a>
+            <a href="../article/meta-roles.html" class="nav-item" data-page="../article/meta-roles.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Meta Roles</a>
+
+        </div>
+    </nav>
+</aside>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="header-glow"></div>
+    
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <div class="search-container">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+        </svg>
+        <input type="text" class="search-input" id="search-input" placeholder="Search documentation..." autocomplete="off">
+        <kbd class="search-kbd">⌘K</kbd>
+        <div class="search-results" id="search-results"></div>
+    </div>
+    
+    <div class="header-actions">
+        <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="btn-ghost">
+            Support
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+        </a>
+        <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" target="_blank" class="btn-primary">
+            Invite Meta
+        </a>
+    </div>
+</header>
+
+<!-- MOBILE OVERLAY -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<!-- MAIN CONTENT -->
+<main class="main-content">
+    <div class="content-container">
+        
+        <section class="doc-section">
+            <h1>Anti Alt Detector</h1>
+            <div class="glow-line"></div>
+            
+            <p class="lead">Detect and block alternate accounts from joining your Discord server. Meta scans every new member and flags suspicious accounts based on account age and other factors.</p>
+            
+            <!-- Introduction Box -->
+            <div class="alt-intro">
+                <p>Alt accounts are widely known as "second" accounts, usually used for actions that a user doesn't want or cannot do on their main account. Users can use alt accounts to evade bans, collect rewards, or perform malicious actions without getting punished on their main account. Meta takes advantage of these patterns and filters out accounts that are suspicious.</p>
+            </div>
+
+            <!-- Warning Cards -->
+            <div class="warning-card" style="background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3);">
+                <div class="warning-card-icon">⚠️</div>
+                <div class="warning-card-content" style="--accent-warning: #ef4444;">
+                    <strong style="color: #f87171;">Permissions Warning</strong>
+                    <p>Users with the <code>Administrator</code> permission will be ignored by Meta. Administrators can change the configurations of the module. Make sure Meta has the necessary permissions to function correctly.</p>
+                </div>
+            </div>
+            
+            <div class="warning-card">
+                <div class="warning-card-icon">📋</div>
+                <div class="warning-card-content">
+                    <strong>Action Logs</strong>
+                    <p>All Anti Alt Detection logs will be sent into the server <code>admin-logs</code> channel. You cannot change the logging channel for Anti Alt Detector.</p>
+                </div>
+            </div>
+
+            <!-- Stats Banner -->
+            <div class="stats-banner">
+                <div class="stat-card">
+                    <div class="stat-number">37 000+</div>
+                    <div class="stat-label">Suspected Alts Detected</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">450+</div>
+                    <div class="stat-label">Servers Protected</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Real-Time Monitoring</div>
+                </div>
+            </div>
+            
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+            <!-- Anti Alt Rules -->
+            <h2>Anti Alt Rules</h2>
+            <p>Meta uses multiple detection methods to identify potential alt accounts joining your server.</p>
+
+            <div class="rule-cards">
+                <div class="rule-card">
+                    <div class="rule-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    </div>
+                    <div class="rule-content">
+                        <h4>Young Account Detection</h4>
+                        <p>An account that has joined your server but is suspiciously young. The parameter of how young an account can be is fully configurable by you. Accounts younger than your set threshold will be flagged and reported to your staff.</p>
+                    </div>
+                </div>
+
+                <div class="rule-card">
+                    <div class="rule-icon red">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+                    </div>
+                    <div class="rule-content">
+                        <h4>Suspicious Username Detection</h4>
+                        <p>If the account has a known scamming or suspicious name, your staff will be notified. Unlike automod, these accounts won't be kicked automatically — instead, your moderation team receives an alert to investigate.</p>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+            <!-- Modify Anti Alt -->
+            <h2>Modify Anti Alt Detector</h2>
+            <p>You can customize the day count threshold for the Anti Alt system. The day count determines how old an account must be to <strong>not</strong> be considered an alt account.</p>
+
+            <div class="config-box">
+                <div class="config-header">
+                    <div class="config-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/><circle cx="12" cy="12" r="3"/></svg>
+                    </div>
+                    <div class="config-title">
+                        <h4>Day Count Configuration</h4>
+                        <span>Set the minimum account age threshold</span>
+                    </div>
+                </div>
+                <div class="config-body">
+                    <p>By default, the day count is set to <strong>2 days</strong>. You can adjust this to be anywhere from 1 day to 356 days (1 year).</p>
+                    <ul>
+                        <li><strong>Default:</strong> 2 days</li>
+                        <li><strong>Minimum:</strong> 1 day</li>
+                        <li><strong>Maximum:</strong> 356 days (1 year)</li>
+                    </ul>
+                    <div class="config-example">
+                        <span class="example-label">Example</span>
+                        If the day count is set to <strong style="color: #fff;">5 days</strong>, then all accounts younger than 5 days will be flagged as suspected alt accounts.
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+            <!-- Automatic Kicker (Premium) -->
+            <div class="premium-card">
+                <div class="premium-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                    Meta Plus
+                </div>
+                <h3>Automatically Kick Alt Accounts</h3>
+                <p>Have a busy server that is struggling with alt accounts constantly joining? Meta Plus offers an automatic alt kicker that handles everything for you. When Meta considers an account to be an alt, the account will be kicked instantly.</p>
+                <ul>
+                    <li><strong>Auto-Kick:</strong> Suspected alt accounts are kicked immediately upon joining</li>
+                    <li><strong>Notifications:</strong> Both the moderation team and the kicked user receive a notification explaining the action</li>
+                    <li><strong>Full Logging:</strong> Everything is logged into the Administrator logs for full transparency</li>
+                </ul>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+            <!-- How It Works -->
+            <div class="how-it-works">
+                <h3>How It Works</h3>
+                <div class="how-it-works-steps">
+                    <div class="how-step">
+                        <div class="how-step-number">1</div>
+                        <h4>Member Joins</h4>
+                        <p>When a new user joins your server, Meta immediately begins analyzing the account.</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="how-step-number">2</div>
+                        <h4>Account Analysis</h4>
+                        <p>Meta checks the account age against your configured threshold and scans for suspicious patterns.</p>
+                    </div>
+                    <div class="how-step">
+                        <div class="how-step-number">3</div>
+                        <h4>Action Taken</h4>
+                        <p>If flagged, staff are notified via admin-logs. With Meta Plus, the account can be auto-kicked.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Section -->
+            <div class="video-section">
+                <div class="video-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sparkle-icon"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                    <h2>Video Tutorial</h2>
+                </div>
+                <p class="video-description">Watch how to set up and configure the Anti Alt Detection system for your server.</p>
+                
+                <div class="video-container">
+                    <div class="video-placeholder">
+                        <div class="video-placeholder-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                        </div>
+                        <div class="video-placeholder-text">
+                            <span class="video-placeholder-title">Anti Alt Setup Tutorial</span>
+                            <span class="video-placeholder-subtitle">Click to watch the tutorial video</span>
+                        </div>
+                        <div class="video-placeholder-decorations">
+                            <span class="decoration-dot dot-1"></span>
+                            <span class="decoration-dot dot-2"></span>
+                            <span class="decoration-dot dot-3"></span>
+                            <span class="decoration-dot dot-4"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Continue Section -->
+            <div class="continue-section">
+                <p style="color: var(--text-muted); margin-bottom: 24px;">Ready to continue? Explore more protection features.</p>
+                <a href="malicious-app.html" class="continue-btn">
+                    Continue to Malicious App
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+            
+        </section>
+        
+    </div>
+</main>
+
+<script>
+// Search functionality
+const searchData = [
+    { title: "Introduction", description: "Welcome to Meta documentation", href: "../introduction.html", category: "Getting Started" },
+    { title: "Getting Started", description: "Learn the basics of Meta bot", href: "getting-started.html", category: "Getting Started" },
+    { title: "Invite Meta", description: "Add Meta to your Discord server", href: "https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", category: "Getting Started" },
+    { title: "Support", description: "Get help and join our community", href: "https://discord.gg/Rc8DgBBpsx", category: "Getting Started" },
+    { title: "Meta Plus", description: "Premium features and benefits", href: "../plus.html", category: "Getting Started" },
+    { title: "Commands", description: "Full list of available commands", href: "../commands.html", category: "Getting Started" },
+    { title: "Anti Mod Grief", description: "Protect against malicious moderators", href: "anti-mod-grief.html", category: "Protection" },
+    { title: "Anti Alt", description: "Detect and block alternate accounts", href: "anti-alt.html", category: "Protection" },
+    { title: "Malicious App", description: "Identify dangerous apps", href: "malicious-app.html", category: "Protection" },
+    { title: "AutoMod", description: "Automatic moderation features", href: "automod.html", category: "Protection" },
+    { title: "Server Logs", description: "Track server activity", href: "server-logs.html", category: "Protection" },
+    { title: "Themes", description: "Customize Meta's appearance", href: "themes.html", category: "Protection" },
+    { title: "Inspecting", description: "Inspect users and content", href: "../article/inspecting.html", category: "Security" },
+    { title: "Scanning", description: "Scan for threats and vulnerabilities", href: "../article/scanning.html", category: "Security" },
+    { title: "Dangerous Roles", description: "Identify risky role permissions", href: "../article/dangerous-roles.html", category: "Security" },
+];
+
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+
+searchInput.addEventListener('input', function(e) {
+    const query = e.target.value.toLowerCase().trim();
+    
+    if (!query) {
+        searchResults.classList.remove('open');
+        searchResults.innerHTML = '';
+        return;
+    }
+    
+    const results = searchData.filter(item => 
+        item.title.toLowerCase().includes(query) ||
+        item.description.toLowerCase().includes(query) ||
+        item.category.toLowerCase().includes(query)
+    ).slice(0, 6);
+    
+    if (results.length === 0) {
+        searchResults.innerHTML = `<div class="search-no-results">No results found for "${query}"</div>`;
+        searchResults.classList.add('open');
+        return;
+    }
+    
+    searchResults.innerHTML = results.map(result => `
+        <a href="${result.href}" class="search-result-item">
+            <div class="search-result-header">
+                <span class="search-result-title">${result.title}</span>
+                <span class="search-result-category">${result.category}</span>
+            </div>
+            <span class="search-result-desc">${result.description}</span>
+        </a>
+    `).join('');
+    
+    searchResults.classList.add('open');
+});
+
+searchInput.addEventListener('focus', function() {
+    if (searchInput.value.trim()) {
+        searchResults.classList.add('open');
+    }
+});
+
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.search-container')) {
+        searchResults.classList.remove('open');
+    }
+});
+
+// Keyboard shortcut
+document.addEventListener('keydown', function(e) {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        searchInput.focus();
+    }
+    if (e.key === 'Escape') {
+        searchResults.classList.remove('open');
+        searchInput.blur();
+    }
+});
+
+// Mobile menu toggle
+const menuBtn = document.getElementById('menu-btn');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('sidebar-overlay');
+
+menuBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+    overlay.classList.toggle('open');
+    menuBtn.classList.toggle('active');
+});
+
+overlay.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    overlay.classList.remove('open');
+    menuBtn.classList.remove('active');
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meta Docs | Server Logs</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Server Logs - Track and monitor all server activity with Meta's comprehensive logging system">
+    <link rel="stylesheet" href="../css files/docs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* Log Category Cards */
+        .log-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+            margin: 32px 0;
+        }
+
+        .log-card {
+            background: rgba(10, 15, 30, 0.8);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 28px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .log-card::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, var(--log-color, var(--accent-cyan)), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .log-card:hover {
+            border-color: rgba(0, 198, 255, 0.3);
+            transform: translateY(-3px);
+        }
+
+        .log-card:hover::after {
+            opacity: 1;
+        }
+
+        .log-card-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+
+        .log-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .log-card-title {
+            font-family: 'Sora', sans-serif;
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0;
+        }
+
+        .log-card-subtitle {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        /* Log event items */
+        .log-events {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 16px;
+        }
+
+        .log-event {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 14px;
+            background: rgba(0, 0, 0, 0.25);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 10px;
+            font-size: 14px;
+            color: var(--text-secondary);
+            transition: all 0.2s ease;
+        }
+
+        .log-event:hover {
+            background: rgba(0, 198, 255, 0.06);
+            border-color: rgba(0, 198, 255, 0.15);
+        }
+
+        .log-event-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        /* Filter note for message logs */
+        .filter-note {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            margin-top: 14px;
+            padding: 12px 16px;
+            background: rgba(46, 111, 255, 0.08);
+            border: 1px solid rgba(46, 111, 255, 0.2);
+            border-radius: 10px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            line-height: 1.6;
+        }
+
+        .filter-note svg {
+            flex-shrink: 0;
+            color: var(--accent-blue);
+            margin-top: 2px;
+        }
+
+        /* Setup Box */
+        .setup-box {
+            background: rgba(10, 15, 30, 0.8);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 32px;
+            margin: 40px 0;
+            transition: all 0.3s ease;
+        }
+
+        .setup-box:hover {
+            border-color: rgba(0, 198, 255, 0.25);
+        }
+
+        .setup-header {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .setup-icon {
+            width: 52px;
+            height: 52px;
+            background: linear-gradient(135deg, rgba(0, 198, 255, 0.2), rgba(46, 111, 255, 0.2));
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--accent-cyan);
+            flex-shrink: 0;
+        }
+
+        .setup-title h3 {
+            font-family: 'Sora', sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 4px 0;
+        }
+
+        .setup-title span {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .setup-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin: 20px 0;
+        }
+
+        .setup-step {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 20px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(0, 198, 255, 0.1);
+            border-radius: 12px;
+            transition: all 0.2s ease;
+        }
+
+        .setup-step:hover {
+            border-color: rgba(0, 198, 255, 0.25);
+        }
+
+        .setup-step-num {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 700;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .setup-step-text {
+            font-size: 14px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .setup-step-text code {
+            font-family: 'JetBrains Mono', monospace;
+            background: rgba(0, 198, 255, 0.1);
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--accent-cyan);
+            font-size: 13px;
+        }
+
+        /* Channel Filter Section */
+        .channel-filter-box {
+            background: linear-gradient(135deg, rgba(46, 111, 255, 0.06), rgba(0, 198, 255, 0.04));
+            border: 1px solid rgba(46, 111, 255, 0.2);
+            border-radius: 16px;
+            padding: 28px;
+            margin: 24px 0;
+        }
+
+        .channel-filter-box h4 {
+            font-family: 'Sora', sans-serif;
+            font-size: 17px;
+            font-weight: 600;
+            color: var(--text-primary);
+            margin: 0 0 12px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .channel-filter-box h4 svg {
+            color: var(--accent-blue);
+        }
+
+        .channel-filter-box p {
+            color: var(--text-secondary);
+            font-size: 14px;
+            line-height: 1.7;
+            margin: 0 0 16px 0;
+        }
+
+        .channel-actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .channel-action {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 18px;
+            background: rgba(0, 0, 0, 0.3);
+            border: 1px solid rgba(46, 111, 255, 0.2);
+            border-radius: 10px;
+            font-size: 13px;
+            color: var(--text-secondary);
+            transition: all 0.2s ease;
+        }
+
+        .channel-action:hover {
+            border-color: rgba(46, 111, 255, 0.4);
+            background: rgba(46, 111, 255, 0.08);
+        }
+
+        .channel-action code {
+            font-family: 'JetBrains Mono', monospace;
+            color: var(--accent-cyan);
+            font-size: 12px;
+        }
+
+        /* Continue Section */
+        .continue-section {
+            text-align: center;
+            padding: 40px 0;
+            margin-top: 40px;
+            border-top: 1px solid var(--border-color);
+        }
+
+        .continue-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 12px;
+            padding: 16px 40px;
+            background: linear-gradient(135deg, var(--accent-blue), var(--accent-cyan));
+            border: none;
+            border-radius: 12px;
+            color: white;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .continue-btn:hover {
+            box-shadow: 0 0 30px rgba(0, 198, 255, 0.5);
+            transform: translateY(-3px);
+        }
+
+        .continue-btn svg { transition: transform 0.3s ease; }
+        .continue-btn:hover svg { transform: translateX(4px); }
+
+        /* Color variants */
+        .log-icon.message { background: linear-gradient(135deg, rgba(0, 198, 255, 0.2), rgba(46, 111, 255, 0.2)); color: var(--accent-cyan); }
+        .log-icon.channel { background: linear-gradient(135deg, rgba(139, 92, 246, 0.2), rgba(109, 40, 217, 0.2)); color: #a78bfa; }
+        .log-icon.role { background: linear-gradient(135deg, rgba(251, 191, 36, 0.2), rgba(245, 158, 11, 0.2)); color: #fbbf24; }
+        .log-icon.user { background: linear-gradient(135deg, rgba(34, 197, 94, 0.2), rgba(22, 163, 74, 0.2)); color: #4ade80; }
+        .log-icon.voice { background: linear-gradient(135deg, rgba(236, 72, 153, 0.2), rgba(219, 39, 119, 0.2)); color: #f472b6; }
+        .log-icon.join { background: linear-gradient(135deg, rgba(45, 212, 191, 0.2), rgba(20, 184, 166, 0.2)); color: var(--accent-aqua); }
+        .log-icon.leave { background: linear-gradient(135deg, rgba(239, 68, 68, 0.2), rgba(220, 38, 38, 0.2)); color: #f87171; }
+
+        .dot-cyan { background: var(--accent-cyan); }
+        .dot-purple { background: #a78bfa; }
+        .dot-yellow { background: #fbbf24; }
+        .dot-green { background: #4ade80; }
+        .dot-pink { background: #f472b6; }
+        .dot-aqua { background: var(--accent-aqua); }
+        .dot-red { background: #f87171; }
+
+        @media (max-width: 768px) {
+            .log-grid { grid-template-columns: 1fr; }
+            .channel-actions { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- SHOOTING STARS -->
+<div class="shooting-stars">
+    <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- PARALLAX STARFIELD -->
+<div class="star-layer star-layer-1"></div>
+<div class="star-layer star-layer-2"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <a href="../introduction.html" class="sidebar-logo">
+            <img src="../images/meta.png" alt="Meta Logo">
+            <span>Meta Docs</span>
+        </a>
+    </div>
+    <nav class="sidebar-nav">
+        <div class="nav-section">
+            <div class="nav-section-title">Getting Started</div>
+            <a href="../introduction.html" class="nav-item" data-page="introduction.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Introduction
+            </a>
+            <a href="getting-started.html" class="nav-item" data-page="getting-started.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
+                Getting Started
+            </a>
+            <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" class="nav-item" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+                Invite Meta
+            </a>
+            <a href="https://discord.gg/Rc8DgBBpsx" class="nav-item" target="_blank">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/></svg>
+                Support
+            </a>
+            <a href="../plus.html" class="nav-item nav-item-special" data-page="plus.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
+                Meta Plus
+            </a>
+            <a href="../commands.html" class="nav-item" data-page="commands.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+                Commands
+            </a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-section-title">Protection</div>
+            <a href="anti-mod-grief.html" class="nav-item" data-page="anti-mod-grief.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
+                Anti Mod Grief
+            </a>
+            <a href="anti-alt.html" class="nav-item" data-page="anti-alt.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" x2="22" y1="8" y2="13"/><line x1="22" x2="17" y1="8" y2="13"/></svg>
+                Anti Alt
+            </a>
+            <a href="malicious-app.html" class="nav-item" data-page="malicious-app.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                Malicious App
+            </a>
+            <a href="automod.html" class="nav-item" data-page="automod.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h0"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>
+                AutoMod
+            </a>
+            <a href="server-logs.html" class="nav-item active" data-page="server-logs.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
+                Server Logs
+            </a>
+            <a href="themes.html" class="nav-item" data-page="themes.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="0.5" fill="currentColor"/><circle cx="17.5" cy="10.5" r="0.5" fill="currentColor"/><circle cx="8.5" cy="7.5" r="0.5" fill="currentColor"/><circle cx="6.5" cy="12.5" r="0.5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg>
+                Themes
+            </a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-section-title">Security</div>
+            <a href="../article/inspecting.html" class="nav-item" data-page="../article/inspecting.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                Inspecting
+            </a>
+            <a href="../article/scanning.html" class="nav-item" data-page="../article/scanning.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></svg>
+                Scanning
+            </a>
+            <a href="../article/dangerous-roles.html" class="nav-item" data-page="../article/dangerous-roles.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
+                Dangerous Roles
+            </a>
+            <a href="../article/meta-roles.html" class="nav-item" data-page="../article/meta-roles.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Meta Roles</a>
+
+        </div>
+    </nav>
+</aside>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="header-glow"></div>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+    <div class="search-container">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input type="text" class="search-input" id="search-input" placeholder="Search documentation..." autocomplete="off">
+        <kbd class="search-kbd">⌘K</kbd>
+        <div class="search-results" id="search-results"></div>
+    </div>
+    <div class="header-actions">
+        <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="btn-ghost">Support <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" target="_blank" class="btn-primary">Invite Meta</a>
+    </div>
+</header>
+
+<!-- MOBILE OVERLAY -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<!-- MAIN CONTENT -->
+<main class="main-content">
+    <div class="content-container">
+
+        <section class="doc-section">
+            <h1>Server Logs</h1>
+            <div class="glow-line"></div>
+
+            <p class="lead">Comprehensive logging system that tracks every important event in your server. Stay informed about what's happening at all times.</p>
+
+            <!-- Setup Box -->
+            <div class="setup-box">
+                <div class="setup-header">
+                    <div class="setup-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/></svg>
+                    </div>
+                    <div class="setup-title">
+                        <h3>How to Enable Logs</h3>
+                        <span>Each log category can be toggled individually</span>
+                    </div>
+                </div>
+                <div class="setup-steps">
+                    <div class="setup-step">
+                        <div class="setup-step-num">1</div>
+                        <div class="setup-step-text">Run <code>/settings</code> in your server to open the configuration panel.</div>
+                    </div>
+                    <div class="setup-step">
+                        <div class="setup-step-num">2</div>
+                        <div class="setup-step-text">Navigate to the <strong>Server Logs</strong> section in the settings menu.</div>
+                    </div>
+                    <div class="setup-step">
+                        <div class="setup-step-num">3</div>
+                        <div class="setup-step-text">Click the corresponding button for each log type to <strong>enable or disable</strong> it.</div>
+                    </div>
+                    <div class="setup-step">
+                        <div class="setup-step-num">4</div>
+                        <div class="setup-step-text">Logs will be sent to your configured <strong>mod-log channel</strong> automatically.</div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+            <!-- Log Categories -->
+            <h2>Log Categories</h2>
+            <p>Each log category captures different types of server events. Enable only the ones you need to keep your log channel clean and organized.</p>
+
+            <div class="log-grid">
+                <!-- Message Logs -->
+                <div class="log-card" style="--log-color: var(--accent-cyan);">
+                    <div class="log-card-header">
+                        <div class="log-icon message">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+                        </div>
+                        <div>
+                            <div class="log-card-title">Message Logs</div>
+                            <div class="log-card-subtitle">Track message changes</div>
+                        </div>
+                    </div>
+                    <div class="log-events">
+                        <div class="log-event">
+                            <span class="log-event-dot dot-cyan"></span>
+                            Messages deleted
+                        </div>
+                        <div class="log-event">
+                            <span class="log-event-dot dot-cyan"></span>
+                            Messages edited
+                        </div>
+                    </div>
+                    <div class="filter-note">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>
+                        <span><strong>Channel Filtering</strong> — You can filter out specific channels from message logging. Submit the channel ID to add or remove filtered channels.</span>
+                    </div>
+                </div>
+
+                <!-- Channel Logs -->
+                <div class="log-card" style="--log-color: #a78bfa;">
+                    <div class="log-card-header">
+                        <div class="log-icon channel">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20h16a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.93a2 2 0 0 1-1.66-.9l-.82-1.2A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13c0 1.1.9 2 2 2Z"/></svg>
+                        </div>
+                        <div>
+                            <div class="log-card-title">Channel Logs</div>
+                            <div class="log-card-subtitle">Monitor channel changes</div>
+                        </div>
+                    </div>
+                    <div class="log-events">
+                        <div class="log-event">
+                            <span class="log-event-dot dot-purple"></span>
+                            Channel created
+                        </div>
+                        <div class="log-event">
+                            <span class="log-event-dot dot-purple"></span>
+                            Channel deleted
+                        </div>
+                        <div class="log-event">
+                            <span class="log-event-dot dot-purple"></span>
+                            Channel updated
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role Logs -->
+                <div class="log-card" style="--log-color: #fbbf24;">
+                    <div class="log-card-header">
+                        <div class="log-icon role">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                        </div>
+                        <div>
+                            <div class="log-card-title">Role Logs</div>
+                            <div class="log-card-subtitle">Track role modifications</div>
+                        </div>
+                    </div>
+                    <div class="log-events">
+                        <div class="log-event">
+                            <span class="log-event-dot dot-yellow"></span>
+                            Role created
+                        </div>
+                        <div class="log-event">
+                            <span class="log-event-dot dot-yellow"></span>
+                            Role deleted
+                        </div>
+                        <div class="log-event">
+                            <span class="log-event-dot dot-yellow"></span>
+                            Role updated
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Logs -->
+                <div class="log-card" style="--log-color: #4ade80;">
+                    <div class="log-card-header">
+                        <div class="log-icon user">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/></svg>
+                        </div>
+                        <div>
+                            <div class="log-card-title">User Logs</div>
+                            <div class="log-card-subtitle">Monitor user profile changes</div>
+                        </div>
+                    </div>
+                    <div class="log-events">
+                        <div class="log-event">
+                            <span class="log-event-dot dot-green"></span>
+                            Username changed
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Voice Logs -->
+                <div class="log-card" style="--log-color: #f472b6;">
+                    <div class="log-card-header">
+                        <div class="log-icon voice">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/></svg>
+                        </div>
+                        <div>
+                            <div class="log-card-title">Voice Logs</div>
+                            <div class="log-card-subtitle">Track voice channel activity</div>
+                        </div>
+                    </div>
+                    <div class="log-events">
+                        <div class="log-event">
+                            <span class="log-event-dot dot-pink"></span>
+                            VC connected
+                        </div>
+                        <div class="log-event">
+                            <span class="log-event-dot dot-pink"></span>
+                            VC disconnected
+                        </div>
+                        <div class="log-event">
+                            <span class="log-event-dot dot-pink"></span>
+                            VC switched
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Join Log -->
+                <div class="log-card" style="--log-color: var(--accent-aqua);">
+                    <div class="log-card-header">
+                        <div class="log-icon join">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="19" x2="19" y1="8" y2="14"/><line x1="22" x2="16" y1="11" y2="11"/></svg>
+                        </div>
+                        <div>
+                            <div class="log-card-title">Join Log</div>
+                            <div class="log-card-subtitle">New member arrivals</div>
+                        </div>
+                    </div>
+                    <div class="log-events">
+                        <div class="log-event">
+                            <span class="log-event-dot dot-aqua"></span>
+                            Member joined
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Leave Log -->
+                <div class="log-card" style="--log-color: #f87171;">
+                    <div class="log-card-header">
+                        <div class="log-icon leave">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" x2="22" y1="11" y2="11"/></svg>
+                        </div>
+                        <div>
+                            <div class="log-card-title">Leave Log</div>
+                            <div class="log-card-subtitle">Member departures</div>
+                        </div>
+                    </div>
+                    <div class="log-events">
+                        <div class="log-event">
+                            <span class="log-event-dot dot-red"></span>
+                            Member left
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+            <!-- Channel Filtering -->
+            <h2>Channel Filtering</h2>
+            <p>Message Logs support channel filtering, allowing you to exclude specific channels from being logged. This is useful for bot channels or high-traffic channels you don't need to monitor.</p>
+
+            <div class="channel-filter-box">
+                <h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z"/></svg>
+                    How to Filter Channels
+                </h4>
+                <p>To add or remove channels from the filter, click the corresponding button in the Message Logs settings and submit the <strong>channel ID</strong>. The same process applies for both adding and removing filtered channels. To see all of the filtered channels, click on the Check button.</p>
+                <div class="channel-actions">
+                    <div class="channel-action">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" x2="12" y1="5" y2="19"/><line x1="5" x2="19" y1="12" y2="12"/></svg>
+                        <span>Add → Submit <code>Channel ID</code></span>
+                    </div>
+                    <div class="channel-action">
+                        <span>Check → Submit</span>
+                    </div>
+                    <div class="channel-action">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" x2="19" y1="12" y2="12"/></svg>
+                        <span>Remove → Submit <code>Channel ID</code></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="info-card-icon">💡</div>
+                <div class="info-card-content">
+                    <strong>Pro Tip</strong>
+                    <p>Only Message Logs support channel filtering. Other log types will capture all relevant events server-wide without the ability to filter by channel.</p>
+                </div>
+            </div>
+
+            <!-- Continue -->
+            <div class="continue-section">
+                <a href="themes.html" class="continue-btn">
+                    Continue to Themes
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+
+        </section>
+    </div>
+</main>
+
+<script>
+const searchData = [
+    { title: "Introduction", desc: "Welcome to Meta documentation", url: "introduction.html", category: "Getting Started" },
+    { title: "Getting Started", desc: "Learn the basics of Meta bot", url: "getting-started.html", category: "Getting Started" },
+    { title: "Meta Plus", desc: "Premium features and benefits", url: "plus.html", category: "Getting Started" },
+    { title: "Commands", desc: "Full list of available commands", url: "commands.html", category: "Getting Started" },
+    { title: "Anti Mod Grief", desc: "Protect against malicious moderators", url: "anti-mod-grief.html", category: "Protection" },
+    { title: "Anti Alt", desc: "Detect and block alternate accounts", url: "anti-alt.html", category: "Protection" },
+    { title: "Malicious App", desc: "Protect from dangerous bots", url: "malicious-app.html", category: "Protection" },
+    { title: "AutoMod", desc: "Automatic moderation features", url: "automod.html", category: "Protection" },
+    { title: "Server Logs", desc: "Track server activity", url: "server-logs.html", category: "Protection" },
+    { title: "Themes", desc: "Customize Meta's appearance", url: "themes.html", category: "Protection" },
+    { title: "Inspecting", desc: "Inspect users and content", url: "inspecting.html", category: "Security" },
+    { title: "Scanning", desc: "Scan for threats", url: "scanning.html", category: "Security" },
+    { title: "Dangerous Roles", desc: "Identify risky role permissions", url: "dangerous-roles.html", category: "Security" },
+];
+
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+
+searchInput.addEventListener('input', function () {
+    const query = this.value.toLowerCase().trim();
+    if (query.length < 2) { searchResults.classList.remove('open'); return; }
+    const matches = searchData.filter(item => item.title.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query));
+    if (matches.length > 0) {
+        searchResults.innerHTML = matches.map(item => `
+            <a href="${item.url}" class="search-result-item">
+                <div class="search-result-header">
+                    <span class="search-result-title">${item.title}</span>
+                    <span class="search-result-category">${item.category}</span>
+                </div>
+                <p class="search-result-desc">${item.desc}</p>
+            </a>
+        `).join('');
+    } else {
+        searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
+    }
+    searchResults.classList.add('open');
+});
+
+document.addEventListener('keydown', function (e) {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); searchInput.focus(); }
+    if (e.key === 'Escape') { searchResults.classList.remove('open'); searchInput.blur(); }
+});
+
+const menuBtn = document.getElementById('menu-btn');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('sidebar-overlay');
+menuBtn.addEventListener('click', function () { sidebar.classList.toggle('open'); overlay.classList.toggle('open'); menuBtn.classList.toggle('active'); });
+overlay.addEventListener('click', function () { sidebar.classList.remove('open'); overlay.classList.remove('open'); menuBtn.classList.remove('active'); });
+</script>
+
+</body>
+</html>

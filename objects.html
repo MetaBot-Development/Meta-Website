@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UI Components - Meta Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meta Bot UI Components Reference">
+    <link rel="stylesheet" href="css files/docs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- SHOOTING STARS -->
+<div class="shooting-stars">
+    <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- PARALLAX STARFIELD -->
+<div class="star-layer star-layer-1"></div>
+<div class="star-layer star-layer-2"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <a href="introduction.html" class="sidebar-logo">
+            <img src="images/meta.png" alt="Meta Logo">
+            <span>Meta Docs</span>
+        </a>
+    </div>
+    
+    <nav class="sidebar-nav">
+        <div class="nav-section">
+            <div class="nav-section-title">Getting Started</div>
+            <a href="introduction.html" class="nav-item" data-page="introduction.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                Introduction
+            </a>
+        </div>
+        
+        <div class="nav-section">
+            <div class="nav-section-title">Resources</div>
+            <a href="objects.html" class="nav-item active" data-page="objects.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="7" height="7" x="3" y="3" rx="1"/><rect width="7" height="7" x="14" y="3" rx="1"/><rect width="7" height="7" x="14" y="14" rx="1"/><rect width="7" height="7" x="3" y="14" rx="1"/></svg>
+                UI Components
+            </a>
+        </div>
+    </nav>
+</aside>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="header-glow"></div>
+    
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+    
+    <div class="search-container">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <path d="m21 21-4.3-4.3"></path>
+        </svg>
+        <input type="text" class="search-input" id="search-input" placeholder="Search documentation..." autocomplete="off">
+        <kbd class="search-kbd">⌘K</kbd>
+        <div class="search-results" id="search-results"></div>
+    </div>
+    
+    <div class="header-actions">
+        <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="btn-ghost">
+            Support
+            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+        </a>
+        <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" target="_blank" class="btn-primary">
+            Invite Meta
+        </a>
+    </div>
+</header>
+
+<!-- MOBILE OVERLAY -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<!-- MAIN CONTENT -->
+<main class="main-content">
+    <div class="content-container">
+        
+        <section class="doc-section">
+            <h1>UI Components Reference</h1>
+            <div class="glow-line"></div>
+            <p class="lead">A collection of reusable UI components for documentation pages. Copy any component to use in your pages.</p>
+            
+            <!-- ===================== INFO CARDS ===================== -->
+            <h2>Info Cards</h2>
+            
+            <!-- Info Card - Blue -->
+            <div class="info-card">
+                <div class="info-card-icon">💡</div>
+                <div class="info-card-content">
+                    <strong>Pro Tip</strong>
+                    <p>This is an info card. Great for tips, notes, and helpful information that stands out from regular text.</p>
+                </div>
+            </div>
+            
+            <!-- Warning Card - Amber -->
+            <div class="warning-card">
+                <div class="warning-card-icon">⚠️</div>
+                <div class="warning-card-content">
+                    <strong>Warning</strong>
+                    <p>This is a warning card. Use it to highlight important cautions or things users should be careful about.</p>
+                </div>
+            </div>
+            
+            <!-- Success Card -->
+            <div class="info-card" style="border-color: rgba(34, 197, 94, 0.3); background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.05) 100%);">
+                <div class="info-card-icon">✅</div>
+                <div class="info-card-content">
+                    <strong>Success</strong>
+                    <p>This is a success card. Perfect for confirming actions or showing positive outcomes.</p>
+                </div>
+            </div>
+            
+            <!-- Error Card -->
+            <div class="info-card" style="border-color: rgba(239, 68, 68, 0.3); background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0.05) 100%);">
+                <div class="info-card-icon">❌</div>
+                <div class="info-card-content">
+                    <strong>Error / Danger</strong>
+                    <p>This is an error card. Use for critical warnings or things that could cause problems.</p>
+                </div>
+            </div>
+            
+            <!-- ===================== MODULE DETAIL CARDS ===================== -->
+            <h2>Module Detail Cards</h2>
+            
+            <div class="module-detail-card">
+                <div class="module-detail-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                    <h3>Module Title</h3>
+                </div>
+                <p>Description of the module goes here. Explain what this feature does and why it's useful.</p>
+                <div class="code-block">
+                    <code>/command option1</code> - Description of command<br>
+                    <code>/command option2</code> - Another command option
+                </div>
+            </div>
+            
+            <!-- Module with List -->
+            <div class="module-detail-card">
+                <div class="module-detail-header">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    <h3>Module with Bullet List</h3>
+                </div>
+                <p>Use bullet points for listing features or items:</p>
+                <ul>
+                    <li>First feature or item</li>
+                    <li>Second feature or item</li>
+                    <li>Third feature or item</li>
+                    <li>Fourth feature or item</li>
+                </ul>
+            </div>
+            
+            <!-- ===================== STEP-BY-STEP PROCESS ===================== -->
+            <h2>Step-by-Step Process</h2>
+            
+            <div class="how-it-works-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h4>First Step Title</h4>
+                        <p>Description of what happens in the first step. Include the <code>/command</code> if relevant.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h4>Second Step Title</h4>
+                        <p>Description of the second step in the process.</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h4>Third Step Title</h4>
+                        <p>Description of the third step. Continue as needed.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- ===================== STAT CARDS GRID ===================== -->
+            <h2>Stat Cards Grid</h2>
+            
+            <div class="stats-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1rem; margin: 1.5rem 0;">
+                <div class="stat-card" style="background: linear-gradient(135deg, rgba(99, 102, 241, 0.15) 0%, rgba(99, 102, 241, 0.05) 100%); border: 1px solid rgba(99, 102, 241, 0.3); border-radius: 12px; padding: 1.5rem; text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #818cf8;">1,234</div>
+                    <div style="color: rgba(255,255,255,0.7); font-size: 0.875rem; margin-top: 0.5rem;">Total Servers</div>
+                </div>
+                <div class="stat-card" style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.15) 0%, rgba(34, 197, 94, 0.05) 100%); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 12px; padding: 1.5rem; text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #4ade80;">99.9%</div>
+                    <div style="color: rgba(255,255,255,0.7); font-size: 0.875rem; margin-top: 0.5rem;">Uptime</div>
+                </div>
+                <div class="stat-card" style="background: linear-gradient(135deg, rgba(251, 191, 36, 0.15) 0%, rgba(251, 191, 36, 0.05) 100%); border: 1px solid rgba(251, 191, 36, 0.3); border-radius: 12px; padding: 1.5rem; text-align: center;">
+                    <div style="font-size: 2.5rem; font-weight: 700; color: #fbbf24;">50ms</div>
+                    <div style="color: rgba(255,255,255,0.7); font-size: 0.875rem; margin-top: 0.5rem;">Response Time</div>
+                </div>
+            </div>
+            
+            <!-- ===================== FEATURE GRID ===================== -->
+            <h2>Feature Grid</h2>
+            
+            <div class="feature-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+                <div class="feature-card" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 1.5rem; transition: all 0.3s ease;">
+                    <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #6366f1, #8b5cf6); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+                    </div>
+                    <h4 style="margin: 0 0 0.5rem 0; color: #fff;">Feature Title</h4>
+                    <p style="margin: 0; color: rgba(255,255,255,0.6); font-size: 0.9rem;">Brief description of this amazing feature and what it does for users.</p>
+                </div>
+                <div class="feature-card" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 1.5rem; transition: all 0.3s ease;">
+                    <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #22c55e, #10b981); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h4 style="margin: 0 0 0.5rem 0; color: #fff;">Another Feature</h4>
+                    <p style="margin: 0; color: rgba(255,255,255,0.6); font-size: 0.9rem;">Description of another great feature with helpful information.</p>
+                </div>
+                <div class="feature-card" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 1.5rem; transition: all 0.3s ease;">
+                    <div style="width: 48px; height: 48px; background: linear-gradient(135deg, #f59e0b, #f97316); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                    </div>
+                    <h4 style="margin: 0 0 0.5rem 0; color: #fff;">Fast & Powerful</h4>
+                    <p style="margin: 0; color: rgba(255,255,255,0.6); font-size: 0.9rem;">Lightning fast responses with powerful capabilities.</p>
+                </div>
+            </div>
+            
+            <!-- ===================== BADGES ===================== -->
+            <h2>Badges & Labels</h2>
+            
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 1.5rem 0;">
+                <span class="action-badge moderate" style="padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Moderate</span>
+                <span class="action-badge warn" style="padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Warning</span>
+                <span class="action-badge kick" style="padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Kick</span>
+                <span class="action-badge ban" style="padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Ban</span>
+                <span style="background: linear-gradient(135deg, #6366f1, #8b5cf6); color: white; padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500;">Premium</span>
+                <span style="background: rgba(255,255,255,0.1); color: rgba(255,255,255,0.8); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.8rem; font-weight: 500; border: 1px solid rgba(255,255,255,0.2);">Default</span>
+            </div>
+            
+            <!-- ===================== TABLE ===================== -->
+            <h2>Data Table</h2>
+            
+            <div class="table-container" style="overflow-x: auto; margin: 1.5rem 0;">
+                <table style="width: 100%; border-collapse: collapse; background: rgba(255,255,255,0.02); border-radius: 12px; overflow: hidden;">
+                    <thead>
+                        <tr style="background: rgba(255,255,255,0.05);">
+                            <th style="padding: 1rem; text-align: left; color: rgba(255,255,255,0.9); font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.1);">Command</th>
+                            <th style="padding: 1rem; text-align: left; color: rgba(255,255,255,0.9); font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.1);">Description</th>
+                            <th style="padding: 1rem; text-align: left; color: rgba(255,255,255,0.9); font-weight: 600; border-bottom: 1px solid rgba(255,255,255,0.1);">Permission</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: #818cf8; font-family: 'JetBrains Mono', monospace;">/kick</td>
+                            <td style="padding: 1rem; color: rgba(255,255,255,0.7);">Kick a member from the server</td>
+                            <td style="padding: 1rem;"><span style="background: rgba(251, 191, 36, 0.2); color: #fbbf24; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem;">Moderator</span></td>
+                        </tr>
+                        <tr style="border-bottom: 1px solid rgba(255,255,255,0.05);">
+                            <td style="padding: 1rem; color: #818cf8; font-family: 'JetBrains Mono', monospace;">/ban</td>
+                            <td style="padding: 1rem; color: rgba(255,255,255,0.7);">Permanently ban a member</td>
+                            <td style="padding: 1rem;"><span style="background: rgba(239, 68, 68, 0.2); color: #f87171; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem;">Admin</span></td>
+                        </tr>
+                        <tr>
+                            <td style="padding: 1rem; color: #818cf8; font-family: 'JetBrains Mono', monospace;">/warn</td>
+                            <td style="padding: 1rem; color: rgba(255,255,255,0.7);">Issue a warning to a member</td>
+                            <td style="padding: 1rem;"><span style="background: rgba(34, 197, 94, 0.2); color: #4ade80; padding: 0.25rem 0.75rem; border-radius: 12px; font-size: 0.8rem;">Helper</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- ===================== TIMELINE ===================== -->
+            <h2>Timeline / Changelog</h2>
+            
+            <div class="timeline" style="margin: 1.5rem 0; padding-left: 2rem; border-left: 2px solid rgba(99, 102, 241, 0.3);">
+                <div class="timeline-item" style="position: relative; padding-bottom: 2rem;">
+                    <div style="position: absolute; left: -2.5rem; width: 16px; height: 16px; background: #6366f1; border-radius: 50%; border: 3px solid #0a0a0f;"></div>
+                    <div style="color: rgba(255,255,255,0.5); font-size: 0.875rem; margin-bottom: 0.5rem;">January 2024</div>
+                    <h4 style="margin: 0 0 0.5rem 0; color: #fff;">Version 2.0 Released</h4>
+                    <p style="margin: 0; color: rgba(255,255,255,0.6);">Major update with new features and improvements.</p>
+                </div>
+                <div class="timeline-item" style="position: relative; padding-bottom: 2rem;">
+                    <div style="position: absolute; left: -2.5rem; width: 16px; height: 16px; background: #22c55e; border-radius: 50%; border: 3px solid #0a0a0f;"></div>
+                    <div style="color: rgba(255,255,255,0.5); font-size: 0.875rem; margin-bottom: 0.5rem;">December 2023</div>
+                    <h4 style="margin: 0 0 0.5rem 0; color: #fff;">Bug Fixes</h4>
+                    <p style="margin: 0; color: rgba(255,255,255,0.6);">Fixed several issues reported by the community.</p>
+                </div>
+                <div class="timeline-item" style="position: relative;">
+                    <div style="position: absolute; left: -2.5rem; width: 16px; height: 16px; background: #f59e0b; border-radius: 50%; border: 3px solid #0a0a0f;"></div>
+                    <div style="color: rgba(255,255,255,0.5); font-size: 0.875rem; margin-bottom: 0.5rem;">November 2023</div>
+                    <h4 style="margin: 0 0 0.5rem 0; color: #fff;">Initial Release</h4>
+                    <p style="margin: 0; color: rgba(255,255,255,0.6);">First public release of the bot.</p>
+                </div>
+            </div>
+            
+            <!-- ===================== ACCORDION ===================== -->
+            <h2>FAQ Accordion</h2>
+            
+            <div class="accordion" style="margin: 1.5rem 0;">
+                <details style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; margin-bottom: 0.75rem; overflow: hidden;">
+                    <summary style="padding: 1rem 1.5rem; cursor: pointer; color: #fff; font-weight: 500; display: flex; align-items: center; justify-content: space-between;">
+                        How do I get started?
+                    </summary>
+                    <div style="padding: 0 1.5rem 1rem 1.5rem; color: rgba(255,255,255,0.7);">
+                        Simply invite the bot to your server and use <code>/setup</code> to configure it. The bot will guide you through the initial setup process.
+                    </div>
+                </details>
+                <details style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; margin-bottom: 0.75rem; overflow: hidden;">
+                    <summary style="padding: 1rem 1.5rem; cursor: pointer; color: #fff; font-weight: 500; display: flex; align-items: center; justify-content: space-between;">
+                        What permissions does the bot need?
+                    </summary>
+                    <div style="padding: 0 1.5rem 1rem 1.5rem; color: rgba(255,255,255,0.7);">
+                        The bot requires Administrator permissions for full functionality, but can work with limited permissions if you only need specific features.
+                    </div>
+                </details>
+                <details style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; overflow: hidden;">
+                    <summary style="padding: 1rem 1.5rem; cursor: pointer; color: #fff; font-weight: 500; display: flex; align-items: center; justify-content: space-between;">
+                        Is there a premium version?
+                    </summary>
+                    <div style="padding: 0 1.5rem 1rem 1.5rem; color: rgba(255,255,255,0.7);">
+                        Yes! Premium includes advanced features like custom branding, priority support, and extended logging.
+                    </div>
+                </details>
+            </div>
+            
+            <!-- ===================== COMPARISON CARDS ===================== -->
+            <h2>Comparison / Before-After</h2>
+            
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 1.5rem 0;">
+                <div style="background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(239, 68, 68, 0.02) 100%); border: 1px solid rgba(239, 68, 68, 0.3); border-radius: 16px; padding: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                        <span style="font-size: 1.5rem;">❌</span>
+                        <h4 style="margin: 0; color: #f87171;">Without Meta</h4>
+                    </div>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: rgba(255,255,255,0.6);">
+                        <li>Vulnerable to raids</li>
+                        <li>Manual moderation only</li>
+                        <li>No alt detection</li>
+                        <li>Slow response times</li>
+                    </ul>
+                </div>
+                <div style="background: linear-gradient(135deg, rgba(34, 197, 94, 0.1) 0%, rgba(34, 197, 94, 0.02) 100%); border: 1px solid rgba(34, 197, 94, 0.3); border-radius: 16px; padding: 1.5rem;">
+                    <div style="display: flex; align-items: center; gap: 0.75rem; margin-bottom: 1rem;">
+                        <span style="font-size: 1.5rem;">✅</span>
+                        <h4 style="margin: 0; color: #4ade80;">With Meta</h4>
+                    </div>
+                    <ul style="margin: 0; padding-left: 1.25rem; color: rgba(255,255,255,0.6);">
+                        <li>24/7 raid protection</li>
+                        <li>Automated moderation</li>
+                        <li>Advanced alt detection</li>
+                        <li>Instant responses</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- ===================== QUOTE / CALLOUT ===================== -->
+            <h2>Quote / Callout</h2>
+            
+            <blockquote style="margin: 1.5rem 0; padding: 1.5rem 2rem; background: linear-gradient(135deg, rgba(99, 102, 241, 0.1) 0%, rgba(139, 92, 246, 0.05) 100%); border-left: 4px solid #6366f1; border-radius: 0 12px 12px 0;">
+                <p style="margin: 0 0 1rem 0; color: rgba(255,255,255,0.9); font-style: italic; font-size: 1.1rem;">"Meta has completely transformed how we manage our community. The automated protection is incredible!"</p>
+                <footer style="color: rgba(255,255,255,0.5);">— Server Owner, 50k+ members</footer>
+            </blockquote>
+            
+            <!-- ===================== CODE BLOCKS ===================== -->
+            <h2>Code Blocks</h2>
+            
+            <div class="code-block">
+                <code>/setup module:antialt enable:true</code>
+            </div>
+            
+            <div style="background: rgba(0,0,0,0.3); border: 1px solid rgba(255,255,255,0.1); border-radius: 12px; padding: 1.5rem; margin: 1rem 0; font-family: 'JetBrains Mono', monospace; font-size: 0.9rem; overflow-x: auto;">
+                <div style="color: rgba(255,255,255,0.5); margin-bottom: 0.5rem;"># Multi-line code example</div>
+                <div style="color: #818cf8;">/config set antialt.age 7d</div>
+                <div style="color: #818cf8;">/config set antialt.action quarantine</div>
+                <div style="color: #818cf8;">/config set antialt.logs #security-logs</div>
+            </div>
+            
+            <!-- ===================== VIDEO CONTAINER ===================== -->
+            <h2>Video Container</h2>
+            
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                    <p>Video tutorial coming soon</p>
+                </div>
+            </div>
+            
+            <!-- ===================== CONTINUE BUTTON ===================== -->
+            <h2>Continue Button</h2>
+            
+            <div class="continue-section">
+                <a href="introduction.html" class="continue-btn">
+                    Continue to Introduction
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+            
+        </section>
+        
+    </div>
+</main>
+
+<script>
+// Mobile menu toggle
+const menuBtn = document.getElementById('menu-btn');
+const sidebar = document.getElementById('sidebar');
+const sidebarOverlay = document.getElementById('sidebar-overlay');
+
+menuBtn.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+    sidebarOverlay.classList.toggle('active');
+});
+
+sidebarOverlay.addEventListener('click', () => {
+    sidebar.classList.remove('open');
+    sidebarOverlay.classList.remove('active');
+});
+
+// Keyboard shortcut for search
+const searchInput = document.getElementById('search-input');
+document.addEventListener('keydown', (e) => {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        searchInput.focus();
+    }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meta Docs | Scanning</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scanning Your Server - Learn how Meta scans and calculates your server's protection score">
+    <link rel="stylesheet" href="../css files/docs.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- SHOOTING STARS -->
+<div class="shooting-stars">
+    <span></span><span></span><span></span><span></span><span></span>
+</div>
+
+<!-- PARALLAX STARFIELD -->
+<div class="star-layer star-layer-1"></div>
+<div class="star-layer star-layer-2"></div>
+
+<!-- SIDEBAR -->
+<aside class="sidebar" id="sidebar">
+    <div class="sidebar-header">
+        <a href="../introduction.html" class="sidebar-logo">
+            <img src="../images/meta.png" alt="Meta Logo">
+            <span>Meta Docs</span>
+        </a>
+    </div>
+    <nav class="sidebar-nav">
+        <div class="nav-section">
+            <div class="nav-section-title">Getting Started</div>
+            <a href="../introduction.html" class="nav-item" data-page="introduction.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Introduction</a>
+            <a href="../documentation/getting.started.html" class="nav-item" data-page="documentation/getting-started.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg> Getting Started</a>
+            <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" class="nav-item" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Invite Meta</a>
+            <a href="https://discord.gg/Rc8DgBBpsx" class="nav-item" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/></svg> Support</a>
+            <a href="../plus.html" class="nav-item nav-item-special" data-page="plus.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg> Meta Plus</a>
+            <a href="../commands.html" class="nav-item" data-page="commands.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg> Commands</a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-section-title">Protection</div>
+            <a href="../documentation/anti-mod-grief.html" class="nav-item" data-page="anti-mod-grief.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg> Anti Mod Grief</a>
+            <a href="../documentation/anti-alt.html" class="nav-item" data-page="anti-alt.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" x2="22" y1="8" y2="13"/><line x1="22" x2="17" y1="8" y2="13"/></svg> Anti Alt</a>
+            <a href="../documentation/malicious-app.html" class="nav-item" data-page="malicious-app.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg> Malicious Bot</a>
+            <a href="../documentation/automod.html" class="nav-item" data-page="automod.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h0"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg> AutoMod</a>
+            <a href="../documentation/server-logs.html" class="nav-item" data-page="server-logs.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg> Server Logs</a>
+            <a href="../documentation/themes.html" class="nav-item" data-page="themes.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="0.5" fill="currentColor"/><circle cx="17.5" cy="10.5" r="0.5" fill="currentColor"/><circle cx="8.5" cy="7.5" r="0.5" fill="currentColor"/><circle cx="6.5" cy="12.5" r="0.5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg> Themes</a>
+        </div>
+        <div class="nav-section">
+            <div class="nav-section-title">Security</div>
+            <a href="inspecting.html" class="nav-item" data-page="inspecting.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Inspecting</a>
+            <a href="scanning.html" class="nav-item active" data-page="scanning.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></svg> Scanning</a>
+            <a href="dangerous-roles.html" class="nav-item" data-page="dangerous-roles.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg> Dangerous Roles</a>
+            <a href="meta-roles.html" class="nav-item" data-page="meta-roles.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Meta Roles</a>
+        </div>
+    </nav>
+</aside>
+
+<!-- HEADER -->
+<header class="header" id="header">
+    <div class="header-glow"></div>
+    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+    </button>
+    <div class="search-container">
+        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+        <input type="text" class="search-input" id="search-input" placeholder="Search documentation..." autocomplete="off">
+        <kbd class="search-kbd">⌘K</kbd>
+        <div class="search-results" id="search-results"></div>
+    </div>
+    <div class="header-actions">
+        <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="btn-ghost">Support <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
+        <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" target="_blank" class="btn-primary">Invite Meta</a>
+    </div>
+</header>
+
+<!-- MOBILE OVERLAY -->
+<div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+<!-- MAIN CONTENT -->
+<main class="main-content">
+    <div class="content-container">
+
+        <section class="doc-section">
+
+            <!-- ═══ HERO ═══ -->
+            <div class="article-hero">
+                <div class="article-hero-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></svg>
+                    Security Article
+                </div>
+                <h1>🔍 Scanning Your Server</h1>
+                <p>Learn how Meta's scanning system analyzes your server's security posture and calculates your protection score.</p>
+            </div>
+
+            <!-- ═══ ARTICLE BODY ═══ -->
+            <div class="article-body">
+
+                <h2>Scanning as an Action</h2>
+                <p>Scanning your server every now and then is very useful if you'd like to get some background information about your server's security status.</p>
+                <p>Meta provides an <strong>advanced scanning system for free</strong>, to ensure everyone their server's safety. The scan gives you inside info about your server administrators, roles, alt accounts, members, and channels.</p>
+                <p>Additionally, Meta calculates a <strong>protection score</strong> and gives you ideas on how to optimize it for maximum security.</p>
+
+                <div class="callout callout-info">
+                    <div class="callout-icon">📊</div>
+                    <div class="callout-content">
+                        <h4>Run a Scan Anytime</h4>
+                        <p>Use the <code>/scan</code> command to trigger a full server scan. Meta will analyze your setup and return a detailed report with your protection score.</p>
+                    </div>
+                </div>
+
+                <!-- ═══ SCORE VISUAL ═══ -->
+                <div class="score-visual">
+                    <div class="score-ring">
+                        <svg viewBox="0 0 120 120">
+                            <defs>
+                                <linearGradient id="scoreGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#00c6ff"/>
+                                    <stop offset="100%" style="stop-color:#6366f1"/>
+                                </linearGradient>
+                            </defs>
+                            <circle class="score-ring-bg" cx="60" cy="60" r="50"/>
+                            <circle class="score-ring-fill" cx="60" cy="60" r="50"/>
+                        </svg>
+                        <div class="score-ring-label">
+                            <span class="score-ring-number">100</span>
+                            <span class="score-ring-text">Max Score</span>
+                        </div>
+                    </div>
+                    <div class="score-info">
+                        <h3>Protection Score</h3>
+                        <p>Your server's protection score ranges from <strong>0 to 100 points</strong>. Each point equals 1%. The higher your score, the better protected your server is. Enable Meta's features to maximize your score.</p>
+                    </div>
+                </div>
+
+                <hr class="article-divider">
+
+                <!-- ═══ SCORE CALCULATION ═══ -->
+                <h2>Score Calculation Breakdown</h2>
+                <p>The protection score is calculated based on the following criteria. Each enabled feature or condition adds points to your total:</p>
+
+                <div class="score-table-wrapper">
+                    <table class="score-table">
+                        <thead>
+                            <tr>
+                                <th>Condition</th>
+                                <th>Points</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-setup"></span>Have Meta Setup completed</span></td>
+                                <td>+15</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-grief"></span>Anti Mod Grief — Channel Create Enabled</span></td>
+                                <td>+3</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-grief"></span>Anti Mod Grief — Channel Delete Enabled</span></td>
+                                <td>+3</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-grief"></span>Anti Mod Grief — Channel Modify Enabled</span></td>
+                                <td>+6</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-grief"></span>Anti Mod Grief — Manual Ban Revoke Enabled</span></td>
+                                <td>+6</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-grief"></span>Anti Mod Grief — Guild Update Enabled</span></td>
+                                <td>+3</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-grief"></span>Anti Mod Grief — Dangerous Role Given Enabled</span></td>
+                                <td>+8</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-grief"></span>Anti Mod Grief — Role Created Enabled</span></td>
+                                <td>+3</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-grief"></span>Anti Mod Grief — Role Deleted Enabled</span></td>
+                                <td>+3</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-grief"></span>Anti Mod Grief — Role Modified Enabled</span></td>
+                                <td>+5</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-alt"></span>Anti Alt Detection System Enabled</span></td>
+                                <td>+14</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-bot"></span>Malicious Bot Scanning System Enabled</span></td>
+                                <td>+11</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-automod"></span>AutoMod Rules Used</span></td>
+                                <td>+3</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-general"></span>Have less than 6 administrators</span></td>
+                                <td>+12</td>
+                            </tr>
+                            <tr>
+                                <td><span class="score-category"><span class="score-category-dot dot-general"></span>Have less than 30 suspected alt accounts</span></td>
+                                <td>+5</td>
+                            </tr>
+                            <tr class="score-total-row">
+                                <td>Total Maximum Score</td>
+                                <td>100</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr class="article-divider">
+
+                <!-- ═══ WHY ═══ -->
+                <h2>Why Do We Calculate It This Way?</h2>
+                <p>We've added general point-giving situations such as alt account count and administrator account count, but this is as far as we can go to be <strong>100% sure</strong> of accuracy.</p>
+                <p>The reason Meta's scanning is so focused on Meta itself is because we know that if you have such features enabled, our score is not false. We rely on <strong>our own statistics and information</strong> because we can trust this data.</p>
+                <p>Maybe in the future, we will add more third-party factors, but given the current situation, we'd like to provide a service that we are <strong>confident and sure of</strong>.</p>
+
+                <div class="callout callout-success">
+                    <div class="callout-icon">✅</div>
+                    <div class="callout-content">
+                        <h4>Trustworthy Data</h4>
+                        <p>By relying on our own systems, we guarantee that the score you see accurately reflects the protections actually in place — no guesswork involved.</p>
+                    </div>
+                </div>
+
+                <hr class="article-divider">
+
+                <!-- ═══ HOW SCANNING WORKS ═══ -->
+                <h2>How Does Scanning Work?</h2>
+                <p>When you run a scan, Meta performs a multi-step analysis of your server:</p>
+
+                <div class="flow-steps">
+                    <div class="flow-step">
+                        <div class="flow-step-dot">1</div>
+                        <div class="flow-step-content">
+                            <h4>Configuration Check</h4>
+                            <p>Meta verifies whether initial setup has been completed and checks which protection modules are currently enabled.</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-dot">2</div>
+                        <div class="flow-step-content">
+                            <h4>Role & Permission Audit</h4>
+                            <p>All roles are scanned for dangerous permissions. The number of administrator accounts is counted and evaluated.</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-dot">3</div>
+                        <div class="flow-step-content">
+                            <h4>Alt Account Detection</h4>
+                            <p>Meta cross-references member data to identify suspected alternate accounts and counts them against the threshold.</p>
+                        </div>
+                    </div>
+                    <div class="flow-step">
+                        <div class="flow-step-dot">4</div>
+                        <div class="flow-step-content">
+                            <h4>Score Compilation</h4>
+                            <p>All checks are combined into your final protection score, along with specific recommendations to improve your server's safety.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ═══ TIP ═══ -->
+                <div class="info-card">
+                    <div class="info-card-icon">💡</div>
+                    <div class="info-card-content">
+                        <strong>Maximize Your Score</strong>
+                        <p>The easiest way to boost your protection score is to complete Meta's setup and enable all Anti Mod Grief modules. This alone gives you up to 55 points.</p>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- ═══ CONTINUE ═══ -->
+            <div class="continue-section">
+                <a href="dangerous-roles.html" class="continue-btn">
+                    Continue to Dangerous Roles
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+                </a>
+            </div>
+
+        </section>
+    </div>
+</main>
+
+<script>
+const searchData = [
+    { title: "Introduction", desc: "Welcome to Meta documentation", url: "../introduction.html", category: "Getting Started" },
+    { title: "Getting Started", desc: "Learn the basics of Meta bot", url: "../documentation/getting-started.html", category: "Getting Started" },
+    { title: "Meta Plus", desc: "Premium features and benefits", url: "../plus.html", category: "Getting Started" },
+    { title: "Commands", desc: "Full list of available commands", url: "../commands.html", category: "Getting Started" },
+    { title: "Anti Mod Grief", desc: "Protect against malicious moderators", url: "../documentation/anti-mod-grief.html", category: "Protection" },
+    { title: "Anti Alt", desc: "Detect and block alternate accounts", url: "../documentation/anti-alt.html", category: "Protection" },
+    { title: "Malicious Bot", desc: "Protect from dangerous bots", url: "../documentation/malicious-app.html", category: "Protection" },
+    { title: "AutoMod", desc: "Automatic moderation features", url: "../documentation/automod.html", category: "Protection" },
+    { title: "Server Logs", desc: "Track server activity", url: "../documentation/server-logs.html", category: "Protection" },
+    { title: "Themes", desc: "Customize Meta's appearance", url: "../documentation/themes.html", category: "Protection" },
+    { title: "Inspecting", desc: "Inspect users and content", url: "inspecting.html", category: "Security" },
+    { title: "Scanning", desc: "Scan for threats", url: "scanning.html", category: "Security" },
+    { title: "Dangerous Roles", desc: "Identify risky role permissions", url: "dangerous-roles.html", category: "Security" },
+    { title: "Meta Roles", desc: "Understanding Meta's role structure", url: "meta-roles.html", category: "Security" },
+];
+
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+
+searchInput.addEventListener('input', function () {
+    const query = this.value.toLowerCase().trim();
+    if (query.length < 2) { searchResults.classList.remove('open'); return; }
+    const matches = searchData.filter(item => item.title.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query));
+    if (matches.length > 0) {
+        searchResults.innerHTML = matches.map(item => `
+            <a href="${item.url}" class="search-result-item">
+                <div class="search-result-header">
+                    <span class="search-result-title">${item.title}</span>
+                    <span class="search-result-category">${item.category}</span>
+                </div>
+                <p class="search-result-desc">${item.desc}</p>
+            </a>
+        `).join('');
+    } else {
+        searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
+    }
+    searchResults.classList.add('open');
+});
+
+document.addEventListener('keydown', function (e) {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); searchInput.focus(); }
+    if (e.key === 'Escape') { searchResults.classList.remove('open'); searchInput.blur(); }
+});
+
+const menuBtn = document.getElementById('menu-btn');
+const sidebar = document.getElementById('sidebar');
+const overlay = document.getElementById('sidebar-overlay');
+menuBtn.addEventListener('click', function () { sidebar.classList.toggle('open'); overlay.classList.toggle('open'); menuBtn.classList.toggle('active'); });
+overlay.addEventListener('click', function () { sidebar.classList.remove('open'); overlay.classList.remove('open'); menuBtn.classList.remove('active'); });
+</script>
+
+</body>
+</html>
