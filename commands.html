@@ -184,6 +184,12 @@
                 <a href="article/meta-roles.html" class="nav-item" data-page="article/meta-roles.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Meta Roles</a>
 
             </div>
+
+        <div class="nav-section">
+            <div class="nav-section-title">Legal</div>
+            <a href="legal/terms.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Terms of Service</a>
+            <a href="legal/privacy.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg> Privacy Policy</a>
+        </div>
         </nav>
     </aside>
 
@@ -570,7 +576,88 @@
         </div>
     </main>
 
-    <script>
+<script>
+// Search functionality
+        const searchData = [
+            { title: "Introduction", description: "Welcome to Meta documentation", href: "home.html", category: "Getting Started" },
+            { title: "Getting Started", description: "Learn the basics of Meta bot", href: "getting-started.html", category: "Getting Started" },
+            { title: "Invite Meta", description: "Add Meta to your Discord server", href: "https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands", category: "Getting Started" },
+            { title: "Support", description: "Get help and join our community", href: "https://discord.gg/Rc8DgBBpsx", category: "Getting Started" },
+            { title: "Meta Plus", description: "Premium features and benefits", href: "plus.html", category: "Getting Started" },
+            { title: "Commands", description: "Full list of available commands", href: "commands.html", category: "Getting Started" },
+            { title: "Anti Mod Grief", description: "Protect against malicious moderators", href: "documentation/anti-mod-grief.html", category: "Protection" },
+            { title: "Anti Alt", description: "Detect and block alternate accounts", href: "documentation/anti-alt.html", category: "Protection" },
+            { title: "Malicious App", description: "Identify dangerous apps", href: "documentation/malicious-app.html", category: "Protection" },
+            { title: "AutoMod", description: "Automatic moderation features", href: "documentation/automod.html", category: "Protection" },
+            { title: "Server Logs", description: "Track server activity", href: "documentation/server-logs.html", category: "Protection" },
+            { title: "Themes", description: "Customize Meta's appearance", href: "documentation/themes.html", category: "Protection" },
+            { title: "Inspecting", description: "Inspect users and content", href: "article/inspecting.html", category: "Security" },
+            { title: "Scanning", description: "Scan for threats and vulnerabilities", href: "article/scanning.html", category: "Security" },
+            { title: "Dangerous Roles", description: "Identify risky role permissions", href: "article/dangerous-roles.html", category: "Security" },
+            { title: "Privacy Policy", description: "Learn how we protect your data", href: "legal/privacy.html", category: "Legal" },
+            { title: "Terms of Service", description: "Official Terms of Service of Meta Bot", href: "legal/terms.html", category: "Legal" }
+        ];
+
+const searchInput = document.getElementById('search-input');
+const searchResults = document.getElementById('search-results');
+
+searchInput.addEventListener('input', function(e) {
+    const query = e.target.value.toLowerCase().trim();
+    
+    if (!query) {
+        searchResults.classList.remove('open');
+        searchResults.innerHTML = '';
+        return;
+    }
+    
+    const results = searchData.filter(item => 
+        item.title.toLowerCase().includes(query) ||
+        item.description.toLowerCase().includes(query) ||
+        item.category.toLowerCase().includes(query)
+    ).slice(0, 6);
+    
+    if (results.length === 0) {
+        searchResults.innerHTML = `<div class="search-no-results">No results found for "${query}"</div>`;
+        searchResults.classList.add('open');
+        return;
+    }
+    
+    searchResults.innerHTML = results.map(result => `
+        <a href="${result.href}" class="search-result-item">
+            <div class="search-result-header">
+                <span class="search-result-title">${result.title}</span>
+                <span class="search-result-category">${result.category}</span>
+            </div>
+            <span class="search-result-desc">${result.description}</span>
+        </a>
+    `).join('');
+    
+    searchResults.classList.add('open');
+});
+
+searchInput.addEventListener('focus', function() {
+    if (searchInput.value.trim()) {
+        searchResults.classList.add('open');
+    }
+});
+
+document.addEventListener('click', function(e) {
+    if (!e.target.closest('.search-container')) {
+        searchResults.classList.remove('open');
+    }
+});
+
+// Keyboard shortcut
+document.addEventListener('keydown', function(e) {
+    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+        e.preventDefault();
+        searchInput.focus();
+    }
+    if (e.key === 'Escape') {
+        searchResults.classList.remove('open');
+        searchInput.blur();
+    }
+});
         // Mobile menu toggle
         const menuBtn = document.getElementById('menu-btn');
         const sidebar = document.getElementById('sidebar');
