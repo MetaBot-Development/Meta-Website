@@ -1,504 +1,730 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Meta Docs | Anti Mod Grief</title>
     <link rel="icon" type="image/x-icon" href="../images/meta.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Anti Mod Grief Protection - Restrict your server staff from dangerous actions to prevent possible griefs">
+    <meta name="description"
+        content="Anti Mod Grief Protection - Restrict your server staff from dangerous actions to prevent possible griefs">
     <link rel="stylesheet" href="../css files/docs.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 
     <meta property="og:title" content="Anti Mod Grief | Meta Docs">
-    <meta property="og:description" content="Restrict your server staff from dangerous actions to prevent possible griefs with Meta's Anti Mod Grief Protection.">
-    <meta property="og:image" content="https://media.discordapp.net/attachments/1011355084514394164/1232259786297577502/lightbub.jpeg?ex=69de06db&is=69dcb55b&hm=9edc8dd25b20cc8aae60ccc2a0062fe29b66cb6225a8fffbf171138e186751bf&=&format=webp&width=206&height=256">
+    <meta property="og:description"
+        content="Restrict your server staff from dangerous actions to prevent possible griefs with Meta's Anti Mod Grief Protection.">
+    <meta property="og:image"
+        content="https://media.discordapp.net/attachments/1011355084514394164/1232259786297577502/lightbub.jpeg?ex=69de06db&is=69dcb55b&hm=9edc8dd25b20cc8aae60ccc2a0062fe29b66cb6225a8fffbf171138e186751bf&=&format=webp&width=206&height=256">
     <meta property="og:url" content="https://botmeta.app/">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#0085FF">
 </head>
+
 <body>
 
-<!-- SHOOTING STARS -->
-<div class="shooting-stars">
-    <span></span><span></span><span></span><span></span><span></span>
-</div>
-
-<!-- PARALLAX STARFIELD -->
-<div class="star-layer star-layer-1"></div>
-<div class="star-layer star-layer-2"></div>
-
-<!-- SIDEBAR -->
-<aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-        <a href="../home.html" class="sidebar-logo">
-            <img src="../images/meta.png" alt="Meta Logo">
-            <span>Meta Docs</span>
-        </a>
+    <!-- SHOOTING STARS -->
+    <div class="shooting-stars">
+        <span></span><span></span><span></span><span></span><span></span>
     </div>
-    
-    <nav class="sidebar-nav">
-        <!-- Getting Started Section -->
-        <div class="nav-section">
-            <div class="nav-section-title">Getting Started</div>
-            <a href="../home.html" class="nav-item" data-page="../home.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                Introduction
-            </a>
-            <a href="getting-started.html" class="nav-item" data-page="getting-started.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-                Getting Started
-            </a>
-            <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" class="nav-item" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                Invite Meta
-            </a>
-            <a href="https://discord.gg/Rc8DgBBpsx" class="nav-item" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/></svg>
-                Support
-            </a>
-            <a href="../plus.html" class="nav-item nav-item-special" data-page="../plus.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
-                Meta Plus
-            </a>
-            <a href="../commands.html" class="nav-item" data-page="../commands.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
-                Commands
+
+    <!-- PARALLAX STARFIELD -->
+    <div class="star-layer star-layer-1"></div>
+    <div class="star-layer star-layer-2"></div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="../home.html" class="sidebar-logo">
+                <img src="../images/meta.png" alt="Meta Logo">
+                <span>Meta Docs</span>
             </a>
         </div>
-        
-        <!-- Protection Section -->
-        <div class="nav-section">
-            <div class="nav-section-title">Protection</div>
-            <a href="anti-mod-grief.html" class="nav-item active" data-page="anti-mod-grief.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
-                Anti Mod Grief
-            </a>
-            <a href="anti-alt.html" class="nav-item" data-page="anti-alt.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" x2="22" y1="8" y2="13"/><line x1="22" x2="17" y1="8" y2="13"/></svg>
-                Anti Alt
-            </a>
-            <a href="malicious-app.html" class="nav-item" data-page="malicious-app.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
-                Malicious App
-            </a>
-            <a href="automod.html" class="nav-item" data-page="automod.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h0"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>
-                AutoMod
-            </a>
-            <a href="server-logs.html" class="nav-item" data-page=" server-logs.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
-                Server Logs
-            </a>
-            <a href="themes.html" class="nav-item" data-page="themes.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="0.5" fill="currentColor"/><circle cx="17.5" cy="10.5" r="0.5" fill="currentColor"/><circle cx="8.5" cy="7.5" r="0.5" fill="currentColor"/><circle cx="6.5" cy="12.5" r="0.5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg>
-                Themes
-            </a>
-        </div>
-        
-        <!-- Security Section -->
-        <div class="nav-section">
-            <div class="nav-section-title">Security</div>
-            <a href="../article/inspecting.html" class="nav-item" data-page="../article/inspecting.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                Inspecting
-            </a>
-            <a href="../article/scanning.html" class="nav-item" data-page="../article/scanning.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></svg>
-                Scanning
-            </a>
-            <a href="../article/dangerous-roles.html" class="nav-item" data-page="../article/dangerous-roles.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
-                Dangerous Roles
-            </a>
-            <a href="../article/meta-roles.html" class="nav-item" data-page="../article/meta-roles.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Meta Roles</a>
-            <a href="../article/permissions.html" class="nav-item" data-page="../article/permissions.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Permissions</a>
-        </div>
 
-        <div class="nav-section">
-            <div class="nav-section-title">Legal</div>
-            <a href="../legal/terms.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Terms of Service</a>
-            <a href="../legal/privacy.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg> Privacy Policy</a>
-        </div>
-    </nav>
-</aside>
-
-<!-- HEADER -->
-<header class="header" id="header">
-    <div class="header-glow"></div>
-    
-    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-    
-    <div class="search-container">
-        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <path d="m21 21-4.3-4.3"></path>
-        </svg>
-        <input type="text" class="search-input" id="search-input" placeholder="Search documentation..." autocomplete="off">
-        <kbd class="search-kbd">⌘K</kbd>
-        <div class="search-results" id="search-results"></div>
-    </div>
-    
-    <div class="header-actions">
-        <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="btn-ghost">
-            Support
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                <polyline points="15 3 21 3 21 9"></polyline>
-                <line x1="10" y1="14" x2="21" y2="3"></line>
-            </svg>
-        </a>
-        <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" target="_blank" class="btn-primary">
-            Invite Meta
-        </a>
-    </div>
-</header>
-
-<!-- MOBILE OVERLAY -->
-<div class="sidebar-overlay" id="sidebar-overlay"></div>
-
-<!-- MAIN CONTENT -->
-<main class="main-content">
-    <div class="content-container">
-        
-        <section class="doc-section">
-            <h1>Anti Mod Grief Protection</h1>
-            <div class="glow-line"></div>
-            
-            <p class="lead">Restrict your server staff members from any of the given functions. When enabled, members with the <span class="meta-team-mention">@Moderator Rank</span> cannot perform the given action.</p>
-            
-            <!-- Introduction Box -->
-            <div class="amg-intro">
-                <p>Anti Mod Grief (AMG) is a background protection system that prevents your server staff from harming your server. Limit your server staff from some more dangerous actions such as deleting a channel/role, unbanning manually without logging, giving out <a href="article/dangerous-roles.html" class="wiki-link">dangerous roles</a> and much more!</p>
-            </div>
-            
-            <div class="warning-card" style="background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3);">
-                <div class="warning-card-icon">⚠️</div>
-                <div class="warning-card-content" style="--accent-warning: #ef4444;">
-                    <strong style="color: #f87171;">Permissions Warning</strong>
-                    <p>
-                        Before using Meta and it's servies, ensure that the app has correct permissions. If you're unsure about the permissions needed, check the <a href="permissions.html" class="wiki-link">permissions documentation</a> or try giving Meta <code>Administrator</code> permissions to test the feature. <br><br>
-                        Be aware that members with the <code>Administrator</code> permission will bypass all AMG restrictions and can edit the modules without any limitations.
-                    </p>
-                </div>
-            </div>
-            
-            <div class="warning-card">
-                <div class="warning-card-icon">📋</div>
-                <div class="warning-card-content">
-                    <strong>Action Logs</strong>
-                    <p>All Anti Mod Grief logs will be sent into the server <code>admin-logs</code> channel. You cannot change the logging channel.</p>
-                </div>
-            </div>
-        
-            
-            
-            
-            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
-            
-            <!-- DETAILED MODULE DESCRIPTIONS -->
-            <h2>Module Details</h2>
-            <p>Each action can be enabled / disabled independently. Below is a detailed breakdown of what each protection module does and how it works.</p>
-            
-            <div class="module-details">
-                <div class="module-detail-card">
-                    <div class="module-detail-header">
-                        <div class="module-detail-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h18v18H3zM12 8v8m-4-4h8"/></svg>
-                        </div>
-                        <div class="module-detail-title">
-                            <h4>Channel Created</h4>
-                            <span>Prevents unauthorized channel creation</span>
-                        </div>
-                    </div>
-                    <div class="module-detail-body">
-                        <p>When enabled, staff members with the Moderator Rank will not be able to create any type of channels in your server. This includes text channels, voice channels, categories, and forum channels.</p>
-                        <ul>
-                            <li><strong>Scope:</strong> All channel types are blocked</li>
-                            <li><strong>Bonus:</strong> Freshly created channel gets deleted instantly</li>
-                            <li><strong>Perk:</strong> Prevents mass channel creation</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="module-detail-card">
-                    <div class="module-detail-header">
-                        <div class="module-detail-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18"/><path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6"/><path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2"/></svg>
-                        </div>
-                        <div class="module-detail-title">
-                            <h4>Channel Deleted</h4>
-                            <span>Blocks channel deletion by staff</span>
-                        </div>
-                    </div>
-                    <div class="module-detail-body">
-                        <p>Prevents moderators from deleting any channels. This is critical protection against grief attacks where compromised moderator accounts attempt to nuke your server by deleting all channels.</p>
-                        <ul>
-                            <li><strong>Scope:</strong> Blocks all channel deletions</li>
-                            <li><strong>Recovery:</strong> Deleted channels are not recoverable</li>
-                            <li><strong>Perk:</strong> Channels cannot be deleted, preventing data loss</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="module-detail-card">
-                    <div class="module-detail-header">
-                        <div class="module-detail-icon cyan">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
-                        </div>
-                        <div class="module-detail-title">
-                            <h4>Channel Modified</h4>
-                            <span>Premium feature - Prevents permission changes</span>
-                        </div>
-                    </div>
-                    <div class="module-detail-body">
-                        <p>Staff members cannot modify channel permissions or settings. This includes changing channel names, topics, slowmode, permission overwrites, and more. This premium feature provides comprehensive protection against stealthy attacks.</p>
-                        <ul>
-                            <li><strong>Scope:</strong> All channel settings and permissions</li>
-                            <li><strong>Prevents:</strong> Channels being taken over by unauthorized users</li>
-                            <li><strong>Perk:</strong> Smart channel modification detection and logging</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="module-detail-card">
-                    <div class="module-detail-header">
-                        <div class="module-detail-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m4.9 4.9 14.2 14.2"/></svg>
-                        </div>
-                        <div class="module-detail-title">
-                            <h4>Manual Ban Removal</h4>
-                            <span>Requires app-based unban</span>
-                        </div>
-                    </div>
-                    <div class="module-detail-body">
-                        <p>Staff members must use commands to unban users. Direct unbanning from Discord's ban list is blocked. This ensures all unbans are logged and tracked properly.</p>
-                        <ul>
-                            <li><strong>Scope:</strong> Discord ban tab unbans being reverted</li>
-                            <li><strong>Prevent:</strong> Users being secretly unbanned</li>
-                            <li><strong>Perk:</strong> Complete audit trail of all unbans. Enforces command useage</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="module-detail-card">
-                    <div class="module-detail-header">
-                        <div class="module-detail-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
-                        </div>
-                        <div class="module-detail-title">
-                            <h4>Dangerous Role</h4>
-                            <span>Blocks granting of powerful roles</span>
-                        </div>
-                    </div>
-                    <div class="module-detail-body">
-                        <p>Prevents staff from assigning roles with dangerous permissions (Administrator, Manage Server, etc.) to members or bots. This stops privilege escalation attacks.</p>
-                        <ul>
-                            <li><strong>Scope:</strong> Role and user management</li>
-                            <li><strong>Permissions:</strong> <a href="article/dangerous-roles.html" class="wiki-link">Dangerous Roles documentation</a></li>
-                            <li><strong>Perk:</strong> Both parties (if there is) are neutralized</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="module-detail-card">
-                    <div class="module-detail-header">
-                        <div class="module-detail-icon cyan">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 1v6m0 6v6"/><path d="m21 12-6 0m-6 0-6 0"/></svg>
-                        </div>
-                        <div class="module-detail-title">
-                            <h4>Guild Update</h4>
-                            <span>Premium feature - Protects server settings</span>
-                        </div>
-                    </div>
-                    <div class="module-detail-body">
-                        <p>Staff members cannot change server overview settings like server name, icon, banner, verification level, and other critical settings. This premium feature prevents defacement attacks.</p>
-                        <ul>
-                            <li><strong>Scope:</strong>Server General Settings</li>
-                            <li><strong>Prevention:</strong> Server defacement, identity theft and impersonation</li>
-                            <li><strong>Perk:</strong> If possible, setting will be reverted to the previous value</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="module-detail-card">
-                    <div class="module-detail-header">
-                        <div class="module-detail-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        </div>
-                        <div class="module-detail-title">
-                            <h4>Role Created</h4>
-                            <span>Restrict the ability to create new roles</span>
-                        </div>
-                    </div>
-                    <div class="module-detail-body">
-                        <p>Prevent staff members from creating new roles in the server. This protection ensures that only authorized users can modify the role structure. Make sure no secret powerful roles are being created behind your back.</p>
-                        <ul>
-                            <li><strong>Scope:</strong> Roles being created</li>
-                            <li><strong>Prevents:</strong> Harmful roles being created</li>
-                            <li><strong>Perk:</strong> Created role will be deleted immediately</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="module-detail-card">
-                    <div class="module-detail-header">
-                        <div class="module-detail-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        </div>
-                        <div class="module-detail-title">
-                            <h4>Role Deleted</h4>
-                            <span>Prevent staff from deleting existing roles</span>
-                        </div>
-                    </div>
-                    <div class="module-detail-body">
-                        <p>Ensure that your servers role structure is protected from staff members deleting roles. Important and key ranks should be protected from deletion. This module prevents accidental or malicious role deletions.</p>
-                        <ul>
-                            <li><strong>Scope:</strong> Roles being deleted</li>
-                            <li><strong>Limitation:</strong> Deleted roles cannot be restored</li>
-                            <li><strong>Perk:</strong> Possible data of the deleted role will be preserved</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="module-detail-card">
-                    <div class="module-detail-header">
-                        <div class="module-detail-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        </div>
-                        <div class="module-detail-title">
-                            <h4>Role Updated</h4>
-                            <span></span>
-                        </div>
-                    </div>
-                    <div class="module-detail-body">
-                    <div class="module-detail-body">
-                        <p>Prevent staff members from modifying existing roles in the server. This protection ensures that only authorized users can modify the role structure. Make sure no roles are being secretly changed or made harmful towards your server.</p>
-                        <ul>
-                            <li><strong>Scope:</strong> Roles being modified</li>
-                            <li><strong>Limitation:</strong> Original states cannot be restored if they were changed</li>
-                            <li><strong>Perk:</strong> intelligent tracking of role changes</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
-
-            <!-- How It Works -->
-            <div class="how-it-works">
-                <h3>How It Works</h3>
-                <div class="how-it-works-steps">
-                    <div class="how-step">
-                        <div class="how-step-number">1</div>
-                        <h4>Action Detected</h4>
-                        <p>Meta monitors all server events in real-time using Discord's audit log system.</p>
-                    </div>
-                    <div class="how-step">
-                        <div class="how-step-number">2</div>
-                        <h4>Permission Check</h4>
-                        <p>When a protected action occurs, Meta checks if the user has the Moderator rank and isn't an Administrator.</p>
-                    </div>
-                    <div class="how-step">
-                        <div class="how-step-number">3</div>
-                        <h4>Automatic Response</h4>
-                        <p>If violation is detected, the action is reversed where possible and logged to admin-logs.</p>
-                    </div>
-                </div>
-            </div>
-            
-            
-            <!-- VIDEO SECTION -->
-            <div class="video-section">
-                <div class="video-header">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="sparkle-icon"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
-                    <h2>Video Tutorial</h2>
-                </div>
-                <p class="video-description">Watch how to setup and configure the Anti Mod Grief protection system for your server.</p>
-                
-                <div class="video-container">
-                    <!-- Placeholder - Replace with actual video -->
-                    <div class="video-placeholder">
-                        <div class="video-placeholder-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="5 3 19 12 5 21 5 3"/></svg>
-                        </div>
-                        <div class="video-placeholder-text">
-                            <span class="video-placeholder-title">AMG Setup Tutorial</span>
-                            <span class="video-placeholder-subtitle">Click to watch the tutorial video</span>
-                        </div>
-                        <div class="video-placeholder-decorations">
-                            <span class="decoration-dot dot-1"></span>
-                            <span class="decoration-dot dot-2"></span>
-                            <span class="decoration-dot dot-3"></span>
-                            <span class="decoration-dot dot-4"></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Continue Section -->
-            <div class="continue-section">
-                <p style="color: var(--text-muted); margin-bottom: 24px;">Ready to continue? Explore more protection features.</p>
-                <a href="anti-alt.html" class="continue-btn">
-                    Continue to Anti Alt
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        <nav class="sidebar-nav">
+            <!-- Getting Started Section -->
+            <div class="nav-section">
+                <div class="nav-section-title">Getting Started</div>
+                <a href="../home.html" class="nav-item" data-page="../home.html">
+                    <https:
+                        //discord.com/oauth2/authorize?client_id=980436688260182016&permissions=7640936837672959&scope=bot%20applications.commands
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                        Introduction
+                </a>
+                <a href="getting-started.html" class="nav-item" data-page="getting-started.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                    </svg>
+                    Getting Started
+                </a>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=7640936837672959&scope=bot%20applications.commands"
+                    class="nav-item" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" x2="12" y1="15" y2="3" />
+                    </svg>
+                    Invite Meta
+                </a>
+                <a href="https://discord.gg/Rc8DgBBpsx" class="nav-item" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
+                    </svg>
+                    Support
+                </a>
+                <a href="../plus.html" class="nav-item nav-item-special" data-page="../plus.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                    </svg>
+                    Meta Plus
+                </a>
+                <a href="../commands.html" class="nav-item" data-page="../commands.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="4 17 10 11 4 5" />
+                        <line x1="12" x2="20" y1="19" y2="19" />
+                    </svg>
+                    Commands
                 </a>
             </div>
-            
-        </section>
-        
-    </div>
-</main>
 
-<script>
-// Search functionality
-const searchData = [
-    { title: "Introduction", desc: "Welcome to Meta documentation", url: "home.html", category: "Getting Started" },
-    { title: "Getting Started", desc: "Learn the basics of Meta bot", url: "getting-started.html", category: "Getting Started" },
-    { title: "Meta Plus", desc: "Premium features and benefits", url: "plus.html", category: "Getting Started" },
-    { title: "Commands", desc: "Full list of available commands", url: "commands.html", category: "Getting Started" },
-    { title: "Anti Mod Grief", desc: "Protect against malicious moderators", url: "anti-mod-grief.html", category: "Protection" },
-    { title: "Anti Alt", desc: "Detect and block alternate accounts", url: "anti-alt.html", category: "Protection" },
-    { title: "Malicious App", desc: "Protect from dangerous bots", url: "malicious-app.html", category: "Protection" },
-    { title: "AutoMod", desc: "Automatic moderation features", url: "automod.html", category: "Protection" },
-    { title: "Server Logs", desc: "Track server activity", url: "server-logs.html", category: "Protection" },
-    { title: "Themes", desc: "Customize Meta's appearance", url: "themes.html", category: "Protection" },
-    { title: "Inspecting", desc: "Inspect users and content", url: "inspecting.html", category: "Security" },
-    { title: "Scanning", desc: "Scan for threats", url: "scanning.html", category: "Security" },
-    { title: "Dangerous Roles", desc: "Identify risky role permissions", url: "dangerous-roles.html", category: "Security" },
-    { title: "Terms of Service", desc: "Review the terms of service", url: "../legal/terms.html", category: "Legal" },
-    { title: "Privacy Policy", desc: "Learn how we protect your data", url: "../legal/privacy.html", category: "Legal" }
-];
+            <!-- Protection Section -->
+            <div class="nav-section">
+                <div class="nav-section-title">Protection</div>
+                <a href="anti-mod-grief.html" class="nav-item active" data-page="anti-mod-grief.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                        <path d="M12 8v4" />
+                        <path d="M12 16h.01" />
+                    </svg>
+                    Anti Mod Grief
+                </a>
+                <a href="anti-alt.html" class="nav-item" data-page="anti-alt.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <line x1="17" x2="22" y1="8" y2="13" />
+                        <line x1="22" x2="17" y1="8" y2="13" />
+                    </svg>
+                    Anti Alt
+                </a>
+                <a href="malicious-app.html" class="nav-item" data-page="malicious-app.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 8V4H8" />
+                        <rect width="16" height="12" x="4" y="8" rx="2" />
+                        <path d="M2 14h2" />
+                        <path d="M20 14h2" />
+                        <path d="M15 13v2" />
+                        <path d="M9 13v2" />
+                    </svg>
+                    Malicious App
+                </a>
+                <a href="automod.html" class="nav-item" data-page="automod.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 4V2" />
+                        <path d="M15 16v-2" />
+                        <path d="M8 9h2" />
+                        <path d="M20 9h2" />
+                        <path d="M17.8 11.8 19 13" />
+                        <path d="M15 9h0" />
+                        <path d="M17.8 6.2 19 5" />
+                        <path d="m3 21 9-9" />
+                        <path d="M12.2 6.2 11 5" />
+                    </svg>
+                    AutoMod
+                </a>
+                <a href="server-logs.html" class="nav-item" data-page=" server-logs.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                        https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=7640936837672959&scope=bot%20applications.commands
+                        <path d="M10 9H8" />
+                        <path d="M16 13H8" />
+                        <path d="M16 17H8" />
+                    </svg>
+                    Server Logs
+                </a>
+                <a href="themes.html" class="nav-item" data-page="themes.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="13.5" cy="6.5" r="0.5" fill="currentColor" />
+                        <circle cx="17.5" cy="10.5" r="0.5" fill="currentColor" />
+                        <circle cx="8.5" cy="7.5" r="0.5" fill="currentColor" />
+                        <circle cx="6.5" cy="12.5" r="0.5" fill="currentColor" />
+                        <path
+                            d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z" />
+                    </svg>
+                    Themes
+                </a>
+            </div>
+
+            <!-- Security Section -->
+            <div class="nav-section">
+                <div class="nav-section-title">Security</div>
+                <a href="../article/inspecting.html" class="nav-item" data-page="../article/inspecting.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                    Inspecting
+                </a>
+                <a href="../article/scanning.html" class="nav-item" data-page="../article/scanning.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+                        <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+                        <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+                        <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+                        <path d="M7 12h10" />
+                    </svg>
+                    Scanning
+                </a>
+                <a href="../article/dangerous-roles.html" class="nav-item" data-page="../article/dangerous-roles.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                        <path d="M12 9v4" />
+                        <path d="M12 17h.01" />
+                    </svg>
+                    Dangerous Roles
+                </a>
+                <a href="../article/meta-roles.html" class="nav-item" data-page="../article/meta-roles.html"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg> Meta Roles</a>
+                <a href="../article/permissions.html" class="nav-item" data-page="../article/permissions.html"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg> Permissions</a>
+            </div>
+
+            <div class="nav-section">
+                <div class="nav-section-title">Legal</div>
+                <a href="../legal/terms.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" x2="8" y1="13" y2="13" />
+                        <line x1="16" x2="8" y1="17" y2="17" />
+                        <polyline points="10 9 9 9 8 9" />
+                    </svg> Terms of Service</a>
+                <a href="../legal/privacy.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                    </svg> Privacy Policy</a>
+            </div>
+        </nav>
+    </aside>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-glow"></div>
+
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <div class="search-container">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+            </svg>
+            <input type="text" class="search-input" id="search-input" placeholder="Search documentation..."
+                autocomplete="off">
+            <kbd class="search-kbd">⌘K</kbd>
+            <div class="search-results" id="search-results"></div>
+        </div>
+
+        <div class="header-actions">
+            <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="btn-ghost">
+                Support
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+            <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=7640936837672959&scope=bot%20applications.commands"
+                target="_blank" class="btn-primary">
+                Invite Meta
+            </a>
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="content-container">
+
+            <section class="doc-section">
+                <h1>Anti Mod Grief Protection</h1>
+                <div class="glow-line"></div>
+
+                <p class="lead">Restrict your server staff members from any of the given functions. When enabled,
+                    members with the <span class="meta-team-mention">@Moderator Rank</span> cannot perform the given
+                    action.</p>
+
+                <!-- Introduction Box -->
+                <div class="amg-intro">
+                    <p>Anti Mod Grief (AMG) is a background protection system that prevents your server staff from
+                        harming your server. Limit your server staff from some more dangerous actions such as deleting a
+                        channel/role, unbanning manually without logging, giving out <a
+                            href="article/dangerous-roles.html" class="wiki-link">dangerous roles</a> and much more!</p>
+                </div>
+
+                <div class="warning-card"
+                    style="background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3);">
+                    <div class="warning-card-icon">⚠️</div>
+                    <div class="warning-card-content" style="--accent-warning: #ef4444;">
+                        <strong style="color: #f87171;">Permissions Warning</strong>
+                        <p>
+                            Before using Meta and it's servies, ensure that the app has correct permissions. If you're
+                            unsure about the permissions needed, check the <a href="permissions.html"
+                                class="wiki-link">permissions documentation</a> or try giving Meta
+                            <code>Administrator</code> permissions to test the feature. <br><br>
+                            Be aware that members with the <code>Administrator</code> permission will bypass all AMG
+                            restrictions and can edit the modules without any limitations.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="warning-card">
+                    <div class="warning-card-icon">📋</div>
+                    <div class="warning-card-content">
+                        <strong>Action Logs</strong>
+                        <p>All Anti Mod Grief logs will be sent into the server <code>admin-logs</code> channel. You
+                            cannot change the logging channel.</p>
+                    </div>
+                </div>
 
 
-const searchInput = document.getElementById('search-input');
-const searchResults = document.getElementById('search-results');
 
-searchInput.addEventListener('input', function(e) {
-    const query = e.target.value.toLowerCase().trim();
-    
-    if (!query) {
-        searchResults.classList.remove('open');
-        searchResults.innerHTML = '';
-        return;
-    }
-    
-    const results = searchData.filter(item => 
-        item.title.toLowerCase().includes(query) ||
-        item.description.toLowerCase().includes(query) ||
-        item.category.toLowerCase().includes(query)
-    ).slice(0, 6);
-    
-    if (results.length === 0) {
-        searchResults.innerHTML = `<div class="search-no-results">No results found for "${query}"</div>`;
-        searchResults.classList.add('open');
-        return;
-    }
-    
-    searchResults.innerHTML = results.map(result => `
+
+                <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <!-- DETAILED MODULE DESCRIPTIONS -->
+                <h2>Module Details</h2>
+                <p>Each action can be enabled / disabled independently. Below is a detailed breakdown of what each
+                    protection module does and how it works.</p>
+
+                <div class="module-details">
+                    <div class="module-detail-card">
+                        <div class="module-detail-header">
+                            <div class="module-detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M3 3h18v18H3zM12 8v8m-4-4h8" />
+                                </svg>
+                            </div>
+                            <div class="module-detail-title">
+                                <h4>Channel Created</h4>
+                                <span>Prevents unauthorized channel creation</span>
+                            </div>
+                        </div>
+                        <div class="module-detail-body">
+                            <p>When enabled, staff members with the Moderator Rank will not be able to create any type
+                                of channels in your server. This includes text channels, voice channels, categories, and
+                                forum channels.</p>
+                            <ul>
+                                <li><strong>Scope:</strong> All channel types are blocked</li>
+                                <li><strong>Bonus:</strong> Freshly created channel gets deleted instantly</li>
+                                <li><strong>Perk:</strong> Prevents mass channel creation</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="module-detail-card">
+                        <div class="module-detail-header">
+                            <div class="module-detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M3 6h18" />
+                                    <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+                                    <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+                                </svg>
+                            </div>
+                            <div class="module-detail-title">
+                                <h4>Channel Deleted</h4>
+                                <span>Blocks channel deletion by staff</span>
+                            </div>
+                        </div>
+                        <div class="module-detail-body">
+                            <p>Prevents moderators from deleting any channels. This is critical protection against grief
+                                attacks where compromised moderator accounts attempt to nuke your server by deleting all
+                                channels.</p>
+                            <ul>
+                                <li><strong>Scope:</strong> Blocks all channel deletions</li>
+                                <li><strong>Recovery:</strong> Deleted channels are not recoverable</li>
+                                <li><strong>Perk:</strong> Channels cannot be deleted, preventing data loss</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="module-detail-card">
+                        <div class="module-detail-header">
+                            <div class="module-detail-icon cyan">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z" />
+                                </svg>
+                            </div>
+                            <div class="module-detail-title">
+                                <h4>Channel Modified</h4>
+                                <span>Premium feature - Prevents permission changes</span>
+                            </div>
+                        </div>
+                        <div class="module-detail-body">
+                            <p>Staff members cannot modify channel permissions or settings. This includes changing
+                                channel names, topics, slowmode, permission overwrites, and more. This premium feature
+                                provides comprehensive protection against stealthy attacks.</p>
+                            <ul>
+                                <li><strong>Scope:</strong> All channel settings and permissions</li>
+                                <li><strong>Prevents:</strong> Channels being taken over by unauthorized users</li>
+                                <li><strong>Perk:</strong> Smart channel modification detection and logging</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="module-detail-card">
+                        <div class="module-detail-header">
+                            <div class="module-detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m4.9 4.9 14.2 14.2" />
+                                </svg>
+                            </div>
+                            <div class="module-detail-title">
+                                <h4>Manual Ban Removal</h4>
+                                <span>Requires app-based unban</span>
+                            </div>
+                        </div>
+                        <div class="module-detail-body">
+                            <p>Staff members must use commands to unban users. Direct unbanning from Discord's ban list
+                                is blocked. This ensures all unbans are logged and tracked properly.</p>
+                            <ul>
+                                <li><strong>Scope:</strong> Discord ban tab unbans being reverted</li>
+                                <li><strong>Prevent:</strong> Users being secretly unbanned</li>
+                                <li><strong>Perk:</strong> Complete audit trail of all unbans. Enforces command useage
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="module-detail-card">
+                        <div class="module-detail-header">
+                            <div class="module-detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                                    <path d="M12 9v4" />
+                                    <path d="M12 17h.01" />
+                                </svg>
+                            </div>
+                            <div class="module-detail-title">
+                                <h4>Dangerous Role</h4>
+                                <span>Blocks granting of powerful roles</span>
+                            </div>
+                        </div>
+                        <div class="module-detail-body">
+                            <p>Prevents staff from assigning roles with dangerous permissions (Administrator, Manage
+                                Server, etc.) to members or bots. This stops privilege escalation attacks.</p>
+                            <ul>
+                                <li><strong>Scope:</strong> Role and user management</li>
+                                <li><strong>Permissions:</strong> <a href="article/dangerous-roles.html"
+                                        class="wiki-link">Dangerous Roles documentation</a></li>
+                                <li><strong>Perk:</strong> Both parties (if there is) are neutralized</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="module-detail-card">
+                        <div class="module-detail-header">
+                            <div class="module-detail-icon cyan">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="3" />
+                                    <path d="M12 1v6m0 6v6" />
+                                    <path d="m21 12-6 0m-6 0-6 0" />
+                                </svg>
+                            </div>
+                            <div class="module-detail-title">
+                                <h4>Guild Update</h4>
+                                <span>Premium feature - Protects server settings</span>
+                            </div>
+                        </div>
+                        <div class="module-detail-body">
+                            <p>Staff members cannot change server overview settings like server name, icon, banner,
+                                verification level, and other critical settings. This premium feature prevents
+                                defacement attacks.</p>
+                            <ul>
+                                <li><strong>Scope:</strong>Server General Settings</li>
+                                <li><strong>Prevention:</strong> Server defacement, identity theft and impersonation
+                                </li>
+                                <li><strong>Perk:</strong> If possible, setting will be reverted to the previous value
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="module-detail-card">
+                        <div class="module-detail-header">
+                            <div class="module-detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <div class="module-detail-title">
+                                <h4>Role Created</h4>
+                                <span>Restrict the ability to create new roles</span>
+                            </div>
+                        </div>
+                        <div class="module-detail-body">
+                            <p>Prevent staff members from creating new roles in the server. This protection ensures that
+                                only authorized users can modify the role structure. Make sure no secret powerful roles
+                                are being created behind your back.</p>
+                            <ul>
+                                <li><strong>Scope:</strong> Roles being created</li>
+                                <li><strong>Prevents:</strong> Harmful roles being created</li>
+                                <li><strong>Perk:</strong> Created role will be deleted immediately</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="module-detail-card">
+                        <div class="module-detail-header">
+                            <div class="module-detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <div class="module-detail-title">
+                                <h4>Role Deleted</h4>
+                                <span>Prevent staff from deleting existing roles</span>
+                            </div>
+                        </div>
+                        <div class="module-detail-body">
+                            <p>Ensure that your servers role structure is protected from staff members deleting roles.
+                                Important and key ranks should be protected from deletion. This module prevents
+                                accidental or malicious role deletions.</p>
+                            <ul>
+                                <li><strong>Scope:</strong> Roles being deleted</li>
+                                <li><strong>Limitation:</strong> Deleted roles cannot be restored</li>
+                                <li><strong>Perk:</strong> Possible data of the deleted role will be preserved</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="module-detail-card">
+                        <div class="module-detail-header">
+                            <div class="module-detail-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <div class="module-detail-title">
+                                <h4>Role Updated</h4>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="module-detail-body">
+                            <div class="module-detail-body">
+                                <p>Prevent staff members from modifying existing roles in the server. This protection
+                                    ensures that only authorized users can modify the role structure. Make sure no roles
+                                    are being secretly changed or made harmful towards your server.</p>
+                                <ul>
+                                    <li><strong>Scope:</strong> Roles being modified</li>
+                                    <li><strong>Limitation:</strong> Original states cannot be restored if they were
+                                        changed</li>
+                                    <li><strong>Perk:</strong> intelligent tracking of role changes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                    <!-- How It Works -->
+                    <div class="how-it-works">
+                        <h3>How It Works</h3>
+                        <div class="how-it-works-steps">
+                            <div class="how-step">
+                                <div class="how-step-number">1</div>
+                                <h4>Action Detected</h4>
+                                <p>Meta monitors all server events in real-time using Discord's audit log system.</p>
+                            </div>
+                            <div class="how-step">
+                                <div class="how-step-number">2</div>
+                                <h4>Permission Check</h4>
+                                <p>When a protected action occurs, Meta checks if the user has the Moderator rank and
+                                    isn't an Administrator.</p>
+                            </div>
+                            <div class="how-step">
+                                <div class="how-step-number">3</div>
+                                <h4>Automatic Response</h4>
+                                <p>If violation is detected, the action is reversed where possible and logged to
+                                    admin-logs.</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- VIDEO SECTION -->
+                    <div class="video-section">
+                        <div class="video-header">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="sparkle-icon">
+                                <path
+                                    d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                            </svg>
+                            <h2>Video Tutorial</h2>
+                        </div>
+                        <p class="video-description">Watch how to setup and configure the Anti Mod Grief protection
+                            system for your server.</p>
+
+                        <div class="video-container">
+                            <!-- Placeholder - Replace with actual video -->
+                            <div class="video-placeholder">
+                                <div class="video-placeholder-icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <polygon points="5 3 19 12 5 21 5 3" />
+                                    </svg>
+                                </div>
+                                <div class="video-placeholder-text">
+                                    <span class="video-placeholder-title">AMG Setup Tutorial</span>
+                                    <span class="video-placeholder-subtitle">Click to watch the tutorial video</span>
+                                </div>
+                                <div class="video-placeholder-decorations">
+                                    <span class="decoration-dot dot-1"></span>
+                                    <span class="decoration-dot dot-2"></span>
+                                    <span class="decoration-dot dot-3"></span>
+                                    <span class="decoration-dot dot-4"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Continue Section -->
+                    <div class="continue-section">
+                        <p style="color: var(--text-muted); margin-bottom: 24px;">Ready to continue? Explore more
+                            protection features.</p>
+                        <a href="anti-alt.html" class="continue-btn">
+                            Continue to Anti Alt
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M5 12h14" />
+                                <path d="m12 5 7 7-7 7" />
+                            </svg>
+                        </a>
+                    </div>
+
+            </section>
+
+        </div>
+    </main>
+
+    <script>
+        // Search functionality
+        const searchData = [
+            { title: "Introduction", desc: "Welcome to Meta documentation", url: "home.html", category: "Getting Started" },
+            { title: "Getting Started", desc: "Learn the basics of Meta bot", url: "getting-started.html", category: "Getting Started" },
+            { title: "Meta Plus", desc: "Premium features and benefits", url: "plus.html", category: "Getting Started" },
+            { title: "Commands", desc: "Full list of available commands", url: "commands.html", category: "Getting Started" },
+            { title: "Anti Mod Grief", desc: "Protect against malicious moderators", url: "anti-mod-grief.html", category: "Protection" },
+            { title: "Anti Alt", desc: "Detect and block alternate accounts", url: "anti-alt.html", category: "Protection" },
+            { title: "Malicious App", desc: "Protect from dangerous bots", url: "malicious-app.html", category: "Protection" },
+            { title: "AutoMod", desc: "Automatic moderation features", url: "automod.html", category: "Protection" },
+            { title: "Server Logs", desc: "Track server activity", url: "server-logs.html", category: "Protection" },
+            { title: "Themes", desc: "Customize Meta's appearance", url: "themes.html", category: "Protection" },
+            { title: "Inspecting", desc: "Inspect users and content", url: "inspecting.html", category: "Security" },
+            { title: "Scanning", desc: "Scan for threats", url: "scanning.html", category: "Security" },
+            { title: "Dangerous Roles", desc: "Identify risky role permissions", url: "dangerous-roles.html", category: "Security" },
+            { title: "Terms of Service", desc: "Review the terms of service", url: "../legal/terms.html", category: "Legal" },
+            { title: "Privacy Policy", desc: "Learn how we protect your data", url: "../legal/privacy.html", category: "Legal" }
+        ];
+
+
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+
+        searchInput.addEventListener('input', function (e) {
+            const query = e.target.value.toLowerCase().trim();
+
+            if (!query) {
+                searchResults.classList.remove('open');
+                searchResults.innerHTML = '';
+                return;
+            }
+
+            const results = searchData.filter(item =>
+                item.title.toLowerCase().includes(query) ||
+                item.description.toLowerCase().includes(query) ||
+                item.category.toLowerCase().includes(query)
+            ).slice(0, 6);
+
+            if (results.length === 0) {
+                searchResults.innerHTML = `<div class="search-no-results">No results found for "${query}"</div>`;
+                searchResults.classList.add('open');
+                return;
+            }
+
+            searchResults.innerHTML = results.map(result => `
         <a href="${result.href}" class="search-result-item">
             <div class="search-result-header">
                 <span class="search-result-title">${result.title}</span>
@@ -507,51 +733,52 @@ searchInput.addEventListener('input', function(e) {
             <span class="search-result-desc">${result.description}</span>
         </a>
     `).join('');
-    
-    searchResults.classList.add('open');
-});
 
-searchInput.addEventListener('focus', function() {
-    if (searchInput.value.trim()) {
-        searchResults.classList.add('open');
-    }
-});
+            searchResults.classList.add('open');
+        });
 
-document.addEventListener('click', function(e) {
-    if (!e.target.closest('.search-container')) {
-        searchResults.classList.remove('open');
-    }
-});
+        searchInput.addEventListener('focus', function () {
+            if (searchInput.value.trim()) {
+                searchResults.classList.add('open');
+            }
+        });
 
-// Keyboard shortcut
-document.addEventListener('keydown', function(e) {
-    if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-        e.preventDefault();
-        searchInput.focus();
-    }
-    if (e.key === 'Escape') {
-        searchResults.classList.remove('open');
-        searchInput.blur();
-    }
-});
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.search-container')) {
+                searchResults.classList.remove('open');
+            }
+        });
 
-// Mobile menu toggle
-const menuBtn = document.getElementById('menu-btn');
-const sidebar = document.getElementById('sidebar');
-const overlay = document.getElementById('sidebar-overlay');
+        // Keyboard shortcut
+        document.addEventListener('keydown', function (e) {
+            if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
+                e.preventDefault();
+                searchInput.focus();
+            }
+            if (e.key === 'Escape') {
+                searchResults.classList.remove('open');
+                searchInput.blur();
+            }
+        });
 
-menuBtn.addEventListener('click', () => {
-    sidebar.classList.toggle('open');
-    overlay.classList.toggle('open');
-    menuBtn.classList.toggle('active');
-});
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
 
-overlay.addEventListener('click', () => {
-    sidebar.classList.remove('open');
-    overlay.classList.remove('open');
-    menuBtn.classList.remove('active');
-});
-</script>
+        menuBtn.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            overlay.classList.toggle('open');
+            menuBtn.classList.toggle('active');
+        });
+
+        overlay.addEventListener('click', () => {
+            sidebar.classList.remove('open');
+            overlay.classList.remove('open');
+            menuBtn.classList.remove('active');
+        });
+    </script>
 
 </body>
+
 </html>

@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Meta Docs | Bot Permissions</title>
     <link rel="icon" type="image/x-icon" href="../images/meta.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Meta Bot Permissions - All permissions Meta needs to function properly in your Discord server">
+    <meta name="description"
+        content="Meta Bot Permissions - All permissions Meta needs to function properly in your Discord server">
     <link rel="stylesheet" href="../css files/docs.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
     <meta property="og:title" content="Permissions | Meta Docs">
-    <meta property="og:description" content="Learn about all the permissions Meta needs to function properly in your Discord server, and why each permission is necessary for optimal performance.">
-    <meta property="og:image" content="https://media.discordapp.net/attachments/1011355084514394164/1232259786297577502/lightbub.jpeg?ex=69de06db&is=69dcb55b&hm=9edc8dd25b20cc8aae60ccc2a0062fe29b66cb6225a8fffbf171138e186751bf&=&format=webp&width=206&height=256">
+    <meta property="og:description"
+        content="Learn about all the permissions Meta needs to function properly in your Discord server, and why each permission is necessary for optimal performance.">
+    <meta property="og:image"
+        content="https://media.discordapp.net/attachments/1011355084514394164/1232259786297577502/lightbub.jpeg?ex=69de06db&is=69dcb55b&hm=9edc8dd25b20cc8aae60ccc2a0062fe29b66cb6225a8fffbf171138e186751bf&=&format=webp&width=206&height=256">
     <meta property="og:url" content="https://botmeta.app/">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#0085FF">
@@ -25,6 +31,7 @@
             background: linear-gradient(135deg, #0a0a1a 0%, #0a1a2a 40%, #0a2a3a 70%, #0a0a1a 100%);
             border: 1px solid rgba(0, 198, 255, 0.15);
         }
+
         .perm-hero::before {
             content: '';
             position: absolute;
@@ -34,13 +41,17 @@
                 radial-gradient(250px circle at 75% 40%, rgba(99, 102, 241, 0.08), transparent);
             pointer-events: none;
         }
+
         .perm-hero::after {
             content: '';
             position: absolute;
-            bottom: 0; left: 0; right: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
             height: 1px;
             background: linear-gradient(90deg, transparent, rgba(0, 198, 255, 0.4), rgba(99, 102, 241, 0.4), transparent);
         }
+
         .perm-hero h1 {
             position: relative;
             font-family: 'Sora', sans-serif;
@@ -54,10 +65,19 @@
             background-clip: text;
             animation: hero-gradient 5s ease infinite;
         }
+
         @keyframes hero-gradient {
-            0%, 100% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
+
+            0%,
+            100% {
+                background-position: 0% 50%;
+            }
+
+            50% {
+                background-position: 100% 50%;
+            }
         }
+
         .perm-hero p {
             position: relative;
             font-size: 17px;
@@ -66,6 +86,7 @@
             line-height: 1.7;
             margin: 0;
         }
+
         .perm-hero-badge {
             position: relative;
             display: inline-flex;
@@ -81,7 +102,10 @@
             margin-bottom: 20px;
         }
 
-        .article-body { max-width: 860px; }
+        .article-body {
+            max-width: 860px;
+        }
+
         .article-body h2 {
             font-family: 'Sora', sans-serif;
             font-size: 24px;
@@ -91,14 +115,21 @@
             padding-bottom: 12px;
             border-bottom: 1px solid rgba(0, 198, 255, 0.15);
         }
-        .article-body h2:first-of-type { margin-top: 0; }
+
+        .article-body h2:first-of-type {
+            margin-top: 0;
+        }
+
         .article-body p {
             font-size: 15px;
             color: var(--text-secondary);
             line-height: 1.8;
             margin: 0 0 16px 0;
         }
-        .article-body strong { color: var(--text-primary); }
+
+        .article-body strong {
+            color: var(--text-primary);
+        }
 
         hr.article-divider {
             border: none;
@@ -114,10 +145,12 @@
             border: 1px solid rgba(0, 198, 255, 0.1);
             margin: 24px 0;
         }
+
         .perm-table {
             width: 100%;
             border-collapse: collapse;
         }
+
         .perm-table thead th {
             background: rgba(0, 198, 255, 0.06);
             padding: 14px 20px;
@@ -128,20 +161,27 @@
             color: #67e8f9;
             border-bottom: 1px solid rgba(0, 198, 255, 0.1);
         }
+
         .perm-table tbody tr {
             border-bottom: 1px solid rgba(255, 255, 255, 0.03);
             transition: background 0.2s ease;
         }
+
         .perm-table tbody tr:hover {
             background: rgba(0, 198, 255, 0.03);
         }
-        .perm-table tbody tr:last-child { border-bottom: none; }
+
+        .perm-table tbody tr:last-child {
+            border-bottom: none;
+        }
+
         .perm-table td {
             padding: 14px 20px;
             font-size: 14px;
             color: var(--text-secondary);
             vertical-align: top;
         }
+
         .perm-name {
             font-family: 'JetBrains Mono', monospace;
             font-size: 13px;
@@ -149,6 +189,7 @@
             color: var(--text-primary);
             white-space: nowrap;
         }
+
         .perm-category-badge {
             display: inline-block;
             padding: 3px 10px;
@@ -157,26 +198,31 @@
             font-weight: 600;
             white-space: nowrap;
         }
+
         .cat-general {
             background: rgba(99, 102, 241, 0.15);
             color: #a5b4fc;
             border: 1px solid rgba(99, 102, 241, 0.25);
         }
+
         .cat-moderation {
             background: rgba(239, 68, 68, 0.15);
             color: #fca5a5;
             border: 1px solid rgba(239, 68, 68, 0.25);
         }
+
         .cat-text {
             background: rgba(34, 197, 94, 0.15);
             color: #86efac;
             border: 1px solid rgba(34, 197, 94, 0.25);
         }
+
         .cat-voice {
             background: rgba(245, 158, 11, 0.15);
             color: #fcd34d;
             border: 1px solid rgba(245, 158, 11, 0.25);
         }
+
         .cat-advanced {
             background: rgba(0, 198, 255, 0.15);
             color: #67e8f9;
@@ -192,12 +238,14 @@
             padding: 28px;
             margin: 32px 0;
         }
+
         .admin-warning-header {
             display: flex;
             align-items: center;
             gap: 10px;
             margin-bottom: 12px;
         }
+
         .admin-warning-header h3 {
             font-family: 'Sora', sans-serif;
             font-size: 18px;
@@ -205,12 +253,14 @@
             color: #fca5a5;
             margin: 0;
         }
+
         .admin-warning p {
             font-size: 14px;
             color: var(--text-secondary);
             line-height: 1.7;
             margin: 0 0 8px 0;
         }
+
         .admin-warning .not-recommended {
             display: inline-flex;
             align-items: center;
@@ -236,11 +286,18 @@
             gap: 16px;
             align-items: flex-start;
         }
+
         .callout-info {
             border: 1px solid rgba(0, 198, 255, 0.2);
             border-left: 4px solid var(--accent-cyan);
         }
-        .callout-icon { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+
+        .callout-icon {
+            font-size: 22px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
         .callout-content h4 {
             font-family: 'Sora', sans-serif;
             font-size: 15px;
@@ -248,6 +305,7 @@
             color: var(--text-primary);
             margin: 0 0 6px 0;
         }
+
         .callout-content p {
             font-size: 14px;
             color: var(--text-muted);
@@ -263,17 +321,20 @@
             border-radius: 20px;
             margin: 32px 0;
         }
+
         .invite-cta h3 {
             font-family: 'Sora', sans-serif;
             font-size: 20px;
             color: var(--text-primary);
             margin: 0 0 8px;
         }
+
         .invite-cta p {
             color: var(--text-muted);
             font-size: 14px;
             margin: 0 0 20px;
         }
+
         .invite-cta a {
             display: inline-flex;
             align-items: center;
@@ -287,6 +348,7 @@
             text-decoration: none;
             transition: all 0.3s ease;
         }
+
         .invite-cta a:hover {
             box-shadow: 0 0 30px rgba(0, 198, 255, 0.35);
             transform: translateY(-2px);
@@ -299,6 +361,7 @@
             margin: 24px 0;
             flex-wrap: wrap;
         }
+
         .perm-stat {
             background: rgba(10, 15, 30, 0.6);
             border: 1px solid rgba(0, 198, 255, 0.1);
@@ -308,6 +371,7 @@
             flex: 1;
             min-width: 120px;
         }
+
         .perm-stat-number {
             font-family: 'Sora', sans-serif;
             font-size: 28px;
@@ -317,6 +381,7 @@
             -webkit-text-fill-color: transparent;
             background-clip: text;
         }
+
         .perm-stat-label {
             font-size: 12px;
             color: var(--text-muted);
@@ -324,473 +389,677 @@
         }
 
         @media (max-width: 768px) {
-            .perm-hero { padding: 36px 24px; }
-            .perm-hero h1 { font-size: 30px; }
-            .perm-table-container { overflow-x: auto; }
-            .perm-stats { flex-direction: column; }
+            .perm-hero {
+                padding: 36px 24px;
+            }
+
+            .perm-hero h1 {
+                font-size: 30px;
+            }
+
+            .perm-table-container {
+                overflow-x: auto;
+            }
+
+            .perm-stats {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
+
 <body>
 
-<div class="shooting-stars"><span></span><span></span><span></span><span></span><span></span></div>
-<div class="star-layer star-layer-1"></div>
-<div class="star-layer star-layer-2"></div>
+    <div class="shooting-stars"><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="star-layer star-layer-1"></div>
+    <div class="star-layer star-layer-2"></div>
 
-<!-- SIDEBAR -->
-<aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-        <a href="home.html" class="sidebar-logo">
-            <img src="images/meta.png" alt="Meta Logo">
-            <span>Meta Docs</span>
-        </a>
-    </div>
-    <nav class="sidebar-nav">
-        <div class="nav-section">
-            <div class="nav-section-title">Getting Started</div>
-            <a href="../home.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg> Introduction</a>
-            <a href="../documentation/getting.started.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg> Getting Started</a>
-            <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" class="nav-item" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> Invite Meta</a>
-            <a href="https://discord.gg/Rc8DgBBpsx" class="nav-item" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/></svg> Support</a>
-            <a href="../plus.html" class="nav-item nav-item-special"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg> Meta Plus</a>
-            <a href="../commands.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg> Commands</a>
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="home.html" class="sidebar-logo">
+                <img src="images/meta.png" alt="Meta Logo">
+                <span>Meta Docs</span>
+            </a>
         </div>
-        <div class="nav-section">
-            <div class="nav-section-title">Protection</div>
-            <a href="../documentation/anti-mod-grief.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg> Anti Mod Grief</a>
-            <a href="../documentation/anti-alt.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" x2="22" y1="8" y2="13"/><line x1="22" x2="17" y1="8" y2="13"/></svg> Anti Alt</a>
-            <a href="../documentation/malicious-app.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg> Malicious Bot</a>
-            <a href="../documentation/automod.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h0"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg> AutoMod</a>
-            <a href="../documentation/server-logs.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg> Server Logs</a>
-            <a href="../documentation/themes.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="0.5" fill="currentColor"/><circle cx="17.5" cy="10.5" r="0.5" fill="currentColor"/><circle cx="8.5" cy="7.5" r="0.5" fill="currentColor"/><circle cx="6.5" cy="12.5" r="0.5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg> Themes</a>
-        </div>
-        <div class="nav-section">
-            <div class="nav-section-title">Security</div>
-            <a href="./inspecting.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Inspecting</a>
-            <a href="./scanning.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></svg> Scanning</a>
-            <a href="./dangerous-roles.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg> Dangerous Roles</a>
-            <a href="./meta-roles.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z"/><path d="M5.21 16.5h13.58"/></svg> Meta Roles</a>
-            <a href="./permissions.html" class="nav-item active"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Permissions</a>
-        </div>
-        <div class="nav-section">
-            <div class="nav-section-title">Legal</div>
-            <a href="../legal/terms.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/></svg> Terms of Service</a>
-            <a href="../legal/privacy.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg> Privacy Policy</a>
-        </div>
-
-        <div class="nav-section">
-            <div class="nav-section-title">Legal</div>
-            <a href="../legal/terms.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Terms of Service</a>
-            <a href="../legal/privacy.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg> Privacy Policy</a>
-        </div>
-    </nav>
-</aside>
-
-<!-- HEADER -->
-<header class="header" id="header">
-    <div class="header-glow"></div>
-    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
-    <div class="search-container">
-        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
-        <input type="text" class="search-input" id="search-input" placeholder="Search documentation..." autocomplete="off">
-        <kbd class="search-kbd">⌘K</kbd>
-        <div class="search-results" id="search-results"></div>
-    </div>
-    <div class="header-actions">
-        <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="btn-ghost">Support <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg></a>
-        <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" target="_blank" class="btn-primary">Invite Meta</a>
-    </div>
-</header>
-
-<div class="sidebar-overlay" id="sidebar-overlay"></div>
-
-<!-- MAIN CONTENT -->
-<main class="main-content">
-    <div class="content-container">
-        <section class="doc-section">
-
-            <!-- HERO -->
-            <div class="perm-hero">
-                <div class="perm-hero-badge">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-                    Configuration
-                </div>
-                <h1>🔐 Permissions</h1>
-                <p>A complete breakdown of every permission Meta requests when invited to your server, and why each one is needed.</p>
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">Getting Started</div>
+                <a href="../home.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                    </svg> Introduction</a>
+                <a href="../documentation/getting.started.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                    </svg> Getting Started</a>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=7640936837672959&scope=bot%20applications.commands"
+                    class="nav-item" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" x2="12" y1="15" y2="3" />
+                    </svg> Invite Meta</a>
+                <a href="https://discord.gg/Rc8DgBBpsx" class="nav-item" target="_blank"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
+                    </svg> Support</a>
+                <a href="../plus.html" class="nav-item nav-item-special"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                    </svg> Meta Plus</a>
+                <a href="../commands.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="4 17 10 11 4 5" />
+                        <line x1="12" x2="20" y1="19" y2="19" />
+                    </svg> Commands</a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Protection</div>
+                <a href="../documentation/anti-mod-grief.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                        <path d="M12 8v4" />
+                        <path d="M12 16h.01" />
+                    </svg> Anti Mod Grief</a>
+                <a href="../documentation/anti-alt.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <line x1="17" x2="22" y1="8" y2="13" />
+                        <line x1="22" x2="17" y1="8" y2="13" />
+                    </svg> Anti Alt</a>
+                <a href="../documentation/malicious-app.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 8V4H8" />
+                        <rect width="16" height="12" x="4" y="8" rx="2" />
+                        <path d="M2 14h2" />
+                        <path d="M20 14h2" />
+                        <path d="M15 13v2" />
+                        <path d="M9 13v2" />
+                    </svg> Malicious Bot</a>
+                <a href="../documentation/automod.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 4V2" />
+                        <path d="M15 16v-2" />
+                        <path d="M8 9h2" />
+                        <path d="M20 9h2" />
+                        <path d="M17.8 11.8 19 13" />
+                        <path d="M15 9h0" />
+                        <path d="M17.8 6.2 19 5" />
+                        <path d="m3 21 9-9" />
+                        <path d="M12.2 6.2 11 5" />
+                    </svg> AutoMod</a>
+                <a href="../documentation/server-logs.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                        <path d="M10 9H8" />
+                        <path d="M16 13H8" />
+                        <path d="M16 17H8" />
+                    </svg> Server Logs</a>
+                <a href="../documentation/themes.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg"
+                        width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="13.5" cy="6.5" r="0.5" fill="currentColor" />
+                        <circle cx="17.5" cy="10.5" r="0.5" fill="currentColor" />
+                        <circle cx="8.5" cy="7.5" r="0.5" fill="currentColor" />
+                        <circle cx="6.5" cy="12.5" r="0.5" fill="currentColor" />
+                        <path
+                            d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z" />
+                    </svg> Themes</a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Security</div>
+                <a href="./inspecting.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg> Inspecting</a>
+                <a href="./scanning.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+                        <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+                        <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+                        <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+                        <path d="M7 12h10" />
+                    </svg> Scanning</a>
+                <a href="./dangerous-roles.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                        <path d="M12 9v4" />
+                        <path d="M12 17h.01" />
+                    </svg> Dangerous Roles</a>
+                <a href="./meta-roles.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M11.562 3.266a.5.5 0 0 1 .876 0L15.39 8.87a1 1 0 0 0 1.516.294L21.183 5.5a.5.5 0 0 1 .798.519l-2.834 10.246a1 1 0 0 1-.956.734H5.81a1 1 0 0 1-.957-.734L2.02 6.02a.5.5 0 0 1 .798-.519l4.276 3.664a1 1 0 0 0 1.516-.294z" />
+                        <path d="M5.21 16.5h13.58" />
+                    </svg> Meta Roles</a>
+                <a href="./permissions.html" class="nav-item active"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                    </svg> Permissions</a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Legal</div>
+                <a href="../legal/terms.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" x2="8" y1="13" y2="13" />
+                        <line x1="16" x2="8" y1="17" y2="17" />
+                    </svg> Terms of Service</a>
+                <a href="../legal/privacy.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                    </svg> Privacy Policy</a>
             </div>
 
-            <!-- ARTICLE BODY -->
-            <div class="article-body">
-
-                <h2>Overview</h2>
-                <p>When you invite Meta to your server, it requests a specific set of permissions needed to power all of its features — from logging and moderation to scanning and protection. Below is a full breakdown of each permission.</p>
-
-                <div class="perm-stats">
-                    <div class="perm-stat">
-                        <div class="perm-stat-number">36</div>
-                        <div class="perm-stat-label">Total Permissions</div>
-                    </div>
-                    <div class="perm-stat">
-                        <div class="perm-stat-number">7</div>
-                        <div class="perm-stat-label">Management</div>
-                    </div>
-                    <div class="perm-stat">
-                        <div class="perm-stat-number">8</div>
-                        <div class="perm-stat-label">Moderation</div>
-                    </div>
-                    <div class="perm-stat">
-                        <div class="perm-stat-number">21</div>
-                        <div class="perm-stat-label">Functionality</div>
-                    </div>
-                </div>
-
-                <hr class="article-divider">
-
-                <!-- MANAGEMENT PERMISSIONS -->
-                <h2>Management Permissions</h2>
-                <p>These permissions let Meta access basic server information and perform fundamental operations.</p>
-
-                <div class="perm-table-container">
-                    <table class="perm-table">
-                        <thead>
-                            <tr>
-                                <th>Permission</th>
-                                <th>Category</th>
-                                <th>Why It's Needed</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="perm-name">Manage Server</span></td>
-                                <td><span class="perm-category-badge cat-general">Management</span></td>
-                                <td>Required to see channels and respond to commands. Without this, Meta cannot function.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Manage Roles</span></td>
-                                <td><span class="perm-category-badge cat-general">Management</span></td>
-                                <td>Powers server logging — Meta reads audit logs to detect who performed actions like bans, kicks, and role changes.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Manage Channels</span></td>
-                                <td><span class="perm-category-badge cat-general">Management</span></td>
-                                <td>Needed for lockdown features, creating log channels, and channel-based protection systems.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Manage Nicknames</span></td>
-                                <td><span class="perm-category-badge cat-general">Management</span></td>
-                                <td>Required for server-level configurations like vanity URL protection and server settings management.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Manage Webhooks</span></td>
-                                <td><span class="perm-category-badge cat-general">Management</span></td>
-                                <td>Allows Meta to add reactions to messages for interactive features and confirmations.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Manage Threads</span></td>
-                                <td><span class="perm-category-badge cat-general">Management</span></td>
-                                <td>Allows Meta to add reactions to messages for interactive features and confirmations.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <hr class="article-divider">
-
-                <!-- MODERATION PERMISSIONS -->
-                <h2>Moderation Permissions</h2>
-                <p>These are required for Meta's core protection and moderation features like anti-alt, anti-grief, and automated actions.</p>
-
-                <div class="perm-table-container">
-                    <table class="perm-table">
-                        <thead>
-                            <tr>
-                                <th>Permission</th>
-                                <th>Category</th>
-                                <th>Why It's Needed</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="perm-name">Ban Members</span></td>
-                                <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
-                                <td>Needed for anti-alt bans, anti-grief protection, and the /ban command.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Kick Members</span></td>
-                                <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
-                                <td>Required for Meta Roles system, anti-grief role restoration, and automated role assignments.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Moderate Members</span></td>
-                                <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
-                                <td>Allows Meta to manage member nicknames for AutoMod nickname filtering and moderation.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Manage Messages</span></td>
-                                <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
-                                <td>Used for advanced logging features and webhook-based notifications.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Bypass Slowmode</span></td>
-                                <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
-                                <td>Enables timeout functionality for AutoMod actions and moderation commands.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Moderate Members</span></td>
-                                <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
-                                <td>Enables timeout functionality for AutoMod actions and moderation commands.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Mute Users in VC</span></td>
-                                <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
-                                <td>Enables timeout functionality for AutoMod actions and moderation commands.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Deafen Users in VC</span></td>
-                                <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
-                                <td>Enables timeout functionality for AutoMod actions and moderation commands.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Move Users in VC</span></td>
-                                <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
-                                <td>Enables timeout functionality for AutoMod actions and moderation commands.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <hr class="article-divider">
-
-                <!-- FUNCTIONALITY PERMISSIONS -->
-                <h2>Functionality Permissions</h2>
-                <p>These permissions are needed for Meta to function properly across various features and commands.</p>
-
-                <div class="perm-table-container">
-                    <table class="perm-table">
-                        <thead>
-                            <tr>
-                                <th>Permission</th>
-                                <th>Category</th>
-                                <th>Why It's Needed</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="perm-name">Create Invites</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Core requirement — Meta must send messages to respond to commands and deliver logs.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Change Nickname</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Required for AutoMod to delete filtered messages and for purge/clean commands.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">View Audit Logs</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to send rich embeds for logs, inspection results, and scan reports.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">View Channel</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Enables file attachments for detailed reports and exported data.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Send Messages</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Needed to read previous messages for context in moderation and logging.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Send Messages in Thread</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to use its custom status emojis and indicators in embeds.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Embed Links</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Used for thread-based features and organized logging systems.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Attach Files</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Read Message History</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Add Reactions</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Use External Emojis</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Use External Stickers</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Create Polls</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Pin Messages</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Connect to VC</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Speak in VC</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Priority Speak</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Video</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Use Soundboard</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Use External Sound</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                            <tr>
-                                <td><span class="perm-name">Set VC Status</span></td>
-                                <td><span class="perm-category-badge cat-text">Functionality</span></td>
-                                <td>Allows Meta to respond and log within threads.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <hr class="article-divider">
-
-                <!-- ADVANCED -->
-                <h2>Advanced Permission</h2>
-                <div class="perm-table-container">
-                    <table class="perm-table">
-                        <thead>
-                            <tr>
-                                <th>Permission</th>
-                                <th>Category</th>
-                                <th>Why It's Needed</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><span class="perm-name">Administrator</span></td>
-                                <td><span class="perm-category-badge cat-advanced">Advanced</span></td>
-                                <td>Included in the invite for convenience but <strong>not required by default</strong>. See the section below for details.</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-
-                <hr class="article-divider">
-
-                <!-- ADMIN WARNING -->
-                <div class="admin-warning">
-                    <div class="admin-warning-header">
-                        <span style="font-size: 24px;">⚠️</span>
-                        <h3>About Administrator Permission</h3>
-                    </div>
-                    <p>If Meta is not functioning correctly in your server — such as failing to log events, not banning alts, or not detecting dangerous roles — it may be a permissions issue.</p>
-                    <p>In these cases, you can try granting <strong>Administrator</strong> permission to the Meta bot role. This gives Meta full access to all channels and permissions, bypassing any channel-level overrides that might be blocking it.</p>
-                    <p>However, this is a <strong>last-resort solution</strong>. We always recommend using the specific permissions listed above and only granting Admin if you've verified that individual permissions aren't resolving the issue.</p>
-                    <p>If you're unsure, please reach out in the <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" style="color: #fca5a5;">support server</a> and the team will help you troubleshoot.</p>
-                    <div class="not-recommended">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
-                        Not Recommended — Use Only If Necessary
-                    </div>
-                </div>
-
-                <div class="callout callout-info">
-                    <div class="callout-icon">💡</div>
-                    <div class="callout-content">
-                        <h4>Pro Tip</h4>
-                        <p>Make sure Meta's role is placed <strong>above</strong> the roles it needs to manage in your server's role hierarchy. Discord requires bots to have a higher role position than any role they modify, assign, or remove.</p>
-                    </div>
-                </div>
-
-                <!-- INVITE CTA -->
-                <div class="invite-cta">
-                    <h3>Ready to add Meta to your server?</h3>
-                    <p>Use the invite link below — all the right permissions are pre-selected for you.</p>
-                    <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" target="_blank">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                        Invite Meta Bot
-                    </a>
-                </div>
-
+            <div class="nav-section">
+                <div class="nav-section-title">Legal</div>
+                <a href="../legal/terms.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" x2="8" y1="13" y2="13" />
+                        <line x1="16" x2="8" y1="17" y2="17" />
+                        <polyline points="10 9 9 9 8 9" />
+                    </svg> Terms of Service</a>
+                <a href="../legal/privacy.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                    </svg> Privacy Policy</a>
             </div>
-        </section>
-    </div>
-</main>
+        </nav>
+    </aside>
 
-<script>
-const searchData = [
-    { title: "Introduction", desc: "Welcome to Meta documentation", url: "home.html", category: "Getting Started" },
-    { title: "Getting Started", desc: "Learn the basics of Meta bot", url: "getting-started.html", category: "Getting Started" },
-    { title: "Meta Plus", desc: "Premium features and benefits", url: "plus.html", category: "Getting Started" },
-    { title: "Commands", desc: "Full list of available commands", url: "commands.html", category: "Getting Started" },
-    { title: "Anti Mod Grief", desc: "Protect against malicious moderators", url: "anti-mod-grief.html", category: "Protection" },
-    { title: "Anti Alt", desc: "Detect and block alternate accounts", url: "anti-alt.html", category: "Protection" },
-    { title: "Malicious App", desc: "Protect from dangerous bots", url: "malicious-app.html", category: "Protection" },
-    { title: "AutoMod", desc: "Automatic moderation features", url: "automod.html", category: "Protection" },
-    { title: "Server Logs", desc: "Track server activity", url: "server-logs.html", category: "Protection" },
-    { title: "Themes", desc: "Customize Meta's appearance", url: "themes.html", category: "Protection" },
-    { title: "Inspecting", desc: "Inspect users and content", url: "inspecting.html", category: "Security" },
-    { title: "Scanning", desc: "Scan for threats", url: "scanning.html", category: "Security" },
-    { title: "Dangerous Roles", desc: "Identify risky role permissions", url: "dangerous-roles.html", category: "Security" },
-    { title: "Terms of Service", desc: "Review the terms of service", url: "../legal/terms.html", category: "Legal" },
-    { title: "Privacy Policy", desc: "Learn how we protect your data", url: "../legal/privacy.html", category: "Legal" }
-];
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-glow"></div>
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+        <div class="search-container">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+            </svg>
+            <input type="text" class="search-input" id="search-input" placeholder="Search documentation..."
+                autocomplete="off">
+            <kbd class="search-kbd">⌘K</kbd>
+            <div class="search-results" id="search-results"></div>
+        </div>
+        <div class="header-actions">
+            <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="btn-ghost">Support <svg
+                    xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                    <polyline points="15 3 21 3 21 9" />
+                    <line x1="10" y1="14" x2="21" y2="3" />
+                </svg></a>
+            <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=7640936837672959&scope=bot%20applications.commands"
+                target="_blank" class="btn-primary">Invite Meta</a>
+        </div>
+    </header>
+
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="content-container">
+            <section class="doc-section">
+
+                <!-- HERO -->
+                <div class="perm-hero">
+                    <div class="perm-hero-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
+                        Configuration
+                    </div>
+                    <h1>🔐 Permissions</h1>
+                    <p>A complete breakdown of every permission Meta requests when invited to your server, and why each
+                        one is needed.</p>
+                </div>
+
+                <!-- ARTICLE BODY -->
+                <div class="article-body">
+
+                    <h2>Overview</h2>
+                    <p>When you invite Meta to your server, it requests a specific set of permissions needed to power
+                        all of its features — from logging and moderation to scanning and protection. Below is a full
+                        breakdown of each permission.</p>
+
+                    <div class="perm-stats">
+                        <div class="perm-stat">
+                            <div class="perm-stat-number">36</div>
+                            <div class="perm-stat-label">Total Permissions</div>
+                        </div>
+                        <div class="perm-stat">
+                            <div class="perm-stat-number">7</div>
+                            <div class="perm-stat-label">Management</div>
+                        </div>
+                        <div class="perm-stat">
+                            <div class="perm-stat-number">8</div>
+                            <div class="perm-stat-label">Moderation</div>
+                        </div>
+                        <div class="perm-stat">
+                            <div class="perm-stat-number">21</div>
+                            <div class="perm-stat-label">Functionality</div>
+                        </div>
+                    </div>
+
+                    <hr class="article-divider">
+
+                    <!-- MANAGEMENT PERMISSIONS -->
+                    <h2>Management Permissions</h2>
+                    <p>These permissions let Meta access basic server information and perform fundamental operations.
+                    </p>
+
+                    <div class="perm-table-container">
+                        <table class="perm-table">
+                            <thead>
+                                <tr>
+                                    <th>Permission</th>
+                                    <th>Category</th>
+                                    <th>Why It's Needed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="perm-name">Manage Server</span></td>
+                                    <td><span class="perm-category-badge cat-general">Management</span></td>
+                                    <td>Required to see channels and respond to commands. Without this, Meta cannot
+                                        function.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Manage Roles</span></td>
+                                    <td><span class="perm-category-badge cat-general">Management</span></td>
+                                    <td>Powers server logging — Meta reads audit logs to detect who performed actions
+                                        like bans, kicks, and role changes.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Manage Channels</span></td>
+                                    <td><span class="perm-category-badge cat-general">Management</span></td>
+                                    <td>Needed for lockdown features, creating log channels, and channel-based
+                                        protection systems.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Manage Nicknames</span></td>
+                                    <td><span class="perm-category-badge cat-general">Management</span></td>
+                                    <td>Required for server-level configurations like vanity URL protection and server
+                                        settings management.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Manage Webhooks</span></td>
+                                    <td><span class="perm-category-badge cat-general">Management</span></td>
+                                    <td>Allows Meta to add reactions to messages for interactive features and
+                                        confirmations.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Manage Threads</span></td>
+                                    <td><span class="perm-category-badge cat-general">Management</span></td>
+                                    <td>Allows Meta to add reactions to messages for interactive features and
+                                        confirmations.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <hr class="article-divider">
+
+                    <!-- MODERATION PERMISSIONS -->
+                    <h2>Moderation Permissions</h2>
+                    <p>These are required for Meta's core protection and moderation features like anti-alt, anti-grief,
+                        and automated actions.</p>
+
+                    <div class="perm-table-container">
+                        <table class="perm-table">
+                            <thead>
+                                <tr>
+                                    <th>Permission</th>
+                                    <th>Category</th>
+                                    <th>Why It's Needed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="perm-name">Ban Members</span></td>
+                                    <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
+                                    <td>Needed for anti-alt bans, anti-grief protection, and the /ban command.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Kick Members</span></td>
+                                    <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
+                                    <td>Required for Meta Roles system, anti-grief role restoration, and automated role
+                                        assignments.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Moderate Members</span></td>
+                                    <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
+                                    <td>Allows Meta to manage member nicknames for AutoMod nickname filtering and
+                                        moderation.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Manage Messages</span></td>
+                                    <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
+                                    <td>Used for advanced logging features and webhook-based notifications.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Bypass Slowmode</span></td>
+                                    <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
+                                    <td>Enables timeout functionality for AutoMod actions and moderation commands.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Moderate Members</span></td>
+                                    <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
+                                    <td>Enables timeout functionality for AutoMod actions and moderation commands.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Mute Users in VC</span></td>
+                                    <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
+                                    <td>Enables timeout functionality for AutoMod actions and moderation commands.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Deafen Users in VC</span></td>
+                                    <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
+                                    <td>Enables timeout functionality for AutoMod actions and moderation commands.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Move Users in VC</span></td>
+                                    <td><span class="perm-category-badge cat-moderation">Moderation</span></td>
+                                    <td>Enables timeout functionality for AutoMod actions and moderation commands.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <hr class="article-divider">
+
+                    <!-- FUNCTIONALITY PERMISSIONS -->
+                    <h2>Functionality Permissions</h2>
+                    <p>These permissions are needed for Meta to function properly across various features and commands.
+                    </p>
+
+                    <div class="perm-table-container">
+                        <table class="perm-table">
+                            <thead>
+                                <tr>
+                                    <th>Permission</th>
+                                    <th>Category</th>
+                                    <th>Why It's Needed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="perm-name">Create Invites</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Core requirement — Meta must send messages to respond to commands and deliver
+                                        logs.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Change Nickname</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Required for AutoMod to delete filtered messages and for purge/clean commands.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">View Audit Logs</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to send rich embeds for logs, inspection results, and scan reports.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">View Channel</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Enables file attachments for detailed reports and exported data.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Send Messages</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Needed to read previous messages for context in moderation and logging.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Send Messages in Thread</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to use its custom status emojis and indicators in embeds.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Embed Links</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Used for thread-based features and organized logging systems.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Attach Files</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Read Message History</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Add Reactions</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Use External Emojis</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Use External Stickers</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Create Polls</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Pin Messages</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Connect to VC</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Speak in VC</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Priority Speak</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Video</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Use Soundboard</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Use External Sound</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                                <tr>
+                                    <td><span class="perm-name">Set VC Status</span></td>
+                                    <td><span class="perm-category-badge cat-text">Functionality</span></td>
+                                    <td>Allows Meta to respond and log within threads.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <hr class="article-divider">
+
+                    <!-- ADVANCED -->
+                    <h2>Advanced Permission</h2>
+                    <div class="perm-table-container">
+                        <table class="perm-table">
+                            <thead>
+                                <tr>
+                                    <th>Permission</th>
+                                    <th>Category</th>
+                                    <th>Why It's Needed</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><span class="perm-name">Administrator</span></td>
+                                    <td><span class="perm-category-badge cat-advanced">Advanced</span></td>
+                                    <td>Included in the invite for convenience but <strong>not required by
+                                            default</strong>. See the section below for details.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <hr class="article-divider">
+
+                    <!-- ADMIN WARNING -->
+                    <div class="admin-warning">
+                        <div class="admin-warning-header">
+                            <span style="font-size: 24px;">⚠️</span>
+                            <h3>About Administrator Permission</h3>
+                        </div>
+                        <p>If Meta is not functioning correctly in your server — such as failing to log events, not
+                            banning alts, or not detecting dangerous roles — it may be a permissions issue.</p>
+                        <p>In these cases, you can try granting <strong>Administrator</strong> permission to the Meta
+                            bot role. This gives Meta full access to all channels and permissions, bypassing any
+                            channel-level overrides that might be blocking it.</p>
+                        <p>However, this is a <strong>last-resort solution</strong>. We always recommend using the
+                            specific permissions listed above and only granting Admin if you've verified that individual
+                            permissions aren't resolving the issue.</p>
+                        <p>If you're unsure, please reach out in the <a href="https://discord.gg/Rc8DgBBpsx"
+                                target="_blank" style="color: #fca5a5;">support server</a> and the team will help you
+                            troubleshoot.</p>
+                        <div class="not-recommended">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                                <path d="M12 9v4" />
+                                <path d="M12 17h.01" />
+                            </svg>
+                            Not Recommended — Use Only If Necessary
+                        </div>
+                    </div>
+
+                    <div class="callout callout-info">
+                        <div class="callout-icon">💡</div>
+                        <div class="callout-content">
+                            <h4>Pro Tip</h4>
+                            <p>Make sure Meta's role is placed <strong>above</strong> the roles it needs to manage in
+                                your server's role hierarchy. Discord requires bots to have a higher role position than
+                                any role they modify, assign, or remove.</p>
+                        </div>
+                    </div>
+
+                    <!-- INVITE CTA -->
+                    <div class="invite-cta">
+                        <h3>Ready to add Meta to your server?</h3>
+                        <p>Use the invite link below — all the right permissions are pre-selected for you.</p>
+                        <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=7640936837672959&scope=bot%20applications.commands"
+                            target="_blank">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <polyline points="7 10 12 15 17 10" />
+                                <line x1="12" x2="12" y1="15" y2="3" />
+                            </svg>
+                            Invite Meta Bot
+                        </a>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const searchData = [
+            { title: "Introduction", desc: "Welcome to Meta documentation", url: "home.html", category: "Getting Started" },
+            { title: "Getting Started", desc: "Learn the basics of Meta bot", url: "getting-started.html", category: "Getting Started" },
+            { title: "Meta Plus", desc: "Premium features and benefits", url: "plus.html", category: "Getting Started" },
+            { title: "Commands", desc: "Full list of available commands", url: "commands.html", category: "Getting Started" },
+            { title: "Anti Mod Grief", desc: "Protect against malicious moderators", url: "anti-mod-grief.html", category: "Protection" },
+            { title: "Anti Alt", desc: "Detect and block alternate accounts", url: "anti-alt.html", category: "Protection" },
+            { title: "Malicious App", desc: "Protect from dangerous bots", url: "malicious-app.html", category: "Protection" },
+            { title: "AutoMod", desc: "Automatic moderation features", url: "automod.html", category: "Protection" },
+            { title: "Server Logs", desc: "Track server activity", url: "server-logs.html", category: "Protection" },
+            { title: "Themes", desc: "Customize Meta's appearance", url: "themes.html", category: "Protection" },
+            { title: "Inspecting", desc: "Inspect users and content", url: "inspecting.html", category: "Security" },
+            { title: "Scanning", desc: "Scan for threats", url: "scanning.html", category: "Security" },
+            { title: "Dangerous Roles", desc: "Identify risky role permissions", url: "dangerous-roles.html", category: "Security" },
+            { title: "Terms of Service", desc: "Review the terms of service", url: "../legal/terms.html", category: "Legal" },
+            { title: "Privacy Policy", desc: "Learn how we protect your data", url: "../legal/privacy.html", category: "Legal" }
+        ];
 
 
-const searchInput = document.getElementById('search-input');
-const searchResults = document.getElementById('search-results');
-searchInput.addEventListener('input', function () {
-    const query = this.value.toLowerCase().trim();
-    if (query.length < 2) { searchResults.classList.remove('open'); return; }
-    const matches = searchData.filter(item => item.title.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query));
-    if (matches.length > 0) {
-        searchResults.innerHTML = matches.map(item => `<a href="${item.url}" class="search-result-item"><div class="search-result-header"><span class="search-result-title">${item.title}</span><span class="search-result-category">${item.category}</span></div><p class="search-result-desc">${item.desc}</p></a>`).join('');
-    } else {
-        searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
-    }
-    searchResults.classList.add('open');
-});
-document.addEventListener('keydown', function (e) {
-    if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); searchInput.focus(); }
-    if (e.key === 'Escape') { searchResults.classList.remove('open'); searchInput.blur(); }
-});
-const menuBtn = document.getElementById('menu-btn');
-const sidebar = document.getElementById('sidebar');
-const overlay = document.getElementById('sidebar-overlay');
-menuBtn.addEventListener('click', function () { sidebar.classList.toggle('open'); overlay.classList.toggle('open'); menuBtn.classList.toggle('active'); });
-overlay.addEventListener('click', function () { sidebar.classList.remove('open'); overlay.classList.remove('open'); menuBtn.classList.remove('active'); });
-</script>
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
+        searchInput.addEventListener('input', function () {
+            const query = this.value.toLowerCase().trim();
+            if (query.length < 2) { searchResults.classList.remove('open'); return; }
+            const matches = searchData.filter(item => item.title.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query));
+            if (matches.length > 0) {
+                searchResults.innerHTML = matches.map(item => `<a href="${item.url}" class="search-result-item"><div class="search-result-header"><span class="search-result-title">${item.title}</span><span class="search-result-category">${item.category}</span></div><p class="search-result-desc">${item.desc}</p></a>`).join('');
+            } else {
+                searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
+            }
+            searchResults.classList.add('open');
+        });
+        document.addEventListener('keydown', function (e) {
+            if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); searchInput.focus(); }
+            if (e.key === 'Escape') { searchResults.classList.remove('open'); searchInput.blur(); }
+        });
+        const menuBtn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+        menuBtn.addEventListener('click', function () { sidebar.classList.toggle('open'); overlay.classList.toggle('open'); menuBtn.classList.toggle('active'); });
+        overlay.addEventListener('click', function () { sidebar.classList.remove('open'); overlay.classList.remove('open'); menuBtn.classList.remove('active'); });
+    </script>
 
 </body>
+
 </html>

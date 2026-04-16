@@ -1,390 +1,597 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Meta Docs | AutoMod</title>
     <link rel="icon" type="image/x-icon" href="../images/meta.ico">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AutoMod - Discord AutoMod integration powered by Meta for faster, cleaner moderation setup">
+    <meta name="description"
+        content="AutoMod - Discord AutoMod integration powered by Meta for faster, cleaner moderation setup">
     <link rel="stylesheet" href="../css files/docs.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
 
     <meta property="og:title" content="AutoMod | Meta Docs">
-    <meta property="og:description" content="Create detailed and powerful AutoMod rules for your Discord server with 1 click using Meta's Automod Integration.">
-    <meta property="og:image" content="https://media.discordapp.net/attachments/1011355084514394164/1232259786297577502/lightbub.jpeg?ex=69de06db&is=69dcb55b&hm=9edc8dd25b20cc8aae60ccc2a0062fe29b66cb6225a8fffbf171138e186751bf&=&format=webp&width=206&height=256">
+    <meta property="og:description"
+        content="Create detailed and powerful AutoMod rules for your Discord server with 1 click using Meta's Automod Integration.">
+    <meta property="og:image"
+        content="https://media.discordapp.net/attachments/1011355084514394164/1232259786297577502/lightbub.jpeg?ex=69de06db&is=69dcb55b&hm=9edc8dd25b20cc8aae60ccc2a0062fe29b66cb6225a8fffbf171138e186751bf&=&format=webp&width=206&height=256">
     <meta property="og:url" content="https://botmeta.app/">
     <meta property="og:type" content="website">
     <meta name="theme-color" content="#0085FF">
 </head>
+
 <body>
 
-<!-- SHOOTING STARS -->
-<div class="shooting-stars">
-    <span></span><span></span><span></span><span></span><span></span>
-</div>
-
-<!-- PARALLAX STARFIELD -->
-<div class="star-layer star-layer-1"></div>
-<div class="star-layer star-layer-2"></div>
-
-<!-- SIDEBAR -->
-<aside class="sidebar" id="sidebar">
-    <div class="sidebar-header">
-        <a href="../home.html" class="sidebar-logo">
-            <img src="../images/meta.png" alt="Meta Logo">
-            <span>Meta Docs</span>
-        </a>
+    <!-- SHOOTING STARS -->
+    <div class="shooting-stars">
+        <span></span><span></span><span></span><span></span><span></span>
     </div>
-    <nav class="sidebar-nav">
-        <div class="nav-section">
-            <div class="nav-section-title">Getting Started</div>
-            <a href="../home.html" class="nav-item" data-page="home.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
-                Introduction
-            </a>
-            <a href="getting-started.html" class="nav-item" data-page="getting-started.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"/></svg>
-                Getting Started
-            </a>
-            <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" class="nav-item" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
-                Invite Meta
-            </a>
-            <a href="https://discord.gg/Rc8DgBBpsx" class="nav-item" target="_blank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z"/></svg>
-                Support
-            </a>
-            <a href="../plus.html" class="nav-item nav-item-special" data-page="plus.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/></svg>
-                Meta Plus
-            </a>
-            <a href="../commands.html" class="nav-item" data-page="commands.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
-                Commands
+
+    <!-- PARALLAX STARFIELD -->
+    <div class="star-layer star-layer-1"></div>
+    <div class="star-layer star-layer-2"></div>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <a href="../home.html" class="sidebar-logo">
+                <img src="../images/meta.png" alt="Meta Logo">
+                <span>Meta Docs</span>
             </a>
         </div>
-        <div class="nav-section">
-            <div class="nav-section-title">Protection</div>
-            <a href="anti-mod-grief.html" class="nav-item" data-page="anti-mod-grief.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/><path d="M12 8v4"/><path d="M12 16h.01"/></svg>
-                Anti Mod Grief
-            </a>
-            <a href="anti-alt.html" class="nav-item" data-page="anti-alt.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><line x1="17" x2="22" y1="8" y2="13"/><line x1="22" x2="17" y1="8" y2="13"/></svg>
-                Anti Alt
-            </a>
-            <a href="malicious-app.html" class="nav-item" data-page="malicious-app.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
-                Malicious App
-            </a>
-            <a href="automod.html" class="nav-item active" data-page="automod.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4V2"/><path d="M15 16v-2"/><path d="M8 9h2"/><path d="M20 9h2"/><path d="M17.8 11.8 19 13"/><path d="M15 9h0"/><path d="M17.8 6.2 19 5"/><path d="m3 21 9-9"/><path d="M12.2 6.2 11 5"/></svg>
-                AutoMod
-            </a>
-            <a href="server-logs.html" class="nav-item" data-page="server-logs.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>
-                Server Logs
-            </a>
-            <a href="themes.html" class="nav-item" data-page="themes.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="13.5" cy="6.5" r="0.5" fill="currentColor"/><circle cx="17.5" cy="10.5" r="0.5" fill="currentColor"/><circle cx="8.5" cy="7.5" r="0.5" fill="currentColor"/><circle cx="6.5" cy="12.5" r="0.5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z"/></svg>
-                Themes
-            </a>
-        </div>
-        <div class="nav-section">
-            <div class="nav-section-title">Security</div>
-            <a href="../article/inspecting.html" class="nav-item" data-page="../article/inspecting.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                Inspecting
-            </a>
-            <a href="../article/scanning.html" class="nav-item" data-page="../article/scanning.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7V5a2 2 0 0 1 2-2h2"/><path d="M17 3h2a2 2 0 0 1 2 2v2"/><path d="M21 17v2a2 2 0 0 1-2 2h-2"/><path d="M7 21H5a2 2 0 0 1-2-2v-2"/><path d="M7 12h10"/></svg>
-                Scanning
-            </a>
-            <a href="../article/dangerous-roles.html" class="nav-item" data-page="../article/dangerous-roles.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
-                Dangerous Roles
-            </a>
-            <a href="../article/meta-roles.html" class="nav-item" data-page="../article/meta-roles.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Meta Roles</a>
-            <a href="../article/permissions.html" class="nav-item" data-page="../article/permissions.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg> Permissions</a>
-        </div>
-
-        <div class="nav-section">
-            <div class="nav-section-title">Legal</div>
-            <a href="../legal/terms.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" x2="8" y1="13" y2="13"/><line x1="16" x2="8" y1="17" y2="17"/><polyline points="10 9 9 9 8 9"/></svg> Terms of Service</a>
-            <a href="../legal/privacy.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg> Privacy Policy</a>
-        </div>
-    </nav>
-</aside>
-
-<!-- HEADER -->
-<header class="header" id="header">
-    <div class="header-glow"></div>
-    <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-    </button>
-    <div class="search-container">
-        <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="11" cy="11" r="8"></circle>
-            <path d="m21 21-4.3-4.3"></path>
-        </svg>
-        <input type="text" class="search-input" id="search-input" placeholder="Search documentation..." autocomplete="off">
-        <kbd class="search-kbd">⌘K</kbd>
-        <div class="search-results" id="search-results"></div>
-    </div>
-    <div class="header-actions">
-        <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="btn-ghost">
-            Support
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
-        </a>
-        <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=1392557026813&scope=bot%20applications.commands" target="_blank" class="btn-primary">
-            Invite Meta
-        </a>
-    </div>
-</header>
-
-<!-- MOBILE OVERLAY -->
-<div class="sidebar-overlay" id="sidebar-overlay"></div>
-
-<!-- MAIN CONTENT -->
-<main class="main-content">
-    <div class="content-container">
-
-        <section class="doc-section">
-            <h1>AutoMod</h1>
-            <div class="glow-line"></div>
-
-            <p class="lead">Discord AutoMod integration powered by Meta — easier, cleaner, and faster moderation setup that works even when Meta is offline.</p>
-
-            <div class="discord-badge">
-                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
-                Powered by Discord AutoMod
-            </div>
-
-            <!-- Intro Box -->
-            <div class="automod-intro">
-                <p>Meta no longer has a custom AutoMod system. Instead, Meta works directly with Discord's built-in AutoMod to provide you the best and most reliable moderation experience. By setting up AutoMod through Meta, you're configuring Discord's native AutoMod — but faster, cleaner, and with fewer steps. This system works even when Meta is offline or in maintenance.</p>
-            </div>
-
-            <!-- Warning Cards -->
-            <div class="warning-card" style="background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3);">
-                <div class="warning-card-icon">⚠️</div>
-                <div class="warning-card-content" style="--accent-warning: #ef4444;">
-                    <strong style="color: #f87171;">Permission Warning</strong>
-                    <p>Users with the <code>Administrator</code> permission will be ignored by AutoMod. Administrators can change the configurations of the module.</p>
-                </div>
-            </div>
-
-            <div class="warning-card">
-                <div class="warning-card-icon">📋</div>
-                <div class="warning-card-content">
-                    <strong>Action Logs</strong>
-                    <p>All AutoMod logs will be sent into the server <code>mod-logs</code> channel. You <strong>cannot</strong> change the logging channel for AutoMod.</p>
-                </div>
-            </div>
-
-            <!-- Why Meta + Discord -->
-            <h2>Why Use Meta for AutoMod?</h2>
-            <div class="advantage-grid">
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-                    </div>
-                    <h4>Faster Setup</h4>
-                    <p>Configure all filters in seconds through Meta's streamlined interface instead of navigating Discord's settings.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
-                    </div>
-                    <h4>Always Active</h4>
-                    <p>Because it uses Discord's native AutoMod, protection stays active even when Meta is offline or under maintenance.</p>
-                </div>
-                <div class="advantage-card">
-                    <div class="advantage-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/></svg>
-                    </div>
-                    <h4>Full Control</h4>
-                    <p>Modify any AutoMod rule anytime through Discord's server settings after the initial Meta setup.</p>
-                </div>
-            </div>
-
-            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
-
-            <!-- Filters -->
-            <h2>Available Filters</h2>
-            <p>Meta sets up the following Discord AutoMod filters for your server. Each filter targets a specific type of unwanted content.</p>
-
-            <div class="filter-grid">
-                <div class="filter-card" style="--filter-color: #7c8aff;">
-                    <div class="filter-header">
-                        <div class="filter-icon invite">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>
-                        </div>
-                        <div>
-                            <div class="filter-name">Invite Filter</div>
-                            <div class="filter-status">Active</div>
-                        </div>
-                    </div>
-                    <p class="filter-desc">Blocks users from sending Discord server invite links in chat. Prevents advertising and member poaching.</p>
-                </div>
-
-                <div class="filter-card" style="--filter-color: #f87171;">
-                    <div class="filter-header">
-                        <div class="filter-icon racism">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg>
-                        </div>
-                        <div>
-                            <div class="filter-name">Racism Filter</div>
-                            <div class="filter-status">Active</div>
-                        </div>
-                    </div>
-                    <p class="filter-desc">Blocks all well-known racial slurs and hate speech. Keeps your community safe and inclusive.</p>
-                </div>
-
-                <div class="filter-card" style="--filter-color: #f472b6;">
-                    <div class="filter-header">
-                        <div class="filter-icon nsfw">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg>
-                        </div>
-                        <div>
-                            <div class="filter-name">NSFW Filter</div>
-                            <div class="filter-status">Active</div>
-                        </div>
-                    </div>
-                    <p class="filter-desc">Blocks all types of NSFW content and explicit material from being shared in your server channels.</p>
-                </div>
-
-                <div class="filter-card" style="--filter-color: #fbbf24;">
-                    <div class="filter-header">
-                        <div class="filter-icon scam">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></svg>
-                        </div>
-                        <div>
-                            <div class="filter-name">Scam Filter</div>
-                            <div class="filter-status">Active</div>
-                        </div>
-                    </div>
-                    <p class="filter-desc">Blocks all known Steam scam links, IP grabbers, and other malicious URLs from being shared.</p>
-                </div>
-
-                <div class="filter-card" style="--filter-color: #4ade80; border: 1.5px solid rgba(0,255,235,0.7); box-shadow: 0 0 12px 2px rgba(0,255,180,0.35);">
-                    <div class="filter-header">
-                        <div class="filter-icon profile">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-                        </div>
-                        <div>
-                            <div class="filter-name">Profile Filter</div>
-                            <div class="filter-status-plus">Meta Plus</div>
-                        </div>
-                    </div>
-                    <p class="filter-desc">Scans and filters out offensive user profiles, including inappropriate usernames and display names.</p>
-                </div>
-            </div>
-
-            <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
-
-            <!-- How to Modify -->
-            <h2>How to Modify AutoMod</h2>
-            <p>After Meta sets up AutoMod, you can fine-tune any rule through Discord's server settings.</p>
-
-            <div class="modify-box">
-                <div class="modify-header">
-                    <div class="modify-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z"/></svg>
-                    </div>
-                    <div class="modify-title">
-                        <h4>Editing AutoMod Rules</h4>
-                        <span>Navigate to your server settings to modify</span>
-                    </div>
-                </div>
-                <div class="modify-body">
-                    <p>To change how AutoMod behaves, head to your Discord server settings and find the AutoMod section:</p>
-                    <div class="path-steps">
-                        <div class="path-step">
-                            <span class="path-label">Casual</span>
-                            <span class="path-value">Server Settings <span>→</span> AutoMod</span>
-                        </div>
-                        <div class="path-step">
-                            <span class="path-label">Community</span>
-                            <span class="path-value">Server Settings <span>→</span> Safety Setup <span>→</span> AutoMod</span>
-                        </div>
-                    </div>
-                    <p>From there, select the rule you want to edit and make your changes. All modifications take effect immediately.</p>
-                </div>
-            </div>
-
-            <!-- How It Works -->
-            <div class="how-it-works">
-                <h3>How It Works</h3>
-                <div class="how-it-works-steps">
-                    <div class="how-step">
-                        <div class="how-step-number">1</div>
-                        <h4>Run Setup</h4>
-                        <p>Use Meta's <code>/settings</code> command to enable and configure AutoMod filters for your server.</p>
-                    </div>
-                    <div class="how-step">
-                        <div class="how-step-number">2</div>
-                        <h4>Discord Takes Over</h4>
-                        <p>Meta configures Discord's native AutoMod. The rules are enforced by Discord itself, not Meta.</p>
-                    </div>
-                    <div class="how-step">
-                        <div class="how-step-number">3</div>
-                        <h4>Always Protected</h4>
-                        <p>Because Discord enforces the rules, your server stays protected 24/7 — even during Meta downtime.</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Info Card -->
-            <div class="info-card">
-                <div class="info-card-icon">💡</div>
-                <div class="info-card-content">
-                    <strong>Pro Tip</strong>
-                    <p>You can add custom words and phrases to any AutoMod filter by editing the rules in Discord's server settings after Meta sets them up.</p>
-                </div>
-            </div>
-
-            <!-- Continue -->
-            <div class="continue-section">
-                <a href="server-logs.html" class="continue-btn">
-                    Continue to Server Logs
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+        <nav class="sidebar-nav">
+            <div class="nav-section">
+                <div class="nav-section-title">Getting Started</div>
+                <a href="../home.html" class="nav-item" data-page="home.html">
+                    <https:
+                        //discord.com/oauth2/authorize?client_id=980436688260182016&permissions=7640936837672959&scope=bot%20applications.commands
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                        <polyline points="9 22 9 12 15 12 15 22" />
+                        </svg>
+                        Introduction
+                </a>
+                <a href="getting-started.html" class="nav-item" data-page="getting-started.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20" />
+                    </svg>
+                    Getting Started
+                </a>
+                <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=7640936837672959&scope=bot%20applications.commands"
+                    class="nav-item" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                        <polyline points="7 10 12 15 17 10" />
+                        <line x1="12" x2="12" y1="15" y2="3" />
+                    </svg>
+                    Invite Meta
+                </a>
+                <a href="https://discord.gg/Rc8DgBBpsx" class="nav-item" target="_blank">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
+                    </svg>
+                    Support
+                </a>
+                <a href="../plus.html" class="nav-item nav-item-special" data-page="plus.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z" />
+                    </svg>
+                    Meta Plus
+                </a>
+                <a href="../commands.html" class="nav-item" data-page="commands.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polyline points="4 17 10 11 4 5" />
+                        <line x1="12" x2="20" y1="19" y2="19" />
+                    </svg>
+                    Commands
                 </a>
             </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Protection</div>
+                <a href="anti-mod-grief.html" class="nav-item" data-page="anti-mod-grief.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                        <path d="M12 8v4" />
+                        <path d="M12 16h.01" />
+                    </svg>
+                    Anti Mod Grief
+                </a>
+                <a href="anti-alt.html" class="nav-item" data-page="anti-alt.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <line x1="17" x2="22" y1="8" y2="13" />
+                        <line x1="22" x2="17" y1="8" y2="13" />
+                    </svg>
+                    Anti Alt
+                </a>
+                <a href="malicious-app.html" class="nav-item" data-page="malicious-app.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 8V4H8" />
+                        <rect width="16" height="12" x="4" y="8" rx="2" />
+                        <path d="M2 14h2" />
+                        <path d="M20 14h2" />
+                        <path d="M15 13v2" />
+                        <path d="M9 13v2" />
+                    </svg>
+                    Malicious App
+                </a>
+                <a href="automod.html" class="nav-item active" data-page="automod.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 4V2" />
+                        <path d="M15 16v-2" />
+                        <path d="M8 9h2" />
+                        <path d="M20 9h2" />
+                        <path d="M17.8 11.8 19 13" />
+                        https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=7640936837672959&scope=bot%20applications.commands
+                        <path d="M17.8 6.2 19 5" />
+                        <path d="m3 21 9-9" />
+                        <path d="M12.2 6.2 11 5" />
+                    </svg>
+                    AutoMod
+                </a>
+                <a href="server-logs.html" class="nav-item" data-page="server-logs.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
+                        <path d="M14 2v4a2 2 0 0 0 2 2h4" />
+                        <path d="M10 9H8" />
+                        <path d="M16 13H8" />
+                        <path d="M16 17H8" />
+                    </svg>
+                    Server Logs
+                </a>
+                <a href="themes.html" class="nav-item" data-page="themes.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="13.5" cy="6.5" r="0.5" fill="currentColor" />
+                        <circle cx="17.5" cy="10.5" r="0.5" fill="currentColor" />
+                        <circle cx="8.5" cy="7.5" r="0.5" fill="currentColor" />
+                        <circle cx="6.5" cy="12.5" r="0.5" fill="currentColor" />
+                        <path
+                            d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.555C21.965 6.012 17.461 2 12 2z" />
+                    </svg>
+                    Themes
+                </a>
+            </div>
+            <div class="nav-section">
+                <div class="nav-section-title">Security</div>
+                <a href="../article/inspecting.html" class="nav-item" data-page="../article/inspecting.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg>
+                    Inspecting
+                </a>
+                <a href="../article/scanning.html" class="nav-item" data-page="../article/scanning.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M3 7V5a2 2 0 0 1 2-2h2" />
+                        <path d="M17 3h2a2 2 0 0 1 2 2v2" />
+                        <path d="M21 17v2a2 2 0 0 1-2 2h-2" />
+                        <path d="M7 21H5a2 2 0 0 1-2-2v-2" />
+                        <path d="M7 12h10" />
+                    </svg>
+                    Scanning
+                </a>
+                <a href="../article/dangerous-roles.html" class="nav-item" data-page="../article/dangerous-roles.html">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                        <path d="M12 9v4" />
+                        <path d="M12 17h.01" />
+                    </svg>
+                    Dangerous Roles
+                </a>
+                <a href="../article/meta-roles.html" class="nav-item" data-page="../article/meta-roles.html"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg> Meta Roles</a>
+                <a href="../article/permissions.html" class="nav-item" data-page="../article/permissions.html"><svg
+                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="11" cy="11" r="8" />
+                        <path d="m21 21-4.3-4.3" />
+                    </svg> Permissions</a>
+            </div>
 
-        </section>
-    </div>
-</main>
+            <div class="nav-section">
+                <div class="nav-section-title">Legal</div>
+                <a href="../legal/terms.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
+                        <polyline points="14 2 14 8 20 8" />
+                        <line x1="16" x2="8" y1="13" y2="13" />
+                        <line x1="16" x2="8" y1="17" y2="17" />
+                        <polyline points="10 9 9 9 8 9" />
+                    </svg> Terms of Service</a>
+                <a href="../legal/privacy.html" class="nav-item"><svg xmlns="http://www.w3.org/2000/svg" width="16"
+                        height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                    </svg> Privacy Policy</a>
+            </div>
+        </nav>
+    </aside>
 
-<script>
-const searchData = [
-    { title: "Introduction", desc: "Welcome to Meta documentation", url: "home.html", category: "Getting Started" },
-    { title: "Getting Started", desc: "Learn the basics of Meta bot", url: "getting-started.html", category: "Getting Started" },
-    { title: "Meta Plus", desc: "Premium features and benefits", url: "plus.html", category: "Getting Started" },
-    { title: "Commands", desc: "Full list of available commands", url: "commands.html", category: "Getting Started" },
-    { title: "Anti Mod Grief", desc: "Protect against malicious moderators", url: "anti-mod-grief.html", category: "Protection" },
-    { title: "Anti Alt", desc: "Detect and block alternate accounts", url: "anti-alt.html", category: "Protection" },
-    { title: "Malicious App", desc: "Protect from dangerous bots", url: "malicious-app.html", category: "Protection" },
-    { title: "AutoMod", desc: "Automatic moderation features", url: "automod.html", category: "Protection" },
-    { title: "Server Logs", desc: "Track server activity", url: "server-logs.html", category: "Protection" },
-    { title: "Themes", desc: "Customize Meta's appearance", url: "themes.html", category: "Protection" },
-    { title: "Inspecting", desc: "Inspect users and content", url: "inspecting.html", category: "Security" },
-    { title: "Scanning", desc: "Scan for threats", url: "scanning.html", category: "Security" },
-    { title: "Dangerous Roles", desc: "Identify risky role permissions", url: "dangerous-roles.html", category: "Security" },
-    { title: "Terms of Service", desc: "Review the terms of service", url: "../legal/terms.html", category: "Legal" },
-    { title: "Privacy Policy", desc: "Learn how we protect your data", url: "../legal/privacy.html", category: "Legal" }
-];
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header-glow"></div>
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+        <div class="search-container">
+            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.3-4.3"></path>
+            </svg>
+            <input type="text" class="search-input" id="search-input" placeholder="Search documentation..."
+                autocomplete="off">
+            <kbd class="search-kbd">⌘K</kbd>
+            <div class="search-results" id="search-results"></div>
+        </div>
+        <div class="header-actions">
+            <a href="https://discord.gg/Rc8DgBBpsx" target="_blank" class="btn-ghost">
+                Support
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+            <a href="https://discord.com/oauth2/authorize?client_id=980436688260182016&permissions=7640936837672959&scope=bot%20applications.commands"
+                target="_blank" class="btn-primary">
+                Invite Meta
+            </a>
+        </div>
+    </header>
+
+    <!-- MOBILE OVERLAY -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+        <div class="content-container">
+
+            <section class="doc-section">
+                <h1>AutoMod</h1>
+                <div class="glow-line"></div>
+
+                <p class="lead">Discord AutoMod integration powered by Meta — easier, cleaner, and faster moderation
+                    setup that works even when Meta is offline.</p>
+
+                <div class="discord-badge">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z" />
+                    </svg>
+                    Powered by Discord AutoMod
+                </div>
+
+                <!-- Intro Box -->
+                <div class="automod-intro">
+                    <p>Meta no longer has a custom AutoMod system. Instead, Meta works directly with Discord's built-in
+                        AutoMod to provide you the best and most reliable moderation experience. By setting up AutoMod
+                        through Meta, you're configuring Discord's native AutoMod — but faster, cleaner, and with fewer
+                        steps. This system works even when Meta is offline or in maintenance.</p>
+                </div>
+
+                <!-- Warning Cards -->
+                <div class="warning-card"
+                    style="background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.3);">
+                    <div class="warning-card-icon">⚠️</div>
+                    <div class="warning-card-content" style="--accent-warning: #ef4444;">
+                        <strong style="color: #f87171;">Permission Warning</strong>
+                        <p>Users with the <code>Administrator</code> permission will be ignored by AutoMod.
+                            Administrators can change the configurations of the module.</p>
+                    </div>
+                </div>
+
+                <div class="warning-card">
+                    <div class="warning-card-icon">📋</div>
+                    <div class="warning-card-content">
+                        <strong>Action Logs</strong>
+                        <p>All AutoMod logs will be sent into the server <code>mod-logs</code> channel. You
+                            <strong>cannot</strong> change the logging channel for AutoMod.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Why Meta + Discord -->
+                <h2>Why Use Meta for AutoMod?</h2>
+                <div class="advantage-grid">
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
+                            </svg>
+                        </div>
+                        <h4>Faster Setup</h4>
+                        <p>Configure all filters in seconds through Meta's streamlined interface instead of navigating
+                            Discord's settings.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10" />
+                            </svg>
+                        </div>
+                        <h4>Always Active</h4>
+                        <p>Because it uses Discord's native AutoMod, protection stays active even when Meta is offline
+                            or under maintenance.</p>
+                    </div>
+                    <div class="advantage-card">
+                        <div class="advantage-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                            </svg>
+                        </div>
+                        <h4>Full Control</h4>
+                        <p>Modify any AutoMod rule anytime through Discord's server settings after the initial Meta
+                            setup.</p>
+                    </div>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <!-- Filters -->
+                <h2>Available Filters</h2>
+                <p>Meta sets up the following Discord AutoMod filters for your server. Each filter targets a specific
+                    type of unwanted content.</p>
+
+                <div class="filter-grid">
+                    <div class="filter-card" style="--filter-color: #7c8aff;">
+                        <div class="filter-header">
+                            <div class="filter-icon invite">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" />
+                                    <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="filter-name">Invite Filter</div>
+                                <div class="filter-status">Active</div>
+                            </div>
+                        </div>
+                        <p class="filter-desc">Blocks users from sending Discord server invite links in chat. Prevents
+                            advertising and member poaching.</p>
+                    </div>
+
+                    <div class="filter-card" style="--filter-color: #f87171;">
+                        <div class="filter-header">
+                            <div class="filter-icon racism">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="4.93" y1="4.93" x2="19.07" y2="19.07" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="filter-name">Racism Filter</div>
+                                <div class="filter-status">Active</div>
+                            </div>
+                        </div>
+                        <p class="filter-desc">Blocks all well-known racial slurs and hate speech. Keeps your community
+                            safe and inclusive.</p>
+                    </div>
+
+                    <div class="filter-card" style="--filter-color: #f472b6;">
+                        <div class="filter-header">
+                            <div class="filter-icon nsfw">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z" />
+                                    <circle cx="12" cy="12" r="3" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="filter-name">NSFW Filter</div>
+                                <div class="filter-status">Active</div>
+                            </div>
+                        </div>
+                        <p class="filter-desc">Blocks all types of NSFW content and explicit material from being shared
+                            in your server channels.</p>
+                    </div>
+
+                    <div class="filter-card" style="--filter-color: #fbbf24;">
+                        <div class="filter-header">
+                            <div class="filter-icon scam">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path
+                                        d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z" />
+                                    <path d="M12 9v4" />
+                                    <path d="M12 17h.01" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="filter-name">Scam Filter</div>
+                                <div class="filter-status">Active</div>
+                            </div>
+                        </div>
+                        <p class="filter-desc">Blocks all known Steam scam links, IP grabbers, and other malicious URLs
+                            from being shared.</p>
+                    </div>
+
+                    <div class="filter-card"
+                        style="--filter-color: #4ade80; border: 1.5px solid rgba(0,255,235,0.7); box-shadow: 0 0 12px 2px rgba(0,255,180,0.35);">
+                        <div class="filter-header">
+                            <div class="filter-icon profile">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                    <circle cx="9" cy="7" r="4" />
+                                    <path d="M22 21v-2a4 4 0 0 0-3-3.87" />
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                                </svg>
+                            </div>
+                            <div>
+                                <div class="filter-name">Profile Filter</div>
+                                <div class="filter-status-plus">Meta Plus</div>
+                            </div>
+                        </div>
+                        <p class="filter-desc">Scans and filters out offensive user profiles, including inappropriate
+                            usernames and display names.</p>
+                    </div>
+                </div>
+
+                <hr style="border: none; border-top: 1px solid var(--border-color); margin: 40px 0;">
+
+                <!-- How to Modify -->
+                <h2>How to Modify AutoMod</h2>
+                <p>After Meta sets up AutoMod, you can fine-tune any rule through Discord's server settings.</p>
+
+                <div class="modify-box">
+                    <div class="modify-header">
+                        <div class="modify-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3" />
+                                <path
+                                    d="M12.22 2h-.44a2 2 0 0 0-2 2v.18a2 2 0 0 1-1 1.73l-.43.25a2 2 0 0 1-2 0l-.15-.08a2 2 0 0 0-2.73.73l-.22.38a2 2 0 0 0 .73 2.73l.15.1a2 2 0 0 1 1 1.72v.51a2 2 0 0 1-1 1.74l-.15.09a2 2 0 0 0-.73 2.73l.22.38a2 2 0 0 0 2.73.73l.15-.08a2 2 0 0 1 2 0l.43.25a2 2 0 0 1 1 1.73V20a2 2 0 0 0 2 2h.44a2 2 0 0 0 2-2v-.18a2 2 0 0 1 1-1.73l.43-.25a2 2 0 0 1 2 0l.15.08a2 2 0 0 0 2.73-.73l.22-.39a2 2 0 0 0-.73-2.73l-.15-.08a2 2 0 0 1-1-1.74v-.5a2 2 0 0 1 1-1.74l.15-.09a2 2 0 0 0 .73-2.73l-.22-.38a2 2 0 0 0-2.73-.73l-.15.08a2 2 0 0 1-2 0l-.43-.25a2 2 0 0 1-1-1.73V4a2 2 0 0 0-2-2z" />
+                            </svg>
+                        </div>
+                        <div class="modify-title">
+                            <h4>Editing AutoMod Rules</h4>
+                            <span>Navigate to your server settings to modify</span>
+                        </div>
+                    </div>
+                    <div class="modify-body">
+                        <p>To change how AutoMod behaves, head to your Discord server settings and find the AutoMod
+                            section:</p>
+                        <div class="path-steps">
+                            <div class="path-step">
+                                <span class="path-label">Casual</span>
+                                <span class="path-value">Server Settings <span>→</span> AutoMod</span>
+                            </div>
+                            <div class="path-step">
+                                <span class="path-label">Community</span>
+                                <span class="path-value">Server Settings <span>→</span> Safety Setup <span>→</span>
+                                    AutoMod</span>
+                            </div>
+                        </div>
+                        <p>From there, select the rule you want to edit and make your changes. All modifications take
+                            effect immediately.</p>
+                    </div>
+                </div>
+
+                <!-- How It Works -->
+                <div class="how-it-works">
+                    <h3>How It Works</h3>
+                    <div class="how-it-works-steps">
+                        <div class="how-step">
+                            <div class="how-step-number">1</div>
+                            <h4>Run Setup</h4>
+                            <p>Use Meta's <code>/settings</code> command to enable and configure AutoMod filters for
+                                your server.</p>
+                        </div>
+                        <div class="how-step">
+                            <div class="how-step-number">2</div>
+                            <h4>Discord Takes Over</h4>
+                            <p>Meta configures Discord's native AutoMod. The rules are enforced by Discord itself, not
+                                Meta.</p>
+                        </div>
+                        <div class="how-step">
+                            <div class="how-step-number">3</div>
+                            <h4>Always Protected</h4>
+                            <p>Because Discord enforces the rules, your server stays protected 24/7 — even during Meta
+                                downtime.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Info Card -->
+                <div class="info-card">
+                    <div class="info-card-icon">💡</div>
+                    <div class="info-card-content">
+                        <strong>Pro Tip</strong>
+                        <p>You can add custom words and phrases to any AutoMod filter by editing the rules in Discord's
+                            server settings after Meta sets them up.</p>
+                    </div>
+                </div>
+
+                <!-- Continue -->
+                <div class="continue-section">
+                    <a href="server-logs.html" class="continue-btn">
+                        Continue to Server Logs
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14" />
+                            <path d="m12 5 7 7-7 7" />
+                        </svg>
+                    </a>
+                </div>
+
+            </section>
+        </div>
+    </main>
+
+    <script>
+        const searchData = [
+            { title: "Introduction", desc: "Welcome to Meta documentation", url: "home.html", category: "Getting Started" },
+            { title: "Getting Started", desc: "Learn the basics of Meta bot", url: "getting-started.html", category: "Getting Started" },
+            { title: "Meta Plus", desc: "Premium features and benefits", url: "plus.html", category: "Getting Started" },
+            { title: "Commands", desc: "Full list of available commands", url: "commands.html", category: "Getting Started" },
+            { title: "Anti Mod Grief", desc: "Protect against malicious moderators", url: "anti-mod-grief.html", category: "Protection" },
+            { title: "Anti Alt", desc: "Detect and block alternate accounts", url: "anti-alt.html", category: "Protection" },
+            { title: "Malicious App", desc: "Protect from dangerous bots", url: "malicious-app.html", category: "Protection" },
+            { title: "AutoMod", desc: "Automatic moderation features", url: "automod.html", category: "Protection" },
+            { title: "Server Logs", desc: "Track server activity", url: "server-logs.html", category: "Protection" },
+            { title: "Themes", desc: "Customize Meta's appearance", url: "themes.html", category: "Protection" },
+            { title: "Inspecting", desc: "Inspect users and content", url: "inspecting.html", category: "Security" },
+            { title: "Scanning", desc: "Scan for threats", url: "scanning.html", category: "Security" },
+            { title: "Dangerous Roles", desc: "Identify risky role permissions", url: "dangerous-roles.html", category: "Security" },
+            { title: "Terms of Service", desc: "Review the terms of service", url: "../legal/terms.html", category: "Legal" },
+            { title: "Privacy Policy", desc: "Learn how we protect your data", url: "../legal/privacy.html", category: "Legal" }
+        ];
 
 
-const searchInput = document.getElementById('search-input');
-const searchResults = document.getElementById('search-results');
+        const searchInput = document.getElementById('search-input');
+        const searchResults = document.getElementById('search-results');
 
-searchInput.addEventListener('input', function () {
-    const query = this.value.toLowerCase().trim();
-    if (query.length < 2) { searchResults.classList.remove('open'); return; }
-    const matches = searchData.filter(item => item.title.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query));
-    if (matches.length > 0) {
-        searchResults.innerHTML = matches.map(item => `
+        searchInput.addEventListener('input', function () {
+            const query = this.value.toLowerCase().trim();
+            if (query.length < 2) { searchResults.classList.remove('open'); return; }
+            const matches = searchData.filter(item => item.title.toLowerCase().includes(query) || item.desc.toLowerCase().includes(query));
+            if (matches.length > 0) {
+                searchResults.innerHTML = matches.map(item => `
             <a href="${item.url}" class="search-result-item">
                 <div class="search-result-header">
                     <span class="search-result-title">${item.title}</span>
@@ -393,23 +600,24 @@ searchInput.addEventListener('input', function () {
                 <p class="search-result-desc">${item.desc}</p>
             </a>
         `).join('');
-    } else {
-        searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
-    }
-    searchResults.classList.add('open');
-});
+            } else {
+                searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
+            }
+            searchResults.classList.add('open');
+        });
 
-document.addEventListener('keydown', function (e) {
-    if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); searchInput.focus(); }
-    if (e.key === 'Escape') { searchResults.classList.remove('open'); searchInput.blur(); }
-});
+        document.addEventListener('keydown', function (e) {
+            if ((e.metaKey || e.ctrlKey) && e.key === 'k') { e.preventDefault(); searchInput.focus(); }
+            if (e.key === 'Escape') { searchResults.classList.remove('open'); searchInput.blur(); }
+        });
 
-const menuBtn = document.getElementById('menu-btn');
-const sidebar = document.getElementById('sidebar');
-const overlay = document.getElementById('sidebar-overlay');
-menuBtn.addEventListener('click', function () { sidebar.classList.toggle('open'); overlay.classList.toggle('open'); menuBtn.classList.toggle('active'); });
-overlay.addEventListener('click', function () { sidebar.classList.remove('open'); overlay.classList.remove('open'); menuBtn.classList.remove('active'); });
-</script>
+        const menuBtn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        const overlay = document.getElementById('sidebar-overlay');
+        menuBtn.addEventListener('click', function () { sidebar.classList.toggle('open'); overlay.classList.toggle('open'); menuBtn.classList.toggle('active'); });
+        overlay.addEventListener('click', function () { sidebar.classList.remove('open'); overlay.classList.remove('open'); menuBtn.classList.remove('active'); });
+    </script>
 
 </body>
+
 </html>
